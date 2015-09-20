@@ -1,0 +1,30 @@
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Solution1\Apresentacao\bin\Debug\Apresentacao.exe.config
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Solution1\Apresentacao\bin\Debug\Apresentacao.exe
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Solution1\Apresentacao\bin\Debug\Apresentacao.pdb
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Solution1\Apresentacao\obj\Debug\Apresentacao.Properties.Resources.resources
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Solution1\Apresentacao\obj\Debug\Apresentacao.csproj.GenerateResource.Cache
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Solution1\Apresentacao\obj\Debug\Apresentacao.exe
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Solution1\Apresentacao\obj\Debug\Apresentacao.pdb
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Solution1\Apresentacao\obj\Debug\Apresentacao.MenuAluno.resources
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Solution1\Apresentacao\obj\Debug\Apresentacao.csprojResolveAssemblyReference.cache
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Solution2\Apresentacao\bin\Debug\Apresentacao.exe.config
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Solution2\Apresentacao\bin\Debug\Apresentacao.exe
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Solution2\Apresentacao\bin\Debug\Apresentacao.pdb
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Solution2\Apresentacao\obj\Debug\Apresentacao.MenuAluno.resources
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Solution2\Apresentacao\obj\Debug\Apresentacao.Properties.Resources.resources
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Solution2\Apresentacao\obj\Debug\Apresentacao.csproj.GenerateResource.Cache
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Solution2\Apresentacao\obj\Debug\Apresentacao.exe
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Solution2\Apresentacao\obj\Debug\Apresentacao.pdb
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Solution2\Apresentacao\obj\Debug\Apresentacao.FrmMenuAlunoAdministrador.resources
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Solution2 - Save Show\Apresentacao\bin\Debug\Apresentacao.exe.config
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Solution2 - Save Show\Apresentacao\obj\Debug\Apresentacao.exe
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Solution2 - Save Show\Apresentacao\obj\Debug\Apresentacao.pdb
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Solution2 - Save Show - uma tela\Apresentacao\bin\Debug\Apresentacao.exe.config
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Solution2 - Save Show - uma tela\Apresentacao\obj\Debug\Apresentacao.exe
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Solution2 - Save Show - uma tela\Apresentacao\obj\Debug\Apresentacao.pdb
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Solution2 - Save Show - uma tela\Apresentacao\bin\Debug\Apresentacao.exe
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Solution2 - Save Show - uma tela\Apresentacao\bin\Debug\Apresentacao.pdb
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Solution2 - Save Show - uma tela\Apresentacao\obj\Debug\Apresentacao.MenuAluno.resources
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Solution2 - Save Show - uma tela\Apresentacao\obj\Debug\Apresentacao.Properties.Resources.resources
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Solution2 - Save Show - uma tela\Apresentacao\obj\Debug\Apresentacao.csproj.GenerateResource.Cache
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Solution2 - Save Show - uma tela\Apresentacao\obj\Debug\Apresentacao.FrmMenuAdministrador.resources

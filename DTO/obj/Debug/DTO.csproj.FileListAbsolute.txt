@@ -1,0 +1,5 @@
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Solution1\DTO\bin\Debug\DTO.dll
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Solution1\DTO\bin\Debug\DTO.pdb
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Solution1\DTO\obj\Debug\DTO.dll
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Solution1\DTO\obj\Debug\DTO.pdb
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Solution1\DTO\obj\Debug\DTO.csprojResolveAssemblyReference.cache

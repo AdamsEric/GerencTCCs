@@ -1,0 +1,313 @@
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Solution2 - Save Show - uma tela\Apresentacao\bin\Release\Apresentacao.exe.config
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Solution2 - Save Show - uma tela\Apresentacao\bin\Release\Apresentacao.exe
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Solution2 - Save Show - uma tela\Apresentacao\bin\Release\Apresentacao.pdb
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Solution2 - Save Show - uma tela\Apresentacao\obj\Release\Apresentacao.csprojResolveAssemblyReference.cache
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Solution2 - Save Show - uma tela\Apresentacao\obj\Release\Apresentacao.MenuAluno.resources
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Solution2 - Save Show - uma tela\Apresentacao\obj\Release\Apresentacao.FrmMenuAdministrador.resources
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Solution2 - Save Show - uma tela\Apresentacao\obj\Release\Apresentacao.Properties.Resources.resources
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Solution2 - Save Show - uma tela\Apresentacao\obj\Release\Apresentacao.csproj.GenerateResource.Cache
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Solution2 - Save Show - uma tela\Apresentacao\obj\Release\Apresentacao.exe
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Solution2 - Save Show - uma tela\Apresentacao\obj\Release\Apresentacao.pdb
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Solution2 - Save Show - uma tela\Apresentacao\bin\Release\Apresentacao.exe.manifest
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Solution2 - Save Show - uma tela\Apresentacao\bin\Release\Apresentacao.application
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Solution2 - Save Show - uma tela\Apresentacao\obj\Release\Apresentacao.exe.manifest
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Solution2 - Save Show - uma tela\Apresentacao\obj\Release\Apresentacao.application
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-07\Apresentacao\bin\Release\Apresentacao.exe.config
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-07\Apresentacao\obj\Release\Apresentacao.exe
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-07\Apresentacao\obj\Release\Apresentacao.pdb
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-07\Apresentacao\bin\Release\Apresentacao.exe.manifest
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-07\Apresentacao\bin\Release\Apresentacao.application
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-07\Apresentacao\bin\Release\Apresentacao.exe
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-07\Apresentacao\bin\Release\Apresentacao.pdb
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-07\Apresentacao\obj\Release\Apresentacao.csprojResolveAssemblyReference.cache
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-07\Apresentacao\obj\Release\Apresentacao.MenuAluno.resources
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-07\Apresentacao\obj\Release\Apresentacao.FrmMenuAdministrador.resources
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-07\Apresentacao\obj\Release\Apresentacao.Properties.Resources.resources
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-07\Apresentacao\obj\Release\Apresentacao.csproj.GenerateResource.Cache
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-07\Apresentacao\obj\Release\Apresentacao.exe.manifest
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-07\Apresentacao\obj\Release\Apresentacao.application
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-07\Apresentacao\obj\Release\Apresentacao.FrmMenuInserirAluno.resources
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-09 v4 ok\Apresentacao\bin\Release\Apresentacao.exe.config
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-09 v4 ok\Apresentacao\obj\Release\Apresentacao.exe
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-09 v4 ok\Apresentacao\obj\Release\Apresentacao.pdb
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-09 v4 ok\Apresentacao\bin\Release\Apresentacao.exe.manifest
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-09 v4 ok\Apresentacao\bin\Release\Apresentacao.application
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-09 v4 ok\Apresentacao\bin\Release\Apresentacao.exe
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-09 v4 ok\Apresentacao\bin\Release\Apresentacao.pdb
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-09 v4 ok\Apresentacao\obj\Release\Apresentacao.csprojResolveAssemblyReference.cache
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-09 v4 ok\Apresentacao\obj\Release\Apresentacao.MenuAluno.resources
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-09 v4 ok\Apresentacao\obj\Release\Apresentacao.FrmMenuAdministrador.resources
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-09 v4 ok\Apresentacao\obj\Release\Apresentacao.FrmMenuInserirAluno.resources
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-09 v4 ok\Apresentacao\obj\Release\Apresentacao.Properties.Resources.resources
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-09 v4 ok\Apresentacao\obj\Release\Apresentacao.csproj.GenerateResource.Cache
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-09 v4 ok\Apresentacao\obj\Release\Apresentacao.exe.manifest
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-09 v4 ok\Apresentacao\obj\Release\Apresentacao.application
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-09 v4 ok\Apresentacao\obj\Release\Apresentacao.FrmMenuInserirProfessor.resources
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-09 v4.2\Apresentacao\bin\Release\Apresentacao.exe.config
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-09 v4.2\Apresentacao\obj\Release\Apresentacao.exe
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-09 v4.2\Apresentacao\obj\Release\Apresentacao.pdb
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-09 v4.2 - Copia\Apresentacao\bin\Release\Apresentacao.exe.config
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-09 v4.2 - Copia\Apresentacao\obj\Release\Apresentacao.exe
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-09 v4.2 - Copia\Apresentacao\obj\Release\Apresentacao.pdb
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-09 v4.2 - Copia\Apresentacao\bin\Release\Apresentacao.exe.manifest
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-09 v4.2 - Copia\Apresentacao\bin\Release\Apresentacao.application
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-09 v4.2 - Copia\Apresentacao\bin\Release\Apresentacao.exe
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-09 v4.2 - Copia\Apresentacao\bin\Release\Apresentacao.pdb
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-09 v4.2 - Copia\Apresentacao\obj\Release\Apresentacao.csprojResolveAssemblyReference.cache
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-09 v4.2 - Copia\Apresentacao\obj\Release\Apresentacao.FrmMenuInserirCurso.resources
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-09 v4.2 - Copia\Apresentacao\obj\Release\Apresentacao.FrmMenuInserirProfessor.resources
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-09 v4.2 - Copia\Apresentacao\obj\Release\Apresentacao.MenuAluno.resources
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-09 v4.2 - Copia\Apresentacao\obj\Release\Apresentacao.FrmMenuAdministrador.resources
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-09 v4.2 - Copia\Apresentacao\obj\Release\Apresentacao.FrmMenuInserirAluno.resources
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-09 v4.2 - Copia\Apresentacao\obj\Release\Apresentacao.Properties.Resources.resources
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-09 v4.2 - Copia\Apresentacao\obj\Release\Apresentacao.csproj.GenerateResource.Cache
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-09 v4.2 - Copia\Apresentacao\obj\Release\Apresentacao.exe.manifest
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-09 v4.2 - Copia\Apresentacao\obj\Release\Apresentacao.application
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-09 v4.3 - Copia\Apresentacao\bin\Release\Apresentacao.exe.config
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-09 v4.3 - Copia\Apresentacao\obj\Release\Apresentacao.exe
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-09 v4.3 - Copia\Apresentacao\obj\Release\Apresentacao.pdb
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-09 v4.3 - Copia\Apresentacao\bin\Release\Apresentacao.exe.manifest
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-09 v4.3 - Copia\Apresentacao\bin\Release\Apresentacao.application
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-09 v4.3 - Copia\Apresentacao\bin\Release\Apresentacao.exe
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-09 v4.3 - Copia\Apresentacao\bin\Release\Apresentacao.pdb
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-09 v4.3 - Copia\Apresentacao\obj\Release\Apresentacao.csprojResolveAssemblyReference.cache
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-09 v4.3 - Copia\Apresentacao\obj\Release\Apresentacao.FrmMenuInserirTCC.resources
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-09 v4.3 - Copia\Apresentacao\obj\Release\Apresentacao.FrmMenuInserirCurso.resources
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-09 v4.3 - Copia\Apresentacao\obj\Release\Apresentacao.FrmMenuInserirProfessor.resources
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-09 v4.3 - Copia\Apresentacao\obj\Release\Apresentacao.MenuAluno.resources
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-09 v4.3 - Copia\Apresentacao\obj\Release\Apresentacao.FrmMenuAdministrador.resources
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-09 v4.3 - Copia\Apresentacao\obj\Release\Apresentacao.FrmMenuInserirAluno.resources
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-09 v4.3 - Copia\Apresentacao\obj\Release\Apresentacao.Properties.Resources.resources
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-09 v4.3 - Copia\Apresentacao\obj\Release\Apresentacao.csproj.GenerateResource.Cache
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-09 v4.3 - Copia\Apresentacao\obj\Release\Apresentacao.exe.manifest
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-09 v4.3 - Copia\Apresentacao\obj\Release\Apresentacao.application
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v1.0\Apresentacao\bin\Release\Apresentacao.exe.config
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v1.0\Apresentacao\obj\Release\Apresentacao.exe
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v1.0\Apresentacao\obj\Release\Apresentacao.pdb
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.0\Apresentacao\bin\Release\Apresentacao.exe.config
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.0\Apresentacao\obj\Release\Apresentacao.exe
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.0\Apresentacao\obj\Release\Apresentacao.pdb
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.0\Apresentacao\bin\Release\Apresentacao.exe.manifest
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.0\Apresentacao\bin\Release\Apresentacao.application
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.0\Apresentacao\bin\Release\Apresentacao.exe
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.0\Apresentacao\bin\Release\Apresentacao.pdb
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.0\Apresentacao\obj\Release\Apresentacao.csprojResolveAssemblyReference.cache
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.0\Apresentacao\obj\Release\Apresentacao.FrmMenuInserirUnidade.resources
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.0\Apresentacao\obj\Release\Apresentacao.FrmMenuInserirTCC.resources
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.0\Apresentacao\obj\Release\Apresentacao.FrmMenuInserirCurso.resources
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.0\Apresentacao\obj\Release\Apresentacao.FrmMenuInserirProfessor.resources
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.0\Apresentacao\obj\Release\Apresentacao.MenuAluno.resources
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.0\Apresentacao\obj\Release\Apresentacao.FrmMenuAdministrador.resources
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.0\Apresentacao\obj\Release\Apresentacao.FrmMenuInserirAluno.resources
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.0\Apresentacao\obj\Release\Apresentacao.Properties.Resources.resources
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.0\Apresentacao\obj\Release\Apresentacao.csproj.GenerateResource.Cache
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.0\Apresentacao\obj\Release\Apresentacao.exe.manifest
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.0\Apresentacao\obj\Release\Apresentacao.application
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.1\Apresentacao\bin\Release\Apresentacao.exe.config
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.1\Apresentacao\obj\Release\Apresentacao.exe
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.1\Apresentacao\obj\Release\Apresentacao.pdb
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.1\Apresentacao\bin\Release\Apresentacao.exe.manifest
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.1\Apresentacao\bin\Release\Apresentacao.application
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.1\Apresentacao\bin\Release\Apresentacao.exe
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.1\Apresentacao\bin\Release\Apresentacao.pdb
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.1\Apresentacao\obj\Release\Apresentacao.csprojResolveAssemblyReference.cache
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.1\Apresentacao\obj\Release\Apresentacao.FrmMenuInserirSala.resources
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.1\Apresentacao\obj\Release\Apresentacao.FrmMenuInserirUnidade.resources
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.1\Apresentacao\obj\Release\Apresentacao.FrmMenuInserirTCC.resources
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.1\Apresentacao\obj\Release\Apresentacao.FrmMenuInserirCurso.resources
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.1\Apresentacao\obj\Release\Apresentacao.FrmMenuInserirProfessor.resources
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.1\Apresentacao\obj\Release\Apresentacao.MenuAluno.resources
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.1\Apresentacao\obj\Release\Apresentacao.FrmMenuAdministrador.resources
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.1\Apresentacao\obj\Release\Apresentacao.FrmMenuInserirAluno.resources
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.1\Apresentacao\obj\Release\Apresentacao.Properties.Resources.resources
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.1\Apresentacao\obj\Release\Apresentacao.csproj.GenerateResource.Cache
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.1\Apresentacao\obj\Release\Apresentacao.exe.manifest
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.1\Apresentacao\obj\Release\Apresentacao.application
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.2\Apresentacao\bin\Release\Apresentacao.exe.config
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.2\Apresentacao\obj\Release\Apresentacao.exe
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.2\Apresentacao\obj\Release\Apresentacao.pdb
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.2\Apresentacao\bin\Release\Apresentacao.exe.manifest
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.2\Apresentacao\bin\Release\Apresentacao.application
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.2\Apresentacao\bin\Release\Apresentacao.exe
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.2\Apresentacao\bin\Release\Apresentacao.pdb
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.2\Apresentacao\obj\Release\Apresentacao.csprojResolveAssemblyReference.cache
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.2\Apresentacao\obj\Release\Apresentacao.FrmMenuInserirSala.resources
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.2\Apresentacao\obj\Release\Apresentacao.FrmMenuInserirUnidade.resources
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.2\Apresentacao\obj\Release\Apresentacao.FrmMenuInserirTCC.resources
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.2\Apresentacao\obj\Release\Apresentacao.FrmMenuInserirCurso.resources
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.2\Apresentacao\obj\Release\Apresentacao.FrmMenuInserirProfessor.resources
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.2\Apresentacao\obj\Release\Apresentacao.MenuAluno.resources
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.2\Apresentacao\obj\Release\Apresentacao.FrmMenuAdministrador.resources
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.2\Apresentacao\obj\Release\Apresentacao.FrmMenuInserirAluno.resources
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.2\Apresentacao\obj\Release\Apresentacao.Properties.Resources.resources
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.2\Apresentacao\obj\Release\Apresentacao.csproj.GenerateResource.Cache
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.2\Apresentacao\obj\Release\Apresentacao.exe.manifest
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.2\Apresentacao\obj\Release\Apresentacao.application
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.2.1\Apresentacao\bin\Release\Apresentacao.exe.config
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.2.1\Apresentacao\obj\Release\Apresentacao.exe
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.2.1\Apresentacao\obj\Release\Apresentacao.pdb
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.2.1\Apresentacao\bin\Release\Apresentacao.exe.manifest
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.2.1\Apresentacao\bin\Release\Apresentacao.application
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.2.1\Apresentacao\bin\Release\Apresentacao.exe
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.2.1\Apresentacao\bin\Release\Apresentacao.pdb
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.2.1\Apresentacao\obj\Release\Apresentacao.csprojResolveAssemblyReference.cache
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.2.1\Apresentacao\obj\Release\Apresentacao.FrmMenuInserirUsuario.resources
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.2.1\Apresentacao\obj\Release\Apresentacao.FrmMenuInserirSala.resources
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.2.1\Apresentacao\obj\Release\Apresentacao.FrmMenuInserirUnidade.resources
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.2.1\Apresentacao\obj\Release\Apresentacao.FrmMenuInserirTCC.resources
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.2.1\Apresentacao\obj\Release\Apresentacao.FrmMenuInserirCurso.resources
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.2.1\Apresentacao\obj\Release\Apresentacao.FrmMenuInserirProfessor.resources
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.2.1\Apresentacao\obj\Release\Apresentacao.MenuAluno.resources
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.2.1\Apresentacao\obj\Release\Apresentacao.FrmMenuAdministrador.resources
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.2.1\Apresentacao\obj\Release\Apresentacao.FrmMenuInserirAluno.resources
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.2.1\Apresentacao\obj\Release\Apresentacao.Properties.Resources.resources
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.2.1\Apresentacao\obj\Release\Apresentacao.csproj.GenerateResource.Cache
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.2.1\Apresentacao\obj\Release\Apresentacao.exe.manifest
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.2.1\Apresentacao\obj\Release\Apresentacao.application
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.3\Apresentacao\bin\Release\Apresentacao.exe.config
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.3\Apresentacao\obj\Release\Apresentacao.exe
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.3\Apresentacao\obj\Release\Apresentacao.pdb
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.3\Apresentacao\bin\Release\Apresentacao.exe.manifest
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.3\Apresentacao\bin\Release\Apresentacao.application
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.3\Apresentacao\bin\Release\Apresentacao.exe
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.3\Apresentacao\bin\Release\Apresentacao.pdb
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.3\Apresentacao\obj\Release\Apresentacao.csprojResolveAssemblyReference.cache
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.3\Apresentacao\obj\Release\Apresentacao.FrmMenuAlterarAluno.resources
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.3\Apresentacao\obj\Release\Apresentacao.FrmMenuInserirUsuario.resources
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.3\Apresentacao\obj\Release\Apresentacao.FrmMenuInserirSala.resources
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.3\Apresentacao\obj\Release\Apresentacao.FrmMenuInserirUnidade.resources
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.3\Apresentacao\obj\Release\Apresentacao.FrmMenuInserirTCC.resources
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.3\Apresentacao\obj\Release\Apresentacao.FrmMenuInserirCurso.resources
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.3\Apresentacao\obj\Release\Apresentacao.FrmMenuInserirProfessor.resources
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.3\Apresentacao\obj\Release\Apresentacao.MenuAluno.resources
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.3\Apresentacao\obj\Release\Apresentacao.FrmMenuAdministrador.resources
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.3\Apresentacao\obj\Release\Apresentacao.FrmMenuInserirAluno.resources
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.3\Apresentacao\obj\Release\Apresentacao.Properties.Resources.resources
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.3\Apresentacao\obj\Release\Apresentacao.csproj.GenerateResource.Cache
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.3\Apresentacao\obj\Release\Apresentacao.exe.manifest
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.3\Apresentacao\obj\Release\Apresentacao.application
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.3\Apresentacao\obj\Release\Apresentacao.FrmMenuAlterarCurso.resources
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.3\Apresentacao\obj\Release\Apresentacao.FrmMenuAlterarProfessor.resources
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.3\Apresentacao\obj\Release\Apresentacao.FrmMenuAlterarSala.resources
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.3\Apresentacao\obj\Release\Apresentacao.FrmMenuAlterarTCC.resources
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.3\Apresentacao\obj\Release\Apresentacao.FrmMenuAlterarUnidade.resources
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.3\Apresentacao\obj\Release\Apresentacao.FrmMenuAlterarUsuario.resources
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.4\Apresentacao\bin\Release\Apresentacao.exe.config
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.4\Apresentacao\obj\Release\Apresentacao.exe
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.4\Apresentacao\obj\Release\Apresentacao.pdb
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.4\Apresentacao\bin\Release\Apresentacao.exe.manifest
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.4\Apresentacao\bin\Release\Apresentacao.application
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.4\Apresentacao\bin\Release\Apresentacao.exe
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.4\Apresentacao\bin\Release\Apresentacao.pdb
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.4\Apresentacao\obj\Release\Apresentacao.csprojResolveAssemblyReference.cache
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.4\Apresentacao\obj\Release\Apresentacao.FrmMenuAlterarCurso.resources
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.4\Apresentacao\obj\Release\Apresentacao.FrmMenuAlterarProfessor.resources
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.4\Apresentacao\obj\Release\Apresentacao.FrmMenuAlterarSala.resources
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.4\Apresentacao\obj\Release\Apresentacao.FrmMenuAlterarTCC.resources
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.4\Apresentacao\obj\Release\Apresentacao.FrmMenuAlterarUnidade.resources
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.4\Apresentacao\obj\Release\Apresentacao.FrmMenuAlterarUsuario.resources
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.4\Apresentacao\obj\Release\Apresentacao.FrmMenuAlterarAluno.resources
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.4\Apresentacao\obj\Release\Apresentacao.FrmMenuInserirUsuario.resources
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.4\Apresentacao\obj\Release\Apresentacao.FrmMenuInserirSala.resources
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.4\Apresentacao\obj\Release\Apresentacao.FrmMenuInserirUnidade.resources
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.4\Apresentacao\obj\Release\Apresentacao.FrmMenuInserirTCC.resources
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.4\Apresentacao\obj\Release\Apresentacao.FrmMenuInserirCurso.resources
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.4\Apresentacao\obj\Release\Apresentacao.FrmMenuInserirProfessor.resources
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.4\Apresentacao\obj\Release\Apresentacao.MenuAluno.resources
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.4\Apresentacao\obj\Release\Apresentacao.FrmMenuAdministrador.resources
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.4\Apresentacao\obj\Release\Apresentacao.FrmMenuInserirAluno.resources
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.4\Apresentacao\obj\Release\Apresentacao.Properties.Resources.resources
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.4\Apresentacao\obj\Release\Apresentacao.csproj.GenerateResource.Cache
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.4\Apresentacao\obj\Release\Apresentacao.exe.manifest
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.4\Apresentacao\obj\Release\Apresentacao.application
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.4\Apresentacao\obj\Release\Apresentacao.FrmInserirConfirmacaoSucesso.resources
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.4.1\Apresentacao\bin\Release\Apresentacao.exe.config
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.4.1\Apresentacao\obj\Release\Apresentacao.exe
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.4.1\Apresentacao\obj\Release\Apresentacao.pdb
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.4.1\Apresentacao\bin\Release\Apresentacao.exe.manifest
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.4.1\Apresentacao\bin\Release\Apresentacao.application
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.4.1\Apresentacao\bin\Release\Apresentacao.exe
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.4.1\Apresentacao\bin\Release\Apresentacao.pdb
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.4.1\Apresentacao\obj\Release\Apresentacao.csprojResolveAssemblyReference.cache
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.4.1\Apresentacao\obj\Release\Apresentacao.FrmInserirConfirmacaoProblema.resources
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.4.1\Apresentacao\obj\Release\Apresentacao.FrmInserirConfirmacaoSucesso.resources
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.4.1\Apresentacao\obj\Release\Apresentacao.FrmMenuAlterarCurso.resources
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.4.1\Apresentacao\obj\Release\Apresentacao.FrmMenuAlterarProfessor.resources
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.4.1\Apresentacao\obj\Release\Apresentacao.FrmMenuAlterarSala.resources
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.4.1\Apresentacao\obj\Release\Apresentacao.FrmMenuAlterarTCC.resources
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.4.1\Apresentacao\obj\Release\Apresentacao.FrmMenuAlterarUnidade.resources
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.4.1\Apresentacao\obj\Release\Apresentacao.FrmMenuAlterarUsuario.resources
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.4.1\Apresentacao\obj\Release\Apresentacao.FrmMenuAlterarAluno.resources
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.4.1\Apresentacao\obj\Release\Apresentacao.FrmMenuInserirUsuario.resources
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.4.1\Apresentacao\obj\Release\Apresentacao.FrmMenuInserirSala.resources
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.4.1\Apresentacao\obj\Release\Apresentacao.FrmMenuInserirUnidade.resources
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.4.1\Apresentacao\obj\Release\Apresentacao.FrmMenuInserirTCC.resources
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.4.1\Apresentacao\obj\Release\Apresentacao.FrmMenuInserirCurso.resources
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.4.1\Apresentacao\obj\Release\Apresentacao.FrmMenuInserirProfessor.resources
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.4.1\Apresentacao\obj\Release\Apresentacao.MenuAluno.resources
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.4.1\Apresentacao\obj\Release\Apresentacao.FrmMenuAdministrador.resources
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.4.1\Apresentacao\obj\Release\Apresentacao.FrmMenuInserirAluno.resources
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.4.1\Apresentacao\obj\Release\Apresentacao.Properties.Resources.resources
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.4.1\Apresentacao\obj\Release\Apresentacao.csproj.GenerateResource.Cache
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.4.1\Apresentacao\obj\Release\Apresentacao.exe.manifest
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.4.1\Apresentacao\obj\Release\Apresentacao.application
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.4.2\Apresentacao\bin\Release\Apresentacao.exe.config
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.4.2\Apresentacao\obj\Release\Apresentacao.exe
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.4.2\Apresentacao\obj\Release\Apresentacao.pdb
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.4.2\Apresentacao\bin\Release\Apresentacao.exe.manifest
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.4.2\Apresentacao\bin\Release\Apresentacao.application
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.4.2\Apresentacao\bin\Release\Apresentacao.exe
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.4.2\Apresentacao\bin\Release\Apresentacao.pdb
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.4.2\Apresentacao\obj\Release\Apresentacao.csprojResolveAssemblyReference.cache
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.4.2\Apresentacao\obj\Release\Apresentacao.FrmInserirConfirmacaoProblema.resources
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.4.2\Apresentacao\obj\Release\Apresentacao.FrmInserirConfirmacaoSucesso.resources
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.4.2\Apresentacao\obj\Release\Apresentacao.FrmMenuAlterarCurso.resources
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.4.2\Apresentacao\obj\Release\Apresentacao.FrmMenuAlterarProfessor.resources
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.4.2\Apresentacao\obj\Release\Apresentacao.FrmMenuAlterarSala.resources
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.4.2\Apresentacao\obj\Release\Apresentacao.FrmMenuAlterarTCC.resources
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.4.2\Apresentacao\obj\Release\Apresentacao.FrmMenuAlterarUnidade.resources
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.4.2\Apresentacao\obj\Release\Apresentacao.FrmMenuAlterarUsuario.resources
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.4.2\Apresentacao\obj\Release\Apresentacao.FrmMenuAlterarAluno.resources
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.4.2\Apresentacao\obj\Release\Apresentacao.FrmMenuInserirUsuario.resources
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.4.2\Apresentacao\obj\Release\Apresentacao.FrmMenuInserirSala.resources
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.4.2\Apresentacao\obj\Release\Apresentacao.FrmMenuInserirUnidade.resources
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.4.2\Apresentacao\obj\Release\Apresentacao.FrmMenuInserirTCC.resources
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.4.2\Apresentacao\obj\Release\Apresentacao.FrmMenuInserirCurso.resources
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.4.2\Apresentacao\obj\Release\Apresentacao.FrmMenuInserirProfessor.resources
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.4.2\Apresentacao\obj\Release\Apresentacao.MenuAluno.resources
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.4.2\Apresentacao\obj\Release\Apresentacao.FrmMenuAdministrador.resources
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.4.2\Apresentacao\obj\Release\Apresentacao.FrmMenuInserirAluno.resources
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.4.2\Apresentacao\obj\Release\Apresentacao.Properties.Resources.resources
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.4.2\Apresentacao\obj\Release\Apresentacao.csproj.GenerateResource.Cache
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.4.2\Apresentacao\obj\Release\Apresentacao.exe.manifest
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.4.2\Apresentacao\obj\Release\Apresentacao.application
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.4.3\Apresentacao\bin\Release\Apresentacao.exe.config
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.4.3\Apresentacao\obj\Release\Apresentacao.exe
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.4.3\Apresentacao\obj\Release\Apresentacao.pdb
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.4.3\Apresentacao\bin\Release\Apresentacao.exe.manifest
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.4.3\Apresentacao\bin\Release\Apresentacao.application
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.4.3\Apresentacao\bin\Release\Apresentacao.exe
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.4.3\Apresentacao\bin\Release\Apresentacao.pdb
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.4.3\Apresentacao\obj\Release\Apresentacao.csprojResolveAssemblyReference.cache
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.4.3\Apresentacao\obj\Release\Apresentacao.FrmInserirConfirmacaoProblema.resources
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.4.3\Apresentacao\obj\Release\Apresentacao.FrmInserirConfirmacaoSucesso.resources
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.4.3\Apresentacao\obj\Release\Apresentacao.FrmMenuAlterarCurso.resources
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.4.3\Apresentacao\obj\Release\Apresentacao.FrmMenuAlterarProfessor.resources
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.4.3\Apresentacao\obj\Release\Apresentacao.FrmMenuAlterarSala.resources
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.4.3\Apresentacao\obj\Release\Apresentacao.FrmMenuAlterarTCC.resources
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.4.3\Apresentacao\obj\Release\Apresentacao.FrmMenuAlterarUnidade.resources
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.4.3\Apresentacao\obj\Release\Apresentacao.FrmMenuAlterarUsuario.resources
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.4.3\Apresentacao\obj\Release\Apresentacao.FrmMenuAlterarAluno.resources
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.4.3\Apresentacao\obj\Release\Apresentacao.FrmMenuInserirUsuario.resources
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.4.3\Apresentacao\obj\Release\Apresentacao.FrmMenuInserirSala.resources
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.4.3\Apresentacao\obj\Release\Apresentacao.FrmMenuInserirUnidade.resources
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.4.3\Apresentacao\obj\Release\Apresentacao.FrmMenuInserirTCC.resources
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.4.3\Apresentacao\obj\Release\Apresentacao.FrmMenuInserirCurso.resources
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.4.3\Apresentacao\obj\Release\Apresentacao.FrmMenuInserirProfessor.resources
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.4.3\Apresentacao\obj\Release\Apresentacao.MenuAluno.resources
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.4.3\Apresentacao\obj\Release\Apresentacao.FrmMenuAdministrador.resources
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.4.3\Apresentacao\obj\Release\Apresentacao.FrmMenuInserirAluno.resources
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.4.3\Apresentacao\obj\Release\Apresentacao.Properties.Resources.resources
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.4.3\Apresentacao\obj\Release\Apresentacao.csproj.GenerateResource.Cache
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.4.3\Apresentacao\obj\Release\Apresentacao.exe.manifest
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Gerenciador de TCCs 2015-09-12 v5.4.3\Apresentacao\obj\Release\Apresentacao.application

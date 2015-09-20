@@ -1,0 +1,9 @@
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Solution2 - Save Show - uma tela\Negocios\bin\Release\Negocios.dll
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Solution2 - Save Show - uma tela\Negocios\bin\Release\Negocios.pdb
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Solution2 - Save Show - uma tela\Negocios\bin\Release\AcessoBancoDados.dll
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Solution2 - Save Show - uma tela\Negocios\bin\Release\DTO.dll
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Solution2 - Save Show - uma tela\Negocios\bin\Release\AcessoBancoDados.pdb
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Solution2 - Save Show - uma tela\Negocios\bin\Release\DTO.pdb
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Solution2 - Save Show - uma tela\Negocios\obj\Release\Negocios.csprojResolveAssemblyReference.cache
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Solution2 - Save Show - uma tela\Negocios\obj\Release\Negocios.dll
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Solution2 - Save Show - uma tela\Negocios\obj\Release\Negocios.pdb

@@ -1,0 +1,5 @@
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Solution2 - Save Show - uma tela\DTO\bin\Release\DTO.dll
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Solution2 - Save Show - uma tela\DTO\bin\Release\DTO.pdb
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Solution2 - Save Show - uma tela\DTO\obj\Release\DTO.csprojResolveAssemblyReference.cache
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Solution2 - Save Show - uma tela\DTO\obj\Release\DTO.dll
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Solution2 - Save Show - uma tela\DTO\obj\Release\DTO.pdb

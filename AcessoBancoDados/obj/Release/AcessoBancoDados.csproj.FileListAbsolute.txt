@@ -1,0 +1,5 @@
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Solution2 - Save Show - uma tela\AcessoBancoDados\bin\Release\AcessoBancoDados.dll.config
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Solution2 - Save Show - uma tela\AcessoBancoDados\bin\Release\AcessoBancoDados.dll
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Solution2 - Save Show - uma tela\AcessoBancoDados\bin\Release\AcessoBancoDados.pdb
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Solution2 - Save Show - uma tela\AcessoBancoDados\obj\Release\AcessoBancoDados.dll
+D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Solution2 - Save Show - uma tela\AcessoBancoDados\obj\Release\AcessoBancoDados.pdb
