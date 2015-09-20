@@ -36,6 +36,7 @@
             this.buttonAlterarCursoCancelar = new System.Windows.Forms.Button();
             this.comboBoxAlterarCursoUnidade = new System.Windows.Forms.ComboBox();
             this.comboBoxAlterarCursoCoordenador = new System.Windows.Forms.ComboBox();
+            this.labelMenuInserirCO = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // labelAlterarCursoNome
@@ -43,30 +44,31 @@
             this.labelAlterarCursoNome.AutoSize = true;
             this.labelAlterarCursoNome.Location = new System.Drawing.Point(16, 22);
             this.labelAlterarCursoNome.Name = "labelAlterarCursoNome";
-            this.labelAlterarCursoNome.Size = new System.Drawing.Size(41, 13);
+            this.labelAlterarCursoNome.Size = new System.Drawing.Size(45, 13);
             this.labelAlterarCursoNome.TabIndex = 0;
-            this.labelAlterarCursoNome.Text = "Nome: ";
+            this.labelAlterarCursoNome.Text = "Nome*: ";
             // 
             // labelAlterarCursoUnidade
             // 
             this.labelAlterarCursoUnidade.AutoSize = true;
             this.labelAlterarCursoUnidade.Location = new System.Drawing.Point(16, 62);
             this.labelAlterarCursoUnidade.Name = "labelAlterarCursoUnidade";
-            this.labelAlterarCursoUnidade.Size = new System.Drawing.Size(53, 13);
+            this.labelAlterarCursoUnidade.Size = new System.Drawing.Size(57, 13);
             this.labelAlterarCursoUnidade.TabIndex = 1;
-            this.labelAlterarCursoUnidade.Text = "Unidade: ";
+            this.labelAlterarCursoUnidade.Text = "Unidade*: ";
             // 
             // labelAlterarCursoCoordenador
             // 
             this.labelAlterarCursoCoordenador.AutoSize = true;
             this.labelAlterarCursoCoordenador.Location = new System.Drawing.Point(16, 101);
             this.labelAlterarCursoCoordenador.Name = "labelAlterarCursoCoordenador";
-            this.labelAlterarCursoCoordenador.Size = new System.Drawing.Size(74, 13);
+            this.labelAlterarCursoCoordenador.Size = new System.Drawing.Size(78, 13);
             this.labelAlterarCursoCoordenador.TabIndex = 3;
-            this.labelAlterarCursoCoordenador.Text = "Coordenador: ";
+            this.labelAlterarCursoCoordenador.Text = "Coordenador*: ";
             // 
             // textBoxAlterarCursoNome
             // 
+            this.textBoxAlterarCursoNome.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.textBoxAlterarCursoNome.Location = new System.Drawing.Point(57, 18);
             this.textBoxAlterarCursoNome.Name = "textBoxAlterarCursoNome";
             this.textBoxAlterarCursoNome.Size = new System.Drawing.Size(373, 20);
@@ -108,11 +110,21 @@
             this.comboBoxAlterarCursoCoordenador.Size = new System.Drawing.Size(334, 21);
             this.comboBoxAlterarCursoCoordenador.TabIndex = 14;
             // 
+            // labelMenuInserirCO
+            // 
+            this.labelMenuInserirCO.AutoSize = true;
+            this.labelMenuInserirCO.Location = new System.Drawing.Point(16, 180);
+            this.labelMenuInserirCO.Name = "labelMenuInserirCO";
+            this.labelMenuInserirCO.Size = new System.Drawing.Size(210, 13);
+            this.labelMenuInserirCO.TabIndex = 15;
+            this.labelMenuInserirCO.Text = "( * ) - Campos de preenchimento obrigatório";
+            // 
             // FrmMenuAlterarCurso
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(454, 205);
+            this.Controls.Add(this.labelMenuInserirCO);
             this.Controls.Add(this.comboBoxAlterarCursoCoordenador);
             this.Controls.Add(this.comboBoxAlterarCursoUnidade);
             this.Controls.Add(this.buttonAlterarCursoCancelar);
@@ -145,5 +157,6 @@
         private System.Windows.Forms.Button buttonAlterarCursoCancelar;
         private System.Windows.Forms.ComboBox comboBoxAlterarCursoUnidade;
         private System.Windows.Forms.ComboBox comboBoxAlterarCursoCoordenador;
+        private System.Windows.Forms.Label labelMenuInserirCO;
     }
 }

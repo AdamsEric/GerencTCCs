@@ -38,6 +38,7 @@
             this.textBoxAlterarUnidadeEstado = new System.Windows.Forms.TextBox();
             this.textBoxAlterarUnidadePais = new System.Windows.Forms.TextBox();
             this.labelAlterarUnidadePais = new System.Windows.Forms.Label();
+            this.labelMenuInserirCO = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // labelAlterarUnidadeNome
@@ -45,30 +46,31 @@
             this.labelAlterarUnidadeNome.AutoSize = true;
             this.labelAlterarUnidadeNome.Location = new System.Drawing.Point(16, 22);
             this.labelAlterarUnidadeNome.Name = "labelAlterarUnidadeNome";
-            this.labelAlterarUnidadeNome.Size = new System.Drawing.Size(41, 13);
+            this.labelAlterarUnidadeNome.Size = new System.Drawing.Size(45, 13);
             this.labelAlterarUnidadeNome.TabIndex = 0;
-            this.labelAlterarUnidadeNome.Text = "Nome: ";
+            this.labelAlterarUnidadeNome.Text = "Nome*: ";
             // 
             // labelAlterarUnidadeCidade
             // 
             this.labelAlterarUnidadeCidade.AutoSize = true;
             this.labelAlterarUnidadeCidade.Location = new System.Drawing.Point(16, 59);
             this.labelAlterarUnidadeCidade.Name = "labelAlterarUnidadeCidade";
-            this.labelAlterarUnidadeCidade.Size = new System.Drawing.Size(46, 13);
+            this.labelAlterarUnidadeCidade.Size = new System.Drawing.Size(50, 13);
             this.labelAlterarUnidadeCidade.TabIndex = 1;
-            this.labelAlterarUnidadeCidade.Text = "Cidade: ";
+            this.labelAlterarUnidadeCidade.Text = "Cidade*: ";
             // 
             // labelAlterarUnidadeEstado
             // 
             this.labelAlterarUnidadeEstado.AutoSize = true;
             this.labelAlterarUnidadeEstado.Location = new System.Drawing.Point(332, 59);
             this.labelAlterarUnidadeEstado.Name = "labelAlterarUnidadeEstado";
-            this.labelAlterarUnidadeEstado.Size = new System.Drawing.Size(69, 13);
+            this.labelAlterarUnidadeEstado.Size = new System.Drawing.Size(73, 13);
             this.labelAlterarUnidadeEstado.TabIndex = 3;
-            this.labelAlterarUnidadeEstado.Text = "Estado (UF): ";
+            this.labelAlterarUnidadeEstado.Text = "Estado (UF)*: ";
             // 
             // textBoxAlterarUnidadeNome
             // 
+            this.textBoxAlterarUnidadeNome.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.textBoxAlterarUnidadeNome.Location = new System.Drawing.Point(57, 18);
             this.textBoxAlterarUnidadeNome.Name = "textBoxAlterarUnidadeNome";
             this.textBoxAlterarUnidadeNome.Size = new System.Drawing.Size(373, 20);
@@ -97,6 +99,7 @@
             // 
             // textBoxAlterarUnidadeCidade
             // 
+            this.textBoxAlterarUnidadeCidade.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.textBoxAlterarUnidadeCidade.Location = new System.Drawing.Point(64, 55);
             this.textBoxAlterarUnidadeCidade.Name = "textBoxAlterarUnidadeCidade";
             this.textBoxAlterarUnidadeCidade.Size = new System.Drawing.Size(266, 20);
@@ -104,13 +107,16 @@
             // 
             // textBoxAlterarUnidadeEstado
             // 
+            this.textBoxAlterarUnidadeEstado.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.textBoxAlterarUnidadeEstado.Location = new System.Drawing.Point(403, 55);
+            this.textBoxAlterarUnidadeEstado.MaxLength = 2;
             this.textBoxAlterarUnidadeEstado.Name = "textBoxAlterarUnidadeEstado";
             this.textBoxAlterarUnidadeEstado.Size = new System.Drawing.Size(26, 20);
             this.textBoxAlterarUnidadeEstado.TabIndex = 16;
             // 
             // textBoxAlterarUnidadePais
             // 
+            this.textBoxAlterarUnidadePais.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.textBoxAlterarUnidadePais.Location = new System.Drawing.Point(53, 92);
             this.textBoxAlterarUnidadePais.Name = "textBoxAlterarUnidadePais";
             this.textBoxAlterarUnidadePais.Size = new System.Drawing.Size(277, 20);
@@ -121,15 +127,25 @@
             this.labelAlterarUnidadePais.AutoSize = true;
             this.labelAlterarUnidadePais.Location = new System.Drawing.Point(16, 96);
             this.labelAlterarUnidadePais.Name = "labelAlterarUnidadePais";
-            this.labelAlterarUnidadePais.Size = new System.Drawing.Size(35, 13);
+            this.labelAlterarUnidadePais.Size = new System.Drawing.Size(39, 13);
             this.labelAlterarUnidadePais.TabIndex = 17;
-            this.labelAlterarUnidadePais.Text = "País: ";
+            this.labelAlterarUnidadePais.Text = "País*: ";
+            // 
+            // labelMenuInserirCO
+            // 
+            this.labelMenuInserirCO.AutoSize = true;
+            this.labelMenuInserirCO.Location = new System.Drawing.Point(16, 180);
+            this.labelMenuInserirCO.Name = "labelMenuInserirCO";
+            this.labelMenuInserirCO.Size = new System.Drawing.Size(210, 13);
+            this.labelMenuInserirCO.TabIndex = 20;
+            this.labelMenuInserirCO.Text = "( * ) - Campos de preenchimento obrigatório";
             // 
             // FrmMenuAlterarUnidade
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(454, 205);
+            this.Controls.Add(this.labelMenuInserirCO);
             this.Controls.Add(this.textBoxAlterarUnidadePais);
             this.Controls.Add(this.labelAlterarUnidadePais);
             this.Controls.Add(this.textBoxAlterarUnidadeEstado);
@@ -166,5 +182,6 @@
         private System.Windows.Forms.TextBox textBoxAlterarUnidadeEstado;
         private System.Windows.Forms.TextBox textBoxAlterarUnidadePais;
         private System.Windows.Forms.Label labelAlterarUnidadePais;
+        private System.Windows.Forms.Label labelMenuInserirCO;
     }
 }

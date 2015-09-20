@@ -87,6 +87,12 @@
     <Compile Include="FrmInserirConfirmacaoSucesso.Designer.cs">
       <DependentUpon>FrmInserirConfirmacaoSucesso.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLogin.Designer.cs">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmMenuAlterar\FrmMenuAlterarCurso.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -190,6 +196,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmInserirConfirmacaoSucesso.resx">
       <DependentUpon>FrmInserirConfirmacaoSucesso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLogin.resx">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmMenuAlterar\FrmMenuAlterarCurso.resx">
       <DependentUpon>FrmMenuAlterarCurso.cs</DependentUpon>

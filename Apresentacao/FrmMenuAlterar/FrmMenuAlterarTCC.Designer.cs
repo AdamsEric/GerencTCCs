@@ -35,18 +35,19 @@
             this.labelAlterarTCCBancaOrientador = new System.Windows.Forms.Label();
             this.textBoxAlterarTCCDescricao = new System.Windows.Forms.TextBox();
             this.textBoxAlterarTCCTema = new System.Windows.Forms.TextBox();
-            this.textBoxAlterarTCCBancaOrientador = new System.Windows.Forms.TextBox();
-            this.textBoxAlterarTCCSala = new System.Windows.Forms.TextBox();
-            this.textBoxAlterarTCCBancaProfessor1 = new System.Windows.Forms.TextBox();
             this.buttonAlterarTCCConfirmar = new System.Windows.Forms.Button();
             this.buttonAlterarTCCCancelar = new System.Windows.Forms.Button();
-            this.textBoxAlterarTCCBancaProfessor2 = new System.Windows.Forms.TextBox();
             this.labelAlterarTCCBancaProfessor2 = new System.Windows.Forms.Label();
             this.dateTimePickerAlterarTCCData = new System.Windows.Forms.DateTimePicker();
             this.labelAlterarTCCData = new System.Windows.Forms.Label();
             this.textBoxAlterarTCCMatriculaAluno = new System.Windows.Forms.TextBox();
             this.labelAlterarTCCMatriculaAluno = new System.Windows.Forms.Label();
             this.groupBoxBanca = new System.Windows.Forms.GroupBox();
+            this.labelMenuInserirCO = new System.Windows.Forms.Label();
+            this.comboBoxAlterarTCCSala = new System.Windows.Forms.ComboBox();
+            this.comboBoxAlterarTCCBancaOrientador = new System.Windows.Forms.ComboBox();
+            this.comboBoxAlterarTCCBancaProfessor1 = new System.Windows.Forms.ComboBox();
+            this.comboBoxAlterarTCCBancaProfessor2 = new System.Windows.Forms.ComboBox();
             this.groupBoxBanca.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -55,18 +56,18 @@
             this.labelAlterarTCCDescricao.AutoSize = true;
             this.labelAlterarTCCDescricao.Location = new System.Drawing.Point(16, 22);
             this.labelAlterarTCCDescricao.Name = "labelAlterarTCCDescricao";
-            this.labelAlterarTCCDescricao.Size = new System.Drawing.Size(61, 13);
+            this.labelAlterarTCCDescricao.Size = new System.Drawing.Size(65, 13);
             this.labelAlterarTCCDescricao.TabIndex = 0;
-            this.labelAlterarTCCDescricao.Text = "Descrição: ";
+            this.labelAlterarTCCDescricao.Text = "Descrição*: ";
             // 
             // labelAlterarTCCTema
             // 
             this.labelAlterarTCCTema.AutoSize = true;
             this.labelAlterarTCCTema.Location = new System.Drawing.Point(16, 48);
             this.labelAlterarTCCTema.Name = "labelAlterarTCCTema";
-            this.labelAlterarTCCTema.Size = new System.Drawing.Size(37, 13);
+            this.labelAlterarTCCTema.Size = new System.Drawing.Size(41, 13);
             this.labelAlterarTCCTema.TabIndex = 1;
-            this.labelAlterarTCCTema.Text = "Tema:";
+            this.labelAlterarTCCTema.Text = "Tema*:";
             // 
             // labelAlterarTCCBancaProfessor1
             // 
@@ -91,44 +92,25 @@
             this.labelAlterarTCCBancaOrientador.AutoSize = true;
             this.labelAlterarTCCBancaOrientador.Location = new System.Drawing.Point(16, 25);
             this.labelAlterarTCCBancaOrientador.Name = "labelAlterarTCCBancaOrientador";
-            this.labelAlterarTCCBancaOrientador.Size = new System.Drawing.Size(62, 13);
+            this.labelAlterarTCCBancaOrientador.Size = new System.Drawing.Size(66, 13);
             this.labelAlterarTCCBancaOrientador.TabIndex = 5;
-            this.labelAlterarTCCBancaOrientador.Text = "Orientador: ";
+            this.labelAlterarTCCBancaOrientador.Text = "Orientador*: ";
             // 
             // textBoxAlterarTCCDescricao
             // 
-            this.textBoxAlterarTCCDescricao.Location = new System.Drawing.Point(75, 18);
+            this.textBoxAlterarTCCDescricao.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.textBoxAlterarTCCDescricao.Location = new System.Drawing.Point(78, 18);
             this.textBoxAlterarTCCDescricao.Name = "textBoxAlterarTCCDescricao";
-            this.textBoxAlterarTCCDescricao.Size = new System.Drawing.Size(355, 20);
+            this.textBoxAlterarTCCDescricao.Size = new System.Drawing.Size(352, 20);
             this.textBoxAlterarTCCDescricao.TabIndex = 6;
             // 
             // textBoxAlterarTCCTema
             // 
+            this.textBoxAlterarTCCTema.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.textBoxAlterarTCCTema.Location = new System.Drawing.Point(59, 44);
             this.textBoxAlterarTCCTema.Name = "textBoxAlterarTCCTema";
             this.textBoxAlterarTCCTema.Size = new System.Drawing.Size(371, 20);
             this.textBoxAlterarTCCTema.TabIndex = 7;
-            // 
-            // textBoxAlterarTCCBancaOrientador
-            // 
-            this.textBoxAlterarTCCBancaOrientador.Location = new System.Drawing.Point(85, 21);
-            this.textBoxAlterarTCCBancaOrientador.Name = "textBoxAlterarTCCBancaOrientador";
-            this.textBoxAlterarTCCBancaOrientador.Size = new System.Drawing.Size(323, 20);
-            this.textBoxAlterarTCCBancaOrientador.TabIndex = 8;
-            // 
-            // textBoxAlterarTCCSala
-            // 
-            this.textBoxAlterarTCCSala.Location = new System.Drawing.Point(295, 69);
-            this.textBoxAlterarTCCSala.Name = "textBoxAlterarTCCSala";
-            this.textBoxAlterarTCCSala.Size = new System.Drawing.Size(135, 20);
-            this.textBoxAlterarTCCSala.TabIndex = 9;
-            // 
-            // textBoxAlterarTCCBancaProfessor1
-            // 
-            this.textBoxAlterarTCCBancaProfessor1.Location = new System.Drawing.Point(85, 44);
-            this.textBoxAlterarTCCBancaProfessor1.Name = "textBoxAlterarTCCBancaProfessor1";
-            this.textBoxAlterarTCCBancaProfessor1.Size = new System.Drawing.Size(323, 20);
-            this.textBoxAlterarTCCBancaProfessor1.TabIndex = 10;
             // 
             // buttonAlterarTCCConfirmar
             // 
@@ -149,13 +131,6 @@
             this.buttonAlterarTCCCancelar.Text = "Cancelar";
             this.buttonAlterarTCCCancelar.UseVisualStyleBackColor = true;
             this.buttonAlterarTCCCancelar.Click += new System.EventHandler(this.buttonAlterarTCCCancelar_Click);
-            // 
-            // textBoxAlterarTCCBancaProfessor2
-            // 
-            this.textBoxAlterarTCCBancaProfessor2.Location = new System.Drawing.Point(85, 66);
-            this.textBoxAlterarTCCBancaProfessor2.Name = "textBoxAlterarTCCBancaProfessor2";
-            this.textBoxAlterarTCCBancaProfessor2.Size = new System.Drawing.Size(323, 20);
-            this.textBoxAlterarTCCBancaProfessor2.TabIndex = 14;
             // 
             // labelAlterarTCCBancaProfessor2
             // 
@@ -184,6 +159,7 @@
             // 
             // textBoxAlterarTCCMatriculaAluno
             // 
+            this.textBoxAlterarTCCMatriculaAluno.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.textBoxAlterarTCCMatriculaAluno.Location = new System.Drawing.Point(119, 69);
             this.textBoxAlterarTCCMatriculaAluno.Name = "textBoxAlterarTCCMatriculaAluno";
             this.textBoxAlterarTCCMatriculaAluno.Size = new System.Drawing.Size(131, 20);
@@ -194,18 +170,18 @@
             this.labelAlterarTCCMatriculaAluno.AutoSize = true;
             this.labelAlterarTCCMatriculaAluno.Location = new System.Drawing.Point(16, 73);
             this.labelAlterarTCCMatriculaAluno.Name = "labelAlterarTCCMatriculaAluno";
-            this.labelAlterarTCCMatriculaAluno.Size = new System.Drawing.Size(103, 13);
+            this.labelAlterarTCCMatriculaAluno.Size = new System.Drawing.Size(107, 13);
             this.labelAlterarTCCMatriculaAluno.TabIndex = 19;
-            this.labelAlterarTCCMatriculaAluno.Text = "Matrícula do Aluno: ";
+            this.labelAlterarTCCMatriculaAluno.Text = "Matrícula do Aluno*: ";
             // 
             // groupBoxBanca
             // 
+            this.groupBoxBanca.Controls.Add(this.comboBoxAlterarTCCBancaProfessor2);
+            this.groupBoxBanca.Controls.Add(this.comboBoxAlterarTCCBancaProfessor1);
+            this.groupBoxBanca.Controls.Add(this.comboBoxAlterarTCCBancaOrientador);
             this.groupBoxBanca.Controls.Add(this.labelAlterarTCCBancaOrientador);
             this.groupBoxBanca.Controls.Add(this.labelAlterarTCCBancaProfessor1);
-            this.groupBoxBanca.Controls.Add(this.textBoxAlterarTCCBancaOrientador);
-            this.groupBoxBanca.Controls.Add(this.textBoxAlterarTCCBancaProfessor1);
             this.groupBoxBanca.Controls.Add(this.labelAlterarTCCBancaProfessor2);
-            this.groupBoxBanca.Controls.Add(this.textBoxAlterarTCCBancaProfessor2);
             this.groupBoxBanca.Location = new System.Drawing.Point(11, 96);
             this.groupBoxBanca.Name = "groupBoxBanca";
             this.groupBoxBanca.Size = new System.Drawing.Size(419, 94);
@@ -213,11 +189,54 @@
             this.groupBoxBanca.TabStop = false;
             this.groupBoxBanca.Text = "Banca";
             // 
+            // labelMenuInserirCO
+            // 
+            this.labelMenuInserirCO.AutoSize = true;
+            this.labelMenuInserirCO.Location = new System.Drawing.Point(16, 236);
+            this.labelMenuInserirCO.Name = "labelMenuInserirCO";
+            this.labelMenuInserirCO.Size = new System.Drawing.Size(210, 13);
+            this.labelMenuInserirCO.TabIndex = 22;
+            this.labelMenuInserirCO.Text = "( * ) - Campos de preenchimento obrigatório";
+            // 
+            // comboBoxAlterarTCCSala
+            // 
+            this.comboBoxAlterarTCCSala.FormattingEnabled = true;
+            this.comboBoxAlterarTCCSala.Location = new System.Drawing.Point(295, 69);
+            this.comboBoxAlterarTCCSala.Name = "comboBoxAlterarTCCSala";
+            this.comboBoxAlterarTCCSala.Size = new System.Drawing.Size(135, 21);
+            this.comboBoxAlterarTCCSala.TabIndex = 23;
+            // 
+            // comboBoxAlterarTCCBancaOrientador
+            // 
+            this.comboBoxAlterarTCCBancaOrientador.FormattingEnabled = true;
+            this.comboBoxAlterarTCCBancaOrientador.Location = new System.Drawing.Point(84, 21);
+            this.comboBoxAlterarTCCBancaOrientador.Name = "comboBoxAlterarTCCBancaOrientador";
+            this.comboBoxAlterarTCCBancaOrientador.Size = new System.Drawing.Size(323, 21);
+            this.comboBoxAlterarTCCBancaOrientador.TabIndex = 15;
+            // 
+            // comboBoxAlterarTCCBancaProfessor1
+            // 
+            this.comboBoxAlterarTCCBancaProfessor1.FormattingEnabled = true;
+            this.comboBoxAlterarTCCBancaProfessor1.Location = new System.Drawing.Point(84, 44);
+            this.comboBoxAlterarTCCBancaProfessor1.Name = "comboBoxAlterarTCCBancaProfessor1";
+            this.comboBoxAlterarTCCBancaProfessor1.Size = new System.Drawing.Size(323, 21);
+            this.comboBoxAlterarTCCBancaProfessor1.TabIndex = 16;
+            // 
+            // comboBoxAlterarTCCBancaProfessor2
+            // 
+            this.comboBoxAlterarTCCBancaProfessor2.FormattingEnabled = true;
+            this.comboBoxAlterarTCCBancaProfessor2.Location = new System.Drawing.Point(84, 66);
+            this.comboBoxAlterarTCCBancaProfessor2.Name = "comboBoxAlterarTCCBancaProfessor2";
+            this.comboBoxAlterarTCCBancaProfessor2.Size = new System.Drawing.Size(323, 21);
+            this.comboBoxAlterarTCCBancaProfessor2.TabIndex = 17;
+            // 
             // FrmMenuAlterarTCC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(454, 261);
+            this.Controls.Add(this.comboBoxAlterarTCCSala);
+            this.Controls.Add(this.labelMenuInserirCO);
             this.Controls.Add(this.groupBoxBanca);
             this.Controls.Add(this.textBoxAlterarTCCMatriculaAluno);
             this.Controls.Add(this.labelAlterarTCCMatriculaAluno);
@@ -225,7 +244,6 @@
             this.Controls.Add(this.buttonAlterarTCCCancelar);
             this.Controls.Add(this.dateTimePickerAlterarTCCData);
             this.Controls.Add(this.buttonAlterarTCCConfirmar);
-            this.Controls.Add(this.textBoxAlterarTCCSala);
             this.Controls.Add(this.textBoxAlterarTCCTema);
             this.Controls.Add(this.textBoxAlterarTCCDescricao);
             this.Controls.Add(this.labelAlterarTCCSala);
@@ -256,17 +274,18 @@
         private System.Windows.Forms.Label labelAlterarTCCBancaOrientador;
         private System.Windows.Forms.TextBox textBoxAlterarTCCDescricao;
         private System.Windows.Forms.TextBox textBoxAlterarTCCTema;
-        private System.Windows.Forms.TextBox textBoxAlterarTCCBancaOrientador;
-        private System.Windows.Forms.TextBox textBoxAlterarTCCSala;
-        private System.Windows.Forms.TextBox textBoxAlterarTCCBancaProfessor1;
         private System.Windows.Forms.Button buttonAlterarTCCConfirmar;
         private System.Windows.Forms.Button buttonAlterarTCCCancelar;
-        private System.Windows.Forms.TextBox textBoxAlterarTCCBancaProfessor2;
         private System.Windows.Forms.Label labelAlterarTCCBancaProfessor2;
         private System.Windows.Forms.DateTimePicker dateTimePickerAlterarTCCData;
         private System.Windows.Forms.Label labelAlterarTCCData;
         private System.Windows.Forms.TextBox textBoxAlterarTCCMatriculaAluno;
         private System.Windows.Forms.Label labelAlterarTCCMatriculaAluno;
         private System.Windows.Forms.GroupBox groupBoxBanca;
+        private System.Windows.Forms.ComboBox comboBoxAlterarTCCBancaProfessor2;
+        private System.Windows.Forms.ComboBox comboBoxAlterarTCCBancaProfessor1;
+        private System.Windows.Forms.ComboBox comboBoxAlterarTCCBancaOrientador;
+        private System.Windows.Forms.Label labelMenuInserirCO;
+        private System.Windows.Forms.ComboBox comboBoxAlterarTCCSala;
     }
 }

@@ -52,9 +52,10 @@
             // 
             // textBoxInserirSalaNome
             // 
-            this.textBoxInserirSalaNome.Location = new System.Drawing.Point(63, 18);
+            this.textBoxInserirSalaNome.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.textBoxInserirSalaNome.Location = new System.Drawing.Point(69, 18);
             this.textBoxInserirSalaNome.Name = "textBoxInserirSalaNome";
-            this.textBoxInserirSalaNome.Size = new System.Drawing.Size(34, 20);
+            this.textBoxInserirSalaNome.Size = new System.Drawing.Size(69, 20);
             this.textBoxInserirSalaNome.TabIndex = 6;
             // 
             // buttonInserirSalaConfirmar
@@ -81,7 +82,7 @@
             // labelInserirSalaTipo
             // 
             this.labelInserirSalaTipo.AutoSize = true;
-            this.labelInserirSalaTipo.Location = new System.Drawing.Point(315, 22);
+            this.labelInserirSalaTipo.Location = new System.Drawing.Point(147, 22);
             this.labelInserirSalaTipo.Name = "labelInserirSalaTipo";
             this.labelInserirSalaTipo.Size = new System.Drawing.Size(38, 13);
             this.labelInserirSalaTipo.TabIndex = 17;
@@ -90,7 +91,7 @@
             // labelInserirSalaUnidade
             // 
             this.labelInserirSalaUnidade.AutoSize = true;
-            this.labelInserirSalaUnidade.Location = new System.Drawing.Point(16, 59);
+            this.labelInserirSalaUnidade.Location = new System.Drawing.Point(16, 96);
             this.labelInserirSalaUnidade.Name = "labelInserirSalaUnidade";
             this.labelInserirSalaUnidade.Size = new System.Drawing.Size(54, 13);
             this.labelInserirSalaUnidade.TabIndex = 19;
@@ -99,15 +100,15 @@
             // comboBoxInserirSalaTipo
             // 
             this.comboBoxInserirSalaTipo.FormattingEnabled = true;
-            this.comboBoxInserirSalaTipo.Location = new System.Drawing.Point(352, 18);
+            this.comboBoxInserirSalaTipo.Location = new System.Drawing.Point(191, 18);
             this.comboBoxInserirSalaTipo.Name = "comboBoxInserirSalaTipo";
-            this.comboBoxInserirSalaTipo.Size = new System.Drawing.Size(78, 21);
+            this.comboBoxInserirSalaTipo.Size = new System.Drawing.Size(118, 21);
             this.comboBoxInserirSalaTipo.TabIndex = 20;
             // 
             // comboBoxInserirSalaUnidade
             // 
             this.comboBoxInserirSalaUnidade.FormattingEnabled = true;
-            this.comboBoxInserirSalaUnidade.Location = new System.Drawing.Point(72, 55);
+            this.comboBoxInserirSalaUnidade.Location = new System.Drawing.Point(72, 92);
             this.comboBoxInserirSalaUnidade.Name = "comboBoxInserirSalaUnidade";
             this.comboBoxInserirSalaUnidade.Size = new System.Drawing.Size(358, 21);
             this.comboBoxInserirSalaUnidade.TabIndex = 21;
@@ -115,7 +116,7 @@
             // labelInserirSalaDescricao
             // 
             this.labelInserirSalaDescricao.AutoSize = true;
-            this.labelInserirSalaDescricao.Location = new System.Drawing.Point(103, 22);
+            this.labelInserirSalaDescricao.Location = new System.Drawing.Point(16, 59);
             this.labelInserirSalaDescricao.Name = "labelInserirSalaDescricao";
             this.labelInserirSalaDescricao.Size = new System.Drawing.Size(61, 13);
             this.labelInserirSalaDescricao.TabIndex = 22;
@@ -123,9 +124,10 @@
             // 
             // textBoxInserirSalaDescricao
             // 
-            this.textBoxInserirSalaDescricao.Location = new System.Drawing.Point(163, 18);
+            this.textBoxInserirSalaDescricao.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.textBoxInserirSalaDescricao.Location = new System.Drawing.Point(83, 55);
             this.textBoxInserirSalaDescricao.Name = "textBoxInserirSalaDescricao";
-            this.textBoxInserirSalaDescricao.Size = new System.Drawing.Size(150, 20);
+            this.textBoxInserirSalaDescricao.Size = new System.Drawing.Size(347, 20);
             this.textBoxInserirSalaDescricao.TabIndex = 23;
             // 
             // labelMenuInserirCO

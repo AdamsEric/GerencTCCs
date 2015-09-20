@@ -38,6 +38,7 @@
             this.comboBoxAlterarSalaUnidade = new System.Windows.Forms.ComboBox();
             this.labelAlterarSalaDescricao = new System.Windows.Forms.Label();
             this.textBoxAlterarSalaDescricao = new System.Windows.Forms.TextBox();
+            this.labelMenuInserirCO = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // labelAlterarSalaNome
@@ -45,15 +46,16 @@
             this.labelAlterarSalaNome.AutoSize = true;
             this.labelAlterarSalaNome.Location = new System.Drawing.Point(16, 22);
             this.labelAlterarSalaNome.Name = "labelAlterarSalaNome";
-            this.labelAlterarSalaNome.Size = new System.Drawing.Size(46, 13);
+            this.labelAlterarSalaNome.Size = new System.Drawing.Size(50, 13);
             this.labelAlterarSalaNome.TabIndex = 0;
-            this.labelAlterarSalaNome.Text = "Código: ";
+            this.labelAlterarSalaNome.Text = "Código*: ";
             // 
             // textBoxAlterarSalaNome
             // 
-            this.textBoxAlterarSalaNome.Location = new System.Drawing.Point(59, 18);
+            this.textBoxAlterarSalaNome.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.textBoxAlterarSalaNome.Location = new System.Drawing.Point(71, 18);
             this.textBoxAlterarSalaNome.Name = "textBoxAlterarSalaNome";
-            this.textBoxAlterarSalaNome.Size = new System.Drawing.Size(38, 20);
+            this.textBoxAlterarSalaNome.Size = new System.Drawing.Size(71, 20);
             this.textBoxAlterarSalaNome.TabIndex = 6;
             // 
             // buttonAlterarSalaConfirmar
@@ -80,7 +82,7 @@
             // labelAlterarSalaTipo
             // 
             this.labelAlterarSalaTipo.AutoSize = true;
-            this.labelAlterarSalaTipo.Location = new System.Drawing.Point(315, 22);
+            this.labelAlterarSalaTipo.Location = new System.Drawing.Point(148, 22);
             this.labelAlterarSalaTipo.Name = "labelAlterarSalaTipo";
             this.labelAlterarSalaTipo.Size = new System.Drawing.Size(34, 13);
             this.labelAlterarSalaTipo.TabIndex = 17;
@@ -89,25 +91,25 @@
             // labelAlterarSalaUnidade
             // 
             this.labelAlterarSalaUnidade.AutoSize = true;
-            this.labelAlterarSalaUnidade.Location = new System.Drawing.Point(16, 59);
+            this.labelAlterarSalaUnidade.Location = new System.Drawing.Point(16, 96);
             this.labelAlterarSalaUnidade.Name = "labelAlterarSalaUnidade";
-            this.labelAlterarSalaUnidade.Size = new System.Drawing.Size(50, 13);
+            this.labelAlterarSalaUnidade.Size = new System.Drawing.Size(54, 13);
             this.labelAlterarSalaUnidade.TabIndex = 19;
-            this.labelAlterarSalaUnidade.Text = "Unidade:";
+            this.labelAlterarSalaUnidade.Text = "Unidade*:";
             // 
             // comboBoxAlterarSalaTipo
             // 
             this.comboBoxAlterarSalaTipo.FormattingEnabled = true;
-            this.comboBoxAlterarSalaTipo.Location = new System.Drawing.Point(348, 18);
+            this.comboBoxAlterarSalaTipo.Location = new System.Drawing.Point(188, 19);
             this.comboBoxAlterarSalaTipo.Name = "comboBoxAlterarSalaTipo";
-            this.comboBoxAlterarSalaTipo.Size = new System.Drawing.Size(82, 21);
+            this.comboBoxAlterarSalaTipo.Size = new System.Drawing.Size(104, 21);
             this.comboBoxAlterarSalaTipo.TabIndex = 20;
-            this.comboBoxAlterarSalaTipo.Text = "Laboratório";
+            this.comboBoxAlterarSalaTipo.Text = "LABORATÒRIO";
             // 
             // comboBoxAlterarSalaUnidade
             // 
             this.comboBoxAlterarSalaUnidade.FormattingEnabled = true;
-            this.comboBoxAlterarSalaUnidade.Location = new System.Drawing.Point(72, 55);
+            this.comboBoxAlterarSalaUnidade.Location = new System.Drawing.Point(72, 92);
             this.comboBoxAlterarSalaUnidade.Name = "comboBoxAlterarSalaUnidade";
             this.comboBoxAlterarSalaUnidade.Size = new System.Drawing.Size(358, 21);
             this.comboBoxAlterarSalaUnidade.TabIndex = 21;
@@ -115,7 +117,7 @@
             // labelAlterarSalaDescricao
             // 
             this.labelAlterarSalaDescricao.AutoSize = true;
-            this.labelAlterarSalaDescricao.Location = new System.Drawing.Point(103, 22);
+            this.labelAlterarSalaDescricao.Location = new System.Drawing.Point(16, 59);
             this.labelAlterarSalaDescricao.Name = "labelAlterarSalaDescricao";
             this.labelAlterarSalaDescricao.Size = new System.Drawing.Size(61, 13);
             this.labelAlterarSalaDescricao.TabIndex = 22;
@@ -123,16 +125,27 @@
             // 
             // textBoxAlterarSalaDescricao
             // 
-            this.textBoxAlterarSalaDescricao.Location = new System.Drawing.Point(163, 18);
+            this.textBoxAlterarSalaDescricao.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.textBoxAlterarSalaDescricao.Location = new System.Drawing.Point(83, 55);
             this.textBoxAlterarSalaDescricao.Name = "textBoxAlterarSalaDescricao";
-            this.textBoxAlterarSalaDescricao.Size = new System.Drawing.Size(150, 20);
+            this.textBoxAlterarSalaDescricao.Size = new System.Drawing.Size(347, 20);
             this.textBoxAlterarSalaDescricao.TabIndex = 23;
+            // 
+            // labelMenuInserirCO
+            // 
+            this.labelMenuInserirCO.AutoSize = true;
+            this.labelMenuInserirCO.Location = new System.Drawing.Point(16, 180);
+            this.labelMenuInserirCO.Name = "labelMenuInserirCO";
+            this.labelMenuInserirCO.Size = new System.Drawing.Size(210, 13);
+            this.labelMenuInserirCO.TabIndex = 25;
+            this.labelMenuInserirCO.Text = "( * ) - Campos de preenchimento obrigatório";
             // 
             // FrmMenuAlterarSala
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(454, 205);
+            this.Controls.Add(this.labelMenuInserirCO);
             this.Controls.Add(this.textBoxAlterarSalaDescricao);
             this.Controls.Add(this.labelAlterarSalaDescricao);
             this.Controls.Add(this.comboBoxAlterarSalaUnidade);
@@ -169,5 +182,6 @@
         private System.Windows.Forms.ComboBox comboBoxAlterarSalaUnidade;
         private System.Windows.Forms.Label labelAlterarSalaDescricao;
         private System.Windows.Forms.TextBox textBoxAlterarSalaDescricao;
+        private System.Windows.Forms.Label labelMenuInserirCO;
     }
 }

@@ -3,3 +3,8 @@ D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Solution1\AcessoBancoDados\
 D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Solution1\AcessoBancoDados\bin\Debug\AcessoBancoDados.pdb
 D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Solution1\AcessoBancoDados\obj\Debug\AcessoBancoDados.dll
 D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Solution1\AcessoBancoDados\obj\Debug\AcessoBancoDados.pdb
+D:\Eric Adams\OneDrive\Estudo\C#\GerencTCCs\AcessoBancoDados\bin\Debug\AcessoBancoDados.dll.config
+D:\Eric Adams\OneDrive\Estudo\C#\GerencTCCs\AcessoBancoDados\bin\Debug\AcessoBancoDados.dll
+D:\Eric Adams\OneDrive\Estudo\C#\GerencTCCs\AcessoBancoDados\bin\Debug\AcessoBancoDados.pdb
+D:\Eric Adams\OneDrive\Estudo\C#\GerencTCCs\AcessoBancoDados\obj\Debug\AcessoBancoDados.dll
+D:\Eric Adams\OneDrive\Estudo\C#\GerencTCCs\AcessoBancoDados\obj\Debug\AcessoBancoDados.pdb

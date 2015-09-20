@@ -70,6 +70,7 @@
             // 
             // textBoxInserirUnidadeNome
             // 
+            this.textBoxInserirUnidadeNome.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.textBoxInserirUnidadeNome.Location = new System.Drawing.Point(57, 18);
             this.textBoxInserirUnidadeNome.Name = "textBoxInserirUnidadeNome";
             this.textBoxInserirUnidadeNome.Size = new System.Drawing.Size(373, 20);
@@ -98,6 +99,7 @@
             // 
             // textBoxInserirUnidadeCidade
             // 
+            this.textBoxInserirUnidadeCidade.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.textBoxInserirUnidadeCidade.Location = new System.Drawing.Point(64, 55);
             this.textBoxInserirUnidadeCidade.Name = "textBoxInserirUnidadeCidade";
             this.textBoxInserirUnidadeCidade.Size = new System.Drawing.Size(266, 20);
@@ -105,13 +107,16 @@
             // 
             // textBoxInserirUnidadeEstado
             // 
+            this.textBoxInserirUnidadeEstado.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.textBoxInserirUnidadeEstado.Location = new System.Drawing.Point(403, 55);
+            this.textBoxInserirUnidadeEstado.MaxLength = 2;
             this.textBoxInserirUnidadeEstado.Name = "textBoxInserirUnidadeEstado";
             this.textBoxInserirUnidadeEstado.Size = new System.Drawing.Size(26, 20);
             this.textBoxInserirUnidadeEstado.TabIndex = 16;
             // 
             // textBoxInserirUnidadePais
             // 
+            this.textBoxInserirUnidadePais.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.textBoxInserirUnidadePais.Location = new System.Drawing.Point(53, 92);
             this.textBoxInserirUnidadePais.Name = "textBoxInserirUnidadePais";
             this.textBoxInserirUnidadePais.Size = new System.Drawing.Size(277, 20);

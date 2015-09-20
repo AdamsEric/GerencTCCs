@@ -38,6 +38,7 @@
             this.textBoxTelefone = new System.Windows.Forms.TextBox();
             this.textBoxAlterarProfessorCPF = new System.Windows.Forms.TextBox();
             this.labelAlterarProfessorCPF = new System.Windows.Forms.Label();
+            this.labelMenuInserirCO = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // labelAlterarProfessorNome
@@ -45,21 +46,22 @@
             this.labelAlterarProfessorNome.AutoSize = true;
             this.labelAlterarProfessorNome.Location = new System.Drawing.Point(16, 22);
             this.labelAlterarProfessorNome.Name = "labelAlterarProfessorNome";
-            this.labelAlterarProfessorNome.Size = new System.Drawing.Size(41, 13);
+            this.labelAlterarProfessorNome.Size = new System.Drawing.Size(45, 13);
             this.labelAlterarProfessorNome.TabIndex = 0;
-            this.labelAlterarProfessorNome.Text = "Nome: ";
+            this.labelAlterarProfessorNome.Text = "Nome*: ";
             // 
             // labelAlterarProfessorMatricula
             // 
             this.labelAlterarProfessorMatricula.AutoSize = true;
             this.labelAlterarProfessorMatricula.Location = new System.Drawing.Point(16, 62);
             this.labelAlterarProfessorMatricula.Name = "labelAlterarProfessorMatricula";
-            this.labelAlterarProfessorMatricula.Size = new System.Drawing.Size(55, 13);
+            this.labelAlterarProfessorMatricula.Size = new System.Drawing.Size(59, 13);
             this.labelAlterarProfessorMatricula.TabIndex = 1;
-            this.labelAlterarProfessorMatricula.Text = "Matrícula:";
+            this.labelAlterarProfessorMatricula.Text = "Matrícula*:";
             // 
             // textBoxAlterarProfessorNome
             // 
+            this.textBoxAlterarProfessorNome.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.textBoxAlterarProfessorNome.Location = new System.Drawing.Point(57, 18);
             this.textBoxAlterarProfessorNome.Name = "textBoxAlterarProfessorNome";
             this.textBoxAlterarProfessorNome.Size = new System.Drawing.Size(373, 20);
@@ -67,6 +69,7 @@
             // 
             // textBoxAlterarProfessorMatricula
             // 
+            this.textBoxAlterarProfessorMatricula.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.textBoxAlterarProfessorMatricula.Location = new System.Drawing.Point(75, 58);
             this.textBoxAlterarProfessorMatricula.Name = "textBoxAlterarProfessorMatricula";
             this.textBoxAlterarProfessorMatricula.Size = new System.Drawing.Size(79, 20);
@@ -103,6 +106,7 @@
             // 
             // textBoxTelefone
             // 
+            this.textBoxTelefone.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.textBoxTelefone.Location = new System.Drawing.Point(350, 58);
             this.textBoxTelefone.Name = "textBoxTelefone";
             this.textBoxTelefone.Size = new System.Drawing.Size(78, 20);
@@ -110,6 +114,7 @@
             // 
             // textBoxAlterarProfessorCPF
             // 
+            this.textBoxAlterarProfessorCPF.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.textBoxAlterarProfessorCPF.Location = new System.Drawing.Point(195, 58);
             this.textBoxAlterarProfessorCPF.Name = "textBoxAlterarProfessorCPF";
             this.textBoxAlterarProfessorCPF.Size = new System.Drawing.Size(92, 20);
@@ -120,15 +125,25 @@
             this.labelAlterarProfessorCPF.AutoSize = true;
             this.labelAlterarProfessorCPF.Location = new System.Drawing.Point(158, 62);
             this.labelAlterarProfessorCPF.Name = "labelAlterarProfessorCPF";
-            this.labelAlterarProfessorCPF.Size = new System.Drawing.Size(33, 13);
+            this.labelAlterarProfessorCPF.Size = new System.Drawing.Size(37, 13);
             this.labelAlterarProfessorCPF.TabIndex = 5;
-            this.labelAlterarProfessorCPF.Text = "CPF: ";
+            this.labelAlterarProfessorCPF.Text = "CPF*: ";
+            // 
+            // labelMenuInserirCO
+            // 
+            this.labelMenuInserirCO.AutoSize = true;
+            this.labelMenuInserirCO.Location = new System.Drawing.Point(16, 180);
+            this.labelMenuInserirCO.Name = "labelMenuInserirCO";
+            this.labelMenuInserirCO.Size = new System.Drawing.Size(210, 13);
+            this.labelMenuInserirCO.TabIndex = 15;
+            this.labelMenuInserirCO.Text = "( * ) - Campos de preenchimento obrigatório";
             // 
             // FrmMenuAlterarProfessor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(454, 205);
+            this.Controls.Add(this.labelMenuInserirCO);
             this.Controls.Add(this.buttonAlterarProfessorCancelar);
             this.Controls.Add(this.buttonAlterarProfessorConfirmar);
             this.Controls.Add(this.textBoxTelefone);
@@ -165,5 +180,6 @@
         private System.Windows.Forms.TextBox textBoxTelefone;
         private System.Windows.Forms.TextBox textBoxAlterarProfessorCPF;
         private System.Windows.Forms.Label labelAlterarProfessorCPF;
+        private System.Windows.Forms.Label labelMenuInserirCO;
     }
 }

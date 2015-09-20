@@ -68,6 +68,7 @@
             // 
             // textBoxInserirCursoNome
             // 
+            this.textBoxInserirCursoNome.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.textBoxInserirCursoNome.Location = new System.Drawing.Point(57, 18);
             this.textBoxInserirCursoNome.Name = "textBoxInserirCursoNome";
             this.textBoxInserirCursoNome.Size = new System.Drawing.Size(373, 20);

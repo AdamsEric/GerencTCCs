@@ -30,7 +30,7 @@ namespace Apresentacao
         private void buttonInserirTCCConfirmar_Click(object sender, EventArgs e)
         {
             if (textBoxInserirTCCDescricao.Text == "" || textBoxInserirTCCTema.Text == ""
-                || textBoxInserirTCCMatriculaAluno.Text == "" || textBoxInserirTCCBancaOrientador.Text == "")
+                || textBoxInserirTCCMatriculaAluno.Text == "" || comboBoxInserirTCCBancaOrientador.Text == "")
             {
                 FrmInserirConfirmacaoProblema frmInserirConfirmacaoProblema = new FrmInserirConfirmacaoProblema();
                 frmInserirConfirmacaoProblema.ShowDialog();

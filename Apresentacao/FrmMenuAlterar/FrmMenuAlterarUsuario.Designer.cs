@@ -49,30 +49,31 @@
             this.labelAlterarUsuarioLogin.AutoSize = true;
             this.labelAlterarUsuarioLogin.Location = new System.Drawing.Point(16, 22);
             this.labelAlterarUsuarioLogin.Name = "labelAlterarUsuarioLogin";
-            this.labelAlterarUsuarioLogin.Size = new System.Drawing.Size(39, 13);
+            this.labelAlterarUsuarioLogin.Size = new System.Drawing.Size(43, 13);
             this.labelAlterarUsuarioLogin.TabIndex = 0;
-            this.labelAlterarUsuarioLogin.Text = "Login: ";
+            this.labelAlterarUsuarioLogin.Text = "Login*: ";
             // 
             // labelAlterarUsuarioGrupo
             // 
             this.labelAlterarUsuarioGrupo.AutoSize = true;
             this.labelAlterarUsuarioGrupo.Location = new System.Drawing.Point(16, 55);
             this.labelAlterarUsuarioGrupo.Name = "labelAlterarUsuarioGrupo";
-            this.labelAlterarUsuarioGrupo.Size = new System.Drawing.Size(42, 13);
+            this.labelAlterarUsuarioGrupo.Size = new System.Drawing.Size(46, 13);
             this.labelAlterarUsuarioGrupo.TabIndex = 1;
-            this.labelAlterarUsuarioGrupo.Text = "Grupo: ";
+            this.labelAlterarUsuarioGrupo.Text = "Grupo*: ";
             // 
             // labelAlterarUsuarioSenha
             // 
             this.labelAlterarUsuarioSenha.AutoSize = true;
             this.labelAlterarUsuarioSenha.Location = new System.Drawing.Point(223, 22);
             this.labelAlterarUsuarioSenha.Name = "labelAlterarUsuarioSenha";
-            this.labelAlterarUsuarioSenha.Size = new System.Drawing.Size(41, 13);
+            this.labelAlterarUsuarioSenha.Size = new System.Drawing.Size(45, 13);
             this.labelAlterarUsuarioSenha.TabIndex = 3;
-            this.labelAlterarUsuarioSenha.Text = "Senha:";
+            this.labelAlterarUsuarioSenha.Text = "Senha*:";
             // 
             // textBoxAlterarUsuarioLogin
             // 
+            this.textBoxAlterarUsuarioLogin.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.textBoxAlterarUsuarioLogin.Location = new System.Drawing.Point(57, 18);
             this.textBoxAlterarUsuarioLogin.Name = "textBoxAlterarUsuarioLogin";
             this.textBoxAlterarUsuarioLogin.Size = new System.Drawing.Size(157, 20);
@@ -109,6 +110,7 @@
             // 
             // textBoxAlterarUsuarioNome
             // 
+            this.textBoxAlterarUsuarioNome.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.textBoxAlterarUsuarioNome.Location = new System.Drawing.Point(105, 24);
             this.textBoxAlterarUsuarioNome.Name = "textBoxAlterarUsuarioNome";
             this.textBoxAlterarUsuarioNome.Size = new System.Drawing.Size(300, 20);
@@ -119,9 +121,9 @@
             this.labelAlterarUsuarioNome.AutoSize = true;
             this.labelAlterarUsuarioNome.Location = new System.Drawing.Point(6, 28);
             this.labelAlterarUsuarioNome.Name = "labelAlterarUsuarioNome";
-            this.labelAlterarUsuarioNome.Size = new System.Drawing.Size(93, 13);
+            this.labelAlterarUsuarioNome.Size = new System.Drawing.Size(97, 13);
             this.labelAlterarUsuarioNome.TabIndex = 17;
-            this.labelAlterarUsuarioNome.Text = "Nome do usuário: ";
+            this.labelAlterarUsuarioNome.Text = "Nome do usuário*: ";
             // 
             // labelAlterarUsuarioMatricula
             // 
@@ -134,6 +136,7 @@
             // 
             // textBoxAlterarUsuarioMatricula
             // 
+            this.textBoxAlterarUsuarioMatricula.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.textBoxAlterarUsuarioMatricula.Location = new System.Drawing.Point(70, 52);
             this.textBoxAlterarUsuarioMatricula.Name = "textBoxAlterarUsuarioMatricula";
             this.textBoxAlterarUsuarioMatricula.Size = new System.Drawing.Size(128, 20);

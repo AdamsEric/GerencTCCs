@@ -196,6 +196,7 @@
             // 
             this.textBoxPesquisa.BackColor = System.Drawing.SystemColors.Window;
             this.textBoxPesquisa.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBoxPesquisa.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.textBoxPesquisa.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.textBoxPesquisa.Location = new System.Drawing.Point(283, 82);
             this.textBoxPesquisa.Name = "textBoxPesquisa";

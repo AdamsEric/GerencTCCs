@@ -90,6 +90,7 @@
             // 
             // textBoxInserirAlunoNome
             // 
+            this.textBoxInserirAlunoNome.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.textBoxInserirAlunoNome.Location = new System.Drawing.Point(57, 18);
             this.textBoxInserirAlunoNome.Name = "textBoxInserirAlunoNome";
             this.textBoxInserirAlunoNome.Size = new System.Drawing.Size(373, 20);
@@ -97,6 +98,7 @@
             // 
             // textBoxInserirAlunoMatricula
             // 
+            this.textBoxInserirAlunoMatricula.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.textBoxInserirAlunoMatricula.Location = new System.Drawing.Point(75, 58);
             this.textBoxInserirAlunoMatricula.Name = "textBoxInserirAlunoMatricula";
             this.textBoxInserirAlunoMatricula.Size = new System.Drawing.Size(79, 20);
@@ -104,6 +106,7 @@
             // 
             // textBoxInserirAlunoCPF
             // 
+            this.textBoxInserirAlunoCPF.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.textBoxInserirAlunoCPF.Location = new System.Drawing.Point(195, 58);
             this.textBoxInserirAlunoCPF.Name = "textBoxInserirAlunoCPF";
             this.textBoxInserirAlunoCPF.Size = new System.Drawing.Size(92, 20);
@@ -111,6 +114,7 @@
             // 
             // textBoxTelefone
             // 
+            this.textBoxTelefone.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.textBoxTelefone.Location = new System.Drawing.Point(350, 58);
             this.textBoxTelefone.Name = "textBoxTelefone";
             this.textBoxTelefone.Size = new System.Drawing.Size(78, 20);
@@ -138,6 +142,10 @@
             // 
             // comboBoxInserirAlunoCurso
             // 
+            this.comboBoxInserirAlunoCurso.AutoCompleteCustomSource.AddRange(new string[] {
+            "COMPUTAÇÂO",
+            "MECÂNICA"});
+            this.comboBoxInserirAlunoCurso.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.comboBoxInserirAlunoCurso.ForeColor = System.Drawing.SystemColors.Desktop;
             this.comboBoxInserirAlunoCurso.FormattingEnabled = true;
             this.comboBoxInserirAlunoCurso.Location = new System.Drawing.Point(56, 99);

@@ -74,6 +74,7 @@
             // 
             // textBoxInserirUsuarioLogin
             // 
+            this.textBoxInserirUsuarioLogin.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.textBoxInserirUsuarioLogin.Location = new System.Drawing.Point(57, 18);
             this.textBoxInserirUsuarioLogin.Name = "textBoxInserirUsuarioLogin";
             this.textBoxInserirUsuarioLogin.Size = new System.Drawing.Size(157, 20);
@@ -110,6 +111,7 @@
             // 
             // textBoxInserirUsuarioNome
             // 
+            this.textBoxInserirUsuarioNome.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.textBoxInserirUsuarioNome.Location = new System.Drawing.Point(105, 24);
             this.textBoxInserirUsuarioNome.Name = "textBoxInserirUsuarioNome";
             this.textBoxInserirUsuarioNome.Size = new System.Drawing.Size(300, 20);
@@ -135,6 +137,7 @@
             // 
             // textBoxInserirUsuarioMatricula
             // 
+            this.textBoxInserirUsuarioMatricula.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.textBoxInserirUsuarioMatricula.Location = new System.Drawing.Point(70, 52);
             this.textBoxInserirUsuarioMatricula.Name = "textBoxInserirUsuarioMatricula";
             this.textBoxInserirUsuarioMatricula.Size = new System.Drawing.Size(128, 20);
@@ -155,6 +158,7 @@
             // 
             // comboBoxInserirUsuarioGrupo
             // 
+            this.comboBoxInserirUsuarioGrupo.Cursor = System.Windows.Forms.Cursors.Default;
             this.comboBoxInserirUsuarioGrupo.FormattingEnabled = true;
             this.comboBoxInserirUsuarioGrupo.Location = new System.Drawing.Point(57, 52);
             this.comboBoxInserirUsuarioGrupo.Name = "comboBoxInserirUsuarioGrupo";

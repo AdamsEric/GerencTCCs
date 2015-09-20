@@ -61,6 +61,7 @@
             // 
             // textBoxInserirProfessorNome
             // 
+            this.textBoxInserirProfessorNome.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.textBoxInserirProfessorNome.Location = new System.Drawing.Point(57, 18);
             this.textBoxInserirProfessorNome.Name = "textBoxInserirProfessorNome";
             this.textBoxInserirProfessorNome.Size = new System.Drawing.Size(373, 20);
@@ -68,6 +69,7 @@
             // 
             // textBoxInserirProfessorMatricula
             // 
+            this.textBoxInserirProfessorMatricula.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.textBoxInserirProfessorMatricula.Location = new System.Drawing.Point(75, 58);
             this.textBoxInserirProfessorMatricula.Name = "textBoxInserirProfessorMatricula";
             this.textBoxInserirProfessorMatricula.Size = new System.Drawing.Size(79, 20);
@@ -105,6 +107,7 @@
             // 
             // textBoxTelefone
             // 
+            this.textBoxTelefone.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.textBoxTelefone.Location = new System.Drawing.Point(350, 58);
             this.textBoxTelefone.Name = "textBoxTelefone";
             this.textBoxTelefone.Size = new System.Drawing.Size(78, 20);
@@ -112,6 +115,7 @@
             // 
             // textBoxInserirProfessorCPF
             // 
+            this.textBoxInserirProfessorCPF.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.textBoxInserirProfessorCPF.Location = new System.Drawing.Point(195, 58);
             this.textBoxInserirProfessorCPF.Name = "textBoxInserirProfessorCPF";
             this.textBoxInserirProfessorCPF.Size = new System.Drawing.Size(92, 20);

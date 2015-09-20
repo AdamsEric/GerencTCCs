@@ -33,5 +33,11 @@ namespace Apresentacao
             frmMenuAdministrador.MdiParent = this;
             frmMenuAdministrador.Show();
         }
+
+        private void acessoLogin_Click(object sender, EventArgs e)
+        {
+            FrmLogin frmLogin = new FrmLogin();
+            frmLogin.ShowDialog();
+        }
     }
 }
