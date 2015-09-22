@@ -26,5 +26,10 @@ namespace Apresentacao
         {
 
         }
+
+        private void buttonAlterarAlunoConfirmar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

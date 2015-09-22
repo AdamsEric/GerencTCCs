@@ -1,0 +1,130 @@
+/* CREATE TABLE tblUnidade(
+
+UnidadeID INT PRIMARY KEY IDENTITY(1,1),
+
+UnidadeNome NVARCHAR(80) NOT NULL,
+
+UnidadeCidade NVARCHAR(50) NOT NULL,
+
+UnidadeEstado NVARCHAR(2) NOT NULL,
+
+UnidadePais NVARCHAR(45) NOT NULL)
+
+GO
+
+CREATE TABLE tblSala(
+
+SalaID INT PRIMARY KEY IDENTITY(1,1),
+
+SalaCodigo NVARCHAR(10) NOT NULL,
+
+SalaDescricao NVARCHAR(70) NULL,
+
+SalaTipo BIT NOT NULL,
+
+SalaUnidadeID INT FOREIGN KEY REFERENCES tblUnidade(UnidadeID))
+
+GO
+
+CREATE TABLE tblProfessor(
+
+ProfessorID INT PRIMARY KEY IDENTITY(1,1),
+
+ProfessorNome NVARCHAR(70) NOT NULL,
+
+ProfessorCPF NVARCHAR(14) UNIQUE NOT NULL,
+
+ProfessorMatricula VARCHAR(15) UNIQUE NOT NULL,
+
+ProfessorTelefone VARCHAR(13))
+
+GO
+
+CREATE TABLE tblCurso(
+
+CursoID INT PRIMARY KEY IDENTITY(1,1),
+
+CursoNome NVARCHAR(80) NOT NULL,
+
+CursoUnidadeID INT FOREIGN KEY REFERENCES tblUnidade(UnidadeID),
+
+CursoCoordenador INT FOREIGN KEY REFERENCES tblProfessor(ProfessorID))
+
+GO
+
+CREATE TABLE tblAluno(
+
+AlunoID INT PRIMARY KEY IDENTITY(1,1),
+
+AlunoNome NVARCHAR(70) NOT NULL,
+
+AlunoCPF NVARCHAR(14) UNIQUE NOT NULL,
+
+AlunoMatricula NVARCHAR(15) UNIQUE NOT NULL,
+
+AlunoTelefone VARCHAR(13),
+
+AlunoCursoID INT FOREIGN KEY REFERENCES tblCurso(CursoID))
+
+GO 
+
+CREATE TABLE tblBanca(
+
+BancaID INT PRIMARY KEY IDENTITY(1,1),
+
+BancaOrientador INT FOREIGN KEY REFERENCES tblProfessor(ProfessorID),
+
+BancaProfessor1 INT FOREIGN KEY REFERENCES tblProfessor(ProfessorID),
+
+BancaProfessor2 INT FOREIGN KEY REFERENCES tblProfessor(ProfessorID))
+
+GO
+
+CREATE TABLE tblTCC(
+
+TCCID INT PRIMARY KEY IDENTITY(1,1),
+
+TCCDescricao NVARCHAR(250) NOT NULL,
+
+TCCTema NVARCHAR (100) NOT NULL,
+
+TCCData DATETIME NULL,
+
+TCCSalaID INT FOREIGN KEY REFERENCES tblSala(SalaID),
+
+TCCAlunoID INT FOREIGN KEY REFERENCES tblAluno(AlunoID),
+
+TCCBancaID INT FOREIGN KEY REFERENCES tblBanca(BancaID))
+
+GO
+
+CREATE TABLE tblGrupo(
+
+GrupoID INT PRIMARY KEY IDENTITY(1,1),
+
+GrupoNome VARCHAR(15) NOT NULL
+
+)
+
+CREATE TABLE tblUsuario(
+
+UsuarioID INT PRIMARY KEY IDENTITY(1,1),
+
+UsuarioLogin NVARCHAR(15) NOT NULL,
+
+UsuarioSenha  NVARCHAR(15) NOT NULL,
+
+UsuarioNome NVARCHAR(70) NOT NULL,
+
+UsuarioMatricula NVARCHAR(15) NULL,
+
+UsuarioGrupoID INT FOREIGN KEY REFERENCES tblGrupo(GrupoID)
+
+)
+
+insert into tblGrupo (GrupoNome) values ('ADMINISTRADOR')
+insert into tblGrupo (GrupoNome) values ('GERENTE')
+insert into tblGrupo (GrupoNome) values ('REGISTRADOR')
+insert into tblGrupo (GrupoNome) values ('VISITANTE')
+
+GO */

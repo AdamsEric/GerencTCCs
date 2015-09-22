@@ -35,10 +35,10 @@
             this.buttonInserirProfessorConfirmar = new System.Windows.Forms.Button();
             this.buttonInserirProfessorCancelar = new System.Windows.Forms.Button();
             this.labelInserirProfessorTelefone = new System.Windows.Forms.Label();
-            this.textBoxTelefone = new System.Windows.Forms.TextBox();
-            this.textBoxInserirProfessorCPF = new System.Windows.Forms.TextBox();
             this.labelInserirProfessorCPF = new System.Windows.Forms.Label();
             this.labelMenuInserirCO = new System.Windows.Forms.Label();
+            this.maskedTextBoxInserirProfessorCPF = new System.Windows.Forms.MaskedTextBox();
+            this.maskedTextBoxInserirProfessorTelefone = new System.Windows.Forms.MaskedTextBox();
             this.SuspendLayout();
             // 
             // labelInserirProfessorNome
@@ -105,22 +105,6 @@
             this.labelInserirProfessorTelefone.TabIndex = 2;
             this.labelInserirProfessorTelefone.Text = "Telefone: ";
             // 
-            // textBoxTelefone
-            // 
-            this.textBoxTelefone.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.textBoxTelefone.Location = new System.Drawing.Point(350, 58);
-            this.textBoxTelefone.Name = "textBoxTelefone";
-            this.textBoxTelefone.Size = new System.Drawing.Size(78, 20);
-            this.textBoxTelefone.TabIndex = 10;
-            // 
-            // textBoxInserirProfessorCPF
-            // 
-            this.textBoxInserirProfessorCPF.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.textBoxInserirProfessorCPF.Location = new System.Drawing.Point(195, 58);
-            this.textBoxInserirProfessorCPF.Name = "textBoxInserirProfessorCPF";
-            this.textBoxInserirProfessorCPF.Size = new System.Drawing.Size(92, 20);
-            this.textBoxInserirProfessorCPF.TabIndex = 8;
-            // 
             // labelInserirProfessorCPF
             // 
             this.labelInserirProfessorCPF.AutoSize = true;
@@ -139,16 +123,32 @@
             this.labelMenuInserirCO.TabIndex = 15;
             this.labelMenuInserirCO.Text = "( * ) - Campos de preenchimento obrigatório";
             // 
+            // maskedTextBoxInserirProfessorCPF
+            // 
+            this.maskedTextBoxInserirProfessorCPF.Location = new System.Drawing.Point(195, 58);
+            this.maskedTextBoxInserirProfessorCPF.Mask = "999,999,999-99";
+            this.maskedTextBoxInserirProfessorCPF.Name = "maskedTextBoxInserirProfessorCPF";
+            this.maskedTextBoxInserirProfessorCPF.Size = new System.Drawing.Size(92, 20);
+            this.maskedTextBoxInserirProfessorCPF.TabIndex = 16;
+            // 
+            // maskedTextBoxInserirProfessorTelefone
+            // 
+            this.maskedTextBoxInserirProfessorTelefone.Location = new System.Drawing.Point(345, 58);
+            this.maskedTextBoxInserirProfessorTelefone.Mask = "(99) 9999-9999";
+            this.maskedTextBoxInserirProfessorTelefone.Name = "maskedTextBoxInserirProfessorTelefone";
+            this.maskedTextBoxInserirProfessorTelefone.Size = new System.Drawing.Size(85, 20);
+            this.maskedTextBoxInserirProfessorTelefone.TabIndex = 17;
+            // 
             // FrmMenuInserirProfessor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(454, 205);
+            this.Controls.Add(this.maskedTextBoxInserirProfessorTelefone);
+            this.Controls.Add(this.maskedTextBoxInserirProfessorCPF);
             this.Controls.Add(this.labelMenuInserirCO);
             this.Controls.Add(this.buttonInserirProfessorCancelar);
             this.Controls.Add(this.buttonInserirProfessorConfirmar);
-            this.Controls.Add(this.textBoxTelefone);
-            this.Controls.Add(this.textBoxInserirProfessorCPF);
             this.Controls.Add(this.textBoxInserirProfessorMatricula);
             this.Controls.Add(this.textBoxInserirProfessorNome);
             this.Controls.Add(this.labelInserirProfessorCPF);
@@ -178,9 +178,9 @@
         private System.Windows.Forms.Button buttonInserirProfessorConfirmar;
         private System.Windows.Forms.Button buttonInserirProfessorCancelar;
         private System.Windows.Forms.Label labelInserirProfessorTelefone;
-        private System.Windows.Forms.TextBox textBoxTelefone;
-        private System.Windows.Forms.TextBox textBoxInserirProfessorCPF;
         private System.Windows.Forms.Label labelInserirProfessorCPF;
         private System.Windows.Forms.Label labelMenuInserirCO;
+        private System.Windows.Forms.MaskedTextBox maskedTextBoxInserirProfessorCPF;
+        private System.Windows.Forms.MaskedTextBox maskedTextBoxInserirProfessorTelefone;
     }
 }

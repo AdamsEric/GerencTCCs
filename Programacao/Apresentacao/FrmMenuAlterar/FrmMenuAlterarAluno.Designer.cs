@@ -35,12 +35,12 @@
             this.labelAlterarAlunoCPF = new System.Windows.Forms.Label();
             this.textBoxAlterarAlunoNome = new System.Windows.Forms.TextBox();
             this.textBoxAlterarAlunoMatricula = new System.Windows.Forms.TextBox();
-            this.textBoxAlterarAlunoCPF = new System.Windows.Forms.TextBox();
-            this.textBoxTelefone = new System.Windows.Forms.TextBox();
             this.buttonAlterarAlunoConfirmar = new System.Windows.Forms.Button();
             this.buttonAlterarAlunoCancelar = new System.Windows.Forms.Button();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.labelMenuInserirCO = new System.Windows.Forms.Label();
+            this.maskedTextBoxAlterarAlunoCPF = new System.Windows.Forms.MaskedTextBox();
+            this.maskedTextBoxAlterarAlunoTelefone = new System.Windows.Forms.MaskedTextBox();
             this.SuspendLayout();
             // 
             // labelAlterarAlunoNome
@@ -104,22 +104,6 @@
             this.textBoxAlterarAlunoMatricula.Size = new System.Drawing.Size(79, 20);
             this.textBoxAlterarAlunoMatricula.TabIndex = 7;
             // 
-            // textBoxAlterarAlunoCPF
-            // 
-            this.textBoxAlterarAlunoCPF.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.textBoxAlterarAlunoCPF.Location = new System.Drawing.Point(195, 58);
-            this.textBoxAlterarAlunoCPF.Name = "textBoxAlterarAlunoCPF";
-            this.textBoxAlterarAlunoCPF.Size = new System.Drawing.Size(92, 20);
-            this.textBoxAlterarAlunoCPF.TabIndex = 8;
-            // 
-            // textBoxTelefone
-            // 
-            this.textBoxTelefone.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.textBoxTelefone.Location = new System.Drawing.Point(350, 58);
-            this.textBoxTelefone.Name = "textBoxTelefone";
-            this.textBoxTelefone.Size = new System.Drawing.Size(78, 20);
-            this.textBoxTelefone.TabIndex = 10;
-            // 
             // buttonAlterarAlunoConfirmar
             // 
             this.buttonAlterarAlunoConfirmar.Location = new System.Drawing.Point(259, 170);
@@ -128,6 +112,7 @@
             this.buttonAlterarAlunoConfirmar.TabIndex = 11;
             this.buttonAlterarAlunoConfirmar.Text = "Confirmar";
             this.buttonAlterarAlunoConfirmar.UseVisualStyleBackColor = true;
+            this.buttonAlterarAlunoConfirmar.Click += new System.EventHandler(this.buttonAlterarAlunoConfirmar_Click);
             // 
             // buttonAlterarAlunoCancelar
             // 
@@ -157,17 +142,35 @@
             this.labelMenuInserirCO.TabIndex = 15;
             this.labelMenuInserirCO.Text = "( * ) - Campos de preenchimento obrigatório";
             // 
+            // maskedTextBoxAlterarAlunoCPF
+            // 
+            this.maskedTextBoxAlterarAlunoCPF.Location = new System.Drawing.Point(193, 58);
+            this.maskedTextBoxAlterarAlunoCPF.Mask = "999,999,999-99";
+            this.maskedTextBoxAlterarAlunoCPF.Name = "maskedTextBoxAlterarAlunoCPF";
+            this.maskedTextBoxAlterarAlunoCPF.Size = new System.Drawing.Size(92, 20);
+            this.maskedTextBoxAlterarAlunoCPF.TabIndex = 16;
+            this.maskedTextBoxAlterarAlunoCPF.TextMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
+            // 
+            // maskedTextBoxAlterarAlunoTelefone
+            // 
+            this.maskedTextBoxAlterarAlunoTelefone.Location = new System.Drawing.Point(350, 58);
+            this.maskedTextBoxAlterarAlunoTelefone.Mask = "(99) 9999-9999";
+            this.maskedTextBoxAlterarAlunoTelefone.Name = "maskedTextBoxAlterarAlunoTelefone";
+            this.maskedTextBoxAlterarAlunoTelefone.Size = new System.Drawing.Size(80, 20);
+            this.maskedTextBoxAlterarAlunoTelefone.TabIndex = 17;
+            this.maskedTextBoxAlterarAlunoTelefone.TextMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
+            // 
             // FrmMenuAlterarAluno
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(454, 205);
+            this.Controls.Add(this.maskedTextBoxAlterarAlunoTelefone);
+            this.Controls.Add(this.maskedTextBoxAlterarAlunoCPF);
             this.Controls.Add(this.labelMenuInserirCO);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.buttonAlterarAlunoCancelar);
             this.Controls.Add(this.buttonAlterarAlunoConfirmar);
-            this.Controls.Add(this.textBoxTelefone);
-            this.Controls.Add(this.textBoxAlterarAlunoCPF);
             this.Controls.Add(this.textBoxAlterarAlunoMatricula);
             this.Controls.Add(this.textBoxAlterarAlunoNome);
             this.Controls.Add(this.labelAlterarAlunoCPF);
@@ -198,11 +201,11 @@
         private System.Windows.Forms.Label labelAlterarAlunoCPF;
         private System.Windows.Forms.TextBox textBoxAlterarAlunoNome;
         private System.Windows.Forms.TextBox textBoxAlterarAlunoMatricula;
-        private System.Windows.Forms.TextBox textBoxAlterarAlunoCPF;
-        private System.Windows.Forms.TextBox textBoxTelefone;
         private System.Windows.Forms.Button buttonAlterarAlunoConfirmar;
         private System.Windows.Forms.Button buttonAlterarAlunoCancelar;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label labelMenuInserirCO;
+        private System.Windows.Forms.MaskedTextBox maskedTextBoxAlterarAlunoCPF;
+        private System.Windows.Forms.MaskedTextBox maskedTextBoxAlterarAlunoTelefone;
     }
 }

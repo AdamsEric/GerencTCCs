@@ -22,24 +22,27 @@ namespace Apresentacao
                 this.Close();
         }
 
-        private void FrmMenuInserirAluno_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void buttonInserirAlunoConfirmar_Click(object sender, EventArgs e)
         {
             if (textBoxInserirAlunoNome.Text == "" || textBoxInserirAlunoMatricula.Text == ""
-                || textBoxInserirAlunoCPF.Text == "" || comboBoxInserirAlunoCurso.Text == "")
+                || comboBoxInserirAlunoCurso.Text == "")
             {
                 FrmInserirConfirmacaoProblema frmInserirConfirmacaoProblema = new FrmInserirConfirmacaoProblema();
                 frmInserirConfirmacaoProblema.ShowDialog();
             }
             else
             {
-                FrmInserirConfirmacaoSucesso frmInserirConfirmacaoSucesso = new FrmInserirConfirmacaoSucesso();
-                frmInserirConfirmacaoSucesso.ShowDialog();
-                this.Close();
+                if (maskedTextBoxInserirAlunoCPF.MaskFull)
+                {
+                    FrmInserirConfirmacaoSucesso frmInserirConfirmacaoSucesso = new FrmInserirConfirmacaoSucesso();
+                    frmInserirConfirmacaoSucesso.ShowDialog();
+                    this.Close();
+                }
+                else
+                {
+                    FrmInserirConfirmacaoProblema frmInserirConfirmacaoProblema = new FrmInserirConfirmacaoProblema();
+                    frmInserirConfirmacaoProblema.ShowDialog();
+                }
             }
         }
     }

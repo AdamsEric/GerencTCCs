@@ -29,17 +29,24 @@ namespace Apresentacao
 
         private void buttonInserirProfessorConfirmar_Click(object sender, EventArgs e)
         {
-            if (textBoxInserirProfessorNome.Text == "" || textBoxInserirProfessorMatricula.Text == ""
-                || textBoxInserirProfessorCPF.Text == "")
+            if (textBoxInserirProfessorNome.Text == "" || textBoxInserirProfessorMatricula.Text == "")
             {
                 FrmInserirConfirmacaoProblema frmInserirConfirmacaoProblema = new FrmInserirConfirmacaoProblema();
                 frmInserirConfirmacaoProblema.ShowDialog();
             }
             else
             {
-                FrmInserirConfirmacaoSucesso frmInserirConfirmacaoSucesso = new FrmInserirConfirmacaoSucesso();
-                frmInserirConfirmacaoSucesso.ShowDialog();
-                this.Close();
+                if (maskedTextBoxInserirProfessorCPF.MaskFull)
+                {
+                    FrmInserirConfirmacaoSucesso frmInserirConfirmacaoSucesso = new FrmInserirConfirmacaoSucesso();
+                    frmInserirConfirmacaoSucesso.ShowDialog();
+                    this.Close();
+                }
+                else 
+                {
+                    FrmInserirConfirmacaoProblema frmInserirConfirmacaoProblema = new FrmInserirConfirmacaoProblema();
+                    frmInserirConfirmacaoProblema.ShowDialog();
+                }
             }
         }
     }

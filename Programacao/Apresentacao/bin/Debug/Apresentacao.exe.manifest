@@ -47,14 +47,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Apresentacao.exe" size="84480">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Apresentacao.exe" size="84992">
       <assemblyIdentity name="Apresentacao" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>DGxOi0N4wa71GEU2pe2fUSUIaoIak/yGTWuQh/hpQ0s=</dsig:DigestValue>
+        <dsig:DigestValue>8zhI6tLVsrgCciD+LFAavAiz5wvFQMfnZrgc2EOo4BU=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
