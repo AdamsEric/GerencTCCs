@@ -8,6 +8,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+using Negocios;
+using DTO;
+
 namespace Apresentacao
 {
     public partial class FrmMenuAdministrador : Form
@@ -423,6 +426,22 @@ namespace Apresentacao
             {
                 FrmMenuAlterarUsuario frmMenuAlterarUsuario = new FrmMenuAlterarUsuario();
                 frmMenuAlterarUsuario.ShowDialog();
+            }
+        }
+
+        private void buttonPesquisar_Click(object sender, EventArgs e)
+        {
+            if (labelModuloTitulo.Text == "Unidades")
+            {
+                UnidadeNegocios unidadeNegocios = new UnidadeNegocios();
+                UnidadeColecao unidadeColecao = new UnidadeColecao();
+                    
+                unidadeColecao = unidadeNegocios.ConsultarPorNome(textBoxPesquisa.Text);
+
+                dataGridView.DataSource = null;
+                dataGridView.DataSource = unidadeColecao;
+                dataGridView.Update();
+                dataGridView.Refresh();
             }
         }
     }

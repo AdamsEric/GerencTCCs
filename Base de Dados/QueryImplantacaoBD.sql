@@ -22,7 +22,17 @@ SalaDescricao NVARCHAR(70) NULL,
 
 SalaTipo BIT NOT NULL,
 
-SalaUnidadeID INT FOREIGN KEY REFERENCES tblUnidade(UnidadeID))
+SalaUnidadeID INT FOREIGN KEY REFERENCES tblUnidade(UnidadeID),
+
+SalaSalaTipoID INT FOREIGN KEY REFERENCES tblSalaTipo(SalaTipoID))
+
+GO
+
+CREATE TABLE tblSalaTipo(
+
+SalaTipoID INT PRIMARY KEY IDENTITY(1,1),
+
+SalaTipoTipo NVARCHAR(15) NOT NULL)
 
 GO
 

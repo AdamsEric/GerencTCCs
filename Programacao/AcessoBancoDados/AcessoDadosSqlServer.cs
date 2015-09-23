@@ -9,7 +9,6 @@ using System.Data;
 using System.Data.SqlClient;
 using AcessoBancoDados.Properties;
 
-
 namespace AcessoBancoDados
 {
     public class AcessoDadosSqlServer
@@ -61,8 +60,6 @@ namespace AcessoBancoDados
         //Consultar registros do banco de dados
         public DataTable ExecutarConsulta(CommandType commandType, string nomeStoredProcedureOuTextoSql)
         {
-            try
-            {
                 //Criar a conexão
                 SqlConnection sqlConnection = CriarConexao();
                 //Abrir conexão
@@ -88,12 +85,6 @@ namespace AcessoBancoDados
                 sqlDataAdapter.Fill(dataTable);
 
                 return dataTable;
-            }
-            catch (Exception ex)
-            {
-                throw new Exception(ex.Message);
-            }
-
         }
     }
 }

@@ -7,3 +7,12 @@ D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Solution1\Negocios\bin\Debu
 D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Solution1\Negocios\obj\Debug\Negocios.csprojResolveAssemblyReference.cache
 D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Solution1\Negocios\obj\Debug\Negocios.dll
 D:\Eric Adams\OneDrive\Estudo\C#\Gerenciador de TCCs\Solution1\Negocios\obj\Debug\Negocios.pdb
+D:\Eric Adams\OneDrive\Estudo\C#\GerencTCCs\Programacao\Negocios\bin\Debug\Negocios.dll
+D:\Eric Adams\OneDrive\Estudo\C#\GerencTCCs\Programacao\Negocios\bin\Debug\Negocios.pdb
+D:\Eric Adams\OneDrive\Estudo\C#\GerencTCCs\Programacao\Negocios\bin\Debug\AcessoBancoDados.dll
+D:\Eric Adams\OneDrive\Estudo\C#\GerencTCCs\Programacao\Negocios\bin\Debug\DTO.dll
+D:\Eric Adams\OneDrive\Estudo\C#\GerencTCCs\Programacao\Negocios\bin\Debug\AcessoBancoDados.pdb
+D:\Eric Adams\OneDrive\Estudo\C#\GerencTCCs\Programacao\Negocios\bin\Debug\DTO.pdb
+D:\Eric Adams\OneDrive\Estudo\C#\GerencTCCs\Programacao\Negocios\obj\Debug\Negocios.csprojResolveAssemblyReference.cache
+D:\Eric Adams\OneDrive\Estudo\C#\GerencTCCs\Programacao\Negocios\obj\Debug\Negocios.dll
+D:\Eric Adams\OneDrive\Estudo\C#\GerencTCCs\Programacao\Negocios\obj\Debug\Negocios.pdb

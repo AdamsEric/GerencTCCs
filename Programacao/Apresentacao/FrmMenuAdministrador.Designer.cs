@@ -211,6 +211,7 @@
             this.buttonPesquisar.TabIndex = 8;
             this.buttonPesquisar.Text = "Pesquisar";
             this.buttonPesquisar.UseVisualStyleBackColor = true;
+            this.buttonPesquisar.Click += new System.EventHandler(this.buttonPesquisar_Click);
             // 
             // dataGridView
             // 
