@@ -12,21 +12,8 @@ UnidadePais NVARCHAR(45) NOT NULL)
 
 GO
 
-CREATE TABLE tblSala(
 
-SalaID INT PRIMARY KEY IDENTITY(1,1),
 
-SalaCodigo NVARCHAR(10) NOT NULL,
-
-SalaDescricao NVARCHAR(70) NULL,
-
-SalaTipo BIT NOT NULL,
-
-SalaUnidadeID INT FOREIGN KEY REFERENCES tblUnidade(UnidadeID),
-
-SalaSalaTipoID INT FOREIGN KEY REFERENCES tblSalaTipo(SalaTipoID))
-
-GO
 
 CREATE TABLE tblSalaTipo(
 
@@ -35,6 +22,26 @@ SalaTipoID INT PRIMARY KEY IDENTITY(1,1),
 SalaTipoTipo NVARCHAR(15) NOT NULL)
 
 GO
+
+
+
+
+CREATE TABLE tblSala(
+
+SalaID INT PRIMARY KEY IDENTITY(1,1),
+
+SalaNome NVARCHAR(10) NOT NULL,
+
+SalaDescricao NVARCHAR(70) NULL,
+
+SalaUnidadeID INT FOREIGN KEY REFERENCES tblUnidade(UnidadeID),
+
+SalaSalaTipoID INT FOREIGN KEY REFERENCES tblSalaTipo(SalaTipoID))
+
+GO
+
+
+
 
 CREATE TABLE tblProfessor(
 
@@ -49,6 +56,9 @@ ProfessorMatricula VARCHAR(15) UNIQUE NOT NULL,
 ProfessorTelefone VARCHAR(13))
 
 GO
+
+
+
 
 CREATE TABLE tblCurso(
 

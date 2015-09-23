@@ -8,6 +8,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+using Negocios;
+using DTO;
+
 namespace Apresentacao
 {
     public partial class FrmMenuInserirUsuario : Form

@@ -8,5 +8,9 @@ namespace DTO
 {
     public class Curso
     {
+        public int CursoID{ get; set; }
+        public string CursoNome { get; set; }
+        public int CursoUnidadeID { get; set; }
+        public int CursoCoordenador { get; set; }
     }
 }

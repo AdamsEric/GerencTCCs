@@ -66,31 +66,31 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>vqLmvdYpWL3RBjAkqKKtFzFxGwesuXgWvbV9dYJvc+I=</dsig:DigestValue>
+        <dsig:DigestValue>NnENxaTwPO3jHWtO1/KQUKLtNRMwsFefKE4A0B2i2RE=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="DTO.dll" size="6144">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="DTO.dll" size="12288">
       <assemblyIdentity name="DTO" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>qtfRGDtuOymjilhmT87BSbKrLJpl/4BklND9IAhNj6E=</dsig:DigestValue>
+        <dsig:DigestValue>jv67PtxQwkCdskIbGidQ+UkgMM3QvZRstbJJRqa1eCg=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Negocios.dll" size="7168">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Negocios.dll" size="10240">
       <assemblyIdentity name="Negocios" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>kFulgrR45hBHsIZyk5+C3g01OIyc3jboBLrupZYt2pY=</dsig:DigestValue>
+        <dsig:DigestValue>C0pTiCR4Q8MPrhvPz6zsv+2CJn8ukNR0SoW2bac8Fkk=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
