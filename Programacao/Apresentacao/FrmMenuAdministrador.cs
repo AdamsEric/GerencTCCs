@@ -58,8 +58,8 @@ namespace Apresentacao
             dateTimePickerFiltroData.Visible = false;
             labelFiltrarPorGrupo.Visible = false;
             comboBoxFiltroGrupo.Visible = false;
-
-
+            //DataGrid
+            dataGridView.DataSource = null;
         }
 
         private void buttonTCCMenu_Click(object sender, EventArgs e)
@@ -102,6 +102,8 @@ namespace Apresentacao
             dateTimePickerFiltroData.Location = new Point(531, 314);
             labelFiltrarPorGrupo.Visible = false;
             comboBoxFiltroGrupo.Visible = false;
+            //DataGrid
+            dataGridView.DataSource = null;
         }
 
         private void buttonProfessorMenu_Click(object sender, EventArgs e)
@@ -142,6 +144,8 @@ namespace Apresentacao
             dateTimePickerFiltroData.Visible = false;
             labelFiltrarPorGrupo.Visible = false;
             comboBoxFiltroGrupo.Visible = false;
+            //DataGrid
+            dataGridView.DataSource = null;
         }
 
         private void buttonCursoMenu_Click(object sender, EventArgs e)
@@ -180,6 +184,8 @@ namespace Apresentacao
             dateTimePickerFiltroData.Visible = false;
             labelFiltrarPorGrupo.Visible = false;
             comboBoxFiltroGrupo.Visible = false;
+            //DataGrid
+            dataGridView.DataSource = null;
         }
 
         private void buttonUnidadeMenu_Click(object sender, EventArgs e)
@@ -218,6 +224,8 @@ namespace Apresentacao
             dateTimePickerFiltroData.Visible = false;
             labelFiltrarPorGrupo.Visible = false;
             comboBoxFiltroGrupo.Visible = false;
+            //DataGrid
+            dataGridView.DataSource = null;
         }
 
         private void buttonSalaMenu_Click(object sender, EventArgs e)
@@ -259,6 +267,8 @@ namespace Apresentacao
             dateTimePickerFiltroData.Visible = false;
             labelFiltrarPorGrupo.Visible = false;
             comboBoxFiltroGrupo.Visible = false;
+            //DataGrid
+            dataGridView.DataSource = null;
         }
 
         private void buttonUsuarioMenu_Click(object sender, EventArgs e)
@@ -301,6 +311,8 @@ namespace Apresentacao
             labelFiltrarPorGrupo.Location = new Point(309,318);
             comboBoxFiltroGrupo.Visible = true;
             comboBoxFiltroGrupo.Location = new Point(351, 314);
+            //DataGrid
+            dataGridView.DataSource = null;
         }
 
         private void radioButtonPesquisarPorNome_CheckedChanged(object sender, EventArgs e)
@@ -377,6 +389,7 @@ namespace Apresentacao
             {
                 FrmMenuInserirUnidade frmMenuInserirUnidade = new FrmMenuInserirUnidade();
                 frmMenuInserirUnidade.ShowDialog();
+                AtualizarGrid();
             }
             if (labelModuloTitulo.Text == "Salas")
             {
@@ -392,11 +405,18 @@ namespace Apresentacao
 
         private void buttonAlterar_Click(object sender, EventArgs e)
         {
+            if (dataGridView.SelectedRows.Count == 0)
+            {
+                MessageBox.Show("Nenhum registro selecionado!", "Erro");
+                return;
+            }
+
             if (labelModuloTitulo.Text == "Alunos")
             {
                 FrmMenuAlterarAluno frmMenuAlterarAluno = new FrmMenuAlterarAluno();
                 frmMenuAlterarAluno.ShowDialog();
             }
+
             if (labelModuloTitulo.Text == "TCCs")
             {
                 FrmMenuAlterarTCC frmMenuAlterarTCC = new FrmMenuAlterarTCC();
@@ -414,8 +434,11 @@ namespace Apresentacao
             }
             if (labelModuloTitulo.Text == "Unidades")
             {
-                FrmMenuAlterarUnidade frmMenuAlterarUnidade = new FrmMenuAlterarUnidade();
+                Unidade unidadeSelecao = (dataGridView.SelectedRows[0].DataBoundItem as Unidade);
+
+                FrmMenuAlterarUnidade frmMenuAlterarUnidade = new FrmMenuAlterarUnidade(unidadeSelecao);
                 frmMenuAlterarUnidade.ShowDialog();
+                AtualizarGrid();
             }
             if (labelModuloTitulo.Text == "Salas")
             {
@@ -429,19 +452,66 @@ namespace Apresentacao
             }
         }
 
-        private void buttonPesquisar_Click(object sender, EventArgs e)
+        private void AtualizarGrid()
         {
             if (labelModuloTitulo.Text == "Unidades")
             {
                 UnidadeNegocios unidadeNegocios = new UnidadeNegocios();
                 UnidadeColecao unidadeColecao = new UnidadeColecao();
-                    
+
                 unidadeColecao = unidadeNegocios.ConsultarPorNome(textBoxPesquisa.Text);
 
                 dataGridView.DataSource = null;
                 dataGridView.DataSource = unidadeColecao;
                 dataGridView.Update();
                 dataGridView.Refresh();
+            }
+        }
+
+        private void buttonPesquisar_Click(object sender, EventArgs e)
+        {
+            AtualizarGrid();
+        }
+
+        private void textBoxPesquisa_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == 13)
+            {
+                AtualizarGrid();
+            }
+        }
+
+        private void buttonExcluir_Click(object sender, EventArgs e)
+        {
+            if (labelModuloTitulo.Text == "Unidades") 
+            {
+                if (dataGridView.SelectedRows.Count == 0)
+                {
+                    MessageBox.Show("Nenhuma registro selecionado!", "Erro");
+                    return;
+                }
+                DialogResult resultado = MessageBox.Show("Tem certeza que deseja excluir esse registro do sistema?", "Aviso", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+                if (resultado == DialogResult.No)
+                {
+                    return;
+                }
+
+                Unidade unidadeSelecao = (dataGridView.SelectedRows[0].DataBoundItem as Unidade);
+                UnidadeNegocios unidadeNegocios = new UnidadeNegocios();
+                string retorno = unidadeNegocios.Excluir(unidadeSelecao);
+
+                try
+                {
+                    int UnidadeID = Convert.ToInt32(retorno);
+
+                    MessageBox.Show("Registro excluído com sucesso", "Aviso", MessageBoxButtons.OK,MessageBoxIcon.Information);
+                    AtualizarGrid();
+                }
+                catch
+                {
+                    MessageBox.Show("Não foi possível excluir. Detalhes: " + retorno, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
         }
     }

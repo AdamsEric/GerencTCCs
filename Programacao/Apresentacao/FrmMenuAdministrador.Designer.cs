@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.buttonAlunoMenu = new System.Windows.Forms.Button();
             this.labelNomeModulo = new System.Windows.Forms.Label();
             this.buttonTCCMenu = new System.Windows.Forms.Button();
@@ -202,6 +203,7 @@
             this.textBoxPesquisa.Name = "textBoxPesquisa";
             this.textBoxPesquisa.Size = new System.Drawing.Size(587, 20);
             this.textBoxPesquisa.TabIndex = 7;
+            this.textBoxPesquisa.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxPesquisa_KeyPress);
             // 
             // buttonPesquisar
             // 
@@ -215,10 +217,16 @@
             // 
             // dataGridView
             // 
+            this.dataGridView.AllowUserToAddRows = false;
+            this.dataGridView.AllowUserToResizeRows = false;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.dataGridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridView.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
             this.dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView.Location = new System.Drawing.Point(241, 114);
+            this.dataGridView.MultiSelect = false;
             this.dataGridView.Name = "dataGridView";
+            this.dataGridView.RowHeadersWidth = 30;
             this.dataGridView.Size = new System.Drawing.Size(710, 193);
             this.dataGridView.TabIndex = 9;
             // 
@@ -304,6 +312,7 @@
             this.buttonExcluir.TabIndex = 14;
             this.buttonExcluir.Text = "Excluir";
             this.buttonExcluir.UseVisualStyleBackColor = true;
+            this.buttonExcluir.Click += new System.EventHandler(this.buttonExcluir_Click);
             // 
             // labelModuloTitulo
             // 

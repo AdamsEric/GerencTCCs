@@ -164,7 +164,6 @@
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Inserir Unidade";
-            this.Load += new System.EventHandler(this.FrmMenuInserirUnidade_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

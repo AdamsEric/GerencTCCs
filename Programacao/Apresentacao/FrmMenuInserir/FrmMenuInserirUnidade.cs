@@ -8,6 +8,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+using Negocios;
+using DTO;
+
 namespace Apresentacao
 {
     public partial class FrmMenuInserirUnidade : Form
@@ -15,6 +18,7 @@ namespace Apresentacao
         public FrmMenuInserirUnidade()
         {
             InitializeComponent();
+
         }
 
         private void buttonInserirUnidadeCancelar_Click(object sender, EventArgs e)
@@ -22,24 +26,36 @@ namespace Apresentacao
             this.Close();
         }
 
-        private void FrmMenuInserirUnidade_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void buttonInserirUnidadeConfirmar_Click(object sender, EventArgs e)
         {
-            if (textBoxInserirUnidadeNome.Text == "" || textBoxInserirUnidadeCidade.Text == ""
-                || textBoxInserirUnidadeEstado.Text == "" || textBoxInserirUnidadePais.Text == "")
+            Unidade unidade = new Unidade();
+            unidade.UnidadeNome = textBoxInserirUnidadeNome.Text;
+            unidade.UnidadeCidade = textBoxInserirUnidadeCidade.Text;
+            unidade.UnidadeEstado = textBoxInserirUnidadeEstado.Text;
+            unidade.UnidadePais = textBoxInserirUnidadePais.Text;
+
+            if (textBoxInserirUnidadeNome.Text == "" || unidade.UnidadeCidade == "" ||
+                unidade.UnidadeEstado == "" || unidade.UnidadePais == "")
             {
-                FrmInserirConfirmacaoProblema frmInserirConfirmacaoProblema = new FrmInserirConfirmacaoProblema();
-                frmInserirConfirmacaoProblema.ShowDialog();
+                MessageBox.Show("Favor preencher todos os campos!");
             }
             else
             {
-                FrmInserirConfirmacaoSucesso frmInserirConfirmacaoSucesso = new FrmInserirConfirmacaoSucesso();
-                frmInserirConfirmacaoSucesso.ShowDialog();
-                this.Close();
+                UnidadeNegocios unidadeNegocios = new UnidadeNegocios();
+                string retorno = unidadeNegocios.Inserir(unidade);
+
+                try
+                {
+                    int unidadeID = Convert.ToInt32(retorno);
+
+                    MessageBox.Show("Registro inserido com sucesso! Código: ", "Aviso", MessageBoxButtons.OK);
+                    this.DialogResult = DialogResult.Yes;
+                }
+                catch
+                {
+                    MessageBox.Show("Não foi possível completar a operação! Detalhes: " + retorno, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    this.DialogResult = DialogResult.No;
+                }
             }
         }
     }

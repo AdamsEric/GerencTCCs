@@ -59,7 +59,7 @@ namespace Negocios
             {
                 acessoDadosSqlServer.LimparParametros();
                 acessoDadosSqlServer.AdicionarParametros("@UnidadeID", unidade.UnidadeID);
-                string UnidadeID = acessoDadosSqlServer.ExecutarManipulacao(CommandType.StoredProcedure, "uspUnidadeAlterar").ToString();
+                string UnidadeID = acessoDadosSqlServer.ExecutarManipulacao(CommandType.StoredProcedure, "uspUnidadeExcluir").ToString();
 
                 return UnidadeID;
             }
