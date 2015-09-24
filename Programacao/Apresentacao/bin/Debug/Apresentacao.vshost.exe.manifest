@@ -59,14 +59,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Apresentacao.exe" size="92160">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Apresentacao.exe" size="121344">
       <assemblyIdentity name="Apresentacao" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>ZEeVg8tYhurOGFJ6SfCttafF3Fg7CSXo8JB/BmXnXeU=</dsig:DigestValue>
+        <dsig:DigestValue>FbQsWd6Lmxxv55KCjaipp/5mVxyuepA8riJ0iniBORc=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -90,17 +90,17 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>QmUs9B8fV/InRY+baWrrLaiqKnLyn8VQUGJ9D2SZPWg=</dsig:DigestValue>
+        <dsig:DigestValue>xXUIodBOHc7OnQWykCwNfDRnrmw+rp/vxP7NQl6vyK0=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
-  <file name="Apresentacao.exe.config" size="187">
+  <file name="Apresentacao.exe.config" size="526">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>xm4bo26HQ0LNVwz1vdPYtzhkpMnp2AI5i+f0b+OahTI=</dsig:DigestValue>
+      <dsig:DigestValue>C5XB+KiG9cB3mgb8Rt9JdPUcY54tNhJ+QnGD1wyG18s=</dsig:DigestValue>
     </hash>
   </file>
 </asmv1:assembly>

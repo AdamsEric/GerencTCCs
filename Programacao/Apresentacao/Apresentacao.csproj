@@ -189,6 +189,11 @@
     <Compile Include="FrmMenuInserir\FrmMenuInserirAluno.Designer.cs">
       <DependentUpon>FrmMenuInserirAluno.cs</DependentUpon>
     </Compile>
+    <Compile Include="GerencTCCsDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GerencTCCsDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FrmInserirConfirmacaoProblema.resx">
@@ -258,6 +263,17 @@
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <None Include="Apresentacao_TemporaryKey.pfx" />
+    <None Include="GerencTCCsDataSet.xsc">
+      <DependentUpon>GerencTCCsDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="GerencTCCsDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>GerencTCCsDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="GerencTCCsDataSet.xss">
+      <DependentUpon>GerencTCCsDataSet.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

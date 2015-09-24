@@ -131,9 +131,9 @@ namespace Apresentacao
             radioButtonPesquisarPorLogin.Visible = false;
             radioButtonPesquisarPorLogin.Checked = false;
             //Filtros
-            labelFiltrar.Visible = true;
-            labelFiltrarPorUnidade.Visible = true;
-            comboBoxFiltroUnidade.Visible = true;
+            labelFiltrar.Visible = false;
+            labelFiltrarPorUnidade.Visible = false;
+            comboBoxFiltroUnidade.Visible = false;
             labelFiltrarPorCurso.Visible = false;
             comboBoxFiltroCurso.Visible = false;
             labelFiltrarPorProfessor.Visible = false;
@@ -409,7 +409,11 @@ namespace Apresentacao
             if (labelModuloTitulo.Text == "Cursos")
             {
                 FrmMenuInserirCurso frmMenuInserirCurso = new FrmMenuInserirCurso();
-                frmMenuInserirCurso.ShowDialog();
+                DialogResult dialogResult = frmMenuInserirCurso.ShowDialog();
+                if (dialogResult == DialogResult.Yes)
+                {
+                    RealizarPesquisa();
+                }
             }
             if (labelModuloTitulo.Text == "Unidades")
             {
@@ -464,8 +468,14 @@ namespace Apresentacao
             }
             if (labelModuloTitulo.Text == "Cursos")
             {
-                FrmMenuAlterarCurso frmMenuAlterarCurso = new FrmMenuAlterarCurso();
-                frmMenuAlterarCurso.ShowDialog();
+                Curso cursoSelecao = (dataGridView.SelectedRows[0].DataBoundItem as Curso);
+
+                FrmMenuAlterarCurso frmMenuAlterarCurso = new FrmMenuAlterarCurso (cursoSelecao);
+                DialogResult dialogResult = frmMenuAlterarCurso.ShowDialog();
+                if (dialogResult == DialogResult.Yes)
+                {
+                    RealizarPesquisa();
+                }
             }
             if (labelModuloTitulo.Text == "Unidades")
             {
@@ -501,6 +511,19 @@ namespace Apresentacao
 
                 dataGridView.DataSource = null;
                 dataGridView.DataSource = unidadeColecao;
+                dataGridView.Update();
+                dataGridView.Refresh();
+            }
+
+            if (labelModuloTitulo.Text == "Cursos")
+            {
+                CursoNegocios cursoNegocios = new CursoNegocios();
+                CursoColecao cursoColecao = new CursoColecao();
+
+                cursoColecao = cursoNegocios.ConsultarPorNome(textBoxPesquisa.Text);
+
+                dataGridView.DataSource = null;
+                dataGridView.DataSource = cursoColecao;
                 dataGridView.Update();
                 dataGridView.Refresh();
             }
@@ -595,6 +618,25 @@ namespace Apresentacao
                     int UnidadeID = Convert.ToInt32(retorno);
 
                     MessageBox.Show("Registro excluído com sucesso", "Aviso", MessageBoxButtons.OK,MessageBoxIcon.Information);
+                    RealizarPesquisa();
+                }
+                catch
+                {
+                    MessageBox.Show("Não foi possível excluir. Detalhes: " + retorno, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+
+            if (labelModuloTitulo.Text == "Cursos")
+            {
+                Curso cursoSelecao = (dataGridView.SelectedRows[0].DataBoundItem as Curso);
+                CursoNegocios cursoNegocios = new CursoNegocios();
+                string retorno = cursoNegocios.Excluir(cursoSelecao);
+
+                try
+                {
+                    int cursoID = Convert.ToInt32(retorno);
+
+                    MessageBox.Show("Registro excluído com sucesso", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     RealizarPesquisa();
                 }
                 catch

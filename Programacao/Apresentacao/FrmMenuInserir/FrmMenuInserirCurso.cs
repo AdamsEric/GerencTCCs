@@ -25,24 +25,35 @@ namespace Apresentacao
             this.Close();
         }
 
-        private void FrmMenuInserirCurso_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void buttonInserirCursoConfirmar_Click(object sender, EventArgs e)
         {
-            if (textBoxInserirCursoNome.Text == "" || comboBoxInserirCursoUnidade.Text == ""
-                || comboBoxInserirCursoCoordenador.Text == "")
+            Curso curso = new Curso();
+            curso.CursoNome = textBoxInserirCursoNome.Text;
+            curso.CursoUnidadeID = Convert.ToInt32(textBoxInserirCursoUnidadeID.Text);
+            curso.CursoCoordenador = Convert.ToInt32(textBoxInserirCursoCoordenadorID.Text);
+
+            if (curso.CursoNome == "" || curso.CursoUnidadeID.ToString() == "" ||
+                curso.CursoCoordenador.ToString() == "")
             {
-                FrmInserirConfirmacaoProblema frmInserirConfirmacaoProblema = new FrmInserirConfirmacaoProblema();
-                frmInserirConfirmacaoProblema.ShowDialog();
+                MessageBox.Show("Favor preencher todos os campos!");
             }
             else
             {
-                FrmInserirConfirmacaoSucesso frmInserirConfirmacaoSucesso = new FrmInserirConfirmacaoSucesso();
-                frmInserirConfirmacaoSucesso.ShowDialog();
-                this.Close();
+                CursoNegocios cursoNegocios = new CursoNegocios();
+                string retorno = cursoNegocios.Inserir(curso);
+
+                try
+                {
+                    int cursoID = Convert.ToInt32(retorno);
+
+                    MessageBox.Show("Registro inserido com sucesso! Código cadastrado: " + cursoID.ToString());
+                    this.DialogResult = DialogResult.Yes;
+                }
+                catch
+                {
+                    MessageBox.Show("Não foi possível completar a operação! Detalhes: " + retorno, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    this.DialogResult = DialogResult.No;
+                }
             }
         }
     }

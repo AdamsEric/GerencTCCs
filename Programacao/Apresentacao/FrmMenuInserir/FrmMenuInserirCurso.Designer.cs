@@ -34,9 +34,11 @@
             this.textBoxInserirCursoNome = new System.Windows.Forms.TextBox();
             this.buttonInserirCursoConfirmar = new System.Windows.Forms.Button();
             this.buttonInserirCursoCancelar = new System.Windows.Forms.Button();
-            this.comboBoxInserirCursoUnidade = new System.Windows.Forms.ComboBox();
-            this.comboBoxInserirCursoCoordenador = new System.Windows.Forms.ComboBox();
             this.labelMenuInserirCO = new System.Windows.Forms.Label();
+            this.textBoxInserirCursoCoordenadorID = new System.Windows.Forms.TextBox();
+            this.textBoxInserirCursoUnidadeID = new System.Windows.Forms.TextBox();
+            this.comboBoxInserirCursoCoordenadorNome = new System.Windows.Forms.ComboBox();
+            this.comboBoxInserirCursoUnidadeNome = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // labelInserirCursoNome
@@ -95,22 +97,6 @@
             this.buttonInserirCursoCancelar.UseVisualStyleBackColor = true;
             this.buttonInserirCursoCancelar.Click += new System.EventHandler(this.buttonInserirCursoCancelar_Click);
             // 
-            // comboBoxInserirCursoUnidade
-            // 
-            this.comboBoxInserirCursoUnidade.FormattingEnabled = true;
-            this.comboBoxInserirCursoUnidade.Location = new System.Drawing.Point(75, 59);
-            this.comboBoxInserirCursoUnidade.Name = "comboBoxInserirCursoUnidade";
-            this.comboBoxInserirCursoUnidade.Size = new System.Drawing.Size(355, 21);
-            this.comboBoxInserirCursoUnidade.TabIndex = 13;
-            // 
-            // comboBoxInserirCursoCoordenador
-            // 
-            this.comboBoxInserirCursoCoordenador.FormattingEnabled = true;
-            this.comboBoxInserirCursoCoordenador.Location = new System.Drawing.Point(96, 98);
-            this.comboBoxInserirCursoCoordenador.Name = "comboBoxInserirCursoCoordenador";
-            this.comboBoxInserirCursoCoordenador.Size = new System.Drawing.Size(334, 21);
-            this.comboBoxInserirCursoCoordenador.TabIndex = 14;
-            // 
             // labelMenuInserirCO
             // 
             this.labelMenuInserirCO.AutoSize = true;
@@ -120,14 +106,46 @@
             this.labelMenuInserirCO.TabIndex = 15;
             this.labelMenuInserirCO.Text = "( * ) - Campos de preenchimento obrigatório";
             // 
+            // textBoxInserirCursoCoordenadorID
+            // 
+            this.textBoxInserirCursoCoordenadorID.Location = new System.Drawing.Point(91, 97);
+            this.textBoxInserirCursoCoordenadorID.Name = "textBoxInserirCursoCoordenadorID";
+            this.textBoxInserirCursoCoordenadorID.Size = new System.Drawing.Size(43, 20);
+            this.textBoxInserirCursoCoordenadorID.TabIndex = 21;
+            // 
+            // textBoxInserirCursoUnidadeID
+            // 
+            this.textBoxInserirCursoUnidadeID.Location = new System.Drawing.Point(72, 58);
+            this.textBoxInserirCursoUnidadeID.Name = "textBoxInserirCursoUnidadeID";
+            this.textBoxInserirCursoUnidadeID.Size = new System.Drawing.Size(43, 20);
+            this.textBoxInserirCursoUnidadeID.TabIndex = 20;
+            // 
+            // comboBoxInserirCursoCoordenadorNome
+            // 
+            this.comboBoxInserirCursoCoordenadorNome.FormattingEnabled = true;
+            this.comboBoxInserirCursoCoordenadorNome.Location = new System.Drawing.Point(140, 97);
+            this.comboBoxInserirCursoCoordenadorNome.Name = "comboBoxInserirCursoCoordenadorNome";
+            this.comboBoxInserirCursoCoordenadorNome.Size = new System.Drawing.Size(290, 21);
+            this.comboBoxInserirCursoCoordenadorNome.TabIndex = 19;
+            // 
+            // comboBoxInserirCursoUnidadeNome
+            // 
+            this.comboBoxInserirCursoUnidadeNome.FormattingEnabled = true;
+            this.comboBoxInserirCursoUnidadeNome.Location = new System.Drawing.Point(128, 58);
+            this.comboBoxInserirCursoUnidadeNome.Name = "comboBoxInserirCursoUnidadeNome";
+            this.comboBoxInserirCursoUnidadeNome.Size = new System.Drawing.Size(302, 21);
+            this.comboBoxInserirCursoUnidadeNome.TabIndex = 18;
+            // 
             // FrmMenuInserirCurso
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(454, 205);
+            this.Controls.Add(this.textBoxInserirCursoCoordenadorID);
+            this.Controls.Add(this.textBoxInserirCursoUnidadeID);
+            this.Controls.Add(this.comboBoxInserirCursoCoordenadorNome);
+            this.Controls.Add(this.comboBoxInserirCursoUnidadeNome);
             this.Controls.Add(this.labelMenuInserirCO);
-            this.Controls.Add(this.comboBoxInserirCursoCoordenador);
-            this.Controls.Add(this.comboBoxInserirCursoUnidade);
             this.Controls.Add(this.buttonInserirCursoCancelar);
             this.Controls.Add(this.buttonInserirCursoConfirmar);
             this.Controls.Add(this.textBoxInserirCursoNome);
@@ -142,7 +160,6 @@
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Inserir Curso";
-            this.Load += new System.EventHandler(this.FrmMenuInserirCurso_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -156,8 +173,10 @@
         private System.Windows.Forms.TextBox textBoxInserirCursoNome;
         private System.Windows.Forms.Button buttonInserirCursoConfirmar;
         private System.Windows.Forms.Button buttonInserirCursoCancelar;
-        private System.Windows.Forms.ComboBox comboBoxInserirCursoUnidade;
-        private System.Windows.Forms.ComboBox comboBoxInserirCursoCoordenador;
         private System.Windows.Forms.Label labelMenuInserirCO;
+        private System.Windows.Forms.TextBox textBoxInserirCursoCoordenadorID;
+        private System.Windows.Forms.TextBox textBoxInserirCursoUnidadeID;
+        private System.Windows.Forms.ComboBox comboBoxInserirCursoCoordenadorNome;
+        private System.Windows.Forms.ComboBox comboBoxInserirCursoUnidadeNome;
     }
 }
