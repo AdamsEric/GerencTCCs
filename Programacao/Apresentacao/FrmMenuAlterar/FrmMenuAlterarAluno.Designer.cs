@@ -154,7 +154,7 @@
             // maskedTextBoxAlterarAlunoTelefone
             // 
             this.maskedTextBoxAlterarAlunoTelefone.Location = new System.Drawing.Point(350, 58);
-            this.maskedTextBoxAlterarAlunoTelefone.Mask = "(99) 9999-9999";
+            this.maskedTextBoxAlterarAlunoTelefone.Mask = "(99)999999999";
             this.maskedTextBoxAlterarAlunoTelefone.Name = "maskedTextBoxAlterarAlunoTelefone";
             this.maskedTextBoxAlterarAlunoTelefone.Size = new System.Drawing.Size(80, 20);
             this.maskedTextBoxAlterarAlunoTelefone.TabIndex = 17;

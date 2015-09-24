@@ -20,6 +20,7 @@ namespace Apresentacao
         public FrmMenuAlterarUnidade(Unidade unidade)
         {
             InitializeComponent();
+
             textBoxAlterarUnidadeID.Text = unidade.UnidadeID.ToString();
             textBoxAlterarUnidadeNome.Text = unidade.UnidadeNome;
             textBoxAlterarUnidadeCidade.Text = unidade.UnidadeCidade;
@@ -52,7 +53,7 @@ namespace Apresentacao
             else
             {
 
-                if (textBoxAlterarUnidadeNome.Text == "" || unidade.UnidadeCidade == "" ||
+                if (unidade.UnidadeNome == "" || unidade.UnidadeCidade == "" ||
                     unidade.UnidadeEstado == "" || unidade.UnidadePais == "")
                 {
                     MessageBox.Show("Favor preencher todos os campos!");

@@ -86,11 +86,11 @@ namespace Negocios
                 //Colocar os dados da linha dele
                 //Adicionar ele na coleção
                 Unidade unidade = new Unidade();
-                unidade.UnidadeID = Convert.ToInt32(linha["Código"]);
-                unidade.UnidadeNome = Convert.ToString(linha["Unidade"]);
-                unidade.UnidadeCidade = Convert.ToString(linha["Cidade"]);
-                unidade.UnidadeEstado = Convert.ToString(linha["Estado"]);
-                unidade.UnidadePais = Convert.ToString(linha["País"]);
+                unidade.UnidadeID = Convert.ToInt32(linha["UnidadeID"]);
+                unidade.UnidadeNome = Convert.ToString(linha["UnidadeNome"]);
+                unidade.UnidadeCidade = Convert.ToString(linha["UnidadeCidade"]);
+                unidade.UnidadeEstado = Convert.ToString(linha["UnidadeEstado"]);
+                unidade.UnidadePais = Convert.ToString(linha["UnidadePais"]);
                 unidadeColecao.Add(unidade);
             }
             return unidadeColecao;

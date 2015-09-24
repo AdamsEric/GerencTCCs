@@ -318,50 +318,72 @@ namespace Apresentacao
         private void radioButtonPesquisarPorNome_CheckedChanged(object sender, EventArgs e)
         {
             labelPesquisaTipo.Text = "Nome: ";
+            textBoxPesquisa.Visible = true;
             textBoxPesquisa.Location = new Point(283, 82);
             textBoxPesquisa.Size = new Size(587, 20);
+            maskedTextBoxPesquisa.Visible = false;
+            maskedTextBoxPesquisa.Location = new Point(275, 82);
         }
 
         private void radioButtonPesquisarPorCPF_CheckedChanged(object sender, EventArgs e)
         {
             labelPesquisaTipo.Text = "CPF: ";
+            textBoxPesquisa.Visible = false;
             textBoxPesquisa.Location = new Point(275, 82);
             textBoxPesquisa.Size = new Size(595, 20);
+            maskedTextBoxPesquisa.Visible = true;
+            maskedTextBoxPesquisa.Location = new Point(275, 82);
+            maskedTextBoxPesquisa.Size = new Size(595, 20);
         }
 
         private void radioButtonPesquisarPorMatricula_CheckedChanged(object sender, EventArgs e)
         {
             labelPesquisaTipo.Text = "Matricula: ";
+            textBoxPesquisa.Visible = true;
             textBoxPesquisa.Location = new Point(299, 82);
             textBoxPesquisa.Size = new Size(571, 20);
+            maskedTextBoxPesquisa.Visible = false;
+            maskedTextBoxPesquisa.Location = new Point(275, 82);
         }
 
         private void radioButtonPesquisarPorDescricao_CheckedChanged(object sender, EventArgs e)
         {
             labelPesquisaTipo.Text = "Descrição: ";
+            textBoxPesquisa.Visible = true;
             textBoxPesquisa.Location = new Point(303, 82);
             textBoxPesquisa.Size = new Size(567, 20);
+            maskedTextBoxPesquisa.Visible = false;
+            maskedTextBoxPesquisa.Location = new Point(275, 82);
         }
 
         private void radioButtonPesquisarPorTema_CheckedChanged(object sender, EventArgs e)
         {
             labelPesquisaTipo.Text = "Tema: ";
+            textBoxPesquisa.Visible = true;
             textBoxPesquisa.Location = new Point(283, 82);
             textBoxPesquisa.Size = new Size(587, 20);
+            maskedTextBoxPesquisa.Visible = false;
+            maskedTextBoxPesquisa.Location = new Point(275, 82);
         }
 
         private void radioButtonPesquisarPorLogin_CheckedChanged(object sender, EventArgs e)
         {
             labelPesquisaTipo.Text = "Login: ";
+            textBoxPesquisa.Visible = true;
             textBoxPesquisa.Location = new Point(283, 82);
             textBoxPesquisa.Size = new Size(587, 20);
+            maskedTextBoxPesquisa.Visible = false;
+            maskedTextBoxPesquisa.Location = new Point(275, 82);
         }
 
         private void radioButtonPesquisarPorCodigo_CheckedChanged(object sender, EventArgs e)
         {
             labelPesquisaTipo.Text = "Código: ";
+            textBoxPesquisa.Visible = true;
             textBoxPesquisa.Location = new Point(283, 82);
             textBoxPesquisa.Size = new Size(587, 20);
+            maskedTextBoxPesquisa.Visible = false;
+            maskedTextBoxPesquisa.Location = new Point(275, 82);
         }
 
         private void buttonInserir_Click(object sender, EventArgs e)
@@ -378,7 +400,11 @@ namespace Apresentacao
             if (labelModuloTitulo.Text == "Professores")
             {
                 FrmMenuInserirProfessor frmMenuInserirProfessor = new FrmMenuInserirProfessor();
-                frmMenuInserirProfessor.ShowDialog();
+                DialogResult dialogResult = frmMenuInserirProfessor.ShowDialog();
+                if (dialogResult == DialogResult.Yes)
+                {
+                    RealizarPesquisa();
+                }
             }
             if (labelModuloTitulo.Text == "Cursos")
             {
@@ -391,7 +417,7 @@ namespace Apresentacao
                 DialogResult dialogResult = frmMenuInserirUnidade.ShowDialog();
                 if (dialogResult == DialogResult.Yes)
                 {
-                    AtualizarGrid();
+                    RealizarPesquisa();
                 }
             }
             if (labelModuloTitulo.Text == "Salas")
@@ -427,8 +453,14 @@ namespace Apresentacao
             }
             if (labelModuloTitulo.Text == "Professores")
             {
-                FrmMenuAlterarProfessor frmMenuAlterarProfessor = new FrmMenuAlterarProfessor();
-                frmMenuAlterarProfessor.ShowDialog();
+                Professor professorSelecao = (dataGridView.SelectedRows[0].DataBoundItem as Professor);
+
+                FrmMenuAlterarProfessor frmMenuAlterarProfessor = new FrmMenuAlterarProfessor(professorSelecao);
+                DialogResult dialogResult = frmMenuAlterarProfessor.ShowDialog();
+                if (dialogResult == DialogResult.Yes)
+                {
+                    RealizarPesquisa();
+                }
             }
             if (labelModuloTitulo.Text == "Cursos")
             {
@@ -443,7 +475,7 @@ namespace Apresentacao
                 DialogResult dialogResult = frmMenuAlterarUnidade.ShowDialog();
                 if (dialogResult == DialogResult.Yes)
                 {
-                    AtualizarGrid();
+                    RealizarPesquisa();
                 }
             }
             if (labelModuloTitulo.Text == "Salas")
@@ -458,7 +490,7 @@ namespace Apresentacao
             }
         }
 
-        private void AtualizarGrid()
+        private void RealizarPesquisa()
         {
             if (labelModuloTitulo.Text == "Unidades")
             {
@@ -472,38 +504,88 @@ namespace Apresentacao
                 dataGridView.Update();
                 dataGridView.Refresh();
             }
+
+            if (labelModuloTitulo.Text == "Professores")
+            {
+                ProfessorNegocios professorNegocios = new ProfessorNegocios();
+                ProfessorColecao professorColecao = new ProfessorColecao();
+
+                if (radioButtonPesquisarPorNome.Checked)
+                {
+                    professorColecao = professorNegocios.ConsultarPorNome(textBoxPesquisa.Text);
+                }
+                if (radioButtonPesquisarPorCPF.Checked)
+                {
+                    if (maskedTextBoxPesquisa.MaskFull)
+                    {
+                        professorColecao = professorNegocios.ConsultarPorCPF(maskedTextBoxPesquisa.Text);
+                    }
+                    else
+                    {
+                        MessageBox.Show("Digite o CPF completo");
+                    }
+                }
+                if (radioButtonPesquisarPorMatricula.Checked)
+                {
+                    professorColecao = professorNegocios.ConsultarPorMatricula(textBoxPesquisa.Text);
+                }
+
+                dataGridView.DataSource = null;
+                dataGridView.DataSource = professorColecao;
+                dataGridView.Update();
+                dataGridView.Refresh();
+            }
         }
 
         private void buttonPesquisar_Click(object sender, EventArgs e)
         {
-            AtualizarGrid();
+            RealizarPesquisa();
         }
 
         private void textBoxPesquisa_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (e.KeyChar == 13)
             {
-                AtualizarGrid();
+                RealizarPesquisa();
             }
         }
 
         private void buttonExcluir_Click(object sender, EventArgs e)
         {
+            if (dataGridView.SelectedRows.Count == 0)
+            {
+                MessageBox.Show("Nenhuma registro selecionado!", "Erro");
+                return;
+            }
+
+            DialogResult resultado = MessageBox.Show("Tem certeza que deseja excluir esse registro do sistema?", "Aviso", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (resultado == DialogResult.No)
+            {
+                return;
+            }
+
+            if (labelModuloTitulo.Text == "Professores")
+            {
+                Professor professorSelecao = (dataGridView.SelectedRows[0].DataBoundItem as Professor);
+                ProfessorNegocios professorNegocios = new ProfessorNegocios();
+                string retorno = professorNegocios.Excluir(professorSelecao);
+
+                try
+                {
+                    int ProfessorID = Convert.ToInt32(retorno);
+
+                    MessageBox.Show("Registro excluído com sucesso", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    RealizarPesquisa();
+                }
+                catch
+                {
+                    MessageBox.Show("Não foi possível excluir. Detalhes: " + retorno, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+
             if (labelModuloTitulo.Text == "Unidades") 
             {
-                if (dataGridView.SelectedRows.Count == 0)
-                {
-                    MessageBox.Show("Nenhuma registro selecionado!", "Erro");
-                    return;
-                }
-
-                DialogResult resultado = MessageBox.Show("Tem certeza que deseja excluir esse registro do sistema?", "Aviso", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-
-                if (resultado == DialogResult.No)
-                {
-                    return;
-                }
-
                 Unidade unidadeSelecao = (dataGridView.SelectedRows[0].DataBoundItem as Unidade);
                 UnidadeNegocios unidadeNegocios = new UnidadeNegocios();
                 string retorno = unidadeNegocios.Excluir(unidadeSelecao);
@@ -513,12 +595,20 @@ namespace Apresentacao
                     int UnidadeID = Convert.ToInt32(retorno);
 
                     MessageBox.Show("Registro excluído com sucesso", "Aviso", MessageBoxButtons.OK,MessageBoxIcon.Information);
-                    AtualizarGrid();
+                    RealizarPesquisa();
                 }
                 catch
                 {
                     MessageBox.Show("Não foi possível excluir. Detalhes: " + retorno, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
+            }
+        }
+
+        private void maskedTextBoxPesquisa_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == 13)
+            {
+                RealizarPesquisa();
             }
         }
     }

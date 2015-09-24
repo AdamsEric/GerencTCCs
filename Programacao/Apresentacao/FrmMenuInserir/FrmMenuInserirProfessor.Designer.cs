@@ -134,7 +134,7 @@
             // maskedTextBoxInserirProfessorTelefone
             // 
             this.maskedTextBoxInserirProfessorTelefone.Location = new System.Drawing.Point(345, 58);
-            this.maskedTextBoxInserirProfessorTelefone.Mask = "(99) 9999-9999";
+            this.maskedTextBoxInserirProfessorTelefone.Mask = "(99)999999999";
             this.maskedTextBoxInserirProfessorTelefone.Name = "maskedTextBoxInserirProfessorTelefone";
             this.maskedTextBoxInserirProfessorTelefone.Size = new System.Drawing.Size(85, 20);
             this.maskedTextBoxInserirProfessorTelefone.TabIndex = 17;
@@ -163,7 +163,6 @@
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Inserir Professor";
-            this.Load += new System.EventHandler(this.FrmMenuInserirProfessor_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

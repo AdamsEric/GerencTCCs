@@ -158,7 +158,7 @@
             // maskedTextBoxInserirAlunoTelefone
             // 
             this.maskedTextBoxInserirAlunoTelefone.Location = new System.Drawing.Point(350, 58);
-            this.maskedTextBoxInserirAlunoTelefone.Mask = "(99) 9999-9999";
+            this.maskedTextBoxInserirAlunoTelefone.Mask = "(99)999999999";
             this.maskedTextBoxInserirAlunoTelefone.Name = "maskedTextBoxInserirAlunoTelefone";
             this.maskedTextBoxInserirAlunoTelefone.Size = new System.Drawing.Size(80, 20);
             this.maskedTextBoxInserirAlunoTelefone.TabIndex = 16;

@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.buttonAlunoMenu = new System.Windows.Forms.Button();
             this.labelNomeModulo = new System.Windows.Forms.Label();
             this.buttonTCCMenu = new System.Windows.Forms.Button();
@@ -69,6 +69,7 @@
             this.radioButtonPesquisarPorNome = new System.Windows.Forms.RadioButton();
             this.radioButtonPesquisarPorCPF = new System.Windows.Forms.RadioButton();
             this.radioButtonPesquisarPorMatricula = new System.Windows.Forms.RadioButton();
+            this.maskedTextBoxPesquisa = new System.Windows.Forms.MaskedTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
             this.SuspendLayout();
             // 
@@ -219,8 +220,8 @@
             // 
             this.dataGridView.AllowUserToAddRows = false;
             this.dataGridView.AllowUserToResizeRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.dataGridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.dataGridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
             this.dataGridView.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
             this.dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView.Location = new System.Drawing.Point(241, 114);
@@ -495,6 +496,16 @@
             this.radioButtonPesquisarPorMatricula.UseVisualStyleBackColor = true;
             this.radioButtonPesquisarPorMatricula.CheckedChanged += new System.EventHandler(this.radioButtonPesquisarPorMatricula_CheckedChanged);
             // 
+            // maskedTextBoxPesquisa
+            // 
+            this.maskedTextBoxPesquisa.Location = new System.Drawing.Point(283, 94);
+            this.maskedTextBoxPesquisa.Mask = "999,999,999-99";
+            this.maskedTextBoxPesquisa.Name = "maskedTextBoxPesquisa";
+            this.maskedTextBoxPesquisa.Size = new System.Drawing.Size(587, 20);
+            this.maskedTextBoxPesquisa.TabIndex = 42;
+            this.maskedTextBoxPesquisa.Visible = false;
+            this.maskedTextBoxPesquisa.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.maskedTextBoxPesquisa_KeyPress);
+            // 
             // FrmMenuAdministrador
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -502,6 +513,7 @@
             this.AutoSize = true;
             this.BackColor = System.Drawing.SystemColors.ControlDark;
             this.ClientSize = new System.Drawing.Size(979, 408);
+            this.Controls.Add(this.maskedTextBoxPesquisa);
             this.Controls.Add(this.radioButtonPesquisarPorCodigo);
             this.Controls.Add(this.radioButtonPesquisarPorLogin);
             this.Controls.Add(this.comboBoxFiltroGrupo);
@@ -591,5 +603,6 @@
         private System.Windows.Forms.RadioButton radioButtonPesquisarPorNome;
         private System.Windows.Forms.RadioButton radioButtonPesquisarPorCPF;
         private System.Windows.Forms.RadioButton radioButtonPesquisarPorMatricula;
+        private System.Windows.Forms.MaskedTextBox maskedTextBoxPesquisa;
     }
 }

@@ -39,6 +39,8 @@
             this.labelMenuInserirCO = new System.Windows.Forms.Label();
             this.maskedTextBoxAlterarProfessorCPF = new System.Windows.Forms.MaskedTextBox();
             this.maskedTextBoxAlterarProfessorTelefone = new System.Windows.Forms.MaskedTextBox();
+            this.labelAlterarProfessorID = new System.Windows.Forms.Label();
+            this.textBoxAlterarProfessorID = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // labelAlterarProfessorNome
@@ -83,6 +85,7 @@
             this.buttonAlterarProfessorConfirmar.TabIndex = 11;
             this.buttonAlterarProfessorConfirmar.Text = "Confirmar";
             this.buttonAlterarProfessorConfirmar.UseVisualStyleBackColor = true;
+            this.buttonAlterarProfessorConfirmar.Click += new System.EventHandler(this.buttonAlterarProfessorConfirmar_Click);
             // 
             // buttonAlterarProfessorCancelar
             // 
@@ -133,16 +136,35 @@
             // maskedTextBoxAlterarProfessorTelefone
             // 
             this.maskedTextBoxAlterarProfessorTelefone.Location = new System.Drawing.Point(345, 58);
-            this.maskedTextBoxAlterarProfessorTelefone.Mask = "(99) 9999-9999";
+            this.maskedTextBoxAlterarProfessorTelefone.Mask = "(99)999999999";
             this.maskedTextBoxAlterarProfessorTelefone.Name = "maskedTextBoxAlterarProfessorTelefone";
             this.maskedTextBoxAlterarProfessorTelefone.Size = new System.Drawing.Size(85, 20);
             this.maskedTextBoxAlterarProfessorTelefone.TabIndex = 18;
+            // 
+            // labelAlterarProfessorID
+            // 
+            this.labelAlterarProfessorID.AutoSize = true;
+            this.labelAlterarProfessorID.Location = new System.Drawing.Point(16, 141);
+            this.labelAlterarProfessorID.Name = "labelAlterarProfessorID";
+            this.labelAlterarProfessorID.Size = new System.Drawing.Size(46, 13);
+            this.labelAlterarProfessorID.TabIndex = 24;
+            this.labelAlterarProfessorID.Text = "Código: ";
+            // 
+            // textBoxAlterarProfessorID
+            // 
+            this.textBoxAlterarProfessorID.Location = new System.Drawing.Point(64, 138);
+            this.textBoxAlterarProfessorID.Name = "textBoxAlterarProfessorID";
+            this.textBoxAlterarProfessorID.ReadOnly = true;
+            this.textBoxAlterarProfessorID.Size = new System.Drawing.Size(90, 20);
+            this.textBoxAlterarProfessorID.TabIndex = 23;
             // 
             // FrmMenuAlterarProfessor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(454, 205);
+            this.Controls.Add(this.labelAlterarProfessorID);
+            this.Controls.Add(this.textBoxAlterarProfessorID);
             this.Controls.Add(this.maskedTextBoxAlterarProfessorTelefone);
             this.Controls.Add(this.maskedTextBoxAlterarProfessorCPF);
             this.Controls.Add(this.labelMenuInserirCO);
@@ -162,7 +184,6 @@
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Alterar Professor";
-            this.Load += new System.EventHandler(this.FrmMenuAlterarProfessor_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -181,5 +202,7 @@
         private System.Windows.Forms.Label labelMenuInserirCO;
         private System.Windows.Forms.MaskedTextBox maskedTextBoxAlterarProfessorCPF;
         private System.Windows.Forms.MaskedTextBox maskedTextBoxAlterarProfessorTelefone;
+        private System.Windows.Forms.Label labelAlterarProfessorID;
+        private System.Windows.Forms.TextBox textBoxAlterarProfessorID;
     }
 }

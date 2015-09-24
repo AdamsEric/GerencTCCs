@@ -25,30 +25,36 @@ namespace Apresentacao
             this.Close();
         }
 
-        private void FrmMenuInserirProfessor_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void buttonInserirProfessorConfirmar_Click(object sender, EventArgs e)
         {
-            if (textBoxInserirProfessorNome.Text == "" || textBoxInserirProfessorMatricula.Text == "")
+            Professor professor = new Professor();
+
+            professor.ProfessorNome = textBoxInserirProfessorNome.Text;
+            professor.ProfessorCPF = maskedTextBoxInserirProfessorCPF.Text;
+            professor.ProfessorMatricula = textBoxInserirProfessorMatricula.Text;
+            professor.ProfessorTelefone = maskedTextBoxInserirProfessorTelefone.Text;
+
+            if (professor.ProfessorNome == "" || professor.ProfessorCPF == "" ||
+                professor.ProfessorMatricula == "")
             {
-                FrmInserirConfirmacaoProblema frmInserirConfirmacaoProblema = new FrmInserirConfirmacaoProblema();
-                frmInserirConfirmacaoProblema.ShowDialog();
+                MessageBox.Show("Favor preencher todos os campos!");
             }
             else
             {
-                if (maskedTextBoxInserirProfessorCPF.MaskFull)
+                ProfessorNegocios professorNegocios = new ProfessorNegocios();
+                string retorno = professorNegocios.Inserir(professor);
+
+                try
                 {
-                    FrmInserirConfirmacaoSucesso frmInserirConfirmacaoSucesso = new FrmInserirConfirmacaoSucesso();
-                    frmInserirConfirmacaoSucesso.ShowDialog();
-                    this.Close();
+                    int professorID = Convert.ToInt32(retorno);
+
+                    MessageBox.Show("Registro inserido com sucesso! Código cadastrado: " + professorID.ToString());
+                    this.DialogResult = DialogResult.Yes;
                 }
-                else 
+                catch
                 {
-                    FrmInserirConfirmacaoProblema frmInserirConfirmacaoProblema = new FrmInserirConfirmacaoProblema();
-                    frmInserirConfirmacaoProblema.ShowDialog();
+                    MessageBox.Show("Não foi possível completar a operação! Detalhes: " + retorno, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    this.DialogResult = DialogResult.No;
                 }
             }
         }

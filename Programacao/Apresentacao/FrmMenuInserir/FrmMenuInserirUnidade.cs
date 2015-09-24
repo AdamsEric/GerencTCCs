@@ -33,7 +33,7 @@ namespace Apresentacao
             unidade.UnidadeEstado = textBoxInserirUnidadeEstado.Text;
             unidade.UnidadePais = textBoxInserirUnidadePais.Text;
 
-            if (textBoxInserirUnidadeNome.Text == "" || unidade.UnidadeCidade == "" ||
+            if (unidade.UnidadeNome == "" || unidade.UnidadeCidade == "" ||
                 unidade.UnidadeEstado == "" || unidade.UnidadePais == "")
             {
                 MessageBox.Show("Favor preencher todos os campos!");
@@ -47,7 +47,7 @@ namespace Apresentacao
                 {
                     int unidadeID = Convert.ToInt32(retorno);
 
-                    MessageBox.Show("Registro inserido com sucesso! Código: " + unidadeID.ToString());
+                    MessageBox.Show("Registro inserido com sucesso! Código cadastrado: " + unidadeID.ToString());
                     this.DialogResult = DialogResult.Yes;
                 }
                 catch
