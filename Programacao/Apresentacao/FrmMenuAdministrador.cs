@@ -388,8 +388,11 @@ namespace Apresentacao
             if (labelModuloTitulo.Text == "Unidades")
             {
                 FrmMenuInserirUnidade frmMenuInserirUnidade = new FrmMenuInserirUnidade();
-                frmMenuInserirUnidade.ShowDialog();
-                AtualizarGrid();
+                DialogResult dialogResult = frmMenuInserirUnidade.ShowDialog();
+                if (dialogResult == DialogResult.Yes)
+                {
+                    AtualizarGrid();
+                }
             }
             if (labelModuloTitulo.Text == "Salas")
             {
@@ -437,8 +440,11 @@ namespace Apresentacao
                 Unidade unidadeSelecao = (dataGridView.SelectedRows[0].DataBoundItem as Unidade);
 
                 FrmMenuAlterarUnidade frmMenuAlterarUnidade = new FrmMenuAlterarUnidade(unidadeSelecao);
-                frmMenuAlterarUnidade.ShowDialog();
-                AtualizarGrid();
+                DialogResult dialogResult = frmMenuAlterarUnidade.ShowDialog();
+                if (dialogResult == DialogResult.Yes)
+                {
+                    AtualizarGrid();
+                }
             }
             if (labelModuloTitulo.Text == "Salas")
             {
@@ -490,6 +496,7 @@ namespace Apresentacao
                     MessageBox.Show("Nenhuma registro selecionado!", "Erro");
                     return;
                 }
+
                 DialogResult resultado = MessageBox.Show("Tem certeza que deseja excluir esse registro do sistema?", "Aviso", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
                 if (resultado == DialogResult.No)

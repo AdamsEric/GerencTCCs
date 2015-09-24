@@ -39,6 +39,8 @@
             this.textBoxAlterarUnidadePais = new System.Windows.Forms.TextBox();
             this.labelAlterarUnidadePais = new System.Windows.Forms.Label();
             this.labelMenuInserirCO = new System.Windows.Forms.Label();
+            this.textBoxAlterarUnidadeID = new System.Windows.Forms.TextBox();
+            this.labelAlterarUnidadeID = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // labelAlterarUnidadeNome
@@ -140,11 +142,30 @@
             this.labelMenuInserirCO.TabIndex = 20;
             this.labelMenuInserirCO.Text = "( * ) - Campos de preenchimento obrigatório";
             // 
+            // textBoxAlterarUnidadeID
+            // 
+            this.textBoxAlterarUnidadeID.Location = new System.Drawing.Point(64, 131);
+            this.textBoxAlterarUnidadeID.Name = "textBoxAlterarUnidadeID";
+            this.textBoxAlterarUnidadeID.ReadOnly = true;
+            this.textBoxAlterarUnidadeID.Size = new System.Drawing.Size(90, 20);
+            this.textBoxAlterarUnidadeID.TabIndex = 21;
+            // 
+            // labelAlterarUnidadeID
+            // 
+            this.labelAlterarUnidadeID.AutoSize = true;
+            this.labelAlterarUnidadeID.Location = new System.Drawing.Point(16, 134);
+            this.labelAlterarUnidadeID.Name = "labelAlterarUnidadeID";
+            this.labelAlterarUnidadeID.Size = new System.Drawing.Size(46, 13);
+            this.labelAlterarUnidadeID.TabIndex = 22;
+            this.labelAlterarUnidadeID.Text = "Código: ";
+            // 
             // FrmMenuAlterarUnidade
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(454, 205);
+            this.Controls.Add(this.labelAlterarUnidadeID);
+            this.Controls.Add(this.textBoxAlterarUnidadeID);
             this.Controls.Add(this.labelMenuInserirCO);
             this.Controls.Add(this.textBoxAlterarUnidadePais);
             this.Controls.Add(this.labelAlterarUnidadePais);
@@ -182,5 +203,7 @@
         private System.Windows.Forms.TextBox textBoxAlterarUnidadePais;
         private System.Windows.Forms.Label labelAlterarUnidadePais;
         private System.Windows.Forms.Label labelMenuInserirCO;
+        private System.Windows.Forms.TextBox textBoxAlterarUnidadeID;
+        private System.Windows.Forms.Label labelAlterarUnidadeID;
     }
 }

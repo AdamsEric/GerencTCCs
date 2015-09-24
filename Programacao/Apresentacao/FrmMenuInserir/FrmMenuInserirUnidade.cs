@@ -18,7 +18,6 @@ namespace Apresentacao
         public FrmMenuInserirUnidade()
         {
             InitializeComponent();
-
         }
 
         private void buttonInserirUnidadeCancelar_Click(object sender, EventArgs e)
@@ -48,7 +47,7 @@ namespace Apresentacao
                 {
                     int unidadeID = Convert.ToInt32(retorno);
 
-                    MessageBox.Show("Registro inserido com sucesso! Código: ", "Aviso", MessageBoxButtons.OK);
+                    MessageBox.Show("Registro inserido com sucesso! Código: " + unidadeID.ToString());
                     this.DialogResult = DialogResult.Yes;
                 }
                 catch

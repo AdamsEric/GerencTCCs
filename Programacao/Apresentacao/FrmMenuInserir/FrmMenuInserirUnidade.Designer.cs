@@ -74,14 +74,14 @@
             this.textBoxInserirUnidadeNome.Location = new System.Drawing.Point(57, 18);
             this.textBoxInserirUnidadeNome.Name = "textBoxInserirUnidadeNome";
             this.textBoxInserirUnidadeNome.Size = new System.Drawing.Size(373, 20);
-            this.textBoxInserirUnidadeNome.TabIndex = 6;
+            this.textBoxInserirUnidadeNome.TabIndex = 0;
             // 
             // buttonInserirUnidadeConfirmar
             // 
             this.buttonInserirUnidadeConfirmar.Location = new System.Drawing.Point(259, 170);
             this.buttonInserirUnidadeConfirmar.Name = "buttonInserirUnidadeConfirmar";
             this.buttonInserirUnidadeConfirmar.Size = new System.Drawing.Size(75, 23);
-            this.buttonInserirUnidadeConfirmar.TabIndex = 11;
+            this.buttonInserirUnidadeConfirmar.TabIndex = 4;
             this.buttonInserirUnidadeConfirmar.Text = "Confirmar";
             this.buttonInserirUnidadeConfirmar.UseVisualStyleBackColor = true;
             this.buttonInserirUnidadeConfirmar.Click += new System.EventHandler(this.buttonInserirUnidadeConfirmar_Click);
@@ -92,7 +92,7 @@
             this.buttonInserirUnidadeCancelar.Location = new System.Drawing.Point(355, 170);
             this.buttonInserirUnidadeCancelar.Name = "buttonInserirUnidadeCancelar";
             this.buttonInserirUnidadeCancelar.Size = new System.Drawing.Size(75, 23);
-            this.buttonInserirUnidadeCancelar.TabIndex = 12;
+            this.buttonInserirUnidadeCancelar.TabIndex = 5;
             this.buttonInserirUnidadeCancelar.Text = "Cancelar";
             this.buttonInserirUnidadeCancelar.UseVisualStyleBackColor = true;
             this.buttonInserirUnidadeCancelar.Click += new System.EventHandler(this.buttonInserirUnidadeCancelar_Click);
@@ -103,7 +103,7 @@
             this.textBoxInserirUnidadeCidade.Location = new System.Drawing.Point(64, 55);
             this.textBoxInserirUnidadeCidade.Name = "textBoxInserirUnidadeCidade";
             this.textBoxInserirUnidadeCidade.Size = new System.Drawing.Size(266, 20);
-            this.textBoxInserirUnidadeCidade.TabIndex = 15;
+            this.textBoxInserirUnidadeCidade.TabIndex = 1;
             // 
             // textBoxInserirUnidadeEstado
             // 
@@ -112,7 +112,7 @@
             this.textBoxInserirUnidadeEstado.MaxLength = 2;
             this.textBoxInserirUnidadeEstado.Name = "textBoxInserirUnidadeEstado";
             this.textBoxInserirUnidadeEstado.Size = new System.Drawing.Size(26, 20);
-            this.textBoxInserirUnidadeEstado.TabIndex = 16;
+            this.textBoxInserirUnidadeEstado.TabIndex = 2;
             // 
             // textBoxInserirUnidadePais
             // 
@@ -120,7 +120,7 @@
             this.textBoxInserirUnidadePais.Location = new System.Drawing.Point(53, 92);
             this.textBoxInserirUnidadePais.Name = "textBoxInserirUnidadePais";
             this.textBoxInserirUnidadePais.Size = new System.Drawing.Size(277, 20);
-            this.textBoxInserirUnidadePais.TabIndex = 18;
+            this.textBoxInserirUnidadePais.TabIndex = 3;
             // 
             // labelInserirUnidadePais
             // 
