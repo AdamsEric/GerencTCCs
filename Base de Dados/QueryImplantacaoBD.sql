@@ -1,4 +1,14 @@
-/* CREATE TABLE tblUnidade(
+CREATE DATABASE GerencTCCs
+
+GO
+
+USE GerencTCCs
+
+GO
+
+
+
+CREATE TABLE tblUnidade(
 
 UnidadeID INT PRIMARY KEY IDENTITY(1,1),
 
@@ -11,7 +21,6 @@ UnidadeEstado NVARCHAR(2) NOT NULL,
 UnidadePais NVARCHAR(45) NOT NULL)
 
 GO
-
 
 
 
@@ -49,8 +58,6 @@ ProfessorID INT PRIMARY KEY IDENTITY(1,1),
 
 ProfessorNome NVARCHAR(70) NOT NULL,
 
-ProfessorCPF NVARCHAR(14) UNIQUE NOT NULL,
-
 ProfessorMatricula VARCHAR(15) UNIQUE NOT NULL,
 
 ProfessorTelefone VARCHAR(13))
@@ -66,9 +73,7 @@ CursoID INT PRIMARY KEY IDENTITY(1,1),
 
 CursoNome NVARCHAR(80) NOT NULL,
 
-CursoUnidadeID INT FOREIGN KEY REFERENCES tblUnidade(UnidadeID),
-
-CursoCoordenador INT FOREIGN KEY REFERENCES tblProfessor(ProfessorID))
+CursoUnidadeID INT FOREIGN KEY REFERENCES tblUnidade(UnidadeID))
 
 GO
 
@@ -77,8 +82,6 @@ CREATE TABLE tblAluno(
 AlunoID INT PRIMARY KEY IDENTITY(1,1),
 
 AlunoNome NVARCHAR(70) NOT NULL,
-
-AlunoCPF NVARCHAR(14) UNIQUE NOT NULL,
 
 AlunoMatricula NVARCHAR(15) UNIQUE NOT NULL,
 
@@ -105,6 +108,8 @@ CREATE TABLE tblTCC(
 TCCID INT PRIMARY KEY IDENTITY(1,1),
 
 TCCDescricao NVARCHAR(250) NOT NULL,
+
+TCCArea NVARCHAR (100) NOT NULL,
 
 TCCTema NVARCHAR (100) NOT NULL,
 
@@ -145,6 +150,5 @@ UsuarioGrupoID INT FOREIGN KEY REFERENCES tblGrupo(GrupoID)
 insert into tblGrupo (GrupoNome) values ('ADMINISTRADOR')
 insert into tblGrupo (GrupoNome) values ('GERENTE')
 insert into tblGrupo (GrupoNome) values ('REGISTRADOR')
-insert into tblGrupo (GrupoNome) values ('VISITANTE')
 
-GO */
+GO
