@@ -1,0 +1,34 @@
+Bom dia Eric, é assim que eu recebo os emails da UFRN sobre bancas de mestrado ou doutorado. Tudo bem que o de vocês é para graduação, mas também serve. A diferença é na quantidade de pessoas na banca, no caso da gradução pode ser apenas professores internos, ja na pós é obrigatório alguém externo a instituição.
+
+-----------------------------------
+
+DISCENTE: EDUARDO NOGUEIRA CUNHA
+DATA: 15/10/2015
+HORA: 09:00
+LOCAL: Auditório do LAUT
+TÍTULO: Modelagem, Simulação e Controle de Sistemas de Abastecimento de Água: Um Estudo de Caso do Campus da Universidade Federal do Rio Grande do Norte
+
+PALAVRAS-CHAVES: Sistemas de abastecimento de água, modelagem matemática, simulação, controle preditivo.
+
+PÁGINAS: 60
+GRANDE ÁREA: Engenharias
+ÁREA: Engenharia Elétrica
+SUBÁREA: Eletrônica Industrial, Sistemas e Controles Eletrônicos
+ESPECIALIDADE: Controle de Processos Eletrônicos, Retroalimentação
+RESUMO:
+
+Os sistemas de abastecimento de água são sistemas complexos e de difícil operação, possuem diversas configurações no que diz respeito aos elementos ativos e passivos contidos no sistema. O seu controle e monitoramento é de suma importância para a operação racional do sistema visando sempre atender de forma satisfatória à população minimizando ao máximo as perdas hídricas e tornando o sistema mais eficiente em termos energéticos. Os sistemas de abastecimento constituem-se em geral de sistemas críticos, onde não há possibilidades de tempo de parada para testes e simulações, assim, para realizar o controle de forma adequada é necessário um modelo que represente o sistema de forma satisfatória, onde seja possível simular e testar as mais diversas situações às quais o sistema é normalmente submetido no dia-a-dia. Neste trabalho é apresentado o modelo matemático do sistema de abastecimento de água (SAA) da Universidade Federal do Rio Grande do Norte (UFRN) contemplando todos
+os elementos presentes em seu sistema. Três controladores são implementados em nível de simulação e tem seus desempenhos comparados: servossistema tipo 1, o controlador preditivo linear e um controlador preditivo não-linear. O objetivo é mostrar que  podemos utilizar o modelo do sistema para testes e simulação de condições de  funcionamento e sintonia do controlador para obter o melhor desempenho do SAA.
+
+MEMBROS DA BANCA: 
+
+Presidente - 1328152 - CARLOS EDUARDO TRABUCO DOREA
+Interno - 2453033 - ANDERSON LUIZ DE OLIVEIRA CAVALCANTI
+Interno - 1149567 - ANDRES ORTIZ SALAZAR
+Externo à Instituição - OSCAR GABRIEL FILHO - UFRN
+
+
+
+-- 
+Atenciosamente,
+André Quintiliano

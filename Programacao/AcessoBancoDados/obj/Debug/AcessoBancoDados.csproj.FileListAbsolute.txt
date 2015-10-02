@@ -13,3 +13,4 @@ D:\Eric Adams\OneDrive\Estudo\C#\GerencTCCs\Programacao\AcessoBancoDados\bin\Deb
 D:\Eric Adams\OneDrive\Estudo\C#\GerencTCCs\Programacao\AcessoBancoDados\bin\Debug\AcessoBancoDados.pdb
 D:\Eric Adams\OneDrive\Estudo\C#\GerencTCCs\Programacao\AcessoBancoDados\obj\Debug\AcessoBancoDados.dll
 D:\Eric Adams\OneDrive\Estudo\C#\GerencTCCs\Programacao\AcessoBancoDados\obj\Debug\AcessoBancoDados.pdb
+D:\Eric Adams\OneDrive\Estudo\C#\GerencTCCs\Programacao\AcessoBancoDados\obj\Debug\AcessoBancoDados.csprojResolveAssemblyReference.cache
