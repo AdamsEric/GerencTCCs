@@ -20,9 +20,8 @@ namespace Negocios
             {
                 acessoDadosSqlServer.LimparParametros();
                 acessoDadosSqlServer.AdicionarParametros("@CursoNome", curso.CursoNome);
-                acessoDadosSqlServer.AdicionarParametros("@CursoUnidade", curso.CursoUnidadeID);
-                acessoDadosSqlServer.AdicionarParametros("@CursoCoordenador", curso.CursoCoordenador);
-                string CursoID = acessoDadosSqlServer.ExecutarManipulacao(CommandType.StoredProcedure, "uspCursoInserir").ToString();
+                acessoDadosSqlServer.AdicionarParametros("@CursoUnidadeID", Convert.ToInt32(curso.CursoUnidadeID));
+                string CursoID = acessoDadosSqlServer.ExecutarManipulacao(CommandType.Text, "INSERT INTO tblCurso (CursoNome,CursoUnidadeID) VALUES (@CursoNome,@CursoUnidadeID) SELECT @@IDENTITY AS RETORNO").ToString();
 
                 return CursoID;
             }
@@ -39,9 +38,8 @@ namespace Negocios
                 acessoDadosSqlServer.LimparParametros();
                 acessoDadosSqlServer.AdicionarParametros("@CursoID", curso.CursoID);
                 acessoDadosSqlServer.AdicionarParametros("@CursoNome", curso.CursoNome);
-                acessoDadosSqlServer.AdicionarParametros("@CursoUnidade", curso.CursoUnidadeID);
-                acessoDadosSqlServer.AdicionarParametros("@CursoCoordenador", curso.CursoCoordenador);
-                string CursoID = acessoDadosSqlServer.ExecutarManipulacao(CommandType.StoredProcedure, "uspCursoAlterar").ToString();
+                acessoDadosSqlServer.AdicionarParametros("@CursoUnidadeID", Convert.ToInt32(curso.CursoUnidadeID));
+                string CursoID = acessoDadosSqlServer.ExecutarManipulacao(CommandType.Text, "UPDATE tblCurso SET CursoNome = @CursoNome, CursoUnidadeID = @CursoUnidadeID WHERE CursoID = @CursoID SELECT @CursoID AS RETORNO").ToString();
 
                 return CursoID;
             }
@@ -57,7 +55,7 @@ namespace Negocios
             {
                 acessoDadosSqlServer.LimparParametros();
                 acessoDadosSqlServer.AdicionarParametros("@CursoID", curso.CursoID);
-                string CursoID = acessoDadosSqlServer.ExecutarManipulacao(CommandType.StoredProcedure, "uspCursoExcluir").ToString();
+                string CursoID = acessoDadosSqlServer.ExecutarManipulacao(CommandType.Text, "DELETE FROM tblCurso WHERE CursoID = @CursoID SELECT @CursoID AS RETORNO").ToString();
 
                 return CursoID;
             }
@@ -74,7 +72,7 @@ namespace Negocios
 
             acessoDadosSqlServer.LimparParametros();
             acessoDadosSqlServer.AdicionarParametros("@CursoNome", nome);
-            DataTable dataTableCurso = acessoDadosSqlServer.ExecutarConsulta(CommandType.StoredProcedure, "uspCursoConsultarPorNome");
+            DataTable dataTableCurso = acessoDadosSqlServer.ExecutarConsulta(CommandType.Text, "SELECT CursoID AS ID, CursoNome AS Curso, UnidadeNome AS Unidade FROM tblCurso INNER JOIN tblUnidade ON CursoUnidadeID = UnidadeID WHERE CursoNome LIKE '%' + @CursoNome + '%'");
 
             //Percorrer o DataTable e transformar em coleção de cliente
             //Cada linha do DataTable é um cliente
@@ -84,14 +82,21 @@ namespace Negocios
                 //Colocar os dados da linha dele
                 //Adicionar ele na coleção
                 Curso curso = new Curso();
-                curso.CursoID = Convert.ToInt32(linha["CursoID"]);
-                curso.CursoNome = Convert.ToString(linha["CursoNome"]);
-                curso.CursoUnidadeID = Convert.ToInt32(linha["CursoUnidadeID"]);
-                curso.CursoCoordenador = Convert.ToInt32(linha["CursoCoordenador"]);
+                curso.CursoID = Convert.ToInt32(linha["ID"]);
+                curso.CursoNome = Convert.ToString(linha["Curso"]);
+                curso.CursoUnidadeNome = Convert.ToString(linha["Unidade"]);
                 cursoColecao.Add(curso);
             }
             return cursoColecao;
         }
 
+        public int RetornaIDCurso (string nome)
+        {
+                acessoDadosSqlServer.LimparParametros();
+                acessoDadosSqlServer.AdicionarParametros("@CursoUnidadeNome", nome);
+                int ID = Convert.ToInt32(acessoDadosSqlServer.ExecutarManipulacao(CommandType.Text, "SELECT UnidadeID FROM tblUnidade where UnidadeNome LIKE '%' + @CursoUnidadeNome + '%'"));
+
+                return ID;
+        }
     }
 }

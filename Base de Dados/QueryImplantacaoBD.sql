@@ -151,4 +151,7 @@ insert into tblGrupo (GrupoNome) values ('ADMINISTRADOR')
 insert into tblGrupo (GrupoNome) values ('GERENTE')
 insert into tblGrupo (GrupoNome) values ('REGISTRADOR')
 
+insert into tblSalaTipo (SalaTipoTipo) values ('SALA')
+insert into tblSalaTipo (SalaTipoTipo) values ('LABORATÓRIO')
+
 GO

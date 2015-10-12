@@ -10,7 +10,6 @@ namespace DTO
     {
         public int ProfessorID { get; set; }
         public string ProfessorNome { get; set; }
-        public string ProfessorCPF { get; set; }
         public string ProfessorMatricula { get; set; }
         public string ProfessorTelefone { get; set; }
     }

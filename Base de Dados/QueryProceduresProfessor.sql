@@ -1,6 +1,5 @@
 CREATE PROCEDURE uspProfessorInserir
 	@ProfessorNome nvarchar(70),
-	@ProfessorCPF nvarchar(14),
 	@ProfessorMatricula nvarchar(15),
 	@ProfessorTelefone varchar(15)
 AS
@@ -8,14 +7,12 @@ BEGIN
 	INSERT INTO tblProfessor
 	(
 		ProfessorNome,
-		ProfessorCPF,
 		ProfessorMatricula,
 		ProfessorTelefone
 	)
 	VALUES
 	(
 		@ProfessorNome,
-		@ProfessorCPF,
 		@ProfessorMatricula,
 		@ProfessorTelefone
 	)
@@ -28,7 +25,6 @@ END
 CREATE PROCEDURE uspProfessorAlterar
 	@ProfessorID int,
 	@ProfessorNome nvarchar(70),
-	@ProfessorCPF nvarchar(14),
 	@ProfessorMatricula nvarchar(15),
 	@ProfessorTelefone varchar(15)
 AS
@@ -36,7 +32,6 @@ BEGIN
 	UPDATE tblProfessor
 	SET
 		ProfessorNome = @ProfessorNome,
-		ProfessorCPF = @ProfessorCPF,
 		ProfessorMatricula = @ProfessorMatricula,
 		ProfessorTelefone = @ProfessorTelefone
 	WHERE
@@ -69,7 +64,6 @@ BEGIN
 	SELECT
 		ProfessorID,
 		ProfessorNome,
-		ProfessorCPF,
 		ProfessorMatricula,
 		ProfessorTelefone
 	FROM
@@ -80,27 +74,6 @@ BEGIN
 END
 
 
-
-CREATE PROCEDURE uspProfessorConsultarPorCPF
-	@ProfessorCPF nvarchar(14)
-AS
-BEGIN
-
-	SELECT
-		ProfessorID,
-		ProfessorNome,
-		ProfessorCPF,
-		ProfessorMatricula,
-		ProfessorTelefone
-	FROM
-		tblProfessor
-	WHERE
-		ProfessorCPF LIKE @ProfessorCPF + '%'
-
-END
-
-
-
 CREATE PROCEDURE uspProfessorConsultarPorMatricula
 	@ProfessorMatricula varchar(13)
 AS
@@ -109,7 +82,6 @@ BEGIN
 	SELECT
 		ProfessorID,
 		ProfessorNome,
-		ProfessorCPF,
 		ProfessorMatricula,
 		ProfessorTelefone
 	FROM

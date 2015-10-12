@@ -35,17 +35,9 @@ namespace Apresentacao
             }
             else
             {
-                if (maskedTextBoxInserirAlunoCPF.MaskFull)
-                {
-                    FrmInserirConfirmacaoSucesso frmInserirConfirmacaoSucesso = new FrmInserirConfirmacaoSucesso();
-                    frmInserirConfirmacaoSucesso.ShowDialog();
-                    this.Close();
-                }
-                else
-                {
-                    FrmInserirConfirmacaoProblema frmInserirConfirmacaoProblema = new FrmInserirConfirmacaoProblema();
-                    frmInserirConfirmacaoProblema.ShowDialog();
-                }
+                FrmInserirConfirmacaoSucesso frmInserirConfirmacaoSucesso = new FrmInserirConfirmacaoSucesso();
+                frmInserirConfirmacaoSucesso.ShowDialog();
+                this.Close();
             }
         }
     }

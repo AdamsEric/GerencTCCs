@@ -32,14 +32,12 @@
             this.labelAlterarAlunoMatricula = new System.Windows.Forms.Label();
             this.labelAlterarAlunoTelefone = new System.Windows.Forms.Label();
             this.labelAlterarAlunoCurso = new System.Windows.Forms.Label();
-            this.labelAlterarAlunoCPF = new System.Windows.Forms.Label();
             this.textBoxAlterarAlunoNome = new System.Windows.Forms.TextBox();
             this.textBoxAlterarAlunoMatricula = new System.Windows.Forms.TextBox();
             this.buttonAlterarAlunoConfirmar = new System.Windows.Forms.Button();
             this.buttonAlterarAlunoCancelar = new System.Windows.Forms.Button();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.labelMenuInserirCO = new System.Windows.Forms.Label();
-            this.maskedTextBoxAlterarAlunoCPF = new System.Windows.Forms.MaskedTextBox();
             this.maskedTextBoxAlterarAlunoTelefone = new System.Windows.Forms.MaskedTextBox();
             this.SuspendLayout();
             // 
@@ -64,7 +62,7 @@
             // labelAlterarAlunoTelefone
             // 
             this.labelAlterarAlunoTelefone.AutoSize = true;
-            this.labelAlterarAlunoTelefone.Location = new System.Drawing.Point(291, 62);
+            this.labelAlterarAlunoTelefone.Location = new System.Drawing.Point(164, 62);
             this.labelAlterarAlunoTelefone.Name = "labelAlterarAlunoTelefone";
             this.labelAlterarAlunoTelefone.Size = new System.Drawing.Size(55, 13);
             this.labelAlterarAlunoTelefone.TabIndex = 2;
@@ -78,15 +76,6 @@
             this.labelAlterarAlunoCurso.Size = new System.Drawing.Size(41, 13);
             this.labelAlterarAlunoCurso.TabIndex = 3;
             this.labelAlterarAlunoCurso.Text = "Curso*:";
-            // 
-            // labelAlterarAlunoCPF
-            // 
-            this.labelAlterarAlunoCPF.AutoSize = true;
-            this.labelAlterarAlunoCPF.Location = new System.Drawing.Point(158, 62);
-            this.labelAlterarAlunoCPF.Name = "labelAlterarAlunoCPF";
-            this.labelAlterarAlunoCPF.Size = new System.Drawing.Size(37, 13);
-            this.labelAlterarAlunoCPF.TabIndex = 5;
-            this.labelAlterarAlunoCPF.Text = "CPF*: ";
             // 
             // textBoxAlterarAlunoNome
             // 
@@ -142,18 +131,9 @@
             this.labelMenuInserirCO.TabIndex = 15;
             this.labelMenuInserirCO.Text = "( * ) - Campos de preenchimento obrigatório";
             // 
-            // maskedTextBoxAlterarAlunoCPF
-            // 
-            this.maskedTextBoxAlterarAlunoCPF.Location = new System.Drawing.Point(193, 58);
-            this.maskedTextBoxAlterarAlunoCPF.Mask = "999,999,999-99";
-            this.maskedTextBoxAlterarAlunoCPF.Name = "maskedTextBoxAlterarAlunoCPF";
-            this.maskedTextBoxAlterarAlunoCPF.Size = new System.Drawing.Size(92, 20);
-            this.maskedTextBoxAlterarAlunoCPF.TabIndex = 16;
-            this.maskedTextBoxAlterarAlunoCPF.TextMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
-            // 
             // maskedTextBoxAlterarAlunoTelefone
             // 
-            this.maskedTextBoxAlterarAlunoTelefone.Location = new System.Drawing.Point(350, 58);
+            this.maskedTextBoxAlterarAlunoTelefone.Location = new System.Drawing.Point(224, 58);
             this.maskedTextBoxAlterarAlunoTelefone.Mask = "(99)999999999";
             this.maskedTextBoxAlterarAlunoTelefone.Name = "maskedTextBoxAlterarAlunoTelefone";
             this.maskedTextBoxAlterarAlunoTelefone.Size = new System.Drawing.Size(80, 20);
@@ -166,14 +146,12 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(454, 205);
             this.Controls.Add(this.maskedTextBoxAlterarAlunoTelefone);
-            this.Controls.Add(this.maskedTextBoxAlterarAlunoCPF);
             this.Controls.Add(this.labelMenuInserirCO);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.buttonAlterarAlunoCancelar);
             this.Controls.Add(this.buttonAlterarAlunoConfirmar);
             this.Controls.Add(this.textBoxAlterarAlunoMatricula);
             this.Controls.Add(this.textBoxAlterarAlunoNome);
-            this.Controls.Add(this.labelAlterarAlunoCPF);
             this.Controls.Add(this.labelAlterarAlunoCurso);
             this.Controls.Add(this.labelAlterarAlunoTelefone);
             this.Controls.Add(this.labelAlterarAlunoMatricula);
@@ -198,14 +176,12 @@
         private System.Windows.Forms.Label labelAlterarAlunoMatricula;
         private System.Windows.Forms.Label labelAlterarAlunoTelefone;
         private System.Windows.Forms.Label labelAlterarAlunoCurso;
-        private System.Windows.Forms.Label labelAlterarAlunoCPF;
         private System.Windows.Forms.TextBox textBoxAlterarAlunoNome;
         private System.Windows.Forms.TextBox textBoxAlterarAlunoMatricula;
         private System.Windows.Forms.Button buttonAlterarAlunoConfirmar;
         private System.Windows.Forms.Button buttonAlterarAlunoCancelar;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label labelMenuInserirCO;
-        private System.Windows.Forms.MaskedTextBox maskedTextBoxAlterarAlunoCPF;
         private System.Windows.Forms.MaskedTextBox maskedTextBoxAlterarAlunoTelefone;
     }
 }

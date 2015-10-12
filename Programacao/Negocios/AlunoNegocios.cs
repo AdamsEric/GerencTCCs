@@ -21,7 +21,6 @@ namespace Negocios
                 acessoDadosSqlServer.LimparParametros();
                 acessoDadosSqlServer.AdicionarParametros("@AlunoNome", aluno.AlunoNome);
                 acessoDadosSqlServer.AdicionarParametros("@AlunoMatricula", aluno.AlunoMatricula);
-                acessoDadosSqlServer.AdicionarParametros("@AlunoCPF", aluno.AlunoCPF);
                 acessoDadosSqlServer.AdicionarParametros("@AlunoTelefone", aluno.AlunoTelefone);
 				acessoDadosSqlServer.AdicionarParametros("@AlunoCurso", aluno.AlunoCursoID);
                 string AlunoID = acessoDadosSqlServer.ExecutarManipulacao(CommandType.StoredProcedure, "uspAlunoInserir").ToString();
@@ -42,7 +41,6 @@ namespace Negocios
                 acessoDadosSqlServer.AdicionarParametros("@AlunoID", aluno.AlunoID);
                 acessoDadosSqlServer.AdicionarParametros("@AlunoNome", aluno.AlunoNome);
                 acessoDadosSqlServer.AdicionarParametros("@AlunoMatricula", aluno.AlunoMatricula);
-                acessoDadosSqlServer.AdicionarParametros("@AlunoCPF", aluno.AlunoCPF);
                 acessoDadosSqlServer.AdicionarParametros("@AlunoTelefone", aluno.AlunoTelefone);
 				acessoDadosSqlServer.AdicionarParametros("@AlunoCurso", aluno.AlunoCursoID);
                 string AlunoID = acessoDadosSqlServer.ExecutarManipulacao(CommandType.StoredProcedure, "uspAlunoAlterar").ToString();
@@ -91,7 +89,6 @@ namespace Negocios
                 aluno.AlunoID = Convert.ToInt32(linha["AlunoID"]);
                 aluno.AlunoNome = Convert.ToString(linha["AlunoNome"]);
                 aluno.AlunoMatricula = Convert.ToString(linha["AlunoMatricula"]);
-                aluno.AlunoCPF = Convert.ToString(linha["AlunoCPF"]);
                 aluno.AlunoTelefone = Convert.ToString(linha["AlunoTelefone"]);
 				aluno.AlunoCursoID = Convert.ToInt32(linha["AlunoCurso"]);
                 alunoColecao.Add(aluno);

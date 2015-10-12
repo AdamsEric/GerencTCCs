@@ -28,7 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
             this.shapeContainer1 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
             this.rectangleShape2 = new Microsoft.VisualBasic.PowerPacks.RectangleShape();
             this.labelPesquisaTipo = new System.Windows.Forms.Label();
@@ -36,6 +37,8 @@
             this.buttonPesquisar = new System.Windows.Forms.Button();
             this.dataGridView = new System.Windows.Forms.DataGridView();
             this.comboBoxFiltroUnidade = new System.Windows.Forms.ComboBox();
+            this.tblUnidadeBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.gerencTCCsDataSet9 = new Apresentacao.GerencTCCsDataSet9();
             this.labelFiltrarPorUnidade = new System.Windows.Forms.Label();
             this.labelFiltrarPorCurso = new System.Windows.Forms.Label();
             this.comboBoxFiltroCurso = new System.Windows.Forms.ComboBox();
@@ -61,8 +64,31 @@
             this.radioButtonPesquisarPorTitulo = new System.Windows.Forms.RadioButton();
             this.labelPesquisarEscolha = new System.Windows.Forms.Label();
             this.radioButtonPesquisarPorDescricao = new System.Windows.Forms.RadioButton();
+            this.tblUnidadeTableAdapter = new Apresentacao.GerencTCCsDataSet9TableAdapters.tblUnidadeTableAdapter();
+            this.gerencTCCsDataSet10 = new Apresentacao.GerencTCCsDataSet10();
+            this.tblCursoBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.tblCursoTableAdapter = new Apresentacao.GerencTCCsDataSet10TableAdapters.tblCursoTableAdapter();
+            this.gerencTCCsDataSet11 = new Apresentacao.GerencTCCsDataSet11();
+            this.tblProfessorBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.tblProfessorTableAdapter = new Apresentacao.GerencTCCsDataSet11TableAdapters.tblProfessorTableAdapter();
+            this.gerencTCCsDataSet12 = new Apresentacao.GerencTCCsDataSet12();
+            this.tblGrupoBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.tblGrupoTableAdapter = new Apresentacao.GerencTCCsDataSet12TableAdapters.tblGrupoTableAdapter();
+            this.gerencTCCsDataSet13 = new Apresentacao.GerencTCCsDataSet13();
+            this.tblSalaTipoBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.tblSalaTipoTableAdapter = new Apresentacao.GerencTCCsDataSet13TableAdapters.tblSalaTipoTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblUnidadeBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gerencTCCsDataSet9)).BeginInit();
             this.groupBoxFiltros.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gerencTCCsDataSet10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblCursoBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gerencTCCsDataSet11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblProfessorBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gerencTCCsDataSet12)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblGrupoBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gerencTCCsDataSet13)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblSalaTipoBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // shapeContainer1
@@ -117,8 +143,8 @@
             // 
             this.dataGridView.AllowUserToAddRows = false;
             this.dataGridView.AllowUserToResizeRows = false;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.dataGridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle19.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.dataGridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle19;
             this.dataGridView.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
             this.dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView.Location = new System.Drawing.Point(25, 114);
@@ -131,11 +157,27 @@
             // comboBoxFiltroUnidade
             // 
             this.comboBoxFiltroUnidade.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.comboBoxFiltroUnidade.DataSource = this.tblUnidadeBindingSource;
+            this.comboBoxFiltroUnidade.DisplayMember = "UnidadeNome";
+            this.comboBoxFiltroUnidade.DropDownWidth = 200;
             this.comboBoxFiltroUnidade.FormattingEnabled = true;
             this.comboBoxFiltroUnidade.Location = new System.Drawing.Point(68, 15);
             this.comboBoxFiltroUnidade.Name = "comboBoxFiltroUnidade";
-            this.comboBoxFiltroUnidade.Size = new System.Drawing.Size(121, 21);
+            this.comboBoxFiltroUnidade.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.comboBoxFiltroUnidade.Size = new System.Drawing.Size(129, 21);
             this.comboBoxFiltroUnidade.TabIndex = 9;
+            this.comboBoxFiltroUnidade.ValueMember = "UnidadeNome";
+            this.comboBoxFiltroUnidade.Click += new System.EventHandler(this.comboBoxFiltroUnidade_Click);
+            // 
+            // tblUnidadeBindingSource
+            // 
+            this.tblUnidadeBindingSource.DataMember = "tblUnidade";
+            this.tblUnidadeBindingSource.DataSource = this.gerencTCCsDataSet9;
+            // 
+            // gerencTCCsDataSet9
+            // 
+            this.gerencTCCsDataSet9.DataSetName = "GerencTCCsDataSet9";
+            this.gerencTCCsDataSet9.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // labelFiltrarPorUnidade
             // 
@@ -158,11 +200,15 @@
             // comboBoxFiltroCurso
             // 
             this.comboBoxFiltroCurso.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.comboBoxFiltroCurso.DataSource = this.tblCursoBindingSource;
+            this.comboBoxFiltroCurso.DisplayMember = "CursoNome";
             this.comboBoxFiltroCurso.FormattingEnabled = true;
             this.comboBoxFiltroCurso.Location = new System.Drawing.Point(68, 44);
             this.comboBoxFiltroCurso.Name = "comboBoxFiltroCurso";
-            this.comboBoxFiltroCurso.Size = new System.Drawing.Size(121, 21);
+            this.comboBoxFiltroCurso.Size = new System.Drawing.Size(129, 21);
             this.comboBoxFiltroCurso.TabIndex = 10;
+            this.comboBoxFiltroCurso.ValueMember = "CursoNome";
+            this.comboBoxFiltroCurso.Click += new System.EventHandler(this.comboBoxFiltroCurso_Click);
             // 
             // buttonInserir
             // 
@@ -222,12 +268,16 @@
             // comboBoxFiltroTipo
             // 
             this.comboBoxFiltroTipo.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.comboBoxFiltroTipo.DataSource = this.tblSalaTipoBindingSource;
+            this.comboBoxFiltroTipo.DisplayMember = "SalaTipoTipo";
             this.comboBoxFiltroTipo.FormattingEnabled = true;
             this.comboBoxFiltroTipo.Location = new System.Drawing.Point(237, 73);
             this.comboBoxFiltroTipo.Name = "comboBoxFiltroTipo";
             this.comboBoxFiltroTipo.Size = new System.Drawing.Size(121, 21);
             this.comboBoxFiltroTipo.TabIndex = 11;
+            this.comboBoxFiltroTipo.ValueMember = "SalaTipoTipo";
             this.comboBoxFiltroTipo.Visible = false;
+            this.comboBoxFiltroTipo.Click += new System.EventHandler(this.comboBoxFiltroTipo_Click);
             // 
             // dateTimePickerFiltroData
             // 
@@ -255,12 +305,16 @@
             // comboBoxFiltroProfessor
             // 
             this.comboBoxFiltroProfessor.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.comboBoxFiltroProfessor.DataSource = this.tblProfessorBindingSource;
+            this.comboBoxFiltroProfessor.DisplayMember = "ProfessorNome";
             this.comboBoxFiltroProfessor.FormattingEnabled = true;
             this.comboBoxFiltroProfessor.Location = new System.Drawing.Point(68, 73);
             this.comboBoxFiltroProfessor.Name = "comboBoxFiltroProfessor";
-            this.comboBoxFiltroProfessor.Size = new System.Drawing.Size(121, 21);
+            this.comboBoxFiltroProfessor.Size = new System.Drawing.Size(131, 21);
             this.comboBoxFiltroProfessor.TabIndex = 11;
+            this.comboBoxFiltroProfessor.ValueMember = "ProfessorNome";
             this.comboBoxFiltroProfessor.Visible = false;
+            this.comboBoxFiltroProfessor.Click += new System.EventHandler(this.comboBoxFiltroProfessor_Click);
             // 
             // labelFiltrarPorProfessor
             // 
@@ -275,12 +329,16 @@
             // comboBoxFiltroGrupo
             // 
             this.comboBoxFiltroGrupo.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.comboBoxFiltroGrupo.DataSource = this.tblGrupoBindingSource;
+            this.comboBoxFiltroGrupo.DisplayMember = "GrupoNome";
             this.comboBoxFiltroGrupo.FormattingEnabled = true;
             this.comboBoxFiltroGrupo.Location = new System.Drawing.Point(237, 44);
             this.comboBoxFiltroGrupo.Name = "comboBoxFiltroGrupo";
             this.comboBoxFiltroGrupo.Size = new System.Drawing.Size(121, 21);
             this.comboBoxFiltroGrupo.TabIndex = 13;
+            this.comboBoxFiltroGrupo.ValueMember = "GrupoNome";
             this.comboBoxFiltroGrupo.Visible = false;
+            this.comboBoxFiltroGrupo.Click += new System.EventHandler(this.comboBoxFiltroGrupo_Click);
             // 
             // labelFiltrarPorGrupo
             // 
@@ -300,6 +358,7 @@
             this.buttonConsultar.TabIndex = 42;
             this.buttonConsultar.Text = "Consultar";
             this.buttonConsultar.UseVisualStyleBackColor = true;
+            this.buttonConsultar.Click += new System.EventHandler(this.buttonConsultar_Click);
             // 
             // groupBoxFiltros
             // 
@@ -348,7 +407,7 @@
             // radioButtonPesquisarPorLogin
             // 
             this.radioButtonPesquisarPorLogin.AutoSize = true;
-            this.radioButtonPesquisarPorLogin.Location = new System.Drawing.Point(410, 325);
+            this.radioButtonPesquisarPorLogin.Location = new System.Drawing.Point(642, 302);
             this.radioButtonPesquisarPorLogin.Name = "radioButtonPesquisarPorLogin";
             this.radioButtonPesquisarPorLogin.Size = new System.Drawing.Size(51, 17);
             this.radioButtonPesquisarPorLogin.TabIndex = 40;
@@ -360,7 +419,7 @@
             // radioButtonPesquisarPorNome
             // 
             this.radioButtonPesquisarPorNome.AutoSize = true;
-            this.radioButtonPesquisarPorNome.Location = new System.Drawing.Point(642, 302);
+            this.radioButtonPesquisarPorNome.Location = new System.Drawing.Point(691, 302);
             this.radioButtonPesquisarPorNome.Name = "radioButtonPesquisarPorNome";
             this.radioButtonPesquisarPorNome.Size = new System.Drawing.Size(53, 17);
             this.radioButtonPesquisarPorNome.TabIndex = 1;
@@ -405,7 +464,7 @@
             // radioButtonPesquisarPorDescricao
             // 
             this.radioButtonPesquisarPorDescricao.AutoSize = true;
-            this.radioButtonPesquisarPorDescricao.Location = new System.Drawing.Point(701, 302);
+            this.radioButtonPesquisarPorDescricao.Location = new System.Drawing.Point(671, 325);
             this.radioButtonPesquisarPorDescricao.Name = "radioButtonPesquisarPorDescricao";
             this.radioButtonPesquisarPorDescricao.Size = new System.Drawing.Size(73, 17);
             this.radioButtonPesquisarPorDescricao.TabIndex = 45;
@@ -414,12 +473,72 @@
             this.radioButtonPesquisarPorDescricao.Visible = false;
             this.radioButtonPesquisarPorDescricao.CheckedChanged += new System.EventHandler(this.radioButtonPesquisarPorDescricao_CheckedChanged);
             // 
+            // tblUnidadeTableAdapter
+            // 
+            this.tblUnidadeTableAdapter.ClearBeforeFill = true;
+            // 
+            // gerencTCCsDataSet10
+            // 
+            this.gerencTCCsDataSet10.DataSetName = "GerencTCCsDataSet10";
+            this.gerencTCCsDataSet10.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // tblCursoBindingSource
+            // 
+            this.tblCursoBindingSource.DataMember = "tblCurso";
+            this.tblCursoBindingSource.DataSource = this.gerencTCCsDataSet10;
+            // 
+            // tblCursoTableAdapter
+            // 
+            this.tblCursoTableAdapter.ClearBeforeFill = true;
+            // 
+            // gerencTCCsDataSet11
+            // 
+            this.gerencTCCsDataSet11.DataSetName = "GerencTCCsDataSet11";
+            this.gerencTCCsDataSet11.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // tblProfessorBindingSource
+            // 
+            this.tblProfessorBindingSource.DataMember = "tblProfessor";
+            this.tblProfessorBindingSource.DataSource = this.gerencTCCsDataSet11;
+            // 
+            // tblProfessorTableAdapter
+            // 
+            this.tblProfessorTableAdapter.ClearBeforeFill = true;
+            // 
+            // gerencTCCsDataSet12
+            // 
+            this.gerencTCCsDataSet12.DataSetName = "GerencTCCsDataSet12";
+            this.gerencTCCsDataSet12.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // tblGrupoBindingSource
+            // 
+            this.tblGrupoBindingSource.DataMember = "tblGrupo";
+            this.tblGrupoBindingSource.DataSource = this.gerencTCCsDataSet12;
+            // 
+            // tblGrupoTableAdapter
+            // 
+            this.tblGrupoTableAdapter.ClearBeforeFill = true;
+            // 
+            // gerencTCCsDataSet13
+            // 
+            this.gerencTCCsDataSet13.DataSetName = "GerencTCCsDataSet13";
+            this.gerencTCCsDataSet13.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // tblSalaTipoBindingSource
+            // 
+            this.tblSalaTipoBindingSource.DataMember = "tblSalaTipo";
+            this.tblSalaTipoBindingSource.DataSource = this.gerencTCCsDataSet13;
+            // 
+            // tblSalaTipoTableAdapter
+            // 
+            this.tblSalaTipoTableAdapter.ClearBeforeFill = true;
+            // 
             // FrmMenuAdministrador
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(800, 410);
             this.Controls.Add(this.radioButtonPesquisarPorDescricao);
             this.Controls.Add(this.labelPesquisarEscolha);
@@ -448,8 +567,18 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmMenuAluno";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblUnidadeBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gerencTCCsDataSet9)).EndInit();
             this.groupBoxFiltros.ResumeLayout(false);
             this.groupBoxFiltros.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gerencTCCsDataSet10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblCursoBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gerencTCCsDataSet11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblProfessorBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gerencTCCsDataSet12)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblGrupoBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gerencTCCsDataSet13)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblSalaTipoBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -489,5 +618,20 @@
         private System.Windows.Forms.RadioButton radioButtonPesquisarPorTitulo;
         private System.Windows.Forms.Label labelPesquisarEscolha;
         private System.Windows.Forms.RadioButton radioButtonPesquisarPorDescricao;
+        private GerencTCCsDataSet9 gerencTCCsDataSet9;
+        private System.Windows.Forms.BindingSource tblUnidadeBindingSource;
+        private GerencTCCsDataSet9TableAdapters.tblUnidadeTableAdapter tblUnidadeTableAdapter;
+        private GerencTCCsDataSet10 gerencTCCsDataSet10;
+        private System.Windows.Forms.BindingSource tblCursoBindingSource;
+        private GerencTCCsDataSet10TableAdapters.tblCursoTableAdapter tblCursoTableAdapter;
+        private GerencTCCsDataSet11 gerencTCCsDataSet11;
+        private System.Windows.Forms.BindingSource tblProfessorBindingSource;
+        private GerencTCCsDataSet11TableAdapters.tblProfessorTableAdapter tblProfessorTableAdapter;
+        private GerencTCCsDataSet12 gerencTCCsDataSet12;
+        private System.Windows.Forms.BindingSource tblGrupoBindingSource;
+        private GerencTCCsDataSet12TableAdapters.tblGrupoTableAdapter tblGrupoTableAdapter;
+        private GerencTCCsDataSet13 gerencTCCsDataSet13;
+        private System.Windows.Forms.BindingSource tblSalaTipoBindingSource;
+        private GerencTCCsDataSet13TableAdapters.tblSalaTipoTableAdapter tblSalaTipoTableAdapter;
     }
 }
