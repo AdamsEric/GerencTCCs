@@ -334,9 +334,9 @@ namespace Apresentacao
                 radioButtonPesquisarPorNome.Visible = true;
                 radioButtonPesquisarPorNome.Checked = true;
                 radioButtonPesquisarPorNome.Location = new Point(642, 302);
-                radioButtonPesquisarPorMatricula.Visible = true;
+                radioButtonPesquisarPorMatricula.Visible = false;
                 radioButtonPesquisarPorMatricula.Checked = false;
-                radioButtonPesquisarPorMatricula.Location = new Point(701, 302);
+                radioButtonPesquisarPorMatricula.Location = new Point();
                 radioButtonPesquisarPorDescricao.Visible = false;
                 radioButtonPesquisarPorDescricao.Checked = false;
                 radioButtonPesquisarPorDescricao.Location = new Point();
@@ -345,7 +345,7 @@ namespace Apresentacao
                 radioButtonPesquisarPorCodigo.Location = new Point();
                 radioButtonPesquisarPorLogin.Visible = true;
                 radioButtonPesquisarPorLogin.Checked = false;
-                radioButtonPesquisarPorLogin.Location = new Point();
+                radioButtonPesquisarPorLogin.Location = new Point(701, 302);
                 //Filtros
                 groupBoxFiltros.Visible = true;
                 labelFiltrarPorUnidade.Visible = false;
