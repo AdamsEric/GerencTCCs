@@ -17,11 +17,6 @@ namespace Apresentacao
             InitializeComponent();
         }
 
-        private void sobreToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void acessoSair_Click(object sender, EventArgs e)
         {
             Application.Exit();
@@ -29,9 +24,11 @@ namespace Apresentacao
 
         private void MenuAluno_Load(object sender, EventArgs e)
         {
-            FrmMenuAdministrador frmMenuAdministrador = new FrmMenuAdministrador();
+            string modulo = "TCCs";
+            FrmMenuAdministrador frmMenuAdministrador = new FrmMenuAdministrador(modulo);
             frmMenuAdministrador.MdiParent = this;
             frmMenuAdministrador.Show();
+
         }
 
         private void acessoLogin_Click(object sender, EventArgs e)
@@ -39,5 +36,62 @@ namespace Apresentacao
             FrmLogin frmLogin = new FrmLogin();
             frmLogin.ShowDialog();
         }
+
+        private void acessoMenuModulosAlunos_Click(object sender, EventArgs e)
+        {
+            string modulo = "Alunos";
+            FrmMenuAdministrador frmMenuAdministrador = new FrmMenuAdministrador(modulo);
+            frmMenuAdministrador.MdiParent = this;
+            frmMenuAdministrador.Show();
+        }
+
+        private void acessoMenuModulosTCCs_Click(object sender, EventArgs e)
+        {
+            string modulo = "TCCs";
+            FrmMenuAdministrador frmMenuAdministrador = new FrmMenuAdministrador(modulo);
+            frmMenuAdministrador.MdiParent = this;
+            frmMenuAdministrador.Show();
+        }
+
+        private void acessoMenuModulosProfessores_Click(object sender, EventArgs e)
+        {
+            string modulo = "Professores";
+            FrmMenuAdministrador frmMenuAdministrador = new FrmMenuAdministrador(modulo);
+            frmMenuAdministrador.MdiParent = this;
+            frmMenuAdministrador.Show();
+        }
+
+        private void acessoMenuModulosCursos_Click(object sender, EventArgs e)
+        {
+            string modulo = "Cursos";
+            FrmMenuAdministrador frmMenuAdministrador = new FrmMenuAdministrador(modulo);
+            frmMenuAdministrador.MdiParent = this;
+            frmMenuAdministrador.Show();
+        }
+
+        private void acessoMenuModulosUnidades_Click(object sender, EventArgs e)
+        {
+            string modulo = "Unidades";
+            FrmMenuAdministrador frmMenuAdministrador = new FrmMenuAdministrador(modulo);
+            frmMenuAdministrador.MdiParent = this;
+            frmMenuAdministrador.Show();
+        }
+
+        private void acessoMenuModulosSalas_Click(object sender, EventArgs e)
+        {
+            string modulo = "Salas";
+            FrmMenuAdministrador frmMenuAdministrador = new FrmMenuAdministrador(modulo);
+            frmMenuAdministrador.MdiParent = this;
+            frmMenuAdministrador.Show();
+        }
+
+        private void acessoMenuAdministracaoUsuarios_Click(object sender, EventArgs e)
+        {
+            string modulo = "Usuários";
+            FrmMenuAdministrador frmMenuAdministrador = new FrmMenuAdministrador(modulo);
+            frmMenuAdministrador.MdiParent = this;
+            frmMenuAdministrador.Show();
+        }
+
     }
 }

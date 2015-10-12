@@ -29,75 +29,62 @@
         private void InitializeComponent()
         {
             this.acessoMenuOpcoes = new System.Windows.Forms.ToolStripMenuItem();
-            this.acessoLogin = new System.Windows.Forms.ToolStripMenuItem();
-            this.acessoSair = new System.Windows.Forms.ToolStripMenuItem();
-            this.acessoMenuAjuda = new System.Windows.Forms.ToolStripMenuItem();
-            this.acessoAjuda = new System.Windows.Forms.ToolStripMenuItem();
-            this.acessoSobre = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.acessoMenuOpcoesLogin = new System.Windows.Forms.ToolStripMenuItem();
+            this.acessoMenuOpcoesSair = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuPrincipal = new System.Windows.Forms.MenuStrip();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabelUsuarioAtual = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripStatusLabelUsuario = new System.Windows.Forms.ToolStripStatusLabel();
-            this.menuStrip1.SuspendLayout();
+            this.acessoMenuModulos = new System.Windows.Forms.ToolStripMenuItem();
+            this.acessoMenuModulosTCCs = new System.Windows.Forms.ToolStripMenuItem();
+            this.acessoMenuModulosAlunos = new System.Windows.Forms.ToolStripMenuItem();
+            this.acessoMenuModulosProfessores = new System.Windows.Forms.ToolStripMenuItem();
+            this.acessoMenuModulosCursos = new System.Windows.Forms.ToolStripMenuItem();
+            this.acessoMenuModulosUnidades = new System.Windows.Forms.ToolStripMenuItem();
+            this.acessoMenuModulosSalas = new System.Windows.Forms.ToolStripMenuItem();
+            this.acessoMenuOpcoesSobre = new System.Windows.Forms.ToolStripMenuItem();
+            this.acessoMenuAdministracao = new System.Windows.Forms.ToolStripMenuItem();
+            this.acessoMenuAdministracaoUsuarios = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuPrincipal.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // acessoMenuOpcoes
             // 
             this.acessoMenuOpcoes.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.acessoLogin,
-            this.acessoSair});
+            this.acessoMenuOpcoesLogin,
+            this.acessoMenuOpcoesSobre,
+            this.acessoMenuOpcoesSair});
             this.acessoMenuOpcoes.Name = "acessoMenuOpcoes";
             this.acessoMenuOpcoes.Size = new System.Drawing.Size(59, 20);
             this.acessoMenuOpcoes.Text = "&Opções";
             // 
-            // acessoLogin
+            // acessoMenuOpcoesLogin
             // 
-            this.acessoLogin.Name = "acessoLogin";
-            this.acessoLogin.Size = new System.Drawing.Size(104, 22);
-            this.acessoLogin.Text = "&Login";
-            this.acessoLogin.Click += new System.EventHandler(this.acessoLogin_Click);
+            this.acessoMenuOpcoesLogin.Name = "acessoMenuOpcoesLogin";
+            this.acessoMenuOpcoesLogin.Size = new System.Drawing.Size(152, 22);
+            this.acessoMenuOpcoesLogin.Text = "Login";
+            this.acessoMenuOpcoesLogin.Click += new System.EventHandler(this.acessoLogin_Click);
             // 
-            // acessoSair
+            // acessoMenuOpcoesSair
             // 
-            this.acessoSair.Name = "acessoSair";
-            this.acessoSair.Size = new System.Drawing.Size(104, 22);
-            this.acessoSair.Text = "&Sair";
-            this.acessoSair.Click += new System.EventHandler(this.acessoSair_Click);
+            this.acessoMenuOpcoesSair.Name = "acessoMenuOpcoesSair";
+            this.acessoMenuOpcoesSair.Size = new System.Drawing.Size(152, 22);
+            this.acessoMenuOpcoesSair.Text = "Sair";
+            this.acessoMenuOpcoesSair.Click += new System.EventHandler(this.acessoSair_Click);
             // 
-            // acessoMenuAjuda
+            // menuPrincipal
             // 
-            this.acessoMenuAjuda.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.acessoAjuda,
-            this.acessoSobre});
-            this.acessoMenuAjuda.Name = "acessoMenuAjuda";
-            this.acessoMenuAjuda.Size = new System.Drawing.Size(50, 20);
-            this.acessoMenuAjuda.Text = "A&juda";
-            this.acessoMenuAjuda.Click += new System.EventHandler(this.sobreToolStripMenuItem_Click);
-            // 
-            // acessoAjuda
-            // 
-            this.acessoAjuda.Name = "acessoAjuda";
-            this.acessoAjuda.Size = new System.Drawing.Size(136, 22);
-            this.acessoAjuda.Text = "E&xibir Ajuda";
-            // 
-            // acessoSobre
-            // 
-            this.acessoSobre.Name = "acessoSobre";
-            this.acessoSobre.Size = new System.Drawing.Size(136, 22);
-            this.acessoSobre.Text = "So&bre...";
-            // 
-            // menuStrip1
-            // 
-            this.menuStrip1.BackColor = System.Drawing.SystemColors.Menu;
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.menuPrincipal.BackColor = System.Drawing.SystemColors.Menu;
+            this.menuPrincipal.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.acessoMenuOpcoes,
-            this.acessoMenuAjuda});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(984, 24);
-            this.menuStrip1.TabIndex = 1;
-            this.menuStrip1.Text = "menuStrip1";
+            this.acessoMenuModulos,
+            this.acessoMenuAdministracao});
+            this.menuPrincipal.Location = new System.Drawing.Point(0, 0);
+            this.menuPrincipal.Name = "menuPrincipal";
+            this.menuPrincipal.Size = new System.Drawing.Size(804, 24);
+            this.menuPrincipal.TabIndex = 1;
+            this.menuPrincipal.Text = "menuStrip1";
             // 
             // statusStrip1
             // 
@@ -106,7 +93,7 @@
             this.toolStripStatusLabelUsuario});
             this.statusStrip1.Location = new System.Drawing.Point(0, 439);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(984, 22);
+            this.statusStrip1.Size = new System.Drawing.Size(804, 22);
             this.statusStrip1.TabIndex = 3;
             this.statusStrip1.Text = "statusStrip1";
             // 
@@ -123,21 +110,100 @@
             this.toolStripStatusLabelUsuario.Size = new System.Drawing.Size(52, 17);
             this.toolStripStatusLabelUsuario.Text = "Visitante";
             // 
+            // acessoMenuModulos
+            // 
+            this.acessoMenuModulos.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.acessoMenuModulosTCCs,
+            this.acessoMenuModulosAlunos,
+            this.acessoMenuModulosProfessores,
+            this.acessoMenuModulosCursos,
+            this.acessoMenuModulosUnidades,
+            this.acessoMenuModulosSalas});
+            this.acessoMenuModulos.Name = "acessoMenuModulos";
+            this.acessoMenuModulos.Size = new System.Drawing.Size(66, 20);
+            this.acessoMenuModulos.Text = "&Módulos";
+            // 
+            // acessoMenuModulosTCCs
+            // 
+            this.acessoMenuModulosTCCs.Name = "acessoMenuModulosTCCs";
+            this.acessoMenuModulosTCCs.Size = new System.Drawing.Size(152, 22);
+            this.acessoMenuModulosTCCs.Text = "TCCs";
+            this.acessoMenuModulosTCCs.Click += new System.EventHandler(this.acessoMenuModulosTCCs_Click);
+            // 
+            // acessoMenuModulosAlunos
+            // 
+            this.acessoMenuModulosAlunos.Name = "acessoMenuModulosAlunos";
+            this.acessoMenuModulosAlunos.Size = new System.Drawing.Size(152, 22);
+            this.acessoMenuModulosAlunos.Text = "Alunos";
+            this.acessoMenuModulosAlunos.Click += new System.EventHandler(this.acessoMenuModulosAlunos_Click);
+            // 
+            // acessoMenuModulosProfessores
+            // 
+            this.acessoMenuModulosProfessores.Name = "acessoMenuModulosProfessores";
+            this.acessoMenuModulosProfessores.Size = new System.Drawing.Size(152, 22);
+            this.acessoMenuModulosProfessores.Text = "Professores";
+            this.acessoMenuModulosProfessores.Click += new System.EventHandler(this.acessoMenuModulosProfessores_Click);
+            // 
+            // acessoMenuModulosCursos
+            // 
+            this.acessoMenuModulosCursos.Name = "acessoMenuModulosCursos";
+            this.acessoMenuModulosCursos.Size = new System.Drawing.Size(152, 22);
+            this.acessoMenuModulosCursos.Text = "Cursos";
+            this.acessoMenuModulosCursos.Click += new System.EventHandler(this.acessoMenuModulosCursos_Click);
+            // 
+            // acessoMenuModulosUnidades
+            // 
+            this.acessoMenuModulosUnidades.Name = "acessoMenuModulosUnidades";
+            this.acessoMenuModulosUnidades.Size = new System.Drawing.Size(152, 22);
+            this.acessoMenuModulosUnidades.Text = "Unidades";
+            this.acessoMenuModulosUnidades.Click += new System.EventHandler(this.acessoMenuModulosUnidades_Click);
+            // 
+            // acessoMenuModulosSalas
+            // 
+            this.acessoMenuModulosSalas.Name = "acessoMenuModulosSalas";
+            this.acessoMenuModulosSalas.Size = new System.Drawing.Size(152, 22);
+            this.acessoMenuModulosSalas.Text = "Salas";
+            this.acessoMenuModulosSalas.Click += new System.EventHandler(this.acessoMenuModulosSalas_Click);
+            // 
+            // acessoMenuOpcoesSobre
+            // 
+            this.acessoMenuOpcoesSobre.Name = "acessoMenuOpcoesSobre";
+            this.acessoMenuOpcoesSobre.Size = new System.Drawing.Size(152, 22);
+            this.acessoMenuOpcoesSobre.Text = "Sobre...";
+            // 
+            // acessoMenuAdministracao
+            // 
+            this.acessoMenuAdministracao.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.acessoMenuAdministracaoUsuarios});
+            this.acessoMenuAdministracao.Name = "acessoMenuAdministracao";
+            this.acessoMenuAdministracao.Size = new System.Drawing.Size(96, 20);
+            this.acessoMenuAdministracao.Text = "Adm&inistração";
+            // 
+            // acessoMenuAdministracaoUsuarios
+            // 
+            this.acessoMenuAdministracaoUsuarios.Name = "acessoMenuAdministracaoUsuarios";
+            this.acessoMenuAdministracaoUsuarios.Size = new System.Drawing.Size(152, 22);
+            this.acessoMenuAdministracaoUsuarios.Text = "Usuários";
+            this.acessoMenuAdministracaoUsuarios.Click += new System.EventHandler(this.acessoMenuAdministracaoUsuarios_Click);
+            // 
             // MenuAluno
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(984, 461);
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.ClientSize = new System.Drawing.Size(804, 461);
             this.Controls.Add(this.statusStrip1);
-            this.Controls.Add(this.menuStrip1);
+            this.Controls.Add(this.menuPrincipal);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.IsMdiContainer = true;
-            this.MainMenuStrip = this.menuStrip1;
+            this.MainMenuStrip = this.menuPrincipal;
+            this.MaximizeBox = false;
             this.Name = "MenuAluno";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Gereniador de TCCs - Versão 1.09.3";
+            this.Text = "Gerenciador de TCCs - Versão 2.10.1";
             this.Load += new System.EventHandler(this.MenuAluno_Load);
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
+            this.menuPrincipal.ResumeLayout(false);
+            this.menuPrincipal.PerformLayout();
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -148,15 +214,22 @@
         #endregion
 
         private System.Windows.Forms.ToolStripMenuItem acessoMenuOpcoes;
-        private System.Windows.Forms.ToolStripMenuItem acessoLogin;
-        private System.Windows.Forms.ToolStripMenuItem acessoSair;
-        private System.Windows.Forms.ToolStripMenuItem acessoMenuAjuda;
-        private System.Windows.Forms.ToolStripMenuItem acessoAjuda;
-        private System.Windows.Forms.ToolStripMenuItem acessoSobre;
-        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem acessoMenuOpcoesLogin;
+        private System.Windows.Forms.ToolStripMenuItem acessoMenuOpcoesSair;
+        private System.Windows.Forms.MenuStrip menuPrincipal;
         private System.Windows.Forms.StatusStrip statusStrip1;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabelUsuarioAtual;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabelUsuario;
+        private System.Windows.Forms.ToolStripMenuItem acessoMenuModulos;
+        private System.Windows.Forms.ToolStripMenuItem acessoMenuModulosTCCs;
+        private System.Windows.Forms.ToolStripMenuItem acessoMenuModulosAlunos;
+        private System.Windows.Forms.ToolStripMenuItem acessoMenuModulosProfessores;
+        private System.Windows.Forms.ToolStripMenuItem acessoMenuModulosCursos;
+        private System.Windows.Forms.ToolStripMenuItem acessoMenuModulosUnidades;
+        private System.Windows.Forms.ToolStripMenuItem acessoMenuOpcoesSobre;
+        private System.Windows.Forms.ToolStripMenuItem acessoMenuModulosSalas;
+        private System.Windows.Forms.ToolStripMenuItem acessoMenuAdministracao;
+        private System.Windows.Forms.ToolStripMenuItem acessoMenuAdministracaoUsuarios;
 
     }
 }

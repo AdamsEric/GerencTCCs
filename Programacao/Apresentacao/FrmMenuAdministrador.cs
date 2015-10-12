@@ -15,375 +15,344 @@ namespace Apresentacao
 {
     public partial class FrmMenuAdministrador : Form
     {
-        public FrmMenuAdministrador()
+        public FrmMenuAdministrador(string modulo)
         {
             InitializeComponent();
+
+            labelModuloTitulo.Text = modulo;
+
+            if (labelModuloTitulo.Text == "TCCs")
+            {
+                labelModuloTitulo.Text = "TCCs";
+                labelPesquisaTipo.Text = "Título: ";
+                //Pesquisas
+                labelPesquisarEscolha.Visible = true;
+                labelPesquisarEscolha.Location = new Point(562, 304);
+                radioButtonPesquisarPorTitulo.Visible = true;
+                radioButtonPesquisarPorTitulo.Checked = true;
+                radioButtonPesquisarPorTitulo.Location = new Point(653,302);
+                radioButtonPesquisarPorAluno.Visible = true;
+                radioButtonPesquisarPorAluno.Checked = false;
+                radioButtonPesquisarPorAluno.Location = new Point(723,302);
+                radioButtonPesquisarPorNome.Visible = false;
+                radioButtonPesquisarPorNome.Checked = false;
+                radioButtonPesquisarPorNome.Location = new Point();
+                radioButtonPesquisarPorMatricula.Visible = false;
+                radioButtonPesquisarPorMatricula.Checked = false;
+                radioButtonPesquisarPorMatricula.Location = new Point();
+                radioButtonPesquisarPorDescricao.Visible = false;
+                radioButtonPesquisarPorDescricao.Checked = false;
+                radioButtonPesquisarPorDescricao.Location = new Point();
+                radioButtonPesquisarPorCodigo.Visible = false;
+                radioButtonPesquisarPorCodigo.Checked = false;
+                radioButtonPesquisarPorCodigo.Location = new Point();
+                radioButtonPesquisarPorLogin.Visible = false;
+                radioButtonPesquisarPorLogin.Checked = false;
+                radioButtonPesquisarPorLogin.Location = new Point();
+                //Filtros
+                groupBoxFiltros.Visible = true;
+                labelFiltrarPorUnidade.Visible = true;
+                comboBoxFiltroUnidade.Visible = true;
+                labelFiltrarPorCurso.Visible = true;
+                comboBoxFiltroCurso.Visible = true;
+                labelFiltrarPorProfessor.Visible = true;
+                comboBoxFiltroProfessor.Visible = true;
+                labelFiltrarPorData.Visible = true;
+                dateTimePickerFiltroData.Visible = true;
+                labelFiltrarPorTipo.Visible = false;
+                labelFiltrarPorTipo.Location = new Point();
+                comboBoxFiltroTipo.Visible = false;
+                comboBoxFiltroTipo.Location = new Point();
+                labelFiltrarPorGrupo.Visible = false;
+                labelFiltrarPorGrupo.Location = new Point();
+                comboBoxFiltroGrupo.Visible = false;
+                comboBoxFiltroGrupo.Location = new Point();
+
+                //DataGrid
+                dataGridView.DataSource = null;
+            }
+
+            if (labelModuloTitulo.Text == "Alunos")
+            {
+                labelModuloTitulo.Text = "Alunos";
+                labelPesquisaTipo.Text = "Nome: ";
+                //Pesquisas
+                labelPesquisarEscolha.Visible = true;
+                labelPesquisarEscolha.Location = new Point(562, 304);
+                radioButtonPesquisarPorTitulo.Visible = false;
+                radioButtonPesquisarPorTitulo.Checked = false;
+                radioButtonPesquisarPorTitulo.Location = new Point();
+                radioButtonPesquisarPorAluno.Visible = false;
+                radioButtonPesquisarPorAluno.Checked = false;
+                radioButtonPesquisarPorAluno.Location = new Point();
+                radioButtonPesquisarPorNome.Visible = true;
+                radioButtonPesquisarPorNome.Checked = true;
+                radioButtonPesquisarPorNome.Location = new Point(644,302);
+                radioButtonPesquisarPorMatricula.Visible = true;
+                radioButtonPesquisarPorMatricula.Checked = false;
+                radioButtonPesquisarPorMatricula.Location = new Point(705,302);
+                radioButtonPesquisarPorDescricao.Visible = false;
+                radioButtonPesquisarPorDescricao.Checked = false;
+                radioButtonPesquisarPorDescricao.Location = new Point();
+                radioButtonPesquisarPorCodigo.Visible = false;
+                radioButtonPesquisarPorCodigo.Checked = false;
+                radioButtonPesquisarPorCodigo.Location = new Point();
+                radioButtonPesquisarPorLogin.Visible = false;
+                radioButtonPesquisarPorLogin.Checked = false;
+                radioButtonPesquisarPorLogin.Location = new Point();
+                //Filtros
+                groupBoxFiltros.Visible = true;
+                labelFiltrarPorUnidade.Visible = true;
+                comboBoxFiltroUnidade.Visible = true;
+                labelFiltrarPorCurso.Visible = true;
+                comboBoxFiltroCurso.Visible = true;
+                labelFiltrarPorProfessor.Visible = false;
+                comboBoxFiltroProfessor.Visible = false;
+                labelFiltrarPorData.Visible = false;
+                dateTimePickerFiltroData.Visible = false;
+                labelFiltrarPorTipo.Visible = false;
+                labelFiltrarPorTipo.Location = new Point();
+                comboBoxFiltroTipo.Visible = false;
+                comboBoxFiltroTipo.Location = new Point();
+                labelFiltrarPorGrupo.Visible = false;
+                labelFiltrarPorGrupo.Location = new Point();
+                comboBoxFiltroGrupo.Visible = false;
+                comboBoxFiltroGrupo.Location = new Point();
+                //DataGrid
+                dataGridView.DataSource = null;
+            }
+
+            if (labelModuloTitulo.Text == "Professores")
+            {
+                labelModuloTitulo.Text = "Professores";
+                labelPesquisaTipo.Text = "Nome: ";
+                //Pesquisas
+                labelPesquisarEscolha.Visible = true;
+                labelPesquisarEscolha.Location = new Point(562,304);
+                radioButtonPesquisarPorTitulo.Visible = false;
+                radioButtonPesquisarPorTitulo.Checked = false;
+                radioButtonPesquisarPorTitulo.Location = new Point();
+                radioButtonPesquisarPorAluno.Visible = false;
+                radioButtonPesquisarPorAluno.Checked = false;
+                radioButtonPesquisarPorAluno.Location = new Point();
+                radioButtonPesquisarPorNome.Visible = true;
+                radioButtonPesquisarPorNome.Checked = true;
+                radioButtonPesquisarPorNome.Location = new Point(644, 302);
+                radioButtonPesquisarPorMatricula.Visible = true;
+                radioButtonPesquisarPorMatricula.Checked = false;
+                radioButtonPesquisarPorMatricula.Location = new Point(705, 302);
+                radioButtonPesquisarPorDescricao.Visible = false;
+                radioButtonPesquisarPorDescricao.Checked = false;
+                radioButtonPesquisarPorDescricao.Location = new Point();
+                radioButtonPesquisarPorCodigo.Visible = false;
+                radioButtonPesquisarPorCodigo.Checked = false;
+                radioButtonPesquisarPorCodigo.Location = new Point();
+                radioButtonPesquisarPorLogin.Visible = false;
+                radioButtonPesquisarPorLogin.Checked = false;
+                radioButtonPesquisarPorLogin.Location = new Point();
+                //Filtros
+                groupBoxFiltros.Visible = false;
+                labelFiltrarPorUnidade.Visible = false;
+                comboBoxFiltroUnidade.Visible = false;
+                labelFiltrarPorCurso.Visible = false;
+                comboBoxFiltroCurso.Visible = false;
+                labelFiltrarPorProfessor.Visible = false;
+                comboBoxFiltroProfessor.Visible = false;
+                labelFiltrarPorData.Visible = false;
+                dateTimePickerFiltroData.Visible = false;
+                labelFiltrarPorTipo.Visible = false;
+                labelFiltrarPorTipo.Location = new Point();
+                comboBoxFiltroTipo.Visible = false;
+                comboBoxFiltroTipo.Location = new Point();
+                labelFiltrarPorGrupo.Visible = false;
+                labelFiltrarPorGrupo.Location = new Point();
+                comboBoxFiltroGrupo.Visible = false;
+                comboBoxFiltroGrupo.Location = new Point();
+                //DataGrid
+                dataGridView.DataSource = null;
+            }
+
+            if (labelModuloTitulo.Text == "Cursos")
+            {
+                labelModuloTitulo.Text = "Cursos";
+                labelPesquisaTipo.Text = "Nome: ";
+                //Pesquisas
+                labelPesquisarEscolha.Visible = false;
+                radioButtonPesquisarPorTitulo.Visible = false;
+                radioButtonPesquisarPorTitulo.Checked = false;
+                radioButtonPesquisarPorTitulo.Location = new Point();
+                radioButtonPesquisarPorAluno.Visible = false;
+                radioButtonPesquisarPorAluno.Checked = false;
+                radioButtonPesquisarPorAluno.Location = new Point();
+                radioButtonPesquisarPorNome.Visible = false;
+                radioButtonPesquisarPorNome.Checked = true;
+                radioButtonPesquisarPorNome.Location = new Point();
+                radioButtonPesquisarPorMatricula.Visible = false;
+                radioButtonPesquisarPorMatricula.Checked = false;
+                radioButtonPesquisarPorMatricula.Location = new Point();
+                radioButtonPesquisarPorDescricao.Visible = false;
+                radioButtonPesquisarPorDescricao.Checked = false;
+                radioButtonPesquisarPorDescricao.Location = new Point();
+                radioButtonPesquisarPorCodigo.Visible = false;
+                radioButtonPesquisarPorCodigo.Checked = false;
+                radioButtonPesquisarPorCodigo.Location = new Point();
+                radioButtonPesquisarPorLogin.Visible = false;
+                radioButtonPesquisarPorLogin.Checked = false;
+                radioButtonPesquisarPorLogin.Location = new Point();
+                //Filtros
+                groupBoxFiltros.Visible = true;
+                labelFiltrarPorUnidade.Visible = true;
+                comboBoxFiltroUnidade.Visible = true;
+                labelFiltrarPorCurso.Visible = false;
+                comboBoxFiltroCurso.Visible = false;
+                labelFiltrarPorProfessor.Visible = false;
+                comboBoxFiltroProfessor.Visible = false;
+                labelFiltrarPorData.Visible = false;
+                dateTimePickerFiltroData.Visible = false;
+                labelFiltrarPorTipo.Visible = false;
+                labelFiltrarPorTipo.Location = new Point();
+                comboBoxFiltroTipo.Visible = false;
+                comboBoxFiltroTipo.Location = new Point();
+                labelFiltrarPorGrupo.Visible = false;
+                labelFiltrarPorGrupo.Location = new Point();
+                comboBoxFiltroGrupo.Visible = false;
+                comboBoxFiltroGrupo.Location = new Point();
+                //DataGrid
+                dataGridView.DataSource = null;
+            }
+
+            if (labelModuloTitulo.Text == "Unidades")
+            {
+                labelModuloTitulo.Text = "Unidades";
+                labelPesquisaTipo.Text = "Nome: ";
+                //Pesquisas
+                labelPesquisarEscolha.Visible = false;
+                radioButtonPesquisarPorTitulo.Visible = false;
+                radioButtonPesquisarPorTitulo.Checked = false;
+                radioButtonPesquisarPorTitulo.Location = new Point();
+                radioButtonPesquisarPorAluno.Visible = false;
+                radioButtonPesquisarPorAluno.Checked = false;
+                radioButtonPesquisarPorAluno.Location = new Point();
+                radioButtonPesquisarPorNome.Visible = false;
+                radioButtonPesquisarPorNome.Checked = true;
+                radioButtonPesquisarPorNome.Location = new Point();
+                radioButtonPesquisarPorMatricula.Visible = false;
+                radioButtonPesquisarPorMatricula.Checked = false;
+                radioButtonPesquisarPorMatricula.Location = new Point();
+                radioButtonPesquisarPorDescricao.Visible = false;
+                radioButtonPesquisarPorDescricao.Checked = false;
+                radioButtonPesquisarPorDescricao.Location = new Point();
+                radioButtonPesquisarPorCodigo.Visible = false;
+                radioButtonPesquisarPorCodigo.Checked = false;
+                radioButtonPesquisarPorCodigo.Location = new Point();
+                radioButtonPesquisarPorLogin.Visible = false;
+                radioButtonPesquisarPorLogin.Checked = false;
+                radioButtonPesquisarPorLogin.Location = new Point();
+                //Filtros
+                groupBoxFiltros.Visible = false;
+                labelFiltrarPorUnidade.Visible = false;
+                comboBoxFiltroUnidade.Visible = false;
+                labelFiltrarPorCurso.Visible = false;
+                comboBoxFiltroCurso.Visible = false;
+                labelFiltrarPorProfessor.Visible = false;
+                comboBoxFiltroProfessor.Visible = false;
+                labelFiltrarPorData.Visible = false;
+                dateTimePickerFiltroData.Visible = false;
+                labelFiltrarPorTipo.Visible = false;
+                labelFiltrarPorTipo.Location = new Point();
+                comboBoxFiltroTipo.Visible = false;
+                comboBoxFiltroTipo.Location = new Point();
+                labelFiltrarPorGrupo.Visible = false;
+                labelFiltrarPorGrupo.Location = new Point();
+                comboBoxFiltroGrupo.Visible = false;
+                comboBoxFiltroGrupo.Location = new Point();
+                //DataGrid
+                dataGridView.DataSource = null;
+            }
+
+            if (labelModuloTitulo.Text == "Salas")
+            {
+                labelModuloTitulo.Text = "Salas";
+                labelPesquisaTipo.Text = "Código: ";
+                //Pesquisas
+                labelPesquisarEscolha.Visible = true;
+                radioButtonPesquisarPorTitulo.Visible = false;
+                radioButtonPesquisarPorTitulo.Checked = false;
+                radioButtonPesquisarPorTitulo.Location = new Point();
+                radioButtonPesquisarPorAluno.Visible = false;
+                radioButtonPesquisarPorAluno.Checked = false;
+                radioButtonPesquisarPorAluno.Location = new Point();
+                radioButtonPesquisarPorNome.Visible = true;
+                radioButtonPesquisarPorNome.Checked = true;
+                radioButtonPesquisarPorNome.Location = new Point(642,302);
+                radioButtonPesquisarPorMatricula.Visible = false;
+                radioButtonPesquisarPorMatricula.Checked = false;
+                radioButtonPesquisarPorMatricula.Location = new Point();
+                radioButtonPesquisarPorDescricao.Visible = true;
+                radioButtonPesquisarPorDescricao.Checked = false;
+                radioButtonPesquisarPorDescricao.Location = new Point(701, 302);
+                radioButtonPesquisarPorCodigo.Visible = false;
+                radioButtonPesquisarPorCodigo.Checked = false;
+                radioButtonPesquisarPorCodigo.Location = new Point();
+                radioButtonPesquisarPorLogin.Visible = false;
+                radioButtonPesquisarPorLogin.Checked = false;
+                radioButtonPesquisarPorLogin.Location = new Point();
+                //Filtros
+                groupBoxFiltros.Visible = true;
+                labelFiltrarPorUnidade.Visible = true;
+                comboBoxFiltroUnidade.Visible = true;
+                labelFiltrarPorCurso.Visible = false;
+                comboBoxFiltroCurso.Visible = false;
+                labelFiltrarPorProfessor.Visible = false;
+                comboBoxFiltroProfessor.Visible = false;
+                labelFiltrarPorData.Visible = false;
+                dateTimePickerFiltroData.Visible = false;
+                labelFiltrarPorTipo.Visible = false;
+                labelFiltrarPorTipo.Location = new Point();
+                comboBoxFiltroTipo.Visible = false;
+                comboBoxFiltroTipo.Location = new Point();
+                labelFiltrarPorGrupo.Visible = false;
+                labelFiltrarPorGrupo.Location = new Point();
+                comboBoxFiltroGrupo.Visible = false;
+                comboBoxFiltroGrupo.Location = new Point();
+                //DataGrid
+                dataGridView.DataSource = null;
+            }
         }
 
-        private void buttonAlunoMenu_Click(object sender, EventArgs e)
+        private void radioButtonPesquisarPorTitulo_CheckedChanged(object sender, EventArgs e)
         {
-            labelModuloTitulo.Text = "Alunos";
-            labelPesquisaTipo.Text = "Nome: ";
-            textBoxPesquisa.Location = new Point(283, 82);
-            textBoxPesquisa.Size = new Size(587, 20);
-            //Pesquisas
-            labelPesquisarEscolha.Visible = true;
-            labelPesquisarEscolha.Location = new Point(681, 315);
-            radioButtonPesquisarPorNome.Visible = true;
-            radioButtonPesquisarPorNome.Checked = true;
-            radioButtonPesquisarPorNome.Location = new Point(764, 313);
-            radioButtonPesquisarPorCPF.Visible = true;
-            radioButtonPesquisarPorCPF.Location = new Point(826, 313);
-            radioButtonPesquisarPorMatricula.Visible = true;
-            radioButtonPesquisarPorMatricula.Location = new Point(880, 313);
-            radioButtonPesquisarPorDescricao.Visible = false;
-            radioButtonPesquisarPorDescricao.Checked = false;
-            radioButtonPesquisarPorTema.Visible = false;
-            radioButtonPesquisarPorTema.Checked = false;
-            radioButtonPesquisarPorCodigo.Visible = false;
-            radioButtonPesquisarPorCodigo.Checked = false;
-            radioButtonPesquisarPorLogin.Visible = false;
-            radioButtonPesquisarPorLogin.Checked = false;
-            //Filtros
-            labelFiltrar.Visible = true;
-            labelFiltrarPorUnidade.Visible = true;
-            comboBoxFiltroUnidade.Visible = true;
-            labelFiltrarPorCurso.Visible = true;
-            comboBoxFiltroCurso.Visible = true;
-            labelFiltrarPorProfessor.Visible = false;
-            comboBoxFiltroProfessor.Visible = false;
-            labelFiltrarPorTipo.Visible = false;
-            comboBoxFiltroTipo.Visible = false;
-            labelFiltrarPorData.Visible = false;
-            dateTimePickerFiltroData.Visible = false;
-            labelFiltrarPorGrupo.Visible = false;
-            comboBoxFiltroGrupo.Visible = false;
-            //DataGrid
-            dataGridView.DataSource = null;
+            labelPesquisaTipo.Text = "Título: ";
         }
 
-        private void buttonTCCMenu_Click(object sender, EventArgs e)
+        private void radioButtonPesquisarPorAluno_CheckedChanged(object sender, EventArgs e)
         {
-            labelModuloTitulo.Text = "TCCs";
-            labelPesquisaTipo.Text = "Descrição: ";
-            textBoxPesquisa.Location = new Point(303, 82);
-            textBoxPesquisa.Size = new Size(567, 20);
-            //Pesquisas
-            labelPesquisarEscolha.Visible = true;
-            labelPesquisarEscolha.Location = new Point(740, 315);
-            radioButtonPesquisarPorNome.Visible = false;
-            radioButtonPesquisarPorCPF.Visible = false;
-            radioButtonPesquisarPorCPF.Checked = false;
-            radioButtonPesquisarPorMatricula.Visible = false;
-            radioButtonPesquisarPorMatricula.Checked = false;
-            radioButtonPesquisarPorDescricao.Visible = true;
-            radioButtonPesquisarPorDescricao.Location = new Point(820, 313);
-            radioButtonPesquisarPorDescricao.Checked = true;
-            radioButtonPesquisarPorTema.Location = new Point(899,313);
-            radioButtonPesquisarPorTema.Visible = true;
-            radioButtonPesquisarPorTema.Checked = false;
-            radioButtonPesquisarPorCodigo.Visible = false;
-            radioButtonPesquisarPorCodigo.Checked = false;
-            radioButtonPesquisarPorLogin.Visible = false;
-            radioButtonPesquisarPorLogin.Checked = false;
-            //Filtros
-            labelFiltrar.Visible = true;
-            labelFiltrarPorUnidade.Visible = true;
-            comboBoxFiltroUnidade.Visible = true;
-            labelFiltrarPorCurso.Visible = true;
-            comboBoxFiltroCurso.Visible = true;
-            labelFiltrarPorProfessor.Visible = true;
-            comboBoxFiltroProfessor.Visible = true;
-            labelFiltrarPorTipo.Visible = false;
-            comboBoxFiltroTipo.Visible = false;
-            labelFiltrarPorData.Visible = true;
-            labelFiltrarPorData.Location = new Point(498, 318);
-            dateTimePickerFiltroData.Visible = true;
-            dateTimePickerFiltroData.Location = new Point(531, 314);
-            labelFiltrarPorGrupo.Visible = false;
-            comboBoxFiltroGrupo.Visible = false;
-            //DataGrid
-            dataGridView.DataSource = null;
-        }
-
-        private void buttonProfessorMenu_Click(object sender, EventArgs e)
-        {
-            labelModuloTitulo.Text = "Professores";
-            labelPesquisaTipo.Text = "Nome: ";
-            textBoxPesquisa.Location = new Point(283, 82);
-            textBoxPesquisa.Size = new Size(587, 20);
-            //Pesquisas
-            labelPesquisarEscolha.Visible = true;
-            labelPesquisarEscolha.Location = new Point(681, 315);
-            radioButtonPesquisarPorNome.Visible = true;
-            radioButtonPesquisarPorNome.Checked = true;
-            radioButtonPesquisarPorNome.Location = new Point(764, 313);
-            radioButtonPesquisarPorCPF.Visible = true;
-            radioButtonPesquisarPorCPF.Location = new Point(826, 313);
-            radioButtonPesquisarPorMatricula.Visible = true;
-            radioButtonPesquisarPorMatricula.Location = new Point(880, 313);
-            radioButtonPesquisarPorDescricao.Visible = false;
-            radioButtonPesquisarPorDescricao.Checked = false;
-            radioButtonPesquisarPorTema.Visible = false;
-            radioButtonPesquisarPorTema.Checked = false;
-            radioButtonPesquisarPorCodigo.Visible = false;
-            radioButtonPesquisarPorCodigo.Checked = false;
-            radioButtonPesquisarPorLogin.Visible = false;
-            radioButtonPesquisarPorLogin.Checked = false;
-            //Filtros
-            labelFiltrar.Visible = false;
-            labelFiltrarPorUnidade.Visible = false;
-            comboBoxFiltroUnidade.Visible = false;
-            labelFiltrarPorCurso.Visible = false;
-            comboBoxFiltroCurso.Visible = false;
-            labelFiltrarPorProfessor.Visible = false;
-            comboBoxFiltroProfessor.Visible = false;
-            labelFiltrarPorTipo.Visible = false;
-            comboBoxFiltroTipo.Visible = false;
-            labelFiltrarPorData.Visible = false;
-            dateTimePickerFiltroData.Visible = false;
-            labelFiltrarPorGrupo.Visible = false;
-            comboBoxFiltroGrupo.Visible = false;
-            //DataGrid
-            dataGridView.DataSource = null;
-        }
-
-        private void buttonCursoMenu_Click(object sender, EventArgs e)
-        {
-            labelModuloTitulo.Text = "Cursos";
-            labelPesquisaTipo.Text = "Nome: ";
-            textBoxPesquisa.Location = new Point(283, 82);
-            textBoxPesquisa.Size = new Size(587, 20);
-            //Pesquisas
-            labelPesquisarEscolha.Visible = false;
-            labelPesquisarEscolha.Location = new Point(681, 315);
-            radioButtonPesquisarPorNome.Visible = false;
-            radioButtonPesquisarPorNome.Checked = true;
-            radioButtonPesquisarPorCPF.Visible = false;
-            radioButtonPesquisarPorCPF.Checked = false;
-            radioButtonPesquisarPorMatricula.Visible = false;
-            radioButtonPesquisarPorDescricao.Visible = false;
-            radioButtonPesquisarPorDescricao.Checked = false;
-            radioButtonPesquisarPorTema.Visible = false;
-            radioButtonPesquisarPorTema.Checked = false;
-            radioButtonPesquisarPorCodigo.Visible = false;
-            radioButtonPesquisarPorCodigo.Checked = false;
-            radioButtonPesquisarPorLogin.Visible = false;
-            radioButtonPesquisarPorLogin.Checked = false;
-            //Filtros
-            labelFiltrar.Visible = true;
-            labelFiltrarPorUnidade.Visible = true;
-            comboBoxFiltroUnidade.Visible = true;
-            labelFiltrarPorCurso.Visible = false;
-            comboBoxFiltroCurso.Visible = false;
-            labelFiltrarPorProfessor.Visible = false;
-            comboBoxFiltroProfessor.Visible = false;
-            labelFiltrarPorTipo.Visible = false;
-            comboBoxFiltroTipo.Visible = false;
-            labelFiltrarPorData.Visible = false;
-            dateTimePickerFiltroData.Visible = false;
-            labelFiltrarPorGrupo.Visible = false;
-            comboBoxFiltroGrupo.Visible = false;
-            //DataGrid
-            dataGridView.DataSource = null;
-        }
-
-        private void buttonUnidadeMenu_Click(object sender, EventArgs e)
-        {
-            labelModuloTitulo.Text = "Unidades";
-            labelPesquisaTipo.Text = "Nome: ";
-            textBoxPesquisa.Location = new Point(283, 82);
-            textBoxPesquisa.Size = new Size(587, 20);
-            //Pesquisas
-            labelPesquisarEscolha.Visible = false;
-            labelPesquisarEscolha.Location = new Point(681, 315);
-            radioButtonPesquisarPorNome.Visible = false;
-            radioButtonPesquisarPorNome.Checked = true;
-            radioButtonPesquisarPorCPF.Visible = false;
-            radioButtonPesquisarPorCPF.Checked = false;
-            radioButtonPesquisarPorMatricula.Visible = false;
-            radioButtonPesquisarPorDescricao.Visible = false;
-            radioButtonPesquisarPorDescricao.Checked = false;
-            radioButtonPesquisarPorTema.Visible = false;
-            radioButtonPesquisarPorTema.Checked = false;
-            radioButtonPesquisarPorCodigo.Visible = false;
-            radioButtonPesquisarPorCodigo.Checked = false;
-            radioButtonPesquisarPorLogin.Visible = false;
-            radioButtonPesquisarPorLogin.Checked = false;
-            //Filtros
-            labelFiltrar.Visible = false;
-            labelFiltrarPorUnidade.Visible = false;
-            comboBoxFiltroUnidade.Visible = false;
-            labelFiltrarPorCurso.Visible = false;
-            comboBoxFiltroCurso.Visible = false;
-            labelFiltrarPorProfessor.Visible = false;
-            comboBoxFiltroProfessor.Visible = false;
-            labelFiltrarPorTipo.Visible = false;
-            comboBoxFiltroTipo.Visible = false;
-            labelFiltrarPorData.Visible = false;
-            dateTimePickerFiltroData.Visible = false;
-            labelFiltrarPorGrupo.Visible = false;
-            comboBoxFiltroGrupo.Visible = false;
-            //DataGrid
-            dataGridView.DataSource = null;
-        }
-
-        private void buttonSalaMenu_Click(object sender, EventArgs e)
-        {
-            labelModuloTitulo.Text = "Salas";
-            labelPesquisaTipo.Text = "Código: ";
-            textBoxPesquisa.Location = new Point(283, 82);
-            textBoxPesquisa.Size = new Size(587, 20);
-            //Pesquisas
-            labelPesquisarEscolha.Visible = true;
-            labelPesquisarEscolha.Location = new Point(736, 315);
-            radioButtonPesquisarPorNome.Visible = false;
-            radioButtonPesquisarPorNome.Checked = false;
-            radioButtonPesquisarPorCPF.Visible = false;
-            radioButtonPesquisarPorCPF.Checked = false;
-            radioButtonPesquisarPorMatricula.Visible = false;
-            radioButtonPesquisarPorDescricao.Visible = true;
-            radioButtonPesquisarPorDescricao.Checked = false;
-            radioButtonPesquisarPorDescricao.Location = new Point(878, 313);
-            radioButtonPesquisarPorTema.Visible = false;
-            radioButtonPesquisarPorTema.Checked = false;
-            radioButtonPesquisarPorCodigo.Visible = true;
-            radioButtonPesquisarPorCodigo.Checked = true;
-            radioButtonPesquisarPorCodigo.Location = new Point(816, 313);
-            radioButtonPesquisarPorLogin.Visible = false;
-            radioButtonPesquisarPorLogin.Checked = false;
-
-            //Filtros
-            labelFiltrar.Visible = true;
-            labelFiltrarPorUnidade.Visible = true;
-            comboBoxFiltroUnidade.Visible = true;
-            labelFiltrarPorCurso.Visible = false;
-            comboBoxFiltroCurso.Visible = false;
-            labelFiltrarPorProfessor.Visible = false;
-            comboBoxFiltroProfessor.Visible = false;
-            labelFiltrarPorTipo.Visible = true;
-            comboBoxFiltroTipo.Visible = true;
-            labelFiltrarPorData.Visible = false;
-            dateTimePickerFiltroData.Visible = false;
-            labelFiltrarPorGrupo.Visible = false;
-            comboBoxFiltroGrupo.Visible = false;
-            //DataGrid
-            dataGridView.DataSource = null;
-        }
-
-        private void buttonUsuarioMenu_Click(object sender, EventArgs e)
-        {
-            labelModuloTitulo.Text = "Usuários";
-            labelPesquisaTipo.Text = "Nome: ";
-            textBoxPesquisa.Location = new Point(283, 82);
-            textBoxPesquisa.Size = new Size(587, 20);
-            //Pesquisas
-            labelPesquisarEscolha.Visible = true;
-            labelPesquisarEscolha.Location = new Point(760, 315);
-            radioButtonPesquisarPorNome.Visible = true;
-            radioButtonPesquisarPorNome.Checked = true;
-            radioButtonPesquisarPorNome.Location = new Point(840, 313);
-            radioButtonPesquisarPorCPF.Visible = false;
-            radioButtonPesquisarPorCPF.Checked = false;
-            radioButtonPesquisarPorMatricula.Visible = false;
-            radioButtonPesquisarPorDescricao.Visible = false;
-            radioButtonPesquisarPorDescricao.Checked = false;
-            radioButtonPesquisarPorTema.Visible = false;
-            radioButtonPesquisarPorTema.Checked = false;
-            radioButtonPesquisarPorCodigo.Visible = false;
-            radioButtonPesquisarPorCodigo.Checked = false;
-            radioButtonPesquisarPorLogin.Visible = true;
-            radioButtonPesquisarPorLogin.Checked = false;
-            radioButtonPesquisarPorLogin.Location = new Point(899, 313);
-            //Filtros
-            labelFiltrar.Visible = true;
-            labelFiltrarPorUnidade.Visible = false;
-            comboBoxFiltroUnidade.Visible = false;
-            labelFiltrarPorCurso.Visible = false;
-            comboBoxFiltroCurso.Visible = false;
-            labelFiltrarPorProfessor.Visible = false;
-            comboBoxFiltroProfessor.Visible = false;
-            labelFiltrarPorTipo.Visible = false;
-            comboBoxFiltroTipo.Visible = false;
-            labelFiltrarPorData.Visible = false;
-            dateTimePickerFiltroData.Visible = false;
-            labelFiltrarPorGrupo.Visible = true;
-            labelFiltrarPorGrupo.Location = new Point(309,318);
-            comboBoxFiltroGrupo.Visible = true;
-            comboBoxFiltroGrupo.Location = new Point(351, 314);
-            //DataGrid
-            dataGridView.DataSource = null;
+            labelPesquisaTipo.Text = "Aluno: ";
         }
 
         private void radioButtonPesquisarPorNome_CheckedChanged(object sender, EventArgs e)
         {
             labelPesquisaTipo.Text = "Nome: ";
-            textBoxPesquisa.Visible = true;
-            textBoxPesquisa.Location = new Point(283, 82);
-            textBoxPesquisa.Size = new Size(587, 20);
-            maskedTextBoxPesquisa.Visible = false;
-            maskedTextBoxPesquisa.Location = new Point(275, 82);
-        }
-
-        private void radioButtonPesquisarPorCPF_CheckedChanged(object sender, EventArgs e)
-        {
-            labelPesquisaTipo.Text = "CPF: ";
-            textBoxPesquisa.Visible = false;
-            textBoxPesquisa.Location = new Point(275, 82);
-            textBoxPesquisa.Size = new Size(595, 20);
-            maskedTextBoxPesquisa.Visible = true;
-            maskedTextBoxPesquisa.Location = new Point(275, 82);
-            maskedTextBoxPesquisa.Size = new Size(595, 20);
         }
 
         private void radioButtonPesquisarPorMatricula_CheckedChanged(object sender, EventArgs e)
         {
             labelPesquisaTipo.Text = "Matricula: ";
-            textBoxPesquisa.Visible = true;
-            textBoxPesquisa.Location = new Point(299, 82);
-            textBoxPesquisa.Size = new Size(571, 20);
-            maskedTextBoxPesquisa.Visible = false;
-            maskedTextBoxPesquisa.Location = new Point(275, 82);
-        }
-
-        private void radioButtonPesquisarPorDescricao_CheckedChanged(object sender, EventArgs e)
-        {
-            labelPesquisaTipo.Text = "Descrição: ";
-            textBoxPesquisa.Visible = true;
-            textBoxPesquisa.Location = new Point(303, 82);
-            textBoxPesquisa.Size = new Size(567, 20);
-            maskedTextBoxPesquisa.Visible = false;
-            maskedTextBoxPesquisa.Location = new Point(275, 82);
-        }
-
-        private void radioButtonPesquisarPorTema_CheckedChanged(object sender, EventArgs e)
-        {
-            labelPesquisaTipo.Text = "Tema: ";
-            textBoxPesquisa.Visible = true;
-            textBoxPesquisa.Location = new Point(283, 82);
-            textBoxPesquisa.Size = new Size(587, 20);
-            maskedTextBoxPesquisa.Visible = false;
-            maskedTextBoxPesquisa.Location = new Point(275, 82);
         }
 
         private void radioButtonPesquisarPorLogin_CheckedChanged(object sender, EventArgs e)
         {
             labelPesquisaTipo.Text = "Login: ";
-            textBoxPesquisa.Visible = true;
-            textBoxPesquisa.Location = new Point(283, 82);
-            textBoxPesquisa.Size = new Size(587, 20);
-            maskedTextBoxPesquisa.Visible = false;
-            maskedTextBoxPesquisa.Location = new Point(275, 82);
         }
 
         private void radioButtonPesquisarPorCodigo_CheckedChanged(object sender, EventArgs e)
         {
             labelPesquisaTipo.Text = "Código: ";
-            textBoxPesquisa.Visible = true;
-            textBoxPesquisa.Location = new Point(283, 82);
-            textBoxPesquisa.Size = new Size(587, 20);
-            maskedTextBoxPesquisa.Visible = false;
-            maskedTextBoxPesquisa.Location = new Point(275, 82);
+        }
+
+        private void radioButtonPesquisarPorDescricao_CheckedChanged(object sender, EventArgs e)
+        {
+            labelPesquisaTipo.Text = "Descrição: ";
         }
 
         private void buttonInserir_Click(object sender, EventArgs e)
@@ -536,17 +505,6 @@ namespace Apresentacao
                 if (radioButtonPesquisarPorNome.Checked)
                 {
                     professorColecao = professorNegocios.ConsultarPorNome(textBoxPesquisa.Text);
-                }
-                if (radioButtonPesquisarPorCPF.Checked)
-                {
-                    if (maskedTextBoxPesquisa.MaskFull)
-                    {
-                        professorColecao = professorNegocios.ConsultarPorCPF(maskedTextBoxPesquisa.Text);
-                    }
-                    else
-                    {
-                        MessageBox.Show("Digite o CPF completo");
-                    }
                 }
                 if (radioButtonPesquisarPorMatricula.Checked)
                 {

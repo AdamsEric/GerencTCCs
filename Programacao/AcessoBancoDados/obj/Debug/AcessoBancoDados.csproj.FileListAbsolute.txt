@@ -14,3 +14,8 @@ D:\Eric Adams\OneDrive\Estudo\C#\GerencTCCs\Programacao\AcessoBancoDados\bin\Deb
 D:\Eric Adams\OneDrive\Estudo\C#\GerencTCCs\Programacao\AcessoBancoDados\obj\Debug\AcessoBancoDados.dll
 D:\Eric Adams\OneDrive\Estudo\C#\GerencTCCs\Programacao\AcessoBancoDados\obj\Debug\AcessoBancoDados.pdb
 D:\Eric Adams\OneDrive\Estudo\C#\GerencTCCs\Programacao\AcessoBancoDados\obj\Debug\AcessoBancoDados.csprojResolveAssemblyReference.cache
+D:\Eric Adams\OneDrive\UNP\2015.2 - 6º Período\Engenharia de Software\GerencTCCs\Programacao\AcessoBancoDados\bin\Debug\AcessoBancoDados.dll.config
+D:\Eric Adams\OneDrive\UNP\2015.2 - 6º Período\Engenharia de Software\GerencTCCs\Programacao\AcessoBancoDados\bin\Debug\AcessoBancoDados.dll
+D:\Eric Adams\OneDrive\UNP\2015.2 - 6º Período\Engenharia de Software\GerencTCCs\Programacao\AcessoBancoDados\bin\Debug\AcessoBancoDados.pdb
+D:\Eric Adams\OneDrive\UNP\2015.2 - 6º Período\Engenharia de Software\GerencTCCs\Programacao\AcessoBancoDados\obj\Debug\AcessoBancoDados.dll
+D:\Eric Adams\OneDrive\UNP\2015.2 - 6º Período\Engenharia de Software\GerencTCCs\Programacao\AcessoBancoDados\obj\Debug\AcessoBancoDados.pdb
