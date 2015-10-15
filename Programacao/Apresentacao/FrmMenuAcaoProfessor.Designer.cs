@@ -44,7 +44,7 @@
             // labelAcaoProfessorNome
             // 
             this.labelAcaoProfessorNome.AutoSize = true;
-            this.labelAcaoProfessorNome.Location = new System.Drawing.Point(16, 22);
+            this.labelAcaoProfessorNome.Location = new System.Drawing.Point(16, 54);
             this.labelAcaoProfessorNome.Name = "labelAcaoProfessorNome";
             this.labelAcaoProfessorNome.Size = new System.Drawing.Size(45, 13);
             this.labelAcaoProfessorNome.TabIndex = 0;
@@ -53,7 +53,7 @@
             // labelAcaoProfessorMatricula
             // 
             this.labelAcaoProfessorMatricula.AutoSize = true;
-            this.labelAcaoProfessorMatricula.Location = new System.Drawing.Point(16, 62);
+            this.labelAcaoProfessorMatricula.Location = new System.Drawing.Point(16, 91);
             this.labelAcaoProfessorMatricula.Name = "labelAcaoProfessorMatricula";
             this.labelAcaoProfessorMatricula.Size = new System.Drawing.Size(59, 13);
             this.labelAcaoProfessorMatricula.TabIndex = 1;
@@ -62,17 +62,17 @@
             // textBoxAcaoProfessorNome
             // 
             this.textBoxAcaoProfessorNome.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.textBoxAcaoProfessorNome.Location = new System.Drawing.Point(57, 18);
+            this.textBoxAcaoProfessorNome.Location = new System.Drawing.Point(68, 50);
             this.textBoxAcaoProfessorNome.Name = "textBoxAcaoProfessorNome";
-            this.textBoxAcaoProfessorNome.Size = new System.Drawing.Size(373, 20);
+            this.textBoxAcaoProfessorNome.Size = new System.Drawing.Size(362, 20);
             this.textBoxAcaoProfessorNome.TabIndex = 6;
             // 
             // textBoxAcaoProfessorMatricula
             // 
             this.textBoxAcaoProfessorMatricula.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.textBoxAcaoProfessorMatricula.Location = new System.Drawing.Point(75, 58);
+            this.textBoxAcaoProfessorMatricula.Location = new System.Drawing.Point(81, 87);
             this.textBoxAcaoProfessorMatricula.Name = "textBoxAcaoProfessorMatricula";
-            this.textBoxAcaoProfessorMatricula.Size = new System.Drawing.Size(79, 20);
+            this.textBoxAcaoProfessorMatricula.Size = new System.Drawing.Size(84, 20);
             this.textBoxAcaoProfessorMatricula.TabIndex = 7;
             // 
             // buttonAcaoProfessorConfirmar
@@ -99,7 +99,7 @@
             // labelAcaoProfessorTelefone
             // 
             this.labelAcaoProfessorTelefone.AutoSize = true;
-            this.labelAcaoProfessorTelefone.Location = new System.Drawing.Point(162, 62);
+            this.labelAcaoProfessorTelefone.Location = new System.Drawing.Point(171, 91);
             this.labelAcaoProfessorTelefone.Name = "labelAcaoProfessorTelefone";
             this.labelAcaoProfessorTelefone.Size = new System.Drawing.Size(55, 13);
             this.labelAcaoProfessorTelefone.TabIndex = 2;
@@ -108,7 +108,7 @@
             // labelAcaoProfessorCO
             // 
             this.labelAcaoProfessorCO.AutoSize = true;
-            this.labelAcaoProfessorCO.Location = new System.Drawing.Point(16, 180);
+            this.labelAcaoProfessorCO.Location = new System.Drawing.Point(16, 175);
             this.labelAcaoProfessorCO.Name = "labelAcaoProfessorCO";
             this.labelAcaoProfessorCO.Size = new System.Drawing.Size(210, 13);
             this.labelAcaoProfessorCO.TabIndex = 15;
@@ -116,7 +116,7 @@
             // 
             // maskedTextBoxAcaoProfessorTelefone
             // 
-            this.maskedTextBoxAcaoProfessorTelefone.Location = new System.Drawing.Point(223, 58);
+            this.maskedTextBoxAcaoProfessorTelefone.Location = new System.Drawing.Point(232, 87);
             this.maskedTextBoxAcaoProfessorTelefone.Mask = "(99)999999999";
             this.maskedTextBoxAcaoProfessorTelefone.Name = "maskedTextBoxAcaoProfessorTelefone";
             this.maskedTextBoxAcaoProfessorTelefone.Size = new System.Drawing.Size(85, 20);
@@ -125,7 +125,7 @@
             // labelAcaoProfessorID
             // 
             this.labelAcaoProfessorID.AutoSize = true;
-            this.labelAcaoProfessorID.Location = new System.Drawing.Point(16, 141);
+            this.labelAcaoProfessorID.Location = new System.Drawing.Point(16, 17);
             this.labelAcaoProfessorID.Name = "labelAcaoProfessorID";
             this.labelAcaoProfessorID.Size = new System.Drawing.Size(46, 13);
             this.labelAcaoProfessorID.TabIndex = 24;
@@ -133,9 +133,9 @@
             // 
             // textBoxAcaoProfessorID
             // 
-            this.textBoxAcaoProfessorID.Location = new System.Drawing.Point(64, 138);
+            this.textBoxAcaoProfessorID.Enabled = false;
+            this.textBoxAcaoProfessorID.Location = new System.Drawing.Point(68, 14);
             this.textBoxAcaoProfessorID.Name = "textBoxAcaoProfessorID";
-            this.textBoxAcaoProfessorID.ReadOnly = true;
             this.textBoxAcaoProfessorID.Size = new System.Drawing.Size(90, 20);
             this.textBoxAcaoProfessorID.TabIndex = 23;
             // 

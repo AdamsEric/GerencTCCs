@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.shapeContainer1 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
             this.rectangleShape2 = new Microsoft.VisualBasic.PowerPacks.RectangleShape();
             this.labelPesquisaTipo = new System.Windows.Forms.Label();
@@ -42,17 +42,25 @@
             this.labelFiltrarPorUnidade = new System.Windows.Forms.Label();
             this.labelFiltrarPorCurso = new System.Windows.Forms.Label();
             this.comboBoxFiltroCurso = new System.Windows.Forms.ComboBox();
+            this.tblCursoBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.gerencTCCsDataSet10 = new Apresentacao.GerencTCCsDataSet10();
             this.buttonInserir = new System.Windows.Forms.Button();
             this.buttonAlterar = new System.Windows.Forms.Button();
             this.buttonExcluir = new System.Windows.Forms.Button();
             this.labelModuloTitulo = new System.Windows.Forms.Label();
             this.labelFiltrarPorTipo = new System.Windows.Forms.Label();
             this.comboBoxFiltroTipo = new System.Windows.Forms.ComboBox();
+            this.tblSalaTipoBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.gerencTCCsDataSet13 = new Apresentacao.GerencTCCsDataSet13();
             this.dateTimePickerFiltroData = new System.Windows.Forms.DateTimePicker();
             this.labelFiltrarPorData = new System.Windows.Forms.Label();
             this.comboBoxFiltroProfessor = new System.Windows.Forms.ComboBox();
+            this.tblProfessorBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.gerencTCCsDataSet11 = new Apresentacao.GerencTCCsDataSet11();
             this.labelFiltrarPorProfessor = new System.Windows.Forms.Label();
             this.comboBoxFiltroGrupo = new System.Windows.Forms.ComboBox();
+            this.tblGrupoBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.gerencTCCsDataSet12 = new Apresentacao.GerencTCCsDataSet12();
             this.labelFiltrarPorGrupo = new System.Windows.Forms.Label();
             this.buttonConsultar = new System.Windows.Forms.Button();
             this.groupBoxFiltros = new System.Windows.Forms.GroupBox();
@@ -65,30 +73,22 @@
             this.labelPesquisarEscolha = new System.Windows.Forms.Label();
             this.radioButtonPesquisarPorDescricao = new System.Windows.Forms.RadioButton();
             this.tblUnidadeTableAdapter = new Apresentacao.GerencTCCsDataSet9TableAdapters.tblUnidadeTableAdapter();
-            this.gerencTCCsDataSet10 = new Apresentacao.GerencTCCsDataSet10();
-            this.tblCursoBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.tblCursoTableAdapter = new Apresentacao.GerencTCCsDataSet10TableAdapters.tblCursoTableAdapter();
-            this.gerencTCCsDataSet11 = new Apresentacao.GerencTCCsDataSet11();
-            this.tblProfessorBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.tblProfessorTableAdapter = new Apresentacao.GerencTCCsDataSet11TableAdapters.tblProfessorTableAdapter();
-            this.gerencTCCsDataSet12 = new Apresentacao.GerencTCCsDataSet12();
-            this.tblGrupoBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.tblGrupoTableAdapter = new Apresentacao.GerencTCCsDataSet12TableAdapters.tblGrupoTableAdapter();
-            this.gerencTCCsDataSet13 = new Apresentacao.GerencTCCsDataSet13();
-            this.tblSalaTipoBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.tblSalaTipoTableAdapter = new Apresentacao.GerencTCCsDataSet13TableAdapters.tblSalaTipoTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblUnidadeBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gerencTCCsDataSet9)).BeginInit();
-            this.groupBoxFiltros.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gerencTCCsDataSet10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblCursoBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gerencTCCsDataSet11)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tblProfessorBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gerencTCCsDataSet12)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tblGrupoBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gerencTCCsDataSet13)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gerencTCCsDataSet10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblSalaTipoBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gerencTCCsDataSet13)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblProfessorBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gerencTCCsDataSet11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblGrupoBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gerencTCCsDataSet12)).BeginInit();
+            this.groupBoxFiltros.SuspendLayout();
             this.SuspendLayout();
             // 
             // shapeContainer1
@@ -143,8 +143,8 @@
             // 
             this.dataGridView.AllowUserToAddRows = false;
             this.dataGridView.AllowUserToResizeRows = false;
-            dataGridViewCellStyle19.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.dataGridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle19;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.dataGridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridView.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
             this.dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView.Location = new System.Drawing.Point(25, 114);
@@ -209,6 +209,16 @@
             this.comboBoxFiltroCurso.TabIndex = 10;
             this.comboBoxFiltroCurso.ValueMember = "CursoNome";
             this.comboBoxFiltroCurso.Click += new System.EventHandler(this.comboBoxFiltroCurso_Click);
+            // 
+            // tblCursoBindingSource
+            // 
+            this.tblCursoBindingSource.DataMember = "tblCurso";
+            this.tblCursoBindingSource.DataSource = this.gerencTCCsDataSet10;
+            // 
+            // gerencTCCsDataSet10
+            // 
+            this.gerencTCCsDataSet10.DataSetName = "GerencTCCsDataSet10";
+            this.gerencTCCsDataSet10.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // buttonInserir
             // 
@@ -279,6 +289,16 @@
             this.comboBoxFiltroTipo.Visible = false;
             this.comboBoxFiltroTipo.Click += new System.EventHandler(this.comboBoxFiltroTipo_Click);
             // 
+            // tblSalaTipoBindingSource
+            // 
+            this.tblSalaTipoBindingSource.DataMember = "tblSalaTipo";
+            this.tblSalaTipoBindingSource.DataSource = this.gerencTCCsDataSet13;
+            // 
+            // gerencTCCsDataSet13
+            // 
+            this.gerencTCCsDataSet13.DataSetName = "GerencTCCsDataSet13";
+            this.gerencTCCsDataSet13.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // dateTimePickerFiltroData
             // 
             this.dateTimePickerFiltroData.Cursor = System.Windows.Forms.Cursors.Arrow;
@@ -316,6 +336,16 @@
             this.comboBoxFiltroProfessor.Visible = false;
             this.comboBoxFiltroProfessor.Click += new System.EventHandler(this.comboBoxFiltroProfessor_Click);
             // 
+            // tblProfessorBindingSource
+            // 
+            this.tblProfessorBindingSource.DataMember = "tblProfessor";
+            this.tblProfessorBindingSource.DataSource = this.gerencTCCsDataSet11;
+            // 
+            // gerencTCCsDataSet11
+            // 
+            this.gerencTCCsDataSet11.DataSetName = "GerencTCCsDataSet11";
+            this.gerencTCCsDataSet11.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // labelFiltrarPorProfessor
             // 
             this.labelFiltrarPorProfessor.AutoSize = true;
@@ -339,6 +369,16 @@
             this.comboBoxFiltroGrupo.ValueMember = "GrupoNome";
             this.comboBoxFiltroGrupo.Visible = false;
             this.comboBoxFiltroGrupo.Click += new System.EventHandler(this.comboBoxFiltroGrupo_Click);
+            // 
+            // tblGrupoBindingSource
+            // 
+            this.tblGrupoBindingSource.DataMember = "tblGrupo";
+            this.tblGrupoBindingSource.DataSource = this.gerencTCCsDataSet12;
+            // 
+            // gerencTCCsDataSet12
+            // 
+            this.gerencTCCsDataSet12.DataSetName = "GerencTCCsDataSet12";
+            this.gerencTCCsDataSet12.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // labelFiltrarPorGrupo
             // 
@@ -477,57 +517,17 @@
             // 
             this.tblUnidadeTableAdapter.ClearBeforeFill = true;
             // 
-            // gerencTCCsDataSet10
-            // 
-            this.gerencTCCsDataSet10.DataSetName = "GerencTCCsDataSet10";
-            this.gerencTCCsDataSet10.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // tblCursoBindingSource
-            // 
-            this.tblCursoBindingSource.DataMember = "tblCurso";
-            this.tblCursoBindingSource.DataSource = this.gerencTCCsDataSet10;
-            // 
             // tblCursoTableAdapter
             // 
             this.tblCursoTableAdapter.ClearBeforeFill = true;
-            // 
-            // gerencTCCsDataSet11
-            // 
-            this.gerencTCCsDataSet11.DataSetName = "GerencTCCsDataSet11";
-            this.gerencTCCsDataSet11.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // tblProfessorBindingSource
-            // 
-            this.tblProfessorBindingSource.DataMember = "tblProfessor";
-            this.tblProfessorBindingSource.DataSource = this.gerencTCCsDataSet11;
             // 
             // tblProfessorTableAdapter
             // 
             this.tblProfessorTableAdapter.ClearBeforeFill = true;
             // 
-            // gerencTCCsDataSet12
-            // 
-            this.gerencTCCsDataSet12.DataSetName = "GerencTCCsDataSet12";
-            this.gerencTCCsDataSet12.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // tblGrupoBindingSource
-            // 
-            this.tblGrupoBindingSource.DataMember = "tblGrupo";
-            this.tblGrupoBindingSource.DataSource = this.gerencTCCsDataSet12;
-            // 
             // tblGrupoTableAdapter
             // 
             this.tblGrupoTableAdapter.ClearBeforeFill = true;
-            // 
-            // gerencTCCsDataSet13
-            // 
-            this.gerencTCCsDataSet13.DataSetName = "GerencTCCsDataSet13";
-            this.gerencTCCsDataSet13.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // tblSalaTipoBindingSource
-            // 
-            this.tblSalaTipoBindingSource.DataMember = "tblSalaTipo";
-            this.tblSalaTipoBindingSource.DataSource = this.gerencTCCsDataSet13;
             // 
             // tblSalaTipoTableAdapter
             // 
@@ -569,16 +569,16 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblUnidadeBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gerencTCCsDataSet9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblCursoBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gerencTCCsDataSet10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblSalaTipoBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gerencTCCsDataSet13)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblProfessorBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gerencTCCsDataSet11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblGrupoBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gerencTCCsDataSet12)).EndInit();
             this.groupBoxFiltros.ResumeLayout(false);
             this.groupBoxFiltros.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gerencTCCsDataSet10)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tblCursoBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gerencTCCsDataSet11)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tblProfessorBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gerencTCCsDataSet12)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tblGrupoBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gerencTCCsDataSet13)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tblSalaTipoBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

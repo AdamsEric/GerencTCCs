@@ -111,6 +111,12 @@
     <Compile Include="FrmMenuAcaoProfessor.Designer.cs">
       <DependentUpon>FrmMenuAcaoProfessor.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmMenuAcaoAluno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMenuAcaoAluno.Designer.cs">
+      <DependentUpon>FrmMenuAcaoAluno.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmMenuAlterar\FrmMenuAlterarSala.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -128,12 +134,6 @@
     </Compile>
     <Compile Include="FrmMenuAlterar\FrmMenuAlterarUsuario.Designer.cs">
       <DependentUpon>FrmMenuAlterarUsuario.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FrmMenuAlterar\FrmMenuAlterarAluno.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmMenuAlterar\FrmMenuAlterarAluno.Designer.cs">
-      <DependentUpon>FrmMenuAlterarAluno.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmMenuInserir\FrmMenuInserirUsuario.cs">
       <SubType>Form</SubType>
@@ -165,12 +165,6 @@
     <Compile Include="FrmMenuAdministrador.Designer.cs">
       <DependentUpon>FrmMenuAdministrador.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmMenuInserir\FrmMenuInserirAluno.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmMenuInserir\FrmMenuInserirAluno.Designer.cs">
-      <DependentUpon>FrmMenuInserirAluno.cs</DependentUpon>
-    </Compile>
     <Compile Include="GerencTCCsDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -200,6 +194,26 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>GerencTCCsDataSet13.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="GerencTCCsDataSet14.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GerencTCCsDataSet14.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="GerencTCCsDataSet15.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GerencTCCsDataSet15.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="GerencTCCsDataSet16.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GerencTCCsDataSet16.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="GerencTCCsDataSet17.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GerencTCCsDataSet17.xsd</DependentUpon>
     </Compile>
     <Compile Include="GerencTCCsDataSet2.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -261,6 +275,9 @@
     <EmbeddedResource Include="FrmMenuAcaoProfessor.resx">
       <DependentUpon>FrmMenuAcaoProfessor.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmMenuAcaoAluno.resx">
+      <DependentUpon>FrmMenuAcaoAluno.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmMenuAlterar\FrmMenuAlterarSala.resx">
       <DependentUpon>FrmMenuAlterarSala.cs</DependentUpon>
     </EmbeddedResource>
@@ -269,9 +286,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmMenuAlterar\FrmMenuAlterarUsuario.resx">
       <DependentUpon>FrmMenuAlterarUsuario.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FrmMenuAlterar\FrmMenuAlterarAluno.resx">
-      <DependentUpon>FrmMenuAlterarAluno.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmMenuInserir\FrmMenuInserirUsuario.resx">
       <DependentUpon>FrmMenuInserirUsuario.cs</DependentUpon>
@@ -287,9 +301,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmMenuAdministrador.resx">
       <DependentUpon>FrmMenuAdministrador.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FrmMenuInserir\FrmMenuInserirAluno.resx">
-      <DependentUpon>FrmMenuInserirAluno.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -366,6 +377,50 @@
     </None>
     <None Include="GerencTCCsDataSet13.xss">
       <DependentUpon>GerencTCCsDataSet13.xsd</DependentUpon>
+    </None>
+    <None Include="GerencTCCsDataSet14.xsc">
+      <DependentUpon>GerencTCCsDataSet14.xsd</DependentUpon>
+    </None>
+    <None Include="GerencTCCsDataSet14.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>GerencTCCsDataSet14.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="GerencTCCsDataSet14.xss">
+      <DependentUpon>GerencTCCsDataSet14.xsd</DependentUpon>
+    </None>
+    <None Include="GerencTCCsDataSet15.xsc">
+      <DependentUpon>GerencTCCsDataSet15.xsd</DependentUpon>
+    </None>
+    <None Include="GerencTCCsDataSet15.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>GerencTCCsDataSet15.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="GerencTCCsDataSet15.xss">
+      <DependentUpon>GerencTCCsDataSet15.xsd</DependentUpon>
+    </None>
+    <None Include="GerencTCCsDataSet16.xsc">
+      <DependentUpon>GerencTCCsDataSet16.xsd</DependentUpon>
+    </None>
+    <None Include="GerencTCCsDataSet16.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>GerencTCCsDataSet16.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="GerencTCCsDataSet16.xss">
+      <DependentUpon>GerencTCCsDataSet16.xsd</DependentUpon>
+    </None>
+    <None Include="GerencTCCsDataSet17.xsc">
+      <DependentUpon>GerencTCCsDataSet17.xsd</DependentUpon>
+    </None>
+    <None Include="GerencTCCsDataSet17.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>GerencTCCsDataSet17.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="GerencTCCsDataSet17.xss">
+      <DependentUpon>GerencTCCsDataSet17.xsd</DependentUpon>
     </None>
     <None Include="GerencTCCsDataSet2.xsc">
       <DependentUpon>GerencTCCsDataSet2.xsd</DependentUpon>

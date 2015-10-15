@@ -407,8 +407,12 @@ namespace Apresentacao
         private void buttonInserir_Click(object sender, EventArgs e)
         {
             if (labelModuloTitulo.Text == "Alunos"){
-                FrmMenuInserirAluno frmMenuInserirAluno = new FrmMenuInserirAluno();
-                frmMenuInserirAluno.ShowDialog();
+                FrmMenuAcaoAluno frmMenuAcaoAluno = new FrmMenuAcaoAluno(null, "Inserir Aluno");
+                DialogResult dialogResult = frmMenuAcaoAluno.ShowDialog();
+                if (dialogResult == DialogResult.Yes)
+                {
+                    RealizarPesquisa();
+                }
             }
             if (labelModuloTitulo.Text == "TCCs")
             {
@@ -464,8 +468,14 @@ namespace Apresentacao
 
             if (labelModuloTitulo.Text == "Alunos")
             {
-                FrmMenuAlterarAluno frmMenuAlterarAluno = new FrmMenuAlterarAluno();
-                frmMenuAlterarAluno.ShowDialog();
+                Aluno alunoSelecao = (dataGridView.SelectedRows[0].DataBoundItem as Aluno);
+
+                FrmMenuAcaoAluno frmMenuAcaoAluno = new FrmMenuAcaoAluno(alunoSelecao, "Alterar Aluno");
+                DialogResult dialogResult = frmMenuAcaoAluno.ShowDialog();
+                if (dialogResult == DialogResult.Yes)
+                {
+                    RealizarPesquisa();
+                }
             }
 
             if (labelModuloTitulo.Text == "TCCs")
@@ -567,7 +577,8 @@ namespace Apresentacao
                 CursoNegocios cursoNegocios = new CursoNegocios();
                 CursoColecao cursoColecao = new CursoColecao();
 
-                cursoColecao = cursoNegocios.ConsultarPorNome(textBoxPesquisa.Text);
+                string filtroUnidade = comboBoxFiltroUnidade.Text;
+                cursoColecao = cursoNegocios.ConsultarPorNome(textBoxPesquisa.Text, filtroUnidade);
 
                 dataGridView.DataSource = null;
                 dataGridView.DataSource = cursoColecao;
@@ -693,26 +704,31 @@ namespace Apresentacao
         private void comboBoxFiltroUnidade_Click(object sender, EventArgs e)
         {
             this.tblUnidadeTableAdapter.Fill(this.gerencTCCsDataSet9.tblUnidade);
+            comboBoxFiltroUnidade.Text = "";
         }
 
         private void comboBoxFiltroCurso_Click(object sender, EventArgs e)
         {
             this.tblCursoTableAdapter.Fill(this.gerencTCCsDataSet10.tblCurso);
+            comboBoxFiltroCurso.Text = "";
         }
 
         private void comboBoxFiltroProfessor_Click(object sender, EventArgs e)
         {
             this.tblProfessorTableAdapter.Fill(this.gerencTCCsDataSet11.tblProfessor);
+            comboBoxFiltroProfessor.Text = "";
         }
 
         private void comboBoxFiltroGrupo_Click(object sender, EventArgs e)
         {
             this.tblGrupoTableAdapter.Fill(this.gerencTCCsDataSet12.tblGrupo);
+            comboBoxFiltroGrupo.Text = "";
         }
 
         private void comboBoxFiltroTipo_Click(object sender, EventArgs e)
         {
             this.tblSalaTipoTableAdapter.Fill(this.gerencTCCsDataSet13.tblSalaTipo);
+            comboBoxFiltroTipo.Text = "";
         }
     }
 }

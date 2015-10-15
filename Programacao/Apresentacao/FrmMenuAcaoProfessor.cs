@@ -43,10 +43,10 @@ namespace Apresentacao
 
                 buttonAcaoProfessorConfirmar.Hide();
                 buttonAcaoProfessorCancelar.Hide();
-                textBoxAcaoProfessorID.ReadOnly = true;
-                textBoxAcaoProfessorNome.ReadOnly = true;
-                textBoxAcaoProfessorMatricula.ReadOnly = true;
-                maskedTextBoxAcaoProfessorTelefone.ReadOnly = true;
+                textBoxAcaoProfessorID.Enabled = false;
+                textBoxAcaoProfessorNome.Enabled = false;
+                textBoxAcaoProfessorMatricula.Enabled = false;
+                maskedTextBoxAcaoProfessorTelefone.Enabled = false;
                 labelAcaoProfessorCO.Hide();
             }
 

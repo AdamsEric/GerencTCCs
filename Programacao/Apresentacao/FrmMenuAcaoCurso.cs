@@ -28,19 +28,21 @@ namespace Apresentacao
             else if (acao == "Alterar Curso")
             {
                 this.Text = "Alterar Curso";
+                textBoxAcaoCursoID.Text = curso.CursoID.ToString();
                 textBoxAcaoCursoNome.Text = curso.CursoNome;
-                comboBoxAcaoCursoUnidadeNome.DisplayMember = curso.CursoUnidadeNome;
+                comboBoxAcaoCursoUnidadeNome.Text = curso.CursoUnidadeNome;
                 cursoold = curso;
             }
             else if(acao == "Consultar Curso")
             {
                 this.Text = "Consultar Curso";
+                textBoxAcaoCursoID.Text = curso.CursoID.ToString();
                 textBoxAcaoCursoNome.Text = curso.CursoNome;
-                comboBoxAcaoCursoUnidadeNome.DisplayMember = curso.CursoUnidadeNome;
+                comboBoxAcaoCursoUnidadeNome.Text = curso.CursoUnidadeNome;
 
                 buttonAcaoCursoConfirmar.Hide();
                 buttonAcaoCursoCancelar.Hide();
-                textBoxAcaoCursoNome.ReadOnly = true;
+                textBoxAcaoCursoNome.Enabled = false;
                 comboBoxAcaoCursoUnidadeNome.Enabled = false;
                 labelAcaoCursoCO.Hide();
             }
@@ -53,13 +55,14 @@ namespace Apresentacao
 
         private void buttonAcaoCursoConfirmar_Click(object sender, EventArgs e)
         {
+
             if (this.Text == "Inserir Curso")
             {
                 Curso curso = new Curso();
                 CursoNegocios cursoNegocios = new CursoNegocios();
+
                 curso.CursoNome = textBoxAcaoCursoNome.Text;
                 curso.CursoUnidadeNome = comboBoxAcaoCursoUnidadeNome.SelectedValue.ToString();
-
                 curso.CursoUnidadeID = cursoNegocios.RetornaIDCurso(curso.CursoUnidadeNome);
 
                 if (curso.CursoNome == "")
@@ -131,23 +134,17 @@ namespace Apresentacao
             }
         }
 
-        private void FrmMenuAcaoCurso_Load(object sender, EventArgs e)
+        private void comboBoxAcaoCursoUnidadeNome_Click(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'gerencTCCsDataSet.tblUnidade' table. You can move, or remove it, as needed.
-            this.tblUnidadeTableAdapter.Fill(this.gerencTCCsDataSet.tblUnidade);
-        }
-
-        private void fillByToolStripButton_Click(object sender, EventArgs e)
-        {
-            try
+            this.tblUnidadeTableAdapter.Fill(this.gerencTCCsDataSet15.tblUnidade);
+            if (cursoold.CursoUnidadeNome == "")
             {
-                this.tblUnidadeTableAdapter.FillBy(this.gerencTCCsDataSet.tblUnidade);
+                comboBoxAcaoCursoUnidadeNome.Text = "";
             }
-            catch (System.Exception ex)
+            else
             {
-                System.Windows.Forms.MessageBox.Show(ex.Message);
+                comboBoxAcaoCursoUnidadeNome.Text = cursoold.CursoUnidadeNome;
             }
-
         }
     }
 }

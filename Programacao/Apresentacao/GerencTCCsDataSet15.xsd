@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="GerencTCCsDataSet15" targetNamespace="http://tempuri.org/GerencTCCsDataSet15.xsd" xmlns:mstns="http://tempuri.org/GerencTCCsDataSet15.xsd" xmlns="http://tempuri.org/GerencTCCsDataSet15.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="GerencTCCsConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="GerencTCCsConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Apresentacao.Properties.Settings.GlobalReference.Default.GerencTCCsConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="tblUnidadeTableAdapter" GeneratorDataComponentClassName="tblUnidadeTableAdapter" Name="tblUnidade" UserDataComponentName="tblUnidadeTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="GerencTCCsConnectionString (Settings)" DbObjectName="GerencTCCs.dbo.tblUnidade" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT UnidadeNome FROM dbo.tblUnidade</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="UnidadeNome" DataSetColumn="UnidadeNome" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="GerencTCCsDataSet15" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="GerencTCCsDataSet15" msprop:Generator_UserDSName="GerencTCCsDataSet15">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="tblUnidade" msprop:Generator_TableClassName="tblUnidadeDataTable" msprop:Generator_TableVarName="tabletblUnidade" msprop:Generator_TablePropName="tblUnidade" msprop:Generator_RowDeletingName="tblUnidadeRowDeleting" msprop:Generator_RowChangingName="tblUnidadeRowChanging" msprop:Generator_RowEvHandlerName="tblUnidadeRowChangeEventHandler" msprop:Generator_RowDeletedName="tblUnidadeRowDeleted" msprop:Generator_UserTableName="tblUnidade" msprop:Generator_RowChangedName="tblUnidadeRowChanged" msprop:Generator_RowEvArgName="tblUnidadeRowChangeEvent" msprop:Generator_RowClassName="tblUnidadeRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="UnidadeNome" msprop:Generator_ColumnVarNameInTable="columnUnidadeNome" msprop:Generator_ColumnPropNameInRow="UnidadeNome" msprop:Generator_ColumnPropNameInTable="UnidadeNomeColumn" msprop:Generator_UserColumnName="UnidadeNome">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="80" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

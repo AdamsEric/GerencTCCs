@@ -65,14 +65,26 @@ namespace Negocios
             }
         }
 
-        public CursoColecao ConsultarPorNome(string nome)
+        public CursoColecao ConsultarPorNome(string nome, string unidade)
         {
             //Criar uma nova coleção de clientes (aqui ela está vazia)
             CursoColecao cursoColecao = new CursoColecao();
 
             acessoDadosSqlServer.LimparParametros();
-            acessoDadosSqlServer.AdicionarParametros("@CursoNome", nome);
-            DataTable dataTableCurso = acessoDadosSqlServer.ExecutarConsulta(CommandType.Text, "SELECT CursoID AS ID, CursoNome AS Curso, UnidadeNome AS Unidade FROM tblCurso INNER JOIN tblUnidade ON CursoUnidadeID = UnidadeID WHERE CursoNome LIKE '%' + @CursoNome + '%'");
+            DataTable dataTableCurso;
+
+            if (unidade == "")
+            {
+                acessoDadosSqlServer.AdicionarParametros("@CursoNome", nome);
+                dataTableCurso = acessoDadosSqlServer.ExecutarConsulta(CommandType.Text, "SELECT CursoID AS ID, CursoNome AS Curso, UnidadeNome AS Unidade FROM tblCurso INNER JOIN tblUnidade ON CursoUnidadeID = UnidadeID WHERE CursoNome LIKE '%' + @CursoNome + '%'");
+            }
+            else
+            {
+                acessoDadosSqlServer.AdicionarParametros("@CursoUnidadeID", RetornaIDCurso(unidade));
+                acessoDadosSqlServer.AdicionarParametros("@CursoNome", nome);
+                dataTableCurso = acessoDadosSqlServer.ExecutarConsulta(CommandType.Text, "SELECT CursoID AS ID, CursoNome AS Curso, UnidadeNome AS Unidade FROM tblCurso INNER JOIN tblUnidade ON CursoUnidadeID = UnidadeID WHERE (CursoNome LIKE '%' + @CursoNome + '%') and (CursoUnidadeID = @CursoUnidadeID)");
+            }
+
 
             //Percorrer o DataTable e transformar em coleção de cliente
             //Cada linha do DataTable é um cliente

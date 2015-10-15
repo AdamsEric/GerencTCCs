@@ -144,6 +144,7 @@
             // 
             // textBoxAcaoUnidadeID
             // 
+            this.textBoxAcaoUnidadeID.Enabled = false;
             this.textBoxAcaoUnidadeID.Location = new System.Drawing.Point(64, 13);
             this.textBoxAcaoUnidadeID.Name = "textBoxAcaoUnidadeID";
             this.textBoxAcaoUnidadeID.ReadOnly = true;
