@@ -54,19 +54,19 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>DkYzjIeEZdkepHz3d3D81rIMvuH/mCAkzdV6L0ibtdc=</dsig:DigestValue>
+        <dsig:DigestValue>s2cRV1xA+WNKGgl/FdAcwnxNeldcTMC5YiKl5eOedkA=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Apresentacao.exe" size="325120">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Apresentacao.exe" size="324096">
       <assemblyIdentity name="Apresentacao" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>CXkOGOncxq05CGiQmiFize0YFDJOHzsXc/Ndxc64zFU=</dsig:DigestValue>
+        <dsig:DigestValue>WG+mtNyF+lZKv7sQITs5bsVkZKjya5u3RtO2pIhs1y4=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -78,19 +78,19 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>CrQJMDeBx1OWo9QzpbwwkYhmmldoYT8eDaYk4O4tLS8=</dsig:DigestValue>
+        <dsig:DigestValue>b1KxE14merliM+Tqk3E0l/+Yp+/ivR2aOrSl6bMwM18=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Negocios.dll" size="16384">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Negocios.dll" size="18432">
       <assemblyIdentity name="Negocios" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>MJ6qeryjjFzaKQfwMGHQymSaAz02Ctpg3hvM9FseVLI=</dsig:DigestValue>
+        <dsig:DigestValue>9fvWY6mjz7xikBuPRppozvNG//99lNJkO29xitRu184=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

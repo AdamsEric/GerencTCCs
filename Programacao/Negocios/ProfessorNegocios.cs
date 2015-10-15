@@ -21,7 +21,7 @@ namespace Negocios
                 acessoDadosSqlServer.AdicionarParametros("@ProfessorNome", professor.ProfessorNome);
                 acessoDadosSqlServer.AdicionarParametros("@ProfessorMatricula", professor.ProfessorMatricula);
                 acessoDadosSqlServer.AdicionarParametros("@ProfessorTelefone", professor.ProfessorTelefone);
-                string ProfessorID = acessoDadosSqlServer.ExecutarManipulacao(CommandType.StoredProcedure, "uspProfessorInserir").ToString();
+                string ProfessorID = acessoDadosSqlServer.ExecutarManipulacao(CommandType.Text, "INSERT INTO tblProfessor (ProfessorNome,ProfessorMatricula,ProfessorTelefone) VALUES (@ProfessorNome,@ProfessorMatricula,@ProfessorTelefone) SELECT @@IDENTITY AS RETORNO").ToString();
 
                 return ProfessorID;
             }
@@ -40,7 +40,7 @@ namespace Negocios
                 acessoDadosSqlServer.AdicionarParametros("@ProfessorNome", professor.ProfessorNome);
                 acessoDadosSqlServer.AdicionarParametros("@ProfessorMatricula", professor.ProfessorMatricula);
                 acessoDadosSqlServer.AdicionarParametros("@ProfessorTelefone", professor.ProfessorTelefone);
-                string ProfessorID = acessoDadosSqlServer.ExecutarManipulacao(CommandType.StoredProcedure, "uspProfessorAlterar").ToString();
+                string ProfessorID = acessoDadosSqlServer.ExecutarManipulacao(CommandType.Text, "UPDATE tblProfessor SET ProfessorNome = @ProfessorNome, ProfessorMatricula = @ProfessorMatricula, ProfessorTelefone = @ProfessorTelefone WHERE ProfessorID = @ProfessorID SELECT @ProfessorID AS RETORNO").ToString();
 
                 return ProfessorID;
             }
@@ -56,7 +56,7 @@ namespace Negocios
             {
                 acessoDadosSqlServer.LimparParametros();
                 acessoDadosSqlServer.AdicionarParametros("@ProfessorID", professor.ProfessorID);
-                string ProfessorID = acessoDadosSqlServer.ExecutarManipulacao(CommandType.StoredProcedure, "uspProfessorExcluir").ToString();
+                string ProfessorID = acessoDadosSqlServer.ExecutarManipulacao(CommandType.Text, "DELETE FROM tblProfessor WHERE ProfessorID = @ProfessorID SELECT @ProfessorID AS RETORNO").ToString();
 
                 return ProfessorID;
             }
@@ -73,7 +73,7 @@ namespace Negocios
 
             acessoDadosSqlServer.LimparParametros();
             acessoDadosSqlServer.AdicionarParametros("@ProfessorNome", nome);
-            DataTable dataTableProfessor = acessoDadosSqlServer.ExecutarConsulta(CommandType.StoredProcedure, "uspProfessorConsultarPorNome");
+            DataTable dataTableProfessor = acessoDadosSqlServer.ExecutarConsulta(CommandType.Text, "SELECT ProfessorID AS ID, ProfessorNome AS Professor, ProfessorMatricula AS Matricula, ProfessorTelefone AS Telefone FROM tblProfessor WHERE ProfessorNome LIKE '%' + @ProfessorNome + '%'");
 
             //Percorrer o DataTable e transformar em coleção de cliente
             //Cada linha do DataTable é um cliente
@@ -83,10 +83,10 @@ namespace Negocios
                 //Colocar os dados da linha dele
                 //Adicionar ele na coleção
                 Professor professor = new Professor();
-                professor.ProfessorID = Convert.ToInt32(linha["ProfessorID"]);
-                professor.ProfessorNome = Convert.ToString(linha["ProfessorNome"]);
-                professor.ProfessorMatricula = Convert.ToString(linha["ProfessorMatricula"]);
-                professor.ProfessorTelefone = Convert.ToString(linha["ProfessorTelefone"]);
+                professor.ProfessorID = Convert.ToInt32(linha["ID"]);
+                professor.ProfessorNome = Convert.ToString(linha["Professor"]);
+                professor.ProfessorMatricula = Convert.ToString(linha["Matricula"]);
+                professor.ProfessorTelefone = Convert.ToString(linha["Telefone"]);
                 professorColecao.Add(professor);
             }
             return professorColecao;
@@ -99,7 +99,7 @@ namespace Negocios
 
             acessoDadosSqlServer.LimparParametros();
             acessoDadosSqlServer.AdicionarParametros("@ProfessorMatricula", matricula);
-            DataTable dataTableProfessor = acessoDadosSqlServer.ExecutarConsulta(CommandType.StoredProcedure, "uspProfessorConsultarPorMatricula");
+            DataTable dataTableProfessor = acessoDadosSqlServer.ExecutarConsulta(CommandType.StoredProcedure, "SELECT ProfessorID AS ID, ProfessorNome AS Professor, ProfessorMatricula AS Matricula, ProfessorTelefone AS Telefone FROM tblProfessor WHERE ProfessorMatricula LIKE '%' + @ProfessorMatricula + '%'");
 
             //Percorrer o DataTable e transformar em coleção de cliente
             //Cada linha do DataTable é um cliente
@@ -109,10 +109,10 @@ namespace Negocios
                 //Colocar os dados da linha dele
                 //Adicionar ele na coleção
                 Professor professor = new Professor();
-                professor.ProfessorID = Convert.ToInt32(linha["ProfessorID"]);
-                professor.ProfessorNome = Convert.ToString(linha["ProfessorNome"]);
-                professor.ProfessorMatricula = Convert.ToString(linha["ProfessorMatricula"]);
-                professor.ProfessorTelefone = Convert.ToString(linha["ProfessorTelefone"]);
+                professor.ProfessorID = Convert.ToInt32(linha["ID"]);
+                professor.ProfessorNome = Convert.ToString(linha["Professor"]);
+                professor.ProfessorMatricula = Convert.ToString(linha["Matricula"]);
+                professor.ProfessorTelefone = Convert.ToString(linha["Telefone"]);
                 professorColecao.Add(professor);
             }
             return professorColecao;

@@ -37,28 +37,21 @@
             this.textBoxAcaoAlunoMatricula = new System.Windows.Forms.TextBox();
             this.buttonAcaoAlunoConfirmar = new System.Windows.Forms.Button();
             this.buttonAcaoAlunoCancelar = new System.Windows.Forms.Button();
-            this.comboBoxAcaoAlunoUnidadeNome = new System.Windows.Forms.ComboBox();
             this.tblUnidadeBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.gerencTCCsDataSet16 = new Apresentacao.GerencTCCsDataSet16();
             this.labelAcaoAlunoCO = new System.Windows.Forms.Label();
             this.maskedTextBoxAcaoAlunoTelefone = new System.Windows.Forms.MaskedTextBox();
             this.labelAcaoAlunoID = new System.Windows.Forms.Label();
             this.textBoxAcaoAlunoID = new System.Windows.Forms.TextBox();
-            this.labelAcaoAlunoUnidade = new System.Windows.Forms.Label();
             this.comboBoxAcaoAlunoCursoNome = new System.Windows.Forms.ComboBox();
             this.tblCursoBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.gerencTCCsDataSet17 = new Apresentacao.GerencTCCsDataSet17();
             this.tblUnidadeTableAdapter = new Apresentacao.GerencTCCsDataSet16TableAdapters.tblUnidadeTableAdapter();
             this.tblCursoTableAdapter = new Apresentacao.GerencTCCsDataSet17TableAdapters.tblCursoTableAdapter();
-            this.fillByToolStrip = new System.Windows.Forms.ToolStrip();
-            this.cursoUnidadeIDToolStripLabel = new System.Windows.Forms.ToolStripLabel();
-            this.cursoUnidadeIDToolStripTextBox = new System.Windows.Forms.ToolStripTextBox();
-            this.fillByToolStripButton = new System.Windows.Forms.ToolStripButton();
             ((System.ComponentModel.ISupportInitialize)(this.tblUnidadeBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gerencTCCsDataSet16)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblCursoBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gerencTCCsDataSet17)).BeginInit();
-            this.fillByToolStrip.SuspendLayout();
             this.SuspendLayout();
             // 
             // labelAcaoAlunoNome
@@ -91,7 +84,7 @@
             // labelAcaoAlunoCurso
             // 
             this.labelAcaoAlunoCurso.AutoSize = true;
-            this.labelAcaoAlunoCurso.Location = new System.Drawing.Point(16, 133);
+            this.labelAcaoAlunoCurso.Location = new System.Drawing.Point(16, 104);
             this.labelAcaoAlunoCurso.Name = "labelAcaoAlunoCurso";
             this.labelAcaoAlunoCurso.Size = new System.Drawing.Size(41, 13);
             this.labelAcaoAlunoCurso.TabIndex = 3;
@@ -133,18 +126,6 @@
             this.buttonAcaoAlunoCancelar.Text = "Cancelar";
             this.buttonAcaoAlunoCancelar.UseVisualStyleBackColor = true;
             this.buttonAcaoAlunoCancelar.Click += new System.EventHandler(this.buttonAcaoAlunoCancelar_Click);
-            // 
-            // comboBoxAcaoAlunoUnidadeNome
-            // 
-            this.comboBoxAcaoAlunoUnidadeNome.DataSource = this.tblUnidadeBindingSource;
-            this.comboBoxAcaoAlunoUnidadeNome.DisplayMember = "UnidadeNome";
-            this.comboBoxAcaoAlunoUnidadeNome.FormattingEnabled = true;
-            this.comboBoxAcaoAlunoUnidadeNome.Location = new System.Drawing.Point(79, 100);
-            this.comboBoxAcaoAlunoUnidadeNome.Name = "comboBoxAcaoAlunoUnidadeNome";
-            this.comboBoxAcaoAlunoUnidadeNome.Size = new System.Drawing.Size(349, 21);
-            this.comboBoxAcaoAlunoUnidadeNome.TabIndex = 3;
-            this.comboBoxAcaoAlunoUnidadeNome.ValueMember = "UnidadeNome";
-            this.comboBoxAcaoAlunoUnidadeNome.Click += new System.EventHandler(this.comboBoxAcaoAlunoUnidadeNome_Click);
             // 
             // tblUnidadeBindingSource
             // 
@@ -191,21 +172,12 @@
             this.textBoxAcaoAlunoID.Size = new System.Drawing.Size(90, 20);
             this.textBoxAcaoAlunoID.TabIndex = 19;
             // 
-            // labelAcaoAlunoUnidade
-            // 
-            this.labelAcaoAlunoUnidade.AutoSize = true;
-            this.labelAcaoAlunoUnidade.Location = new System.Drawing.Point(16, 104);
-            this.labelAcaoAlunoUnidade.Name = "labelAcaoAlunoUnidade";
-            this.labelAcaoAlunoUnidade.Size = new System.Drawing.Size(57, 13);
-            this.labelAcaoAlunoUnidade.TabIndex = 20;
-            this.labelAcaoAlunoUnidade.Text = "Unidade*: ";
-            // 
             // comboBoxAcaoAlunoCursoNome
             // 
             this.comboBoxAcaoAlunoCursoNome.DataSource = this.tblCursoBindingSource;
             this.comboBoxAcaoAlunoCursoNome.DisplayMember = "CursoNome";
             this.comboBoxAcaoAlunoCursoNome.FormattingEnabled = true;
-            this.comboBoxAcaoAlunoCursoNome.Location = new System.Drawing.Point(63, 127);
+            this.comboBoxAcaoAlunoCursoNome.Location = new System.Drawing.Point(63, 100);
             this.comboBoxAcaoAlunoCursoNome.Name = "comboBoxAcaoAlunoCursoNome";
             this.comboBoxAcaoAlunoCursoNome.Size = new System.Drawing.Size(365, 21);
             this.comboBoxAcaoAlunoCursoNome.TabIndex = 4;
@@ -230,49 +202,16 @@
             // 
             this.tblCursoTableAdapter.ClearBeforeFill = true;
             // 
-            // fillByToolStrip
-            // 
-            this.fillByToolStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.cursoUnidadeIDToolStripLabel,
-            this.cursoUnidadeIDToolStripTextBox,
-            this.fillByToolStripButton});
-            this.fillByToolStrip.Location = new System.Drawing.Point(0, 0);
-            this.fillByToolStrip.Name = "fillByToolStrip";
-            this.fillByToolStrip.Size = new System.Drawing.Size(111, 25);
-            this.fillByToolStrip.TabIndex = 21;
-            this.fillByToolStrip.Text = "fillByToolStrip";
-            // 
-            // cursoUnidadeIDToolStripLabel
-            // 
-            this.cursoUnidadeIDToolStripLabel.Name = "cursoUnidadeIDToolStripLabel";
-            this.cursoUnidadeIDToolStripLabel.Size = new System.Drawing.Size(96, 15);
-            this.cursoUnidadeIDToolStripLabel.Text = "CursoUnidadeID:";
-            // 
-            // cursoUnidadeIDToolStripTextBox
-            // 
-            this.cursoUnidadeIDToolStripTextBox.Name = "cursoUnidadeIDToolStripTextBox";
-            this.cursoUnidadeIDToolStripTextBox.Size = new System.Drawing.Size(100, 23);
-            // 
-            // fillByToolStripButton
-            // 
-            this.fillByToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.fillByToolStripButton.Name = "fillByToolStripButton";
-            this.fillByToolStripButton.Size = new System.Drawing.Size(39, 19);
-            this.fillByToolStripButton.Text = "FillBy";
-            // 
             // FrmMenuAcaoAluno
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(454, 205);
-            this.Controls.Add(this.fillByToolStrip);
             this.Controls.Add(this.comboBoxAcaoAlunoCursoNome);
-            this.Controls.Add(this.labelAcaoAlunoUnidade);
             this.Controls.Add(this.textBoxAcaoAlunoID);
             this.Controls.Add(this.labelAcaoAlunoID);
             this.Controls.Add(this.maskedTextBoxAcaoAlunoTelefone);
             this.Controls.Add(this.labelAcaoAlunoCO);
-            this.Controls.Add(this.comboBoxAcaoAlunoUnidadeNome);
             this.Controls.Add(this.buttonAcaoAlunoCancelar);
             this.Controls.Add(this.buttonAcaoAlunoConfirmar);
             this.Controls.Add(this.textBoxAcaoAlunoMatricula);
@@ -293,8 +232,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.gerencTCCsDataSet16)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblCursoBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gerencTCCsDataSet17)).EndInit();
-            this.fillByToolStrip.ResumeLayout(false);
-            this.fillByToolStrip.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -310,12 +247,10 @@
         private System.Windows.Forms.TextBox textBoxAcaoAlunoMatricula;
         private System.Windows.Forms.Button buttonAcaoAlunoConfirmar;
         private System.Windows.Forms.Button buttonAcaoAlunoCancelar;
-        private System.Windows.Forms.ComboBox comboBoxAcaoAlunoUnidadeNome;
         private System.Windows.Forms.Label labelAcaoAlunoCO;
         private System.Windows.Forms.MaskedTextBox maskedTextBoxAcaoAlunoTelefone;
         private System.Windows.Forms.Label labelAcaoAlunoID;
         private System.Windows.Forms.TextBox textBoxAcaoAlunoID;
-        private System.Windows.Forms.Label labelAcaoAlunoUnidade;
         private System.Windows.Forms.ComboBox comboBoxAcaoAlunoCursoNome;
         private GerencTCCsDataSet16 gerencTCCsDataSet16;
         private System.Windows.Forms.BindingSource tblUnidadeBindingSource;
@@ -323,9 +258,5 @@
         private GerencTCCsDataSet17 gerencTCCsDataSet17;
         private System.Windows.Forms.BindingSource tblCursoBindingSource;
         private GerencTCCsDataSet17TableAdapters.tblCursoTableAdapter tblCursoTableAdapter;
-        private System.Windows.Forms.ToolStrip fillByToolStrip;
-        private System.Windows.Forms.ToolStripLabel cursoUnidadeIDToolStripLabel;
-        private System.Windows.Forms.ToolStripTextBox cursoUnidadeIDToolStripTextBox;
-        private System.Windows.Forms.ToolStripButton fillByToolStripButton;
     }
 }

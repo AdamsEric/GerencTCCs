@@ -555,6 +555,13 @@ namespace Apresentacao
                 FrmMenuAcaoProfessor frmMenuAcaoProfessor = new FrmMenuAcaoProfessor(professorSelecao, "Consultar Professor");
                 frmMenuAcaoProfessor.ShowDialog();
             }
+
+            if (labelModuloTitulo.Text == "Alunos")
+            {
+                Aluno alunoSelecao = (dataGridView.SelectedRows[0].DataBoundItem as Aluno);
+                FrmMenuAcaoAluno frmMenuAcaoAluno = new FrmMenuAcaoAluno(alunoSelecao, "Consultar Aluno");
+                frmMenuAcaoAluno.ShowDialog();
+            }
         }
 
         private void RealizarPesquisa()
@@ -602,6 +609,26 @@ namespace Apresentacao
 
                 dataGridView.DataSource = null;
                 dataGridView.DataSource = professorColecao;
+                dataGridView.Update();
+                dataGridView.Refresh();
+            }
+
+            if (labelModuloTitulo.Text == "Alunos")
+            {
+                AlunoNegocios alunoNegocios = new AlunoNegocios();
+                AlunoColecao alunoColecao = new AlunoColecao();
+
+                if (radioButtonPesquisarPorNome.Checked)
+                {
+                    alunoColecao = alunoNegocios.ConsultarPorNome(textBoxPesquisa.Text);
+                }
+                if (radioButtonPesquisarPorMatricula.Checked)
+                {
+                    alunoColecao = alunoNegocios.ConsultarPorMatricula(textBoxPesquisa.Text);
+                }
+
+                dataGridView.DataSource = null;
+                dataGridView.DataSource = alunoColecao;
                 dataGridView.Update();
                 dataGridView.Refresh();
             }
@@ -682,6 +709,25 @@ namespace Apresentacao
                 try
                 {
                     int cursoID = Convert.ToInt32(retorno);
+
+                    MessageBox.Show("Registro excluído com sucesso", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    RealizarPesquisa();
+                }
+                catch
+                {
+                    MessageBox.Show("Não foi possível excluir. Detalhes: " + retorno, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+
+            if (labelModuloTitulo.Text == "Alunos")
+            {
+                Aluno alunoSelecao = (dataGridView.SelectedRows[0].DataBoundItem as Aluno);
+                AlunoNegocios alunoNegocios = new AlunoNegocios();
+                string retorno = alunoNegocios.Excluir(alunoSelecao);
+
+                try
+                {
+                    int alunoID = Convert.ToInt32(retorno);
 
                     MessageBox.Show("Registro excluído com sucesso", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     RealizarPesquisa();
