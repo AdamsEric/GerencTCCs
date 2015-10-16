@@ -448,8 +448,12 @@ namespace Apresentacao
             }
             if (labelModuloTitulo.Text == "Salas")
             {
-                FrmMenuInserirSala frmMenuInserirSala = new FrmMenuInserirSala();
-                frmMenuInserirSala.ShowDialog();
+                FrmMenuAcaoSala frmMenuAcaoSala = new FrmMenuAcaoSala(null, "Inserir Sala");
+                DialogResult dialogResult = frmMenuAcaoSala.ShowDialog();
+                if (dialogResult == DialogResult.Yes)
+                {
+                    RealizarPesquisa();
+                }
             }
             if (labelModuloTitulo.Text == "Usuários")
             {
@@ -517,8 +521,13 @@ namespace Apresentacao
             }
             if (labelModuloTitulo.Text == "Salas")
             {
-                FrmMenuAlterarSala frmMenuAlterarSala = new FrmMenuAlterarSala();
-                frmMenuAlterarSala.ShowDialog();
+                Sala salaSelecao = (dataGridView.SelectedRows[0].DataBoundItem as Sala);
+                FrmMenuAcaoSala frmMenuAlterarSala = new FrmMenuAcaoSala(salaSelecao, "Alterar Sala");
+                DialogResult dialogResult = frmMenuAlterarSala.ShowDialog();
+                if (dialogResult == DialogResult.Yes)
+                {
+                    RealizarPesquisa();
+                }
             }
             if (labelModuloTitulo.Text == "Usuários")
             {
@@ -561,6 +570,13 @@ namespace Apresentacao
                 Aluno alunoSelecao = (dataGridView.SelectedRows[0].DataBoundItem as Aluno);
                 FrmMenuAcaoAluno frmMenuAcaoAluno = new FrmMenuAcaoAluno(alunoSelecao, "Consultar Aluno");
                 frmMenuAcaoAluno.ShowDialog();
+            }
+
+            if (labelModuloTitulo.Text == "Salas")
+            {
+                Sala salaSelecao = (dataGridView.SelectedRows[0].DataBoundItem as Sala);
+                FrmMenuAcaoSala frmMenuAcaoSala = new FrmMenuAcaoSala(salaSelecao, "Consultar Sala");
+                frmMenuAcaoSala.ShowDialog();
             }
         }
 
@@ -629,6 +645,28 @@ namespace Apresentacao
 
                 dataGridView.DataSource = null;
                 dataGridView.DataSource = alunoColecao;
+                dataGridView.Update();
+                dataGridView.Refresh();
+            }
+
+            if (labelModuloTitulo.Text == "Salas")
+            {
+                SalaNegocios salaNegocios = new SalaNegocios();
+                SalaColecao salaColecao = new SalaColecao();
+
+                string filtroUnidade = comboBoxFiltroUnidade.Text;
+
+                if (radioButtonPesquisarPorNome.Checked)
+                {
+                    salaColecao = salaNegocios.ConsultarPorNome(textBoxPesquisa.Text, filtroUnidade);
+                }
+                if (radioButtonPesquisarPorMatricula.Checked)
+                {
+                    salaColecao = salaNegocios.ConsultarPorDescricao(textBoxPesquisa.Text, filtroUnidade);
+                }
+
+                dataGridView.DataSource = null;
+                dataGridView.DataSource = salaColecao;
                 dataGridView.Update();
                 dataGridView.Refresh();
             }
@@ -728,6 +766,25 @@ namespace Apresentacao
                 try
                 {
                     int alunoID = Convert.ToInt32(retorno);
+
+                    MessageBox.Show("Registro excluído com sucesso", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    RealizarPesquisa();
+                }
+                catch
+                {
+                    MessageBox.Show("Não foi possível excluir. Detalhes: " + retorno, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+
+            if (labelModuloTitulo.Text == "Salas")
+            {
+                Sala salaSelecao = (dataGridView.SelectedRows[0].DataBoundItem as Sala);
+                SalaNegocios salaNegocios = new SalaNegocios();
+                string retorno = salaNegocios.Excluir(salaSelecao);
+
+                try
+                {
+                    int salaID = Convert.ToInt32(retorno);
 
                     MessageBox.Show("Registro excluído com sucesso", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     RealizarPesquisa();

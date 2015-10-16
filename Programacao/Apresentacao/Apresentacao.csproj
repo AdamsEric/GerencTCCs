@@ -117,11 +117,11 @@
     <Compile Include="FrmMenuAcaoAluno.Designer.cs">
       <DependentUpon>FrmMenuAcaoAluno.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmMenuAlterar\FrmMenuAlterarSala.cs">
+    <Compile Include="FrmMenuAcaoSala.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmMenuAlterar\FrmMenuAlterarSala.Designer.cs">
-      <DependentUpon>FrmMenuAlterarSala.cs</DependentUpon>
+    <Compile Include="FrmMenuAcaoSala.Designer.cs">
+      <DependentUpon>FrmMenuAcaoSala.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmMenuAlterar\FrmMenuAlterarTCC.cs">
       <SubType>Form</SubType>
@@ -140,12 +140,6 @@
     </Compile>
     <Compile Include="FrmMenuInserir\FrmMenuInserirUsuario.Designer.cs">
       <DependentUpon>FrmMenuInserirUsuario.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FrmMenuInserir\FrmMenuInserirSala.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmMenuInserir\FrmMenuInserirSala.Designer.cs">
-      <DependentUpon>FrmMenuInserirSala.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmMenuInserir\FrmMenuInserirTCC.cs">
       <SubType>Form</SubType>
@@ -210,10 +204,24 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>GerencTCCsDataSet16.xsd</DependentUpon>
     </Compile>
+    <Compile Include="GerencTCCsDataSet17.cs">
+      <DependentUpon>GerencTCCsDataSet17.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="GerencTCCsDataSet17.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>GerencTCCsDataSet17.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="GerencTCCsDataSet18.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GerencTCCsDataSet18.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="GerencTCCsDataSet19.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GerencTCCsDataSet19.xsd</DependentUpon>
     </Compile>
     <Compile Include="GerencTCCsDataSet2.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -278,8 +286,8 @@
     <EmbeddedResource Include="FrmMenuAcaoAluno.resx">
       <DependentUpon>FrmMenuAcaoAluno.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmMenuAlterar\FrmMenuAlterarSala.resx">
-      <DependentUpon>FrmMenuAlterarSala.cs</DependentUpon>
+    <EmbeddedResource Include="FrmMenuAcaoSala.resx">
+      <DependentUpon>FrmMenuAcaoSala.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmMenuAlterar\FrmMenuAlterarTCC.resx">
       <DependentUpon>FrmMenuAlterarTCC.cs</DependentUpon>
@@ -289,9 +297,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmMenuInserir\FrmMenuInserirUsuario.resx">
       <DependentUpon>FrmMenuInserirUsuario.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FrmMenuInserir\FrmMenuInserirSala.resx">
-      <DependentUpon>FrmMenuInserirSala.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmMenuInserir\FrmMenuInserirTCC.resx">
       <DependentUpon>FrmMenuInserirTCC.cs</DependentUpon>
@@ -421,6 +426,28 @@
     </None>
     <None Include="GerencTCCsDataSet17.xss">
       <DependentUpon>GerencTCCsDataSet17.xsd</DependentUpon>
+    </None>
+    <None Include="GerencTCCsDataSet18.xsc">
+      <DependentUpon>GerencTCCsDataSet18.xsd</DependentUpon>
+    </None>
+    <None Include="GerencTCCsDataSet18.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>GerencTCCsDataSet18.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="GerencTCCsDataSet18.xss">
+      <DependentUpon>GerencTCCsDataSet18.xsd</DependentUpon>
+    </None>
+    <None Include="GerencTCCsDataSet19.xsc">
+      <DependentUpon>GerencTCCsDataSet19.xsd</DependentUpon>
+    </None>
+    <None Include="GerencTCCsDataSet19.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>GerencTCCsDataSet19.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="GerencTCCsDataSet19.xss">
+      <DependentUpon>GerencTCCsDataSet19.xsd</DependentUpon>
     </None>
     <None Include="GerencTCCsDataSet2.xsc">
       <DependentUpon>GerencTCCsDataSet2.xsd</DependentUpon>

@@ -113,11 +113,11 @@ namespace Negocios
                 //Colocar os dados da linha dele
                 //Adicionar ele na coleção
                 Aluno aluno = new Aluno();
-                aluno.AlunoID = Convert.ToInt32(linha["AlunoID"]);
-                aluno.AlunoNome = Convert.ToString(linha["ProfessorNome"]);
-                aluno.AlunoMatricula = Convert.ToString(linha["ProfessorMatricula"]);
-                aluno.AlunoTelefone = Convert.ToString(linha["ProfessorTelefone"]);
-                aluno.AlunoCursoNome = Convert.ToString(linha["AlunoCursoNome"]);
+                aluno.AlunoID = Convert.ToInt32(linha["ID"]);
+                aluno.AlunoNome = Convert.ToString(linha["Aluno"]);
+                aluno.AlunoMatricula = Convert.ToString(linha["Matricula"]);
+                aluno.AlunoTelefone = Convert.ToString(linha["Telefone"]);
+                aluno.AlunoCursoNome = Convert.ToString(linha["Curso"]);
                 alunoColecao.Add(aluno);
             }
             return alunoColecao;

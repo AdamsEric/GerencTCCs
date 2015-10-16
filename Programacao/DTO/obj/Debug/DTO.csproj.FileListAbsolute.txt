@@ -12,4 +12,3 @@ D:\Eric Adams\OneDrive\UNP\2015.2 - 6º Período\Engenharia de Software\GerencTC
 D:\Eric Adams\OneDrive\UNP\2015.2 - 6º Período\Engenharia de Software\GerencTCCs\Programacao\DTO\bin\Debug\DTO.pdb
 D:\Eric Adams\OneDrive\UNP\2015.2 - 6º Período\Engenharia de Software\GerencTCCs\Programacao\DTO\obj\Debug\DTO.dll
 D:\Eric Adams\OneDrive\UNP\2015.2 - 6º Período\Engenharia de Software\GerencTCCs\Programacao\DTO\obj\Debug\DTO.pdb
-D:\Eric Adams\OneDrive\UNP\2015.2 - 6º Período\Engenharia de Software\GerencTCCs\Programacao\DTO\obj\Debug\DTO.csprojResolveAssemblyReference.cache

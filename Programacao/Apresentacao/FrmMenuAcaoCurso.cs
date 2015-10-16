@@ -63,7 +63,7 @@ namespace Apresentacao
 
                 curso.CursoNome = textBoxAcaoCursoNome.Text;
                 curso.CursoUnidadeNome = comboBoxAcaoCursoUnidadeNome.SelectedValue.ToString();
-                curso.CursoUnidadeID = cursoNegocios.RetornaIDCurso(curso.CursoUnidadeNome);
+                curso.CursoUnidadeID = cursoNegocios.RetornaCursoID(curso.CursoUnidadeNome);
 
                 if (curso.CursoNome == "")
                 {
@@ -99,7 +99,7 @@ namespace Apresentacao
 
                 if (curso.CursoUnidadeNome != "")
                 {
-                    curso.CursoUnidadeID = cursoNegocios.RetornaIDCurso(curso.CursoUnidadeNome);
+                    curso.CursoUnidadeID = cursoNegocios.RetornaCursoID(curso.CursoUnidadeNome);
                 }
 
                 if (curso.CursoNome == cursoold.CursoNome && curso.CursoUnidadeNome == cursoold.CursoUnidadeNome)

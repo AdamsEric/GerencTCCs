@@ -48,6 +48,8 @@
             this.gerencTCCsDataSet17 = new Apresentacao.GerencTCCsDataSet17();
             this.tblUnidadeTableAdapter = new Apresentacao.GerencTCCsDataSet16TableAdapters.tblUnidadeTableAdapter();
             this.tblCursoTableAdapter = new Apresentacao.GerencTCCsDataSet17TableAdapters.tblCursoTableAdapter();
+            this.comboBoxAcaoAlunoUnidadeNome = new System.Windows.Forms.ComboBox();
+            this.labelAcaoAlunoUnidade = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.tblUnidadeBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gerencTCCsDataSet16)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblCursoBindingSource)).BeginInit();
@@ -84,7 +86,7 @@
             // labelAcaoAlunoCurso
             // 
             this.labelAcaoAlunoCurso.AutoSize = true;
-            this.labelAcaoAlunoCurso.Location = new System.Drawing.Point(16, 104);
+            this.labelAcaoAlunoCurso.Location = new System.Drawing.Point(16, 133);
             this.labelAcaoAlunoCurso.Name = "labelAcaoAlunoCurso";
             this.labelAcaoAlunoCurso.Size = new System.Drawing.Size(41, 13);
             this.labelAcaoAlunoCurso.TabIndex = 3;
@@ -177,7 +179,7 @@
             this.comboBoxAcaoAlunoCursoNome.DataSource = this.tblCursoBindingSource;
             this.comboBoxAcaoAlunoCursoNome.DisplayMember = "CursoNome";
             this.comboBoxAcaoAlunoCursoNome.FormattingEnabled = true;
-            this.comboBoxAcaoAlunoCursoNome.Location = new System.Drawing.Point(63, 100);
+            this.comboBoxAcaoAlunoCursoNome.Location = new System.Drawing.Point(63, 129);
             this.comboBoxAcaoAlunoCursoNome.Name = "comboBoxAcaoAlunoCursoNome";
             this.comboBoxAcaoAlunoCursoNome.Size = new System.Drawing.Size(365, 21);
             this.comboBoxAcaoAlunoCursoNome.TabIndex = 4;
@@ -202,11 +204,33 @@
             // 
             this.tblCursoTableAdapter.ClearBeforeFill = true;
             // 
+            // comboBoxAcaoAlunoUnidadeNome
+            // 
+            this.comboBoxAcaoAlunoUnidadeNome.DataSource = this.tblCursoBindingSource;
+            this.comboBoxAcaoAlunoUnidadeNome.DisplayMember = "CursoNome";
+            this.comboBoxAcaoAlunoUnidadeNome.FormattingEnabled = true;
+            this.comboBoxAcaoAlunoUnidadeNome.Location = new System.Drawing.Point(79, 100);
+            this.comboBoxAcaoAlunoUnidadeNome.Name = "comboBoxAcaoAlunoUnidadeNome";
+            this.comboBoxAcaoAlunoUnidadeNome.Size = new System.Drawing.Size(349, 21);
+            this.comboBoxAcaoAlunoUnidadeNome.TabIndex = 21;
+            this.comboBoxAcaoAlunoUnidadeNome.ValueMember = "CursoNome";
+            // 
+            // labelAcaoAlunoUnidade
+            // 
+            this.labelAcaoAlunoUnidade.AutoSize = true;
+            this.labelAcaoAlunoUnidade.Location = new System.Drawing.Point(16, 104);
+            this.labelAcaoAlunoUnidade.Name = "labelAcaoAlunoUnidade";
+            this.labelAcaoAlunoUnidade.Size = new System.Drawing.Size(54, 13);
+            this.labelAcaoAlunoUnidade.TabIndex = 20;
+            this.labelAcaoAlunoUnidade.Text = "Unidade*:";
+            // 
             // FrmMenuAcaoAluno
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(454, 205);
+            this.Controls.Add(this.comboBoxAcaoAlunoUnidadeNome);
+            this.Controls.Add(this.labelAcaoAlunoUnidade);
             this.Controls.Add(this.comboBoxAcaoAlunoCursoNome);
             this.Controls.Add(this.textBoxAcaoAlunoID);
             this.Controls.Add(this.labelAcaoAlunoID);
@@ -258,5 +282,7 @@
         private GerencTCCsDataSet17 gerencTCCsDataSet17;
         private System.Windows.Forms.BindingSource tblCursoBindingSource;
         private GerencTCCsDataSet17TableAdapters.tblCursoTableAdapter tblCursoTableAdapter;
+        private System.Windows.Forms.ComboBox comboBoxAcaoAlunoUnidadeNome;
+        private System.Windows.Forms.Label labelAcaoAlunoUnidade;
     }
 }
