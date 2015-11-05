@@ -80,7 +80,7 @@ namespace Negocios
             }
             else
             {
-                acessoDadosSqlServer.AdicionarParametros("@CursoUnidadeID", RetornaCursoID(unidade));
+                acessoDadosSqlServer.AdicionarParametros("@CursoUnidadeID", RetornaIDCurso(unidade));
                 acessoDadosSqlServer.AdicionarParametros("@CursoNome", nome);
                 dataTableCurso = acessoDadosSqlServer.ExecutarConsulta(CommandType.Text, "SELECT CursoID AS ID, CursoNome AS Curso, UnidadeNome AS Unidade FROM tblCurso INNER JOIN tblUnidade ON CursoUnidadeID = UnidadeID WHERE (CursoNome LIKE '%' + @CursoNome + '%') and (CursoUnidadeID = @CursoUnidadeID)");
             }
@@ -102,7 +102,7 @@ namespace Negocios
             return cursoColecao;
         }
 
-        public int RetornaCursoID (string nome)
+        public int RetornaIDCurso (string nome)
         {
                 acessoDadosSqlServer.LimparParametros();
                 acessoDadosSqlServer.AdicionarParametros("@CursoUnidadeNome", nome);

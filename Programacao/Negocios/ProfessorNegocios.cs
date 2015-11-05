@@ -99,7 +99,7 @@ namespace Negocios
 
             acessoDadosSqlServer.LimparParametros();
             acessoDadosSqlServer.AdicionarParametros("@ProfessorMatricula", matricula);
-            DataTable dataTableProfessor = acessoDadosSqlServer.ExecutarConsulta(CommandType.Text, "SELECT ProfessorID AS ID, ProfessorNome AS Professor, ProfessorMatricula AS Matricula, ProfessorTelefone AS Telefone FROM tblProfessor WHERE ProfessorMatricula LIKE '%' + @ProfessorMatricula + '%'");
+            DataTable dataTableProfessor = acessoDadosSqlServer.ExecutarConsulta(CommandType.StoredProcedure, "SELECT ProfessorID AS ID, ProfessorNome AS Professor, ProfessorMatricula AS Matricula, ProfessorTelefone AS Telefone FROM tblProfessor WHERE ProfessorMatricula LIKE '%' + @ProfessorMatricula + '%'");
 
             //Percorrer o DataTable e transformar em coleção de cliente
             //Cada linha do DataTable é um cliente

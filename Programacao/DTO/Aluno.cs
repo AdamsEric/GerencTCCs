@@ -14,7 +14,6 @@ namespace DTO
         public string AlunoTelefone { get; set; }
         public int AlunoCursoID { get; set; }
         public string AlunoCursoNome { get; set; }
-        public int AlunoUnidadeID { get; set; }
         public string AlunoUnidadeNome { get; set; }
     }
 }

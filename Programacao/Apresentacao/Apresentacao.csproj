@@ -75,6 +75,44 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DataSetCurso.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetCurso.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetGrupo.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetGrupo.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetSalaTipo.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetSalaTipo.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetUnidade.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetUnidade.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMenuAcaoSala.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMenuAcaoSala.Designer.cs">
+      <DependentUpon>FrmMenuAcaoSala.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMenuAcaoTCC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMenuAcaoTCC.Designer.cs">
+      <DependentUpon>FrmMenuAcaoTCC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMenuSelecao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMenuSelecao.Designer.cs">
+      <DependentUpon>FrmMenuSelecao.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmInserirConfirmacaoProblema.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -117,11 +155,11 @@
     <Compile Include="FrmMenuAcaoAluno.Designer.cs">
       <DependentUpon>FrmMenuAcaoAluno.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmMenuAcaoSala.cs">
+    <Compile Include="FrmMenuAlterar\FrmMenuAlterarSala.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmMenuAcaoSala.Designer.cs">
-      <DependentUpon>FrmMenuAcaoSala.cs</DependentUpon>
+    <Compile Include="FrmMenuAlterar\FrmMenuAlterarSala.Designer.cs">
+      <DependentUpon>FrmMenuAlterarSala.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmMenuAlterar\FrmMenuAlterarTCC.cs">
       <SubType>Form</SubType>
@@ -140,6 +178,12 @@
     </Compile>
     <Compile Include="FrmMenuInserir\FrmMenuInserirUsuario.Designer.cs">
       <DependentUpon>FrmMenuInserirUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMenuInserir\FrmMenuInserirSala.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMenuInserir\FrmMenuInserirSala.Designer.cs">
+      <DependentUpon>FrmMenuInserirSala.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmMenuInserir\FrmMenuInserirTCC.cs">
       <SubType>Form</SubType>
@@ -204,24 +248,18 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>GerencTCCsDataSet16.xsd</DependentUpon>
     </Compile>
-    <Compile Include="GerencTCCsDataSet17.cs">
-      <DependentUpon>GerencTCCsDataSet17.xsd</DependentUpon>
-      <SubType>Component</SubType>
-    </Compile>
     <Compile Include="GerencTCCsDataSet17.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>GerencTCCsDataSet17.xsd</DependentUpon>
     </Compile>
+    <Compile Include="GerencTCCsDataSet18.cs">
+      <DependentUpon>GerencTCCsDataSet18.xsd</DependentUpon>
+    </Compile>
     <Compile Include="GerencTCCsDataSet18.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>GerencTCCsDataSet18.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="GerencTCCsDataSet19.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>GerencTCCsDataSet19.xsd</DependentUpon>
     </Compile>
     <Compile Include="GerencTCCsDataSet2.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -265,6 +303,15 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmMenuAcaoSala.resx">
+      <DependentUpon>FrmMenuAcaoSala.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMenuAcaoTCC.resx">
+      <DependentUpon>FrmMenuAcaoTCC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMenuSelecao.resx">
+      <DependentUpon>FrmMenuSelecao.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmInserirConfirmacaoProblema.resx">
       <DependentUpon>FrmInserirConfirmacaoProblema.cs</DependentUpon>
     </EmbeddedResource>
@@ -286,8 +333,8 @@
     <EmbeddedResource Include="FrmMenuAcaoAluno.resx">
       <DependentUpon>FrmMenuAcaoAluno.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmMenuAcaoSala.resx">
-      <DependentUpon>FrmMenuAcaoSala.cs</DependentUpon>
+    <EmbeddedResource Include="FrmMenuAlterar\FrmMenuAlterarSala.resx">
+      <DependentUpon>FrmMenuAlterarSala.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmMenuAlterar\FrmMenuAlterarTCC.resx">
       <DependentUpon>FrmMenuAlterarTCC.cs</DependentUpon>
@@ -297,6 +344,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmMenuInserir\FrmMenuInserirUsuario.resx">
       <DependentUpon>FrmMenuInserirUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMenuInserir\FrmMenuInserirSala.resx">
+      <DependentUpon>FrmMenuInserirSala.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmMenuInserir\FrmMenuInserirTCC.resx">
       <DependentUpon>FrmMenuInserirTCC.cs</DependentUpon>
@@ -317,6 +367,50 @@
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <None Include="Apresentacao_TemporaryKey.pfx" />
+    <None Include="DataSetCurso.xsc">
+      <DependentUpon>DataSetCurso.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetCurso.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetCurso.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSetCurso.xss">
+      <DependentUpon>DataSetCurso.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetGrupo.xsc">
+      <DependentUpon>DataSetGrupo.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetGrupo.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetGrupo.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSetGrupo.xss">
+      <DependentUpon>DataSetGrupo.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSalaTipo.xsc">
+      <DependentUpon>DataSetSalaTipo.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSalaTipo.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetSalaTipo.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSetSalaTipo.xss">
+      <DependentUpon>DataSetSalaTipo.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetUnidade.xsc">
+      <DependentUpon>DataSetUnidade.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetUnidade.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetUnidade.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSetUnidade.xss">
+      <DependentUpon>DataSetUnidade.xsd</DependentUpon>
+    </None>
     <None Include="GerencTCCsDataSet.xsc">
       <DependentUpon>GerencTCCsDataSet.xsd</DependentUpon>
     </None>
@@ -437,17 +531,6 @@
     </None>
     <None Include="GerencTCCsDataSet18.xss">
       <DependentUpon>GerencTCCsDataSet18.xsd</DependentUpon>
-    </None>
-    <None Include="GerencTCCsDataSet19.xsc">
-      <DependentUpon>GerencTCCsDataSet19.xsd</DependentUpon>
-    </None>
-    <None Include="GerencTCCsDataSet19.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>GerencTCCsDataSet19.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="GerencTCCsDataSet19.xss">
-      <DependentUpon>GerencTCCsDataSet19.xsd</DependentUpon>
     </None>
     <None Include="GerencTCCsDataSet2.xsc">
       <DependentUpon>GerencTCCsDataSet2.xsd</DependentUpon>

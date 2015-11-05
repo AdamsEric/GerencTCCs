@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             this.labelAcaoAlunoNome = new System.Windows.Forms.Label();
             this.labelAcaoAlunoMatricula = new System.Windows.Forms.Label();
             this.labelAcaoAlunoTelefone = new System.Windows.Forms.Label();
@@ -37,23 +36,15 @@
             this.textBoxAcaoAlunoMatricula = new System.Windows.Forms.TextBox();
             this.buttonAcaoAlunoConfirmar = new System.Windows.Forms.Button();
             this.buttonAcaoAlunoCancelar = new System.Windows.Forms.Button();
-            this.tblUnidadeBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.gerencTCCsDataSet16 = new Apresentacao.GerencTCCsDataSet16();
             this.labelAcaoAlunoCO = new System.Windows.Forms.Label();
             this.maskedTextBoxAcaoAlunoTelefone = new System.Windows.Forms.MaskedTextBox();
             this.labelAcaoAlunoID = new System.Windows.Forms.Label();
             this.textBoxAcaoAlunoID = new System.Windows.Forms.TextBox();
-            this.comboBoxAcaoAlunoCursoNome = new System.Windows.Forms.ComboBox();
-            this.tblCursoBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.gerencTCCsDataSet17 = new Apresentacao.GerencTCCsDataSet17();
-            this.tblUnidadeTableAdapter = new Apresentacao.GerencTCCsDataSet16TableAdapters.tblUnidadeTableAdapter();
-            this.tblCursoTableAdapter = new Apresentacao.GerencTCCsDataSet17TableAdapters.tblCursoTableAdapter();
-            this.comboBoxAcaoAlunoUnidadeNome = new System.Windows.Forms.ComboBox();
+            this.textBoxAcaoAlunoCursoNome = new System.Windows.Forms.TextBox();
+            this.buttonAcaoAlunoCursoSelecionar = new System.Windows.Forms.Button();
+            this.textBoxAcaoAlunoCursoID = new System.Windows.Forms.TextBox();
+            this.textBoxAcaoAlunoUnidade = new System.Windows.Forms.TextBox();
             this.labelAcaoAlunoUnidade = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.tblUnidadeBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gerencTCCsDataSet16)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tblCursoBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gerencTCCsDataSet17)).BeginInit();
             this.SuspendLayout();
             // 
             // labelAcaoAlunoNome
@@ -86,7 +77,7 @@
             // labelAcaoAlunoCurso
             // 
             this.labelAcaoAlunoCurso.AutoSize = true;
-            this.labelAcaoAlunoCurso.Location = new System.Drawing.Point(16, 133);
+            this.labelAcaoAlunoCurso.Location = new System.Drawing.Point(16, 104);
             this.labelAcaoAlunoCurso.Name = "labelAcaoAlunoCurso";
             this.labelAcaoAlunoCurso.Size = new System.Drawing.Size(41, 13);
             this.labelAcaoAlunoCurso.TabIndex = 3;
@@ -129,16 +120,6 @@
             this.buttonAcaoAlunoCancelar.UseVisualStyleBackColor = true;
             this.buttonAcaoAlunoCancelar.Click += new System.EventHandler(this.buttonAcaoAlunoCancelar_Click);
             // 
-            // tblUnidadeBindingSource
-            // 
-            this.tblUnidadeBindingSource.DataMember = "tblUnidade";
-            this.tblUnidadeBindingSource.DataSource = this.gerencTCCsDataSet16;
-            // 
-            // gerencTCCsDataSet16
-            // 
-            this.gerencTCCsDataSet16.DataSetName = "GerencTCCsDataSet16";
-            this.gerencTCCsDataSet16.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
             // labelAcaoAlunoCO
             // 
             this.labelAcaoAlunoCO.AutoSize = true;
@@ -169,59 +150,55 @@
             // textBoxAcaoAlunoID
             // 
             this.textBoxAcaoAlunoID.Enabled = false;
-            this.textBoxAcaoAlunoID.Location = new System.Drawing.Point(68, 13);
+            this.textBoxAcaoAlunoID.Location = new System.Drawing.Point(67, 13);
             this.textBoxAcaoAlunoID.Name = "textBoxAcaoAlunoID";
             this.textBoxAcaoAlunoID.Size = new System.Drawing.Size(90, 20);
             this.textBoxAcaoAlunoID.TabIndex = 19;
             // 
-            // comboBoxAcaoAlunoCursoNome
+            // textBoxAcaoAlunoCursoNome
             // 
-            this.comboBoxAcaoAlunoCursoNome.DataSource = this.tblCursoBindingSource;
-            this.comboBoxAcaoAlunoCursoNome.DisplayMember = "CursoNome";
-            this.comboBoxAcaoAlunoCursoNome.FormattingEnabled = true;
-            this.comboBoxAcaoAlunoCursoNome.Location = new System.Drawing.Point(63, 129);
-            this.comboBoxAcaoAlunoCursoNome.Name = "comboBoxAcaoAlunoCursoNome";
-            this.comboBoxAcaoAlunoCursoNome.Size = new System.Drawing.Size(365, 21);
-            this.comboBoxAcaoAlunoCursoNome.TabIndex = 4;
-            this.comboBoxAcaoAlunoCursoNome.ValueMember = "CursoNome";
-            this.comboBoxAcaoAlunoCursoNome.Click += new System.EventHandler(this.comboBoxAcaoAlunoCursoNome_Click);
+            this.textBoxAcaoAlunoCursoNome.Enabled = false;
+            this.textBoxAcaoAlunoCursoNome.Location = new System.Drawing.Point(116, 101);
+            this.textBoxAcaoAlunoCursoNome.Name = "textBoxAcaoAlunoCursoNome";
+            this.textBoxAcaoAlunoCursoNome.ReadOnly = true;
+            this.textBoxAcaoAlunoCursoNome.Size = new System.Drawing.Size(243, 20);
+            this.textBoxAcaoAlunoCursoNome.TabIndex = 20;
             // 
-            // tblCursoBindingSource
+            // buttonAcaoAlunoCursoSelecionar
             // 
-            this.tblCursoBindingSource.DataMember = "tblCurso";
-            this.tblCursoBindingSource.DataSource = this.gerencTCCsDataSet17;
+            this.buttonAcaoAlunoCursoSelecionar.Location = new System.Drawing.Point(365, 99);
+            this.buttonAcaoAlunoCursoSelecionar.Name = "buttonAcaoAlunoCursoSelecionar";
+            this.buttonAcaoAlunoCursoSelecionar.Size = new System.Drawing.Size(65, 23);
+            this.buttonAcaoAlunoCursoSelecionar.TabIndex = 21;
+            this.buttonAcaoAlunoCursoSelecionar.Text = "Selecionar";
+            this.buttonAcaoAlunoCursoSelecionar.UseVisualStyleBackColor = true;
+            this.buttonAcaoAlunoCursoSelecionar.Click += new System.EventHandler(this.buttonAcaoAlunoCursoSelecionar_Click);
             // 
-            // gerencTCCsDataSet17
+            // textBoxAcaoAlunoCursoID
             // 
-            this.gerencTCCsDataSet17.DataSetName = "GerencTCCsDataSet17";
-            this.gerencTCCsDataSet17.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.textBoxAcaoAlunoCursoID.Enabled = false;
+            this.textBoxAcaoAlunoCursoID.Location = new System.Drawing.Point(67, 101);
+            this.textBoxAcaoAlunoCursoID.Name = "textBoxAcaoAlunoCursoID";
+            this.textBoxAcaoAlunoCursoID.ReadOnly = true;
+            this.textBoxAcaoAlunoCursoID.Size = new System.Drawing.Size(43, 20);
+            this.textBoxAcaoAlunoCursoID.TabIndex = 22;
             // 
-            // tblUnidadeTableAdapter
+            // textBoxAcaoAlunoUnidade
             // 
-            this.tblUnidadeTableAdapter.ClearBeforeFill = true;
-            // 
-            // tblCursoTableAdapter
-            // 
-            this.tblCursoTableAdapter.ClearBeforeFill = true;
-            // 
-            // comboBoxAcaoAlunoUnidadeNome
-            // 
-            this.comboBoxAcaoAlunoUnidadeNome.DataSource = this.tblCursoBindingSource;
-            this.comboBoxAcaoAlunoUnidadeNome.DisplayMember = "CursoNome";
-            this.comboBoxAcaoAlunoUnidadeNome.FormattingEnabled = true;
-            this.comboBoxAcaoAlunoUnidadeNome.Location = new System.Drawing.Point(79, 100);
-            this.comboBoxAcaoAlunoUnidadeNome.Name = "comboBoxAcaoAlunoUnidadeNome";
-            this.comboBoxAcaoAlunoUnidadeNome.Size = new System.Drawing.Size(349, 21);
-            this.comboBoxAcaoAlunoUnidadeNome.TabIndex = 21;
-            this.comboBoxAcaoAlunoUnidadeNome.ValueMember = "CursoNome";
+            this.textBoxAcaoAlunoUnidade.Enabled = false;
+            this.textBoxAcaoAlunoUnidade.Location = new System.Drawing.Point(67, 131);
+            this.textBoxAcaoAlunoUnidade.Name = "textBoxAcaoAlunoUnidade";
+            this.textBoxAcaoAlunoUnidade.ReadOnly = true;
+            this.textBoxAcaoAlunoUnidade.Size = new System.Drawing.Size(363, 20);
+            this.textBoxAcaoAlunoUnidade.TabIndex = 24;
             // 
             // labelAcaoAlunoUnidade
             // 
             this.labelAcaoAlunoUnidade.AutoSize = true;
-            this.labelAcaoAlunoUnidade.Location = new System.Drawing.Point(16, 104);
+            this.labelAcaoAlunoUnidade.Location = new System.Drawing.Point(16, 134);
             this.labelAcaoAlunoUnidade.Name = "labelAcaoAlunoUnidade";
             this.labelAcaoAlunoUnidade.Size = new System.Drawing.Size(54, 13);
-            this.labelAcaoAlunoUnidade.TabIndex = 20;
+            this.labelAcaoAlunoUnidade.TabIndex = 23;
             this.labelAcaoAlunoUnidade.Text = "Unidade*:";
             // 
             // FrmMenuAcaoAluno
@@ -229,9 +206,11 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(454, 205);
-            this.Controls.Add(this.comboBoxAcaoAlunoUnidadeNome);
+            this.Controls.Add(this.textBoxAcaoAlunoUnidade);
             this.Controls.Add(this.labelAcaoAlunoUnidade);
-            this.Controls.Add(this.comboBoxAcaoAlunoCursoNome);
+            this.Controls.Add(this.textBoxAcaoAlunoCursoID);
+            this.Controls.Add(this.buttonAcaoAlunoCursoSelecionar);
+            this.Controls.Add(this.textBoxAcaoAlunoCursoNome);
             this.Controls.Add(this.textBoxAcaoAlunoID);
             this.Controls.Add(this.labelAcaoAlunoID);
             this.Controls.Add(this.maskedTextBoxAcaoAlunoTelefone);
@@ -252,10 +231,6 @@
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Acao Aluno";
-            ((System.ComponentModel.ISupportInitialize)(this.tblUnidadeBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gerencTCCsDataSet16)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tblCursoBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gerencTCCsDataSet17)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -275,14 +250,10 @@
         private System.Windows.Forms.MaskedTextBox maskedTextBoxAcaoAlunoTelefone;
         private System.Windows.Forms.Label labelAcaoAlunoID;
         private System.Windows.Forms.TextBox textBoxAcaoAlunoID;
-        private System.Windows.Forms.ComboBox comboBoxAcaoAlunoCursoNome;
-        private GerencTCCsDataSet16 gerencTCCsDataSet16;
-        private System.Windows.Forms.BindingSource tblUnidadeBindingSource;
-        private GerencTCCsDataSet16TableAdapters.tblUnidadeTableAdapter tblUnidadeTableAdapter;
-        private GerencTCCsDataSet17 gerencTCCsDataSet17;
-        private System.Windows.Forms.BindingSource tblCursoBindingSource;
-        private GerencTCCsDataSet17TableAdapters.tblCursoTableAdapter tblCursoTableAdapter;
-        private System.Windows.Forms.ComboBox comboBoxAcaoAlunoUnidadeNome;
+        private System.Windows.Forms.TextBox textBoxAcaoAlunoCursoNome;
+        private System.Windows.Forms.Button buttonAcaoAlunoCursoSelecionar;
+        private System.Windows.Forms.TextBox textBoxAcaoAlunoCursoID;
+        private System.Windows.Forms.TextBox textBoxAcaoAlunoUnidade;
         private System.Windows.Forms.Label labelAcaoAlunoUnidade;
     }
 }

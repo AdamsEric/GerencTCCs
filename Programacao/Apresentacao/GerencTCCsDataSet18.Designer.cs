@@ -24,7 +24,7 @@ namespace Apresentacao {
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.DataSet")]
     public partial class GerencTCCsDataSet18 : global::System.Data.DataSet {
         
-        private tblSalaTipoDataTable tabletblSalaTipo;
+        private tblCursoDataTable tabletblCurso;
         
         private global::System.Data.SchemaSerializationMode _schemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
         
@@ -54,8 +54,8 @@ namespace Apresentacao {
             if ((this.DetermineSchemaSerializationMode(info, context) == global::System.Data.SchemaSerializationMode.IncludeSchema)) {
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXmlSchema(new global::System.Xml.XmlTextReader(new global::System.IO.StringReader(strSchema)));
-                if ((ds.Tables["tblSalaTipo"] != null)) {
-                    base.Tables.Add(new tblSalaTipoDataTable(ds.Tables["tblSalaTipo"]));
+                if ((ds.Tables["tblCurso"] != null)) {
+                    base.Tables.Add(new tblCursoDataTable(ds.Tables["tblCurso"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -79,9 +79,9 @@ namespace Apresentacao {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Browsable(false)]
         [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
-        public tblSalaTipoDataTable tblSalaTipo {
+        public tblCursoDataTable tblCurso {
             get {
-                return this.tabletblSalaTipo;
+                return this.tabletblCurso;
             }
         }
         
@@ -152,8 +152,8 @@ namespace Apresentacao {
                 this.Reset();
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXml(reader);
-                if ((ds.Tables["tblSalaTipo"] != null)) {
-                    base.Tables.Add(new tblSalaTipoDataTable(ds.Tables["tblSalaTipo"]));
+                if ((ds.Tables["tblCurso"] != null)) {
+                    base.Tables.Add(new tblCursoDataTable(ds.Tables["tblCurso"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -188,10 +188,10 @@ namespace Apresentacao {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         internal void InitVars(bool initTable) {
-            this.tabletblSalaTipo = ((tblSalaTipoDataTable)(base.Tables["tblSalaTipo"]));
+            this.tabletblCurso = ((tblCursoDataTable)(base.Tables["tblCurso"]));
             if ((initTable == true)) {
-                if ((this.tabletblSalaTipo != null)) {
-                    this.tabletblSalaTipo.InitVars();
+                if ((this.tabletblCurso != null)) {
+                    this.tabletblCurso.InitVars();
                 }
             }
         }
@@ -204,13 +204,13 @@ namespace Apresentacao {
             this.Namespace = "http://tempuri.org/GerencTCCsDataSet18.xsd";
             this.EnforceConstraints = true;
             this.SchemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
-            this.tabletblSalaTipo = new tblSalaTipoDataTable();
-            base.Tables.Add(this.tabletblSalaTipo);
+            this.tabletblCurso = new tblCursoDataTable();
+            base.Tables.Add(this.tabletblCurso);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        private bool ShouldSerializetblSalaTipo() {
+        private bool ShouldSerializetblCurso() {
             return false;
         }
         
@@ -270,21 +270,21 @@ namespace Apresentacao {
         }
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public delegate void tblSalaTipoRowChangeEventHandler(object sender, tblSalaTipoRowChangeEvent e);
+        public delegate void tblCursoRowChangeEventHandler(object sender, tblCursoRowChangeEvent e);
         
         /// <summary>
         ///Represents the strongly named DataTable class.
         ///</summary>
         [global::System.Serializable()]
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
-        public partial class tblSalaTipoDataTable : global::System.Data.TypedTableBase<tblSalaTipoRow> {
+        public partial class tblCursoDataTable : global::System.Data.TypedTableBase<tblCursoRow> {
             
-            private global::System.Data.DataColumn columnSalaTipoTipo;
+            private global::System.Data.DataColumn columnCursoNome;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public tblSalaTipoDataTable() {
-                this.TableName = "tblSalaTipo";
+            public tblCursoDataTable() {
+                this.TableName = "tblCurso";
                 this.BeginInit();
                 this.InitClass();
                 this.EndInit();
@@ -292,7 +292,7 @@ namespace Apresentacao {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            internal tblSalaTipoDataTable(global::System.Data.DataTable table) {
+            internal tblCursoDataTable(global::System.Data.DataTable table) {
                 this.TableName = table.TableName;
                 if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
                     this.CaseSensitive = table.CaseSensitive;
@@ -309,16 +309,16 @@ namespace Apresentacao {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            protected tblSalaTipoDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+            protected tblCursoDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                     base(info, context) {
                 this.InitVars();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn SalaTipoTipoColumn {
+            public global::System.Data.DataColumn CursoNomeColumn {
                 get {
-                    return this.columnSalaTipoTipo;
+                    return this.columnCursoNome;
                 }
             }
             
@@ -333,45 +333,45 @@ namespace Apresentacao {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public tblSalaTipoRow this[int index] {
+            public tblCursoRow this[int index] {
                 get {
-                    return ((tblSalaTipoRow)(this.Rows[index]));
+                    return ((tblCursoRow)(this.Rows[index]));
                 }
             }
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public event tblSalaTipoRowChangeEventHandler tblSalaTipoRowChanging;
+            public event tblCursoRowChangeEventHandler tblCursoRowChanging;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public event tblSalaTipoRowChangeEventHandler tblSalaTipoRowChanged;
+            public event tblCursoRowChangeEventHandler tblCursoRowChanged;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public event tblSalaTipoRowChangeEventHandler tblSalaTipoRowDeleting;
+            public event tblCursoRowChangeEventHandler tblCursoRowDeleting;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public event tblSalaTipoRowChangeEventHandler tblSalaTipoRowDeleted;
+            public event tblCursoRowChangeEventHandler tblCursoRowDeleted;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void AddtblSalaTipoRow(tblSalaTipoRow row) {
+            public void AddtblCursoRow(tblCursoRow row) {
                 this.Rows.Add(row);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public tblSalaTipoRow AddtblSalaTipoRow(string SalaTipoTipo) {
-                tblSalaTipoRow rowtblSalaTipoRow = ((tblSalaTipoRow)(this.NewRow()));
+            public tblCursoRow AddtblCursoRow(string CursoNome) {
+                tblCursoRow rowtblCursoRow = ((tblCursoRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
-                        SalaTipoTipo};
-                rowtblSalaTipoRow.ItemArray = columnValuesArray;
-                this.Rows.Add(rowtblSalaTipoRow);
-                return rowtblSalaTipoRow;
+                        CursoNome};
+                rowtblCursoRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowtblCursoRow);
+                return rowtblCursoRow;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public override global::System.Data.DataTable Clone() {
-                tblSalaTipoDataTable cln = ((tblSalaTipoDataTable)(base.Clone()));
+                tblCursoDataTable cln = ((tblCursoDataTable)(base.Clone()));
                 cln.InitVars();
                 return cln;
             }
@@ -379,48 +379,48 @@ namespace Apresentacao {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override global::System.Data.DataTable CreateInstance() {
-                return new tblSalaTipoDataTable();
+                return new tblCursoDataTable();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             internal void InitVars() {
-                this.columnSalaTipoTipo = base.Columns["SalaTipoTipo"];
+                this.columnCursoNome = base.Columns["CursoNome"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             private void InitClass() {
-                this.columnSalaTipoTipo = new global::System.Data.DataColumn("SalaTipoTipo", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnSalaTipoTipo);
-                this.columnSalaTipoTipo.AllowDBNull = false;
-                this.columnSalaTipoTipo.MaxLength = 15;
+                this.columnCursoNome = new global::System.Data.DataColumn("CursoNome", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnCursoNome);
+                this.columnCursoNome.AllowDBNull = false;
+                this.columnCursoNome.MaxLength = 80;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public tblSalaTipoRow NewtblSalaTipoRow() {
-                return ((tblSalaTipoRow)(this.NewRow()));
+            public tblCursoRow NewtblCursoRow() {
+                return ((tblCursoRow)(this.NewRow()));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
-                return new tblSalaTipoRow(builder);
+                return new tblCursoRow(builder);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override global::System.Type GetRowType() {
-                return typeof(tblSalaTipoRow);
+                return typeof(tblCursoRow);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanged(e);
-                if ((this.tblSalaTipoRowChanged != null)) {
-                    this.tblSalaTipoRowChanged(this, new tblSalaTipoRowChangeEvent(((tblSalaTipoRow)(e.Row)), e.Action));
+                if ((this.tblCursoRowChanged != null)) {
+                    this.tblCursoRowChanged(this, new tblCursoRowChangeEvent(((tblCursoRow)(e.Row)), e.Action));
                 }
             }
             
@@ -428,8 +428,8 @@ namespace Apresentacao {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanging(e);
-                if ((this.tblSalaTipoRowChanging != null)) {
-                    this.tblSalaTipoRowChanging(this, new tblSalaTipoRowChangeEvent(((tblSalaTipoRow)(e.Row)), e.Action));
+                if ((this.tblCursoRowChanging != null)) {
+                    this.tblCursoRowChanging(this, new tblCursoRowChangeEvent(((tblCursoRow)(e.Row)), e.Action));
                 }
             }
             
@@ -437,8 +437,8 @@ namespace Apresentacao {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleted(e);
-                if ((this.tblSalaTipoRowDeleted != null)) {
-                    this.tblSalaTipoRowDeleted(this, new tblSalaTipoRowChangeEvent(((tblSalaTipoRow)(e.Row)), e.Action));
+                if ((this.tblCursoRowDeleted != null)) {
+                    this.tblCursoRowDeleted(this, new tblCursoRowChangeEvent(((tblCursoRow)(e.Row)), e.Action));
                 }
             }
             
@@ -446,14 +446,14 @@ namespace Apresentacao {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleting(e);
-                if ((this.tblSalaTipoRowDeleting != null)) {
-                    this.tblSalaTipoRowDeleting(this, new tblSalaTipoRowChangeEvent(((tblSalaTipoRow)(e.Row)), e.Action));
+                if ((this.tblCursoRowDeleting != null)) {
+                    this.tblCursoRowDeleting(this, new tblCursoRowChangeEvent(((tblCursoRow)(e.Row)), e.Action));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void RemovetblSalaTipoRow(tblSalaTipoRow row) {
+            public void RemovetblCursoRow(tblCursoRow row) {
                 this.Rows.Remove(row);
             }
             
@@ -480,7 +480,7 @@ namespace Apresentacao {
                 type.Attributes.Add(attribute1);
                 global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
                 attribute2.Name = "tableTypeName";
-                attribute2.FixedValue = "tblSalaTipoDataTable";
+                attribute2.FixedValue = "tblCursoDataTable";
                 type.Attributes.Add(attribute2);
                 type.Particle = sequence;
                 global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
@@ -524,25 +524,25 @@ namespace Apresentacao {
         /// <summary>
         ///Represents strongly named DataRow class.
         ///</summary>
-        public partial class tblSalaTipoRow : global::System.Data.DataRow {
+        public partial class tblCursoRow : global::System.Data.DataRow {
             
-            private tblSalaTipoDataTable tabletblSalaTipo;
+            private tblCursoDataTable tabletblCurso;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            internal tblSalaTipoRow(global::System.Data.DataRowBuilder rb) : 
+            internal tblCursoRow(global::System.Data.DataRowBuilder rb) : 
                     base(rb) {
-                this.tabletblSalaTipo = ((tblSalaTipoDataTable)(this.Table));
+                this.tabletblCurso = ((tblCursoDataTable)(this.Table));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string SalaTipoTipo {
+            public string CursoNome {
                 get {
-                    return ((string)(this[this.tabletblSalaTipo.SalaTipoTipoColumn]));
+                    return ((string)(this[this.tabletblCurso.CursoNomeColumn]));
                 }
                 set {
-                    this[this.tabletblSalaTipo.SalaTipoTipoColumn] = value;
+                    this[this.tabletblCurso.CursoNomeColumn] = value;
                 }
             }
         }
@@ -551,22 +551,22 @@ namespace Apresentacao {
         ///Row event argument class
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public class tblSalaTipoRowChangeEvent : global::System.EventArgs {
+        public class tblCursoRowChangeEvent : global::System.EventArgs {
             
-            private tblSalaTipoRow eventRow;
+            private tblCursoRow eventRow;
             
             private global::System.Data.DataRowAction eventAction;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public tblSalaTipoRowChangeEvent(tblSalaTipoRow row, global::System.Data.DataRowAction action) {
+            public tblCursoRowChangeEvent(tblCursoRow row, global::System.Data.DataRowAction action) {
                 this.eventRow = row;
                 this.eventAction = action;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public tblSalaTipoRow Row {
+            public tblCursoRow Row {
                 get {
                     return this.eventRow;
                 }
@@ -594,7 +594,7 @@ namespace Apresentacao.GerencTCCsDataSet18TableAdapters {
     [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
         ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-    public partial class tblSalaTipoTableAdapter : global::System.ComponentModel.Component {
+    public partial class tblCursoTableAdapter : global::System.ComponentModel.Component {
         
         private global::System.Data.SqlClient.SqlDataAdapter _adapter;
         
@@ -608,7 +608,7 @@ namespace Apresentacao.GerencTCCsDataSet18TableAdapters {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public tblSalaTipoTableAdapter() {
+        public tblCursoTableAdapter() {
             this.ClearBeforeFill = true;
         }
         
@@ -705,14 +705,9 @@ namespace Apresentacao.GerencTCCsDataSet18TableAdapters {
             this._adapter = new global::System.Data.SqlClient.SqlDataAdapter();
             global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
             tableMapping.SourceTable = "Table";
-            tableMapping.DataSetTable = "tblSalaTipo";
-            tableMapping.ColumnMappings.Add("SalaTipoTipo", "SalaTipoTipo");
+            tableMapping.DataSetTable = "tblCurso";
+            tableMapping.ColumnMappings.Add("CursoNome", "CursoNome");
             this._adapter.TableMappings.Add(tableMapping);
-            this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
-            this._adapter.InsertCommand.Connection = this.Connection;
-            this._adapter.InsertCommand.CommandText = "INSERT INTO [dbo].[tblSalaTipo] ([SalaTipoTipo]) VALUES (@SalaTipoTipo)";
-            this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@SalaTipoTipo", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "SalaTipoTipo", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -728,16 +723,24 @@ namespace Apresentacao.GerencTCCsDataSet18TableAdapters {
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT SalaTipoTipo FROM dbo.tblSalaTipo";
+            this._commandCollection[0].CommandText = "SELECT CursoNome FROM dbo.tblCurso INNER JOIN tblUnidade ON CursoUnidadeID = Unid" +
+                "adeID WHERE CursoUnidadeID = @UnidadeID";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@UnidadeID", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "CursoUnidadeID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(GerencTCCsDataSet18.tblSalaTipoDataTable dataTable) {
+        public virtual int Fill(GerencTCCsDataSet18.tblCursoDataTable dataTable, global::System.Nullable<int> UnidadeID) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
+            if ((UnidadeID.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[0].Value = ((int)(UnidadeID.Value));
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[0].Value = global::System.DBNull.Value;
+            }
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
             }
@@ -749,67 +752,17 @@ namespace Apresentacao.GerencTCCsDataSet18TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual GerencTCCsDataSet18.tblSalaTipoDataTable GetData() {
+        public virtual GerencTCCsDataSet18.tblCursoDataTable GetData(global::System.Nullable<int> UnidadeID) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            GerencTCCsDataSet18.tblSalaTipoDataTable dataTable = new GerencTCCsDataSet18.tblSalaTipoDataTable();
-            this.Adapter.Fill(dataTable);
-            return dataTable;
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(GerencTCCsDataSet18.tblSalaTipoDataTable dataTable) {
-            return this.Adapter.Update(dataTable);
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(GerencTCCsDataSet18 dataSet) {
-            return this.Adapter.Update(dataSet, "tblSalaTipo");
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(global::System.Data.DataRow dataRow) {
-            return this.Adapter.Update(new global::System.Data.DataRow[] {
-                        dataRow});
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(global::System.Data.DataRow[] dataRows) {
-            return this.Adapter.Update(dataRows);
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public virtual int Insert(string SalaTipoTipo) {
-            if ((SalaTipoTipo == null)) {
-                throw new global::System.ArgumentNullException("SalaTipoTipo");
+            if ((UnidadeID.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[0].Value = ((int)(UnidadeID.Value));
             }
             else {
-                this.Adapter.InsertCommand.Parameters[0].Value = ((string)(SalaTipoTipo));
+                this.Adapter.SelectCommand.Parameters[0].Value = global::System.DBNull.Value;
             }
-            global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
-            if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 
-                        != global::System.Data.ConnectionState.Open)) {
-                this.Adapter.InsertCommand.Connection.Open();
-            }
-            try {
-                int returnValue = this.Adapter.InsertCommand.ExecuteNonQuery();
-                return returnValue;
-            }
-            finally {
-                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
-                    this.Adapter.InsertCommand.Connection.Close();
-                }
-            }
+            GerencTCCsDataSet18.tblCursoDataTable dataTable = new GerencTCCsDataSet18.tblCursoDataTable();
+            this.Adapter.Fill(dataTable);
+            return dataTable;
         }
     }
     
@@ -825,8 +778,6 @@ namespace Apresentacao.GerencTCCsDataSet18TableAdapters {
         
         private UpdateOrderOption _updateOrder;
         
-        private tblSalaTipoTableAdapter _tblSalaTipoTableAdapter;
-        
         private bool _backupDataSetBeforeUpdate;
         
         private global::System.Data.IDbConnection _connection;
@@ -839,20 +790,6 @@ namespace Apresentacao.GerencTCCsDataSet18TableAdapters {
             }
             set {
                 this._updateOrder = value;
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        [global::System.ComponentModel.EditorAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterManagerPropertyEditor, Microso" +
-            "ft.VSDesigner, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3" +
-            "a", "System.Drawing.Design.UITypeEditor")]
-        public tblSalaTipoTableAdapter tblSalaTipoTableAdapter {
-            get {
-                return this._tblSalaTipoTableAdapter;
-            }
-            set {
-                this._tblSalaTipoTableAdapter = value;
             }
         }
         
@@ -875,10 +812,6 @@ namespace Apresentacao.GerencTCCsDataSet18TableAdapters {
                 if ((this._connection != null)) {
                     return this._connection;
                 }
-                if (((this._tblSalaTipoTableAdapter != null) 
-                            && (this._tblSalaTipoTableAdapter.Connection != null))) {
-                    return this._tblSalaTipoTableAdapter.Connection;
-                }
                 return null;
             }
             set {
@@ -892,9 +825,6 @@ namespace Apresentacao.GerencTCCsDataSet18TableAdapters {
         public int TableAdapterInstanceCount {
             get {
                 int count = 0;
-                if ((this._tblSalaTipoTableAdapter != null)) {
-                    count = (count + 1);
-                }
                 return count;
             }
         }
@@ -906,15 +836,6 @@ namespace Apresentacao.GerencTCCsDataSet18TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private int UpdateUpdatedRows(GerencTCCsDataSet18 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
-            if ((this._tblSalaTipoTableAdapter != null)) {
-                global::System.Data.DataRow[] updatedRows = dataSet.tblSalaTipo.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
-                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
-                if (((updatedRows != null) 
-                            && (0 < updatedRows.Length))) {
-                    result = (result + this._tblSalaTipoTableAdapter.Update(updatedRows));
-                    allChangedRows.AddRange(updatedRows);
-                }
-            }
             return result;
         }
         
@@ -925,14 +846,6 @@ namespace Apresentacao.GerencTCCsDataSet18TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private int UpdateInsertedRows(GerencTCCsDataSet18 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
-            if ((this._tblSalaTipoTableAdapter != null)) {
-                global::System.Data.DataRow[] addedRows = dataSet.tblSalaTipo.Select(null, null, global::System.Data.DataViewRowState.Added);
-                if (((addedRows != null) 
-                            && (0 < addedRows.Length))) {
-                    result = (result + this._tblSalaTipoTableAdapter.Update(addedRows));
-                    allAddedRows.AddRange(addedRows);
-                }
-            }
             return result;
         }
         
@@ -943,14 +856,6 @@ namespace Apresentacao.GerencTCCsDataSet18TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private int UpdateDeletedRows(GerencTCCsDataSet18 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
             int result = 0;
-            if ((this._tblSalaTipoTableAdapter != null)) {
-                global::System.Data.DataRow[] deletedRows = dataSet.tblSalaTipo.Select(null, null, global::System.Data.DataViewRowState.Deleted);
-                if (((deletedRows != null) 
-                            && (0 < deletedRows.Length))) {
-                    result = (result + this._tblSalaTipoTableAdapter.Update(deletedRows));
-                    allChangedRows.AddRange(deletedRows);
-                }
-            }
             return result;
         }
         
@@ -990,11 +895,6 @@ namespace Apresentacao.GerencTCCsDataSet18TableAdapters {
             if ((dataSet.HasChanges() == false)) {
                 return 0;
             }
-            if (((this._tblSalaTipoTableAdapter != null) 
-                        && (this.MatchTableAdapterConnection(this._tblSalaTipoTableAdapter.Connection) == false))) {
-                throw new global::System.ArgumentException("All TableAdapters managed by a TableAdapterManager must use the same connection s" +
-                        "tring.");
-            }
             global::System.Data.IDbConnection workConnection = this.Connection;
             if ((workConnection == null)) {
                 throw new global::System.ApplicationException("TableAdapterManager contains no connection information. Set each TableAdapterMana" +
@@ -1027,15 +927,6 @@ namespace Apresentacao.GerencTCCsDataSet18TableAdapters {
             try {
                 // ---- Prepare for update -----------
                 //
-                if ((this._tblSalaTipoTableAdapter != null)) {
-                    revertConnections.Add(this._tblSalaTipoTableAdapter, this._tblSalaTipoTableAdapter.Connection);
-                    this._tblSalaTipoTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(workConnection));
-                    this._tblSalaTipoTableAdapter.Transaction = ((global::System.Data.SqlClient.SqlTransaction)(workTransaction));
-                    if (this._tblSalaTipoTableAdapter.Adapter.AcceptChangesDuringUpdate) {
-                        this._tblSalaTipoTableAdapter.Adapter.AcceptChangesDuringUpdate = false;
-                        adaptersWithAcceptChangesDuringUpdate.Add(this._tblSalaTipoTableAdapter.Adapter);
-                    }
-                }
                 // 
                 //---- Perform updates -----------
                 //
@@ -1093,10 +984,6 @@ namespace Apresentacao.GerencTCCsDataSet18TableAdapters {
             finally {
                 if (workConnOpened) {
                     workConnection.Close();
-                }
-                if ((this._tblSalaTipoTableAdapter != null)) {
-                    this._tblSalaTipoTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(revertConnections[this._tblSalaTipoTableAdapter]));
-                    this._tblSalaTipoTableAdapter.Transaction = null;
                 }
                 if ((0 < adaptersWithAcceptChangesDuringUpdate.Count)) {
                     global::System.Data.Common.DataAdapter[] adapters = new System.Data.Common.DataAdapter[adaptersWithAcceptChangesDuringUpdate.Count];

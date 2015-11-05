@@ -55,8 +55,6 @@ namespace Apresentacao
                 comboBoxFiltroUnidade.Visible = true;
                 labelFiltrarPorCurso.Visible = true;
                 comboBoxFiltroCurso.Visible = true;
-                labelFiltrarPorProfessor.Visible = true;
-                comboBoxFiltroProfessor.Visible = true;
                 labelFiltrarPorData.Visible = true;
                 dateTimePickerFiltroData.Visible = true;
                 labelFiltrarPorTipo.Visible = false;
@@ -106,8 +104,6 @@ namespace Apresentacao
                 comboBoxFiltroUnidade.Visible = true;
                 labelFiltrarPorCurso.Visible = true;
                 comboBoxFiltroCurso.Visible = true;
-                labelFiltrarPorProfessor.Visible = false;
-                comboBoxFiltroProfessor.Visible = false;
                 labelFiltrarPorData.Visible = false;
                 dateTimePickerFiltroData.Visible = false;
                 labelFiltrarPorTipo.Visible = false;
@@ -156,8 +152,6 @@ namespace Apresentacao
                 comboBoxFiltroUnidade.Visible = false;
                 labelFiltrarPorCurso.Visible = false;
                 comboBoxFiltroCurso.Visible = false;
-                labelFiltrarPorProfessor.Visible = false;
-                comboBoxFiltroProfessor.Visible = false;
                 labelFiltrarPorData.Visible = false;
                 dateTimePickerFiltroData.Visible = false;
                 labelFiltrarPorTipo.Visible = false;
@@ -205,8 +199,6 @@ namespace Apresentacao
                 comboBoxFiltroUnidade.Visible = true;
                 labelFiltrarPorCurso.Visible = false;
                 comboBoxFiltroCurso.Visible = false;
-                labelFiltrarPorProfessor.Visible = false;
-                comboBoxFiltroProfessor.Visible = false;
                 labelFiltrarPorData.Visible = false;
                 dateTimePickerFiltroData.Visible = false;
                 labelFiltrarPorTipo.Visible = false;
@@ -254,8 +246,6 @@ namespace Apresentacao
                 comboBoxFiltroUnidade.Visible = false;
                 labelFiltrarPorCurso.Visible = false;
                 comboBoxFiltroCurso.Visible = false;
-                labelFiltrarPorProfessor.Visible = false;
-                comboBoxFiltroProfessor.Visible = false;
                 labelFiltrarPorData.Visible = false;
                 dateTimePickerFiltroData.Visible = false;
                 labelFiltrarPorTipo.Visible = false;
@@ -303,8 +293,6 @@ namespace Apresentacao
                 comboBoxFiltroUnidade.Visible = true;
                 labelFiltrarPorCurso.Visible = false;
                 comboBoxFiltroCurso.Visible = false;
-                labelFiltrarPorProfessor.Visible = false;
-                comboBoxFiltroProfessor.Visible = false;
                 labelFiltrarPorData.Visible = false;
                 dateTimePickerFiltroData.Visible = false;
                 labelFiltrarPorTipo.Visible = true;
@@ -352,8 +340,6 @@ namespace Apresentacao
                 comboBoxFiltroUnidade.Visible = false;
                 labelFiltrarPorCurso.Visible = false;
                 comboBoxFiltroCurso.Visible = false;
-                labelFiltrarPorProfessor.Visible = false;
-                comboBoxFiltroProfessor.Visible = false;
                 labelFiltrarPorData.Visible = false;
                 dateTimePickerFiltroData.Visible = false;
                 labelFiltrarPorTipo.Visible = false;
@@ -416,8 +402,12 @@ namespace Apresentacao
             }
             if (labelModuloTitulo.Text == "TCCs")
             {
-                FrmMenuInserirTCC frmMenuInserirTCC = new FrmMenuInserirTCC();
-                frmMenuInserirTCC.ShowDialog();
+                FrmMenuAcaoTCC frmMenuAcaoTCC = new FrmMenuAcaoTCC(null, "Inserir TCC");
+                DialogResult dialogResult = frmMenuAcaoTCC.ShowDialog();
+                if (dialogResult == DialogResult.Yes)
+                {
+                    RealizarPesquisa();
+                }
             }
             if (labelModuloTitulo.Text == "Professores")
             {
@@ -484,8 +474,14 @@ namespace Apresentacao
 
             if (labelModuloTitulo.Text == "TCCs")
             {
-                FrmMenuAlterarTCC frmMenuAlterarTCC = new FrmMenuAlterarTCC();
-                frmMenuAlterarTCC.ShowDialog();
+                TCC tccSelecao = (dataGridView.SelectedRows[0].DataBoundItem as TCC);
+
+                FrmMenuAcaoTCC frmMenuAcaoTCC = new FrmMenuAcaoTCC(tccSelecao, "Alterar TCC");
+                DialogResult dialogResult = frmMenuAcaoTCC.ShowDialog();
+                if (dialogResult == DialogResult.Yes)
+                {
+                    RealizarPesquisa();
+                }
             }
             if (labelModuloTitulo.Text == "Professores")
             {
@@ -512,6 +508,7 @@ namespace Apresentacao
             if (labelModuloTitulo.Text == "Unidades")
             {
                 Unidade unidadeSelecao = (dataGridView.SelectedRows[0].DataBoundItem as Unidade);
+
                 FrmMenuAcaoUnidade frmMenuAcaoUnidade = new FrmMenuAcaoUnidade(unidadeSelecao, "Alterar Unidade");
                 DialogResult dialogResult = frmMenuAcaoUnidade.ShowDialog();
                 if (dialogResult == DialogResult.Yes)
@@ -522,8 +519,9 @@ namespace Apresentacao
             if (labelModuloTitulo.Text == "Salas")
             {
                 Sala salaSelecao = (dataGridView.SelectedRows[0].DataBoundItem as Sala);
-                FrmMenuAcaoSala frmMenuAlterarSala = new FrmMenuAcaoSala(salaSelecao, "Alterar Sala");
-                DialogResult dialogResult = frmMenuAlterarSala.ShowDialog();
+
+                FrmMenuAcaoSala frmMenuAcaoSala = new FrmMenuAcaoSala(salaSelecao, "Alterar Sala");
+                DialogResult dialogResult = frmMenuAcaoSala.ShowDialog();
                 if (dialogResult == DialogResult.Yes)
                 {
                     RealizarPesquisa();
@@ -570,6 +568,13 @@ namespace Apresentacao
                 Aluno alunoSelecao = (dataGridView.SelectedRows[0].DataBoundItem as Aluno);
                 FrmMenuAcaoAluno frmMenuAcaoAluno = new FrmMenuAcaoAluno(alunoSelecao, "Consultar Aluno");
                 frmMenuAcaoAluno.ShowDialog();
+            }
+
+            if (labelModuloTitulo.Text == "TCCs")
+            {
+                TCC tccSelecao = (dataGridView.SelectedRows[0].DataBoundItem as TCC);
+                FrmMenuAcaoTCC frmMenuAcaoTCC = new FrmMenuAcaoTCC(tccSelecao, "Consultar TCC");
+                frmMenuAcaoTCC.ShowDialog();
             }
 
             if (labelModuloTitulo.Text == "Salas")
@@ -649,21 +654,24 @@ namespace Apresentacao
                 dataGridView.Refresh();
             }
 
+            if (labelModuloTitulo.Text == "TCCs")
+            {
+                TCCNegocios tccNegocios = new TCCNegocios();
+                TCCColecao tccColecao = new TCCColecao();
+
+                dataGridView.DataSource = null;
+                dataGridView.DataSource = tccColecao;
+                dataGridView.Update();
+                dataGridView.Refresh();
+            }
+
             if (labelModuloTitulo.Text == "Salas")
             {
                 SalaNegocios salaNegocios = new SalaNegocios();
                 SalaColecao salaColecao = new SalaColecao();
 
                 string filtroUnidade = comboBoxFiltroUnidade.Text;
-
-                if (radioButtonPesquisarPorNome.Checked)
-                {
-                    salaColecao = salaNegocios.ConsultarPorNome(textBoxPesquisa.Text, filtroUnidade);
-                }
-                if (radioButtonPesquisarPorMatricula.Checked)
-                {
-                    salaColecao = salaNegocios.ConsultarPorDescricao(textBoxPesquisa.Text, filtroUnidade);
-                }
+                salaColecao = salaNegocios.ConsultarPorNome(textBoxPesquisa.Text, filtroUnidade);
 
                 dataGridView.DataSource = null;
                 dataGridView.DataSource = salaColecao;
@@ -710,7 +718,7 @@ namespace Apresentacao
                 {
                     int ProfessorID = Convert.ToInt32(retorno);
 
-                    MessageBox.Show("Registro excluído com sucesso", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("Registro excluído com sucesso!", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     RealizarPesquisa();
                 }
                 catch
@@ -729,7 +737,7 @@ namespace Apresentacao
                 {
                     int UnidadeID = Convert.ToInt32(retorno);
 
-                    MessageBox.Show("Registro excluído com sucesso", "Aviso", MessageBoxButtons.OK,MessageBoxIcon.Information);
+                    MessageBox.Show("Registro excluído com sucesso!", "Aviso", MessageBoxButtons.OK,MessageBoxIcon.Information);
                     RealizarPesquisa();
                 }
                 catch
@@ -748,7 +756,7 @@ namespace Apresentacao
                 {
                     int cursoID = Convert.ToInt32(retorno);
 
-                    MessageBox.Show("Registro excluído com sucesso", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("Registro excluído com sucesso!", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     RealizarPesquisa();
                 }
                 catch
@@ -767,7 +775,7 @@ namespace Apresentacao
                 {
                     int alunoID = Convert.ToInt32(retorno);
 
-                    MessageBox.Show("Registro excluído com sucesso", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("Registro excluído com sucesso!", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     RealizarPesquisa();
                 }
                 catch
@@ -786,13 +794,18 @@ namespace Apresentacao
                 {
                     int salaID = Convert.ToInt32(retorno);
 
-                    MessageBox.Show("Registro excluído com sucesso", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("Registro excluído com sucesso!", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     RealizarPesquisa();
                 }
                 catch
                 {
                     MessageBox.Show("Não foi possível excluir. Detalhes: " + retorno, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
+            }
+
+            if (labelModuloTitulo.Text == "TCCs")
+            {
+                
             }
         }
 
@@ -806,31 +819,25 @@ namespace Apresentacao
 
         private void comboBoxFiltroUnidade_Click(object sender, EventArgs e)
         {
-            this.tblUnidadeTableAdapter.Fill(this.gerencTCCsDataSet9.tblUnidade);
+            this.tblUnidadeTableAdapter.Fill(this.dataSetUnidade.tblUnidade);
             comboBoxFiltroUnidade.Text = "";
         }
 
         private void comboBoxFiltroCurso_Click(object sender, EventArgs e)
         {
-            this.tblCursoTableAdapter.Fill(this.gerencTCCsDataSet10.tblCurso);
+            this.tblCursoTableAdapter.Fill(this.dataSetCurso.tblCurso);
             comboBoxFiltroCurso.Text = "";
-        }
-
-        private void comboBoxFiltroProfessor_Click(object sender, EventArgs e)
-        {
-            this.tblProfessorTableAdapter.Fill(this.gerencTCCsDataSet11.tblProfessor);
-            comboBoxFiltroProfessor.Text = "";
         }
 
         private void comboBoxFiltroGrupo_Click(object sender, EventArgs e)
         {
-            this.tblGrupoTableAdapter.Fill(this.gerencTCCsDataSet12.tblGrupo);
+            this.tblGrupoTableAdapter.Fill(this.dataSetGrupo.tblGrupo);
             comboBoxFiltroGrupo.Text = "";
         }
 
         private void comboBoxFiltroTipo_Click(object sender, EventArgs e)
         {
-            this.tblSalaTipoTableAdapter.Fill(this.gerencTCCsDataSet13.tblSalaTipo);
+            this.tblSalaTipoTableAdapter.Fill(this.dataSetSalaTipo.tblSalaTipo);
             comboBoxFiltroTipo.Text = "";
         }
     }

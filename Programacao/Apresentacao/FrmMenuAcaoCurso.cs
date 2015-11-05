@@ -62,10 +62,15 @@ namespace Apresentacao
                 CursoNegocios cursoNegocios = new CursoNegocios();
 
                 curso.CursoNome = textBoxAcaoCursoNome.Text;
-                curso.CursoUnidadeNome = comboBoxAcaoCursoUnidadeNome.SelectedValue.ToString();
-                curso.CursoUnidadeID = cursoNegocios.RetornaCursoID(curso.CursoUnidadeNome);
+                curso.CursoUnidadeNome = "";
 
-                if (curso.CursoNome == "")
+                if (comboBoxAcaoCursoUnidadeNome.Text != "")
+                {
+                    curso.CursoUnidadeNome = comboBoxAcaoCursoUnidadeNome.Text.ToString();
+                    curso.CursoUnidadeID = cursoNegocios.RetornaIDCurso(curso.CursoUnidadeNome);
+                }
+
+                if (curso.CursoNome == "" || curso.CursoUnidadeNome == "")
                 {
                     MessageBox.Show("Favor preencher todos os campos!");
                 }
@@ -99,7 +104,7 @@ namespace Apresentacao
 
                 if (curso.CursoUnidadeNome != "")
                 {
-                    curso.CursoUnidadeID = cursoNegocios.RetornaCursoID(curso.CursoUnidadeNome);
+                    curso.CursoUnidadeID = cursoNegocios.RetornaIDCurso(curso.CursoUnidadeNome);
                 }
 
                 if (curso.CursoNome == cursoold.CursoNome && curso.CursoUnidadeNome == cursoold.CursoUnidadeNome)
@@ -136,7 +141,7 @@ namespace Apresentacao
 
         private void comboBoxAcaoCursoUnidadeNome_Click(object sender, EventArgs e)
         {
-            this.tblUnidadeTableAdapter.Fill(this.gerencTCCsDataSet15.tblUnidade);
+            this.tblUnidadeTableAdapter1.Fill(this.dataSetUnidade.tblUnidade);
             if (cursoold.CursoUnidadeNome == "")
             {
                 comboBoxAcaoCursoUnidadeNome.Text = "";
@@ -145,6 +150,11 @@ namespace Apresentacao
             {
                 comboBoxAcaoCursoUnidadeNome.Text = cursoold.CursoUnidadeNome;
             }
+        }
+
+        private void comboBoxAcaoCursoUnidadeNome_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = true;
         }
     }
 }

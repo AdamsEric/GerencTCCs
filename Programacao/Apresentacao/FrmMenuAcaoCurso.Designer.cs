@@ -35,14 +35,16 @@
             this.buttonAcaoCursoConfirmar = new System.Windows.Forms.Button();
             this.buttonAcaoCursoCancelar = new System.Windows.Forms.Button();
             this.comboBoxAcaoCursoUnidadeNome = new System.Windows.Forms.ComboBox();
-            this.tblUnidadeBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.gerencTCCsDataSet15 = new Apresentacao.GerencTCCsDataSet15();
+            this.tblUnidadeBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.dataSetUnidadeBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dataSetUnidade = new Apresentacao.DataSetUnidade();
             this.labelAcaoCursoCO = new System.Windows.Forms.Label();
             this.labelAcaoCursoID = new System.Windows.Forms.Label();
             this.textBoxAcaoCursoID = new System.Windows.Forms.TextBox();
-            this.tblUnidadeTableAdapter = new Apresentacao.GerencTCCsDataSet15TableAdapters.tblUnidadeTableAdapter();
-            ((System.ComponentModel.ISupportInitialize)(this.tblUnidadeBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gerencTCCsDataSet15)).BeginInit();
+            this.tblUnidadeTableAdapter1 = new Apresentacao.DataSetUnidadeTableAdapters.tblUnidadeTableAdapter();
+            ((System.ComponentModel.ISupportInitialize)(this.tblUnidadeBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataSetUnidadeBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataSetUnidade)).BeginInit();
             this.SuspendLayout();
             // 
             // labelAcaoCursoNome
@@ -94,7 +96,7 @@
             // 
             // comboBoxAcaoCursoUnidadeNome
             // 
-            this.comboBoxAcaoCursoUnidadeNome.DataSource = this.tblUnidadeBindingSource;
+            this.comboBoxAcaoCursoUnidadeNome.DataSource = this.tblUnidadeBindingSource1;
             this.comboBoxAcaoCursoUnidadeNome.DisplayMember = "UnidadeNome";
             this.comboBoxAcaoCursoUnidadeNome.FormattingEnabled = true;
             this.comboBoxAcaoCursoUnidadeNome.Location = new System.Drawing.Point(79, 87);
@@ -103,16 +105,22 @@
             this.comboBoxAcaoCursoUnidadeNome.TabIndex = 2;
             this.comboBoxAcaoCursoUnidadeNome.ValueMember = "UnidadeNome";
             this.comboBoxAcaoCursoUnidadeNome.Click += new System.EventHandler(this.comboBoxAcaoCursoUnidadeNome_Click);
+            this.comboBoxAcaoCursoUnidadeNome.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.comboBoxAcaoCursoUnidadeNome_KeyPress);
             // 
-            // tblUnidadeBindingSource
+            // tblUnidadeBindingSource1
             // 
-            this.tblUnidadeBindingSource.DataMember = "tblUnidade";
-            this.tblUnidadeBindingSource.DataSource = this.gerencTCCsDataSet15;
+            this.tblUnidadeBindingSource1.DataMember = "tblUnidade";
+            this.tblUnidadeBindingSource1.DataSource = this.dataSetUnidadeBindingSource;
             // 
-            // gerencTCCsDataSet15
+            // dataSetUnidadeBindingSource
             // 
-            this.gerencTCCsDataSet15.DataSetName = "GerencTCCsDataSet15";
-            this.gerencTCCsDataSet15.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.dataSetUnidadeBindingSource.DataSource = this.dataSetUnidade;
+            this.dataSetUnidadeBindingSource.Position = 0;
+            // 
+            // dataSetUnidade
+            // 
+            this.dataSetUnidade.DataSetName = "DataSetUnidade";
+            this.dataSetUnidade.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // labelAcaoCursoCO
             // 
@@ -140,9 +148,9 @@
             this.textBoxAcaoCursoID.Size = new System.Drawing.Size(90, 20);
             this.textBoxAcaoCursoID.TabIndex = 0;
             // 
-            // tblUnidadeTableAdapter
+            // tblUnidadeTableAdapter1
             // 
-            this.tblUnidadeTableAdapter.ClearBeforeFill = true;
+            this.tblUnidadeTableAdapter1.ClearBeforeFill = true;
             // 
             // FrmMenuAcaoCurso
             // 
@@ -166,8 +174,9 @@
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Acao Curso";
-            ((System.ComponentModel.ISupportInitialize)(this.tblUnidadeBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gerencTCCsDataSet15)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblUnidadeBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataSetUnidadeBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataSetUnidade)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -184,8 +193,9 @@
         private System.Windows.Forms.Label labelAcaoCursoCO;
         private System.Windows.Forms.Label labelAcaoCursoID;
         private System.Windows.Forms.TextBox textBoxAcaoCursoID;
-        private GerencTCCsDataSet15 gerencTCCsDataSet15;
-        private System.Windows.Forms.BindingSource tblUnidadeBindingSource;
-        private GerencTCCsDataSet15TableAdapters.tblUnidadeTableAdapter tblUnidadeTableAdapter;
+        private System.Windows.Forms.BindingSource dataSetUnidadeBindingSource;
+        private DataSetUnidade dataSetUnidade;
+        private System.Windows.Forms.BindingSource tblUnidadeBindingSource1;
+        private DataSetUnidadeTableAdapters.tblUnidadeTableAdapter tblUnidadeTableAdapter1;
     }
 }

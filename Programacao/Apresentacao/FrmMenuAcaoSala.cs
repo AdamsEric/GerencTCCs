@@ -16,7 +16,7 @@ namespace Apresentacao
     public partial class FrmMenuAcaoSala : Form
     {
         Sala salaold = new Sala();
-       
+
         public FrmMenuAcaoSala(Sala sala, string acao)
         {
             InitializeComponent();
@@ -31,25 +31,26 @@ namespace Apresentacao
                 textBoxAcaoSalaID.Text = sala.SalaID.ToString();
                 textBoxAcaoSalaNome.Text = sala.SalaNome;
                 textBoxAcaoSalaDescricao.Text = sala.SalaDescricao;
-                comboBoxAcaoSalaUnidadeNome.Text = sala.SalaUnidadeNome;
-                comboBoxAcaoSalaTipoNome.Text = sala.SalaSalaTipoNome;
+                comboBoxAcaoSalaUnidade.Text = sala.SalaUnidadeNome;
+                comboBoxAcaoSalaTipo.Text = sala.SalaSalaTipoNome;
                 salaold = sala;
             }
-            else if (acao == "Consultar Sala")
+            else if(acao == "Consultar Sala")
             {
                 this.Text = "Consultar Sala";
                 textBoxAcaoSalaID.Text = sala.SalaID.ToString();
                 textBoxAcaoSalaNome.Text = sala.SalaNome;
                 textBoxAcaoSalaDescricao.Text = sala.SalaDescricao;
-                comboBoxAcaoSalaUnidadeNome.Text = sala.SalaUnidadeNome;
-                comboBoxAcaoSalaTipoNome.Text = sala.SalaSalaTipoNome;
+                comboBoxAcaoSalaUnidade.Text = sala.SalaUnidadeNome;
+                comboBoxAcaoSalaTipo.Text = sala.SalaSalaTipoNome;
 
                 buttonAcaoSalaConfirmar.Hide();
                 buttonAcaoSalaCancelar.Hide();
                 textBoxAcaoSalaNome.Enabled = false;
                 textBoxAcaoSalaDescricao.Enabled = false;
-                comboBoxAcaoSalaUnidadeNome.Enabled = false;
-                comboBoxAcaoSalaTipoNome.Enabled = false;
+                comboBoxAcaoSalaUnidade.Enabled = false;
+                comboBoxAcaoSalaTipo.Enabled = false;
+
                 labelAcaoSalaCO.Hide();
             }
         }
@@ -61,6 +62,7 @@ namespace Apresentacao
 
         private void buttonAcaoSalaConfirmar_Click(object sender, EventArgs e)
         {
+
             if (this.Text == "Inserir Sala")
             {
                 Sala sala = new Sala();
@@ -68,18 +70,28 @@ namespace Apresentacao
 
                 sala.SalaNome = textBoxAcaoSalaNome.Text;
                 sala.SalaDescricao = textBoxAcaoSalaDescricao.Text;
-                sala.SalaUnidadeNome = comboBoxAcaoSalaUnidadeNome.SelectedValue.ToString();
-                sala.SalaUnidadeID = salaNegocios.RetornaUnidadeID(sala.SalaUnidadeNome);
-                sala.SalaSalaTipoNome = comboBoxAcaoSalaTipoNome.SelectedValue.ToString();
-                sala.SalaSalaTipoID = salaNegocios.RetornaSalaTipoID(sala.SalaSalaTipoNome);
+                sala.SalaSalaTipoNome = "";
+                sala.SalaUnidadeNome = "";
 
-                if (sala.SalaNome == "" && sala.SalaDescricao == "" 
-                    && sala.SalaUnidadeID.ToString() == "" && sala.SalaSalaTipoID.ToString() == "")
+                if (comboBoxAcaoSalaUnidade.Text != "")
+                {
+                    sala.SalaUnidadeNome = comboBoxAcaoSalaUnidade.Text.ToString();
+                    sala.SalaUnidadeID = salaNegocios.RetornaUnidadeID(sala.SalaUnidadeNome);
+                }
+
+                if (comboBoxAcaoSalaTipo.Text != "")
+                {
+                    sala.SalaSalaTipoNome = comboBoxAcaoSalaTipo.Text.ToString();
+                    sala.SalaSalaTipoID = salaNegocios.RetornaSalaTipoID(sala.SalaSalaTipoNome);
+                }
+                
+                if (sala.SalaNome == "" || sala.SalaSalaTipoNome == "" || sala.SalaUnidadeNome == "")
                 {
                     MessageBox.Show("Favor preencher todos os campos!");
                 }
                 else
                 {
+                    
                     string retorno = salaNegocios.Inserir(sala);
 
                     try
@@ -102,27 +114,32 @@ namespace Apresentacao
                 Sala sala = new Sala();
                 SalaNegocios salaNegocios = new SalaNegocios();
 
+                sala.SalaID = Convert.ToInt32(textBoxAcaoSalaID.Text);
                 sala.SalaNome = textBoxAcaoSalaNome.Text;
                 sala.SalaDescricao = textBoxAcaoSalaDescricao.Text;
-                sala.SalaUnidadeNome = comboBoxAcaoSalaUnidadeNome.SelectedValue.ToString();
-                sala.SalaUnidadeID = salaNegocios.RetornaUnidadeID(sala.SalaUnidadeNome);
-                sala.SalaSalaTipoNome = comboBoxAcaoSalaTipoNome.SelectedValue.ToString();
-                sala.SalaSalaTipoID = salaNegocios.RetornaSalaTipoID(sala.SalaSalaTipoNome);
 
-                if (sala.SalaNome == "" && sala.SalaDescricao == ""
-                    && sala.SalaUnidadeID.ToString() == "" && sala.SalaSalaTipoID.ToString() == "")
+                if (comboBoxAcaoSalaUnidade.Text != "")
                 {
-                    MessageBox.Show("Favor preencher todos os campos!");
+                    sala.SalaUnidadeNome = comboBoxAcaoSalaUnidade.Text.ToString();
+                    sala.SalaUnidadeID = salaNegocios.RetornaUnidadeID(sala.SalaUnidadeNome);
                 }
 
-                if (sala.SalaNome == salaold.SalaNome && sala.SalaUnidadeNome == salaold.SalaUnidadeNome)
+                if (comboBoxAcaoSalaTipo.Text != "")
+                {
+                    sala.SalaSalaTipoNome = comboBoxAcaoSalaTipo.Text.ToString();
+                    sala.SalaSalaTipoID = salaNegocios.RetornaSalaTipoID(sala.SalaSalaTipoNome);
+                }
+
+                if (sala.SalaNome == salaold.SalaNome && sala.SalaDescricao == salaold.SalaDescricao
+                    && sala.SalaUnidadeNome == salaold.SalaUnidadeNome
+                    && sala.SalaSalaTipoNome == salaold.SalaSalaTipoNome)
                 {
                     MessageBox.Show("Os campos não foram alterados");
                 }
                 else
                 {
 
-                    if (sala.SalaNome == "" || sala.SalaUnidadeNome == "")
+                    if (sala.SalaNome == "" || sala.SalaSalaTipoNome == "" || sala.SalaUnidadeNome == "")
                     {
                         MessageBox.Show("Favor preencher todos os campos!");
                     }
@@ -147,30 +164,40 @@ namespace Apresentacao
             }
         }
 
-        private void comboBoxAcaoSalaTipo_Click(object sender, EventArgs e)
+        private void comboBoxAcaoSalaUnidade_Click(object sender, EventArgs e)
         {
-            this.tblSalaTipoTableAdapter.Fill(this.gerencTCCsDataSet18.tblSalaTipo);
-            if (salaold.SalaSalaTipoNome == "")
+            this.tblUnidadeTableAdapter1.Fill(this.dataSetUnidade.tblUnidade);
+            if (salaold.SalaUnidadeNome == "")
             {
-                comboBoxAcaoSalaTipoNome.Text = "";
+                comboBoxAcaoSalaUnidade.Text = "";
             }
             else
             {
-                comboBoxAcaoSalaTipoNome.Text = salaold.SalaUnidadeNome;
+                comboBoxAcaoSalaUnidade.Text = salaold.SalaUnidadeNome;
             }
         }
 
-        private void comboBoxAcaoSalaUnidadeNome_Click(object sender, EventArgs e)
+        private void comboBoxAcaoSalaTipo_Click(object sender, EventArgs e)
         {
-            this.tblUnidadeTableAdapter.Fill(this.gerencTCCsDataSet19.tblUnidade);
-            if (salaold.SalaUnidadeNome == "")
+            this.tblSalaTipoTableAdapter.Fill(this.dataSetSalaTipo.tblSalaTipo);
+            if (salaold.SalaSalaTipoNome == "")
             {
-                comboBoxAcaoSalaUnidadeNome.Text = "";
+                comboBoxAcaoSalaTipo.Text = "";
             }
             else
             {
-                comboBoxAcaoSalaUnidadeNome.Text = salaold.SalaUnidadeNome;
+                comboBoxAcaoSalaTipo.Text = salaold.SalaSalaTipoNome;
             }
+        }
+
+        private void comboBoxAcaoSalaTipo_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = true;
+        }
+
+        private void comboBoxAcaoSalaUnidade_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = true;
         }
     }
 }

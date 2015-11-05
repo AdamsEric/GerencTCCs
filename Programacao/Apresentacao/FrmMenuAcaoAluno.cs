@@ -34,7 +34,9 @@ namespace Apresentacao
                 textBoxAcaoAlunoNome.Text = aluno.AlunoNome;
                 textBoxAcaoAlunoMatricula.Text = aluno.AlunoMatricula;
                 maskedTextBoxAcaoAlunoTelefone.Text = aluno.AlunoTelefone;
-                comboBoxAcaoAlunoCursoNome.Text = aluno.AlunoCursoNome;
+                textBoxAcaoAlunoCursoID.Text = aluno.AlunoCursoID.ToString();
+                textBoxAcaoAlunoCursoNome.Text = aluno.AlunoCursoNome;
+                textBoxAcaoAlunoUnidade.Text = aluno.AlunoUnidadeNome;
                 alunoold = aluno;
             }
             else if (acao == "Consultar Aluno")
@@ -44,14 +46,16 @@ namespace Apresentacao
                 textBoxAcaoAlunoNome.Text = aluno.AlunoNome;
                 textBoxAcaoAlunoMatricula.Text = aluno.AlunoMatricula;
                 maskedTextBoxAcaoAlunoTelefone.Text = aluno.AlunoTelefone;
-                comboBoxAcaoAlunoCursoNome.Text = aluno.AlunoCursoNome;
+                textBoxAcaoAlunoCursoID.Text = aluno.AlunoCursoID.ToString();
+                textBoxAcaoAlunoCursoNome.Text = aluno.AlunoCursoNome;
+                textBoxAcaoAlunoUnidade.Text = aluno.AlunoUnidadeNome;
 
                 buttonAcaoAlunoConfirmar.Hide();
                 buttonAcaoAlunoCancelar.Hide();
                 textBoxAcaoAlunoNome.Enabled = false;
                 textBoxAcaoAlunoMatricula.Enabled = false;
                 maskedTextBoxAcaoAlunoTelefone.Enabled = false;
-                comboBoxAcaoAlunoCursoNome.Enabled = false;
+
                 labelAcaoAlunoCO.Hide();
             }
         }
@@ -71,10 +75,16 @@ namespace Apresentacao
                 aluno.AlunoNome = textBoxAcaoAlunoNome.Text;
                 aluno.AlunoMatricula = textBoxAcaoAlunoMatricula.Text;
                 aluno.AlunoTelefone = maskedTextBoxAcaoAlunoTelefone.Text;
-                aluno.AlunoCursoNome = comboBoxAcaoAlunoCursoNome.SelectedValue.ToString();
-                aluno.AlunoCursoID = alunoNegocios.RetornaCursoID(aluno.AlunoCursoNome);
+                if (textBoxAcaoAlunoCursoID.Text != "")
+                {
+                    aluno.AlunoCursoID = Convert.ToInt32(textBoxAcaoAlunoCursoID.Text);
+                }
+                aluno.AlunoCursoNome = textBoxAcaoAlunoCursoNome.Text;
+                aluno.AlunoUnidadeNome = textBoxAcaoAlunoUnidade.Text;
 
-                if (aluno.AlunoNome == "" && aluno.AlunoMatricula == "" && aluno.AlunoCursoNome == "")
+
+                if (aluno.AlunoNome == "" || aluno.AlunoMatricula == "" || aluno.AlunoCursoID.ToString() == ""
+                    || aluno.AlunoCursoNome == "")
                 {
                     MessageBox.Show("Favor preencher todos os campos!");
                 }
@@ -106,12 +116,14 @@ namespace Apresentacao
                 aluno.AlunoNome = textBoxAcaoAlunoNome.Text;
                 aluno.AlunoMatricula = textBoxAcaoAlunoMatricula.Text;
                 aluno.AlunoTelefone = maskedTextBoxAcaoAlunoTelefone.Text;
-                aluno.AlunoCursoNome = Convert.ToString(comboBoxAcaoAlunoCursoNome.SelectedValue);
-                aluno.AlunoCursoID = alunoNegocios.RetornaCursoID(aluno.AlunoCursoNome);
+                aluno.AlunoCursoID = Convert.ToInt32(textBoxAcaoAlunoCursoID.Text);
+                aluno.AlunoCursoNome = textBoxAcaoAlunoCursoNome.Text;
+                aluno.AlunoUnidadeNome = textBoxAcaoAlunoUnidade.Text;
 
                 if (aluno.AlunoNome == alunoold.AlunoNome
                     && aluno.AlunoMatricula == alunoold.AlunoMatricula
                     && aluno.AlunoTelefone == alunoold.AlunoTelefone
+                    && aluno.AlunoCursoID == alunoold.AlunoCursoID
                     && aluno.AlunoCursoNome == alunoold.AlunoCursoNome)
                 {
                     MessageBox.Show("Os campos não foram alterados");
@@ -119,7 +131,8 @@ namespace Apresentacao
                 else
                 {
 
-                    if (aluno.AlunoNome == "" && aluno.AlunoMatricula == "" && aluno.AlunoCursoNome == "")
+                    if (aluno.AlunoNome == "" || aluno.AlunoMatricula == "" || aluno.AlunoCursoID.ToString() == ""
+                    || aluno.AlunoCursoNome == "")
                     {
                         MessageBox.Show("Favor preencher todos os campos!");
                     }
@@ -143,16 +156,18 @@ namespace Apresentacao
             }
         }
 
-        private void comboBoxAcaoAlunoCursoNome_Click(object sender, EventArgs e)
+        private void buttonAcaoAlunoCursoSelecionar_Click(object sender, EventArgs e)
         {
-            this.tblCursoTableAdapter.Fill(this.gerencTCCsDataSet17.tblCurso);
-            if (alunoold.AlunoCursoNome == "")
+            string modulo = "Cursos";
+
+            FrmMenuSelecao frmMenuSelecao = new FrmMenuSelecao(modulo);
+            frmMenuSelecao.ShowDialog();
+
+            if (frmMenuSelecao.ValorID != 0)
             {
-                comboBoxAcaoAlunoCursoNome.Text = "";
-            }
-            else
-            {
-                comboBoxAcaoAlunoCursoNome.Text = alunoold.AlunoCursoNome;
+                textBoxAcaoAlunoCursoID.Text = Convert.ToString(frmMenuSelecao.ValorID);
+                textBoxAcaoAlunoCursoNome.Text = frmMenuSelecao.ValorRetorno1;
+                textBoxAcaoAlunoUnidade.Text = frmMenuSelecao.ValorRetorno2;
             }
         }
     }
