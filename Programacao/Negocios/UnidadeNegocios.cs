@@ -95,5 +95,23 @@ namespace Negocios
             }
             return unidadeColecao;
         }
+
+        public int VerificarUnidadeExistente(string unidade, int unidadeid)
+        {
+            acessoDadosSqlServer.LimparParametros();
+            acessoDadosSqlServer.AdicionarParametros("@UnidadeNome", unidade);
+            acessoDadosSqlServer.AdicionarParametros("@UnidadeID", unidadeid);
+            int verificacao = Convert.ToInt32(acessoDadosSqlServer.ExecutarManipulacao(CommandType.Text, "SELECT UnidadeID FROM tblUnidade WHERE UnidadeNome LIKE  ('%' + '@UnidadeNome' + '%') AND UnidadeID <> @UnidadeID"));
+
+            return verificacao;
+        }
+
+        public int VerificarUso(int unidadeid)
+        {
+            acessoDadosSqlServer.LimparParametros();
+            acessoDadosSqlServer.AdicionarParametros("@UnidadeID", unidadeid);
+            int verificacao = Convert.ToInt32(acessoDadosSqlServer.ExecutarManipulacao(CommandType.Text, "SELECT TOP 1 UnidadeID FROM tblUnidade INNER JOIN tblCurso ON UnidadeID = CursoUnidadeID WHERE UnidadeID = @UnidadeID and CursoID > '0'"));
+            return verificacao;
+        }
     }
 }

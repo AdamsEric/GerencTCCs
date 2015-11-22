@@ -62,7 +62,8 @@ namespace Apresentacao
         {
             if (this.Text == "Inserir Professor")
             {
-                   Professor professor = new Professor();
+                Professor professor = new Professor();
+                ProfessorNegocios professorNegocios = new ProfessorNegocios();
 
                 professor.ProfessorNome = textBoxAcaoProfessorNome.Text;
                 professor.ProfessorMatricula = textBoxAcaoProfessorMatricula.Text;
@@ -74,20 +75,29 @@ namespace Apresentacao
                 }
                 else
                 {
-                    ProfessorNegocios professorNegocios = new ProfessorNegocios();
-                    string retorno = professorNegocios.Inserir(professor);
+                    int professorid = 0;
+                    int verificacao = professorNegocios.VerificarProfessorExistente(textBoxAcaoProfessorMatricula.Text, professorid);
 
-                    try
+                    if (verificacao != 0)
                     {
-                        int professorID = Convert.ToInt32(retorno);
-
-                        MessageBox.Show("Registro inserido com sucesso! Código cadastrado: " + professorID.ToString());
-                        this.DialogResult = DialogResult.Yes;
+                        MessageBox.Show("Já existe professor cadastrado com esta matrícula!");
                     }
-                    catch
+                    else
                     {
-                        MessageBox.Show("Não foi possível completar a operação! Detalhes: " + retorno, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                        this.DialogResult = DialogResult.No;
+                        string retorno = professorNegocios.Inserir(professor);
+
+                        try
+                        {
+                            int professorID = Convert.ToInt32(retorno);
+
+                            MessageBox.Show("Registro inserido com sucesso! Código cadastrado: " + professorID.ToString());
+                            this.DialogResult = DialogResult.Yes;
+                        }
+                        catch
+                        {
+                            MessageBox.Show("Não foi possível completar a operação! Detalhes: " + retorno, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            this.DialogResult = DialogResult.No;
+                        }
                     }
                 }
             }
@@ -117,22 +127,56 @@ namespace Apresentacao
                     else
                     {
                         ProfessorNegocios professorNegocios = new ProfessorNegocios();
-                        string retorno = professorNegocios.Alterar(professor);
 
-                        try
+                        int verificacao = professorNegocios.VerificarProfessorExistente(textBoxAcaoProfessorMatricula.Text, Convert.ToInt32(textBoxAcaoProfessorID.Text));
+
+                        if (verificacao != 0)
                         {
-                            int professorID = Convert.ToInt32(retorno);
-
-                            MessageBox.Show("Registro inserido com sucesso! Código: " + professorID.ToString());
-                            this.DialogResult = DialogResult.Yes;
+                            MessageBox.Show("Já existe professor cadastrado com esta matrícula!");
                         }
-                        catch
+                        else
                         {
-                            MessageBox.Show("Não foi possível completar a operação! Detalhes: " + retorno, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                            this.DialogResult = DialogResult.No;
+                            string retorno = professorNegocios.Alterar(professor);
+
+                            try
+                            {
+                                int professorID = Convert.ToInt32(retorno);
+
+                                MessageBox.Show("Registro inserido com sucesso! Código: " + professorID.ToString());
+                                this.DialogResult = DialogResult.Yes;
+                            }
+                            catch
+                            {
+                                MessageBox.Show("Não foi possível completar a operação! Detalhes: " + retorno, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                this.DialogResult = DialogResult.No;
+                            }
                         }
                     }
                 }
+            }
+        }
+
+        private void textBoxAcaoProfessorNome_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == 13)
+            {
+                buttonAcaoProfessorConfirmar.PerformClick();
+            }
+        }
+
+        private void textBoxAcaoProfessorMatricula_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == 13)
+            {
+                buttonAcaoProfessorConfirmar.PerformClick();
+            }
+        }
+
+        private void maskedTextBoxAcaoProfessorTelefone_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == 13)
+            {
+                buttonAcaoProfessorConfirmar.PerformClick();
             }
         }
     }

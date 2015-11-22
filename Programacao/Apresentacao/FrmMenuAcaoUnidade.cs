@@ -95,7 +95,6 @@ namespace Apresentacao
                 }
             }
 
-
             if (this.Text == "Alterar Unidade")
             {
                 Unidade unidade = new Unidade();
@@ -126,10 +125,10 @@ namespace Apresentacao
 
                         try
                         {
-                            int unidadeID = Convert.ToInt32(retorno);
+                        int unidadeID = Convert.ToInt32(retorno);
 
-                            MessageBox.Show("Registro inserido com sucesso! Código: " + unidadeID.ToString());
-                            this.DialogResult = DialogResult.Yes;
+                        MessageBox.Show("Registro inserido com sucesso! Código: " + unidadeID.ToString());
+                        this.DialogResult = DialogResult.Yes;
                         }
                         catch
                         {
@@ -140,5 +139,39 @@ namespace Apresentacao
                 }
             }
         }
+
+        private void textBoxAcaoUnidadeNome_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == 13)
+            {
+                buttonAcaoUnidadeConfirmar.PerformClick();
+            }
+        }
+
+        private void textBoxAcaoUnidadeCidade_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == 13)
+            {
+                buttonAcaoUnidadeConfirmar.PerformClick();
+            }
+        }
+
+        private void textBoxAcaoUnidadeEstado_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == 13)
+            {
+                buttonAcaoUnidadeConfirmar.PerformClick();
+            }
+        }
+
+        private void textBoxAcaoUnidadePais_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == 13)
+            {
+                buttonAcaoUnidadeConfirmar.PerformClick();
+            }
+        }
+
+
     }
 }

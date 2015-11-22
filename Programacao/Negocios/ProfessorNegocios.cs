@@ -117,5 +117,15 @@ namespace Negocios
             }
             return professorColecao;
         }
+
+        public int VerificarProfessorExistente(string matricula, int professorid)
+        {
+            acessoDadosSqlServer.LimparParametros();
+            acessoDadosSqlServer.AdicionarParametros("@ProfessorMatricula", matricula);
+            acessoDadosSqlServer.AdicionarParametros("@ProfessorID", professorid);
+            int verificacao = Convert.ToInt32(acessoDadosSqlServer.ExecutarManipulacao(CommandType.Text, "SELECT ProfessorID FROM tblProfessor WHERE ProfessorMatricula = @ProfessorMatricula AND ProfessorID <> @ProfessorID"));
+
+            return verificacao;
+        }
     }
 }

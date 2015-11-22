@@ -14,17 +14,25 @@ namespace Negocios
     {
         AcessoDadosSqlServer acessoDadosSqlServer = new AcessoDadosSqlServer();
 
-        public string Inserir(Curso curso)
+        public string Inserir(TCC tcc)
         {
             try
             {
                 acessoDadosSqlServer.LimparParametros();
-                acessoDadosSqlServer.AdicionarParametros("@TCCID", curso.CursoID);
+                acessoDadosSqlServer.AdicionarParametros("@TCCTitulo", tcc.TCCTitulo);
+                acessoDadosSqlServer.AdicionarParametros("@TCCGrandeArea", tcc.TCCGrandeArea);
+                acessoDadosSqlServer.AdicionarParametros("@TCCArea", tcc.TCCArea);
+                acessoDadosSqlServer.AdicionarParametros("@TCCSubarea", tcc.TCCSubarea);
+                acessoDadosSqlServer.AdicionarParametros("@TCCEspecialidade", tcc.TCCEspecialidade);
+                acessoDadosSqlServer.AdicionarParametros("@TCCResumo", tcc.TCCResumo);
+                acessoDadosSqlServer.AdicionarParametros("@TCCPaginas", tcc.TCCPaginas);
+                acessoDadosSqlServer.AdicionarParametros("@TCCData", tcc.TCCData);
+                acessoDadosSqlServer.AdicionarParametros("@TCCSalaID", tcc.TCCSalaID);
+                acessoDadosSqlServer.AdicionarParametros("@TCCAlunoID", tcc.TCCAlunoID);
+                acessoDadosSqlServer.AdicionarParametros("@TCCOrientadorID", tcc.TCCOrientadorID);
+                string tccID = acessoDadosSqlServer.ExecutarManipulacao(CommandType.Text, "INSERT INTO tblTCC (TCCTitulo,TCCGrandeArea,TCCArea,TCCSubarea,TCCEspecialidade,TCCResumo,TCCPaginas,TCCData,TCCSalaID,TCCAlunoID,TCCOrientadorID) VALUES (@TCCTitulo,@TCCGrandeArea,@TCCArea,@TCCSubarea,@TCCEspecialidade,@TCCResumo,@TCCPaginas,@TCCData,@TCCSalaID,@TCCAlunoID,@TCCOrientadorID) SELECT @@IDENTITY AS RETORNO").ToString();
 
-                acessoDadosSqlServer.AdicionarParametros("@CursoUnidadeID", Convert.ToInt32(curso.CursoUnidadeID));
-                string CursoID = acessoDadosSqlServer.ExecutarManipulacao(CommandType.Text, "INSERT INTO tblCurso (CursoNome,CursoUnidadeID) VALUES (@CursoNome,@CursoUnidadeID) SELECT @@IDENTITY AS RETORNO").ToString();
-
-                return CursoID;
+                return tccID;
             }
             catch (Exception ex)
             {
@@ -32,19 +40,26 @@ namespace Negocios
             }
         }
 
-        public string Alterar(Aluno aluno)
+        public string Alterar(TCC tcc)
         {
             try
             {
                 acessoDadosSqlServer.LimparParametros();
-                acessoDadosSqlServer.AdicionarParametros("@AlunoID", aluno.AlunoID);
-                acessoDadosSqlServer.AdicionarParametros("@AlunoNome", aluno.AlunoNome);
-                acessoDadosSqlServer.AdicionarParametros("@AlunoMatricula", aluno.AlunoMatricula);
-                acessoDadosSqlServer.AdicionarParametros("@AlunoTelefone", aluno.AlunoTelefone);
-                acessoDadosSqlServer.AdicionarParametros("@AlunoCursoID", aluno.AlunoCursoID);
-                string AlunoID = acessoDadosSqlServer.ExecutarManipulacao(CommandType.Text, "UPDATE tblAluno SET AlunoNome = @AlunoNome, AlunoMatricula = @AlunoMatricula, AlunoTelefone = @AlunoTelefone, AlunoCursoID = @AlunoCursoID WHERE AlunoID = @AlunoID SELECT @AlunoID AS RETORNO").ToString();
+                acessoDadosSqlServer.AdicionarParametros("@TCCID", tcc.TCCID);
+                acessoDadosSqlServer.AdicionarParametros("@TCCTitulo", tcc.TCCTitulo);
+                acessoDadosSqlServer.AdicionarParametros("@TCCGrandeArea", tcc.TCCGrandeArea);
+                acessoDadosSqlServer.AdicionarParametros("@TCCArea", tcc.TCCArea);
+                acessoDadosSqlServer.AdicionarParametros("@TCCSubarea", tcc.TCCSubarea);
+                acessoDadosSqlServer.AdicionarParametros("@TCCEspecialidade", tcc.TCCEspecialidade);
+                acessoDadosSqlServer.AdicionarParametros("@TCCResumo", tcc.TCCResumo);
+                acessoDadosSqlServer.AdicionarParametros("@TCCPaginas", tcc.TCCPaginas);
+                acessoDadosSqlServer.AdicionarParametros("@TCCData", tcc.TCCData);
+                acessoDadosSqlServer.AdicionarParametros("@TCCSalaID", tcc.TCCSalaID);
+                acessoDadosSqlServer.AdicionarParametros("@TCCAlunoID", tcc.TCCAlunoID);
+                acessoDadosSqlServer.AdicionarParametros("@TCCOrientadorID", tcc.TCCOrientadorID);
+                string TCCID = acessoDadosSqlServer.ExecutarManipulacao(CommandType.Text, "UPDATE tblTCC SET TCCTitulo = @TCCTitulo,TCCGrandeArea = @TCCGrandeArea,TCCArea = @TCCArea,TCCSubarea = @TCCSubarea,TCCEspecialidade = @TCCEspecialidade,TCCResumo = @TCCResumo,TCCPaginas = @TCCPaginas,TCCData = @TCCData,TCCSalaID = @TCCSalaID, TCCAlunoID = @TCCAlunoID, TCCOrientadorID = @TCCOrientadorID WHERE TCCID = @TCCID SELECT @TCCID AS RETORNO").ToString();
 
-                return AlunoID;
+                return TCCID;
             }
             catch (Exception ex)
             {
@@ -52,15 +67,15 @@ namespace Negocios
             }
         }
 
-        public string Excluir(Aluno aluno)
+        public string Excluir(TCC tcc)
         {
             try
             {
                 acessoDadosSqlServer.LimparParametros();
-                acessoDadosSqlServer.AdicionarParametros("@AlunoID", aluno.AlunoID);
-                string AlunoID = acessoDadosSqlServer.ExecutarManipulacao(CommandType.Text, "DELETE FROM tblAluno WHERE AlunoID = @AlunoID SELECT @AlunoID AS RETORNO").ToString();
+                acessoDadosSqlServer.AdicionarParametros("@TCCID", tcc.TCCID);
+                string TCCID = acessoDadosSqlServer.ExecutarManipulacao(CommandType.Text, "DELETE FROM tblTCC WHERE TCCID = @TCCID SELECT @TCCID AS RETORNO").ToString();
 
-                return AlunoID;
+                return TCCID;
             }
             catch (Exception ex)
             {
@@ -68,67 +83,84 @@ namespace Negocios
             }
         }
 
-        public AlunoColecao ConsultarPorNome(string nome)
+        public TCCColecao ConsultarPorTitulo(string titulo)
         {
             //Criar uma nova coleção de clientes (aqui ela está vazia)
-            AlunoColecao alunoColecao = new AlunoColecao();
+            TCCColecao tccColecao = new TCCColecao();
 
             acessoDadosSqlServer.LimparParametros();
-            acessoDadosSqlServer.AdicionarParametros("@AlunoNome", nome);
-            DataTable dataTableAluno = acessoDadosSqlServer.ExecutarConsulta(CommandType.Text, "SELECT AlunoID AS ID, AlunoNome AS Aluno, AlunoMatricula AS Matricula, AlunoTelefone AS Telefone, CursoNome AS Curso  FROM tblAluno INNER JOIN tblCurso ON AlunoCursoID = CursoID WHERE AlunoNome LIKE '%' + @AlunoNome + '%'");
+            acessoDadosSqlServer.AdicionarParametros("@TCCTitulo", titulo);
+            DataTable dataTableTCC = acessoDadosSqlServer.ExecutarConsulta(CommandType.Text, "SELECT TCCID AS ID, AlunoID AS AlunoID, AlunoNome AS Aluno, TCCTitulo AS Titulo, ProfessorID AS OrientadorID, ProfessorNome AS Orientador, TCCGrandeArea AS 'Grande Area', TCCArea AS Area, TCCSubarea AS Subarea, TCCEspecialidade AS Especialidade, TCCPaginas AS 'N de Paginas', TCCData AS Data, SalaID AS SalaID, SalaNome AS Sala, UnidadeNome AS Unidade, TCCResumo AS Resumo FROM tblTCC INNER JOIN tblAluno ON TCCAlunoID = AlunoID INNER JOIN tblSala ON TCCSalaID = SalaID INNER JOIN tblUnidade ON SalaUnidadeID = UnidadeID INNER JOIN tblProfessor ON TCCOrientadorID = ProfessorID WHERE TCCTitulo LIKE '%' + @TCCTitulo + '%'");
 
             //Percorrer o DataTable e transformar em coleção de cliente
             //Cada linha do DataTable é um cliente
-            foreach (DataRow linha in dataTableAluno.Rows)
+            foreach (DataRow linha in dataTableTCC.Rows)
             {
                 //Criar um cliente vazio
                 //Colocar os dados da linha dele
                 //Adicionar ele na coleção
-                Aluno aluno = new Aluno();
-                aluno.AlunoID = Convert.ToInt32(linha["ID"]);
-                aluno.AlunoNome = Convert.ToString(linha["Aluno"]);
-                aluno.AlunoMatricula = Convert.ToString(linha["Matricula"]);
-                aluno.AlunoTelefone = Convert.ToString(linha["Telefone"]);
-                aluno.AlunoCursoNome = (linha["Curso"]).ToString();
-                alunoColecao.Add(aluno);
+                TCC tcc = new TCC();
+
+                tcc.TCCID = Convert.ToInt32(linha["ID"]);
+                tcc.TCCAlunoID = Convert.ToInt32(linha["AlunoID"]);
+                tcc.TCCAlunoNome = Convert.ToString(linha["Aluno"]);
+                tcc.TCCTitulo = Convert.ToString(linha["Titulo"]);
+                tcc.TCCOrientadorID = Convert.ToInt32(linha["OrientadorID"]);
+                tcc.TCCOrientadorNome = Convert.ToString(linha["Orientador"]);
+                tcc.TCCGrandeArea = Convert.ToString(linha["Grande Area"]);
+                tcc.TCCArea = Convert.ToString(linha["Area"]);
+                tcc.TCCSubarea = Convert.ToString(linha["Subarea"]);
+                tcc.TCCEspecialidade = Convert.ToString(linha["Especialidade"]);
+                tcc.TCCPaginas = Convert.ToInt32(linha["N de Paginas"]);
+                tcc.TCCSalaID = Convert.ToInt32(linha["SalaID"]);
+                tcc.TCCSalaNome = Convert.ToString(linha["Sala"]);
+                tcc.TCCUnidade = Convert.ToString(linha["Unidade"]);
+                tcc.TCCData = Convert.ToDateTime(linha["Data"]);
+                tcc.TCCResumo = Convert.ToString(linha["Resumo"]);
+
+                tccColecao.Add(tcc);
             }
-            return alunoColecao;
+            return tccColecao;
         }
 
-        public AlunoColecao ConsultarPorMatricula(string matricula)
+        public TCCColecao ConsultarPorAluno(string aluno)
         {
             //Criar uma nova coleção de clientes (aqui ela está vazia)
-            AlunoColecao alunoColecao = new AlunoColecao();
+            TCCColecao tccColecao = new TCCColecao();
 
             acessoDadosSqlServer.LimparParametros();
-            acessoDadosSqlServer.AdicionarParametros("@AlunoMatricula", matricula);
-            DataTable dataTableAluno = acessoDadosSqlServer.ExecutarConsulta(CommandType.Text, "SELECT AlunoID AS ID, AlunoNome AS Aluno, AlunoMatricula AS Matricula, AlunoTelefone AS Telefone, CursoNome AS Curso FROM tblAluno INNER JOIN tblCurso ON AlunoCursoID = CursoID WHERE AlunoMatricula LIKE '%' + @AlunoMatricula + '%'");
+            acessoDadosSqlServer.AdicionarParametros("@TCCAlunoNome", aluno);
+            DataTable dataTableTCC = acessoDadosSqlServer.ExecutarConsulta(CommandType.Text, "SELECT TCCID AS ID, AlunoID AS AlunoID, AlunoNome AS Aluno, TCCTitulo AS Titulo, ProfessorID AS OrientadorID, ProfessorNome AS Orientador, TCCGrandeArea AS 'Grande Area', TCCArea AS Area, TCCSubarea AS Subarea, TCCEspecialidade AS Especialidade, TCCPaginas AS 'N de Paginas', TCCData AS Data, SalaID AS SalaID, SalaNome AS Sala, UnidadeNome AS Unidade, TCCResumo AS Resumo FROM tblTCC INNER JOIN tblAluno ON TCCAlunoID = AlunoID INNER JOIN tblSala ON TCCSalaID = SalaID INNER JOIN tblUnidade ON SalaUnidadeID = UnidadeID INNER JOIN tblProfessor ON TCCOrientadorID = ProfessorID WHERE AlunoNome LIKE '%' + @TCCAlunoNome + '%'");
 
             //Percorrer o DataTable e transformar em coleção de cliente
             //Cada linha do DataTable é um cliente
-            foreach (DataRow linha in dataTableAluno.Rows)
+            foreach (DataRow linha in dataTableTCC.Rows)
             {
                 //Criar um cliente vazio
                 //Colocar os dados da linha dele
                 //Adicionar ele na coleção
-                Aluno aluno = new Aluno();
-                aluno.AlunoID = Convert.ToInt32(linha["AlunoID"]);
-                aluno.AlunoNome = Convert.ToString(linha["ProfessorNome"]);
-                aluno.AlunoMatricula = Convert.ToString(linha["ProfessorMatricula"]);
-                aluno.AlunoTelefone = Convert.ToString(linha["ProfessorTelefone"]);
-                aluno.AlunoCursoNome = Convert.ToString(linha["AlunoCursoNome"]);
-                alunoColecao.Add(aluno);
+                TCC tcc = new TCC();
+
+                tcc.TCCID = Convert.ToInt32(linha["ID"]);
+                tcc.TCCAlunoID = Convert.ToInt32(linha["AlunoID"]);
+                tcc.TCCAlunoNome = Convert.ToString(linha["Aluno"]);
+                tcc.TCCTitulo = Convert.ToString(linha["Titulo"]);
+                tcc.TCCOrientadorID = Convert.ToInt32(linha["OrientadorID"]);
+                tcc.TCCOrientadorNome = Convert.ToString(linha["Orientador"]);
+                tcc.TCCGrandeArea = Convert.ToString(linha["Grande Area"]);
+                tcc.TCCArea = Convert.ToString(linha["Area"]);
+                tcc.TCCSubarea = Convert.ToString(linha["Subarea"]);
+                tcc.TCCEspecialidade = Convert.ToString(linha["Especialidade"]);
+                tcc.TCCPaginas = Convert.ToInt32(linha["N de Paginas"]);
+                tcc.TCCSalaID = Convert.ToInt32(linha["SalaID"]);
+                tcc.TCCSalaNome = Convert.ToString(linha["Sala"]);
+                tcc.TCCUnidade = Convert.ToString(linha["Unidade"]);
+                tcc.TCCData = Convert.ToDateTime(linha["Data"]);
+                tcc.TCCResumo = Convert.ToString(linha["Resumo"]);
+
+                tccColecao.Add(tcc);
             }
-            return alunoColecao;
-        }
-
-        public int RetornaCursoID(string curso)
-        {
-            acessoDadosSqlServer.LimparParametros();
-            acessoDadosSqlServer.AdicionarParametros("@AlunoCursoNome", curso);
-            int ID = Convert.ToInt32(acessoDadosSqlServer.ExecutarManipulacao(CommandType.Text, "SELECT * FROM tblCurso WHERE (CursoNome LIKE '%' + @AlunoCursoNome + '%')"));
-
-            return ID;
+            return tccColecao;
         }
     }
 }

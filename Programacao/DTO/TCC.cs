@@ -10,6 +10,11 @@ namespace DTO
     {
         public int TCCID { get; set; }
         public string TCCTitulo { get; set; }
+        public int TCCAlunoID { get; set; }
+        public string TCCAlunoNome { get; set; }
+        public int TCCOrientadorID { get; set; }
+        public string TCCOrientadorNome { get; set; }
+        public string TCCGrandeArea { get; set; }
         public string TCCArea { get; set; }
         public string TCCSubarea { get; set; }
         public string TCCEspecialidade { get; set; }
@@ -17,10 +22,7 @@ namespace DTO
         public string TCCResumo { get; set; }
         public DateTime TCCData { get; set; }
         public int TCCSalaID { get; set; }
-        public int TCCAlunoID { get; set; }
-        public int TCCOrientadorID { get; set; }
-        public int TCCBancaID { get; set; }
-        public int TCCBancaProfessor1 { get; set; }
-        public int TCCBancaProfessor2 { get; set; }
+        public string TCCSalaNome { get; set; }
+        public string TCCUnidade { get; set; }
     }
 }

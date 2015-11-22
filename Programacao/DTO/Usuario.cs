@@ -14,5 +14,6 @@ namespace DTO
         public string UsuarioNome { get; set; }
         public string UsuarioMatricula { get; set; }
         public int UsuarioGrupoID { get; set; }
+        public string UsuarioGrupoNome { get; set; }
     }
 }

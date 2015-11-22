@@ -89,7 +89,7 @@
             this.textBoxAcaoAlunoNome.Location = new System.Drawing.Point(67, 42);
             this.textBoxAcaoAlunoNome.Name = "textBoxAcaoAlunoNome";
             this.textBoxAcaoAlunoNome.Size = new System.Drawing.Size(363, 20);
-            this.textBoxAcaoAlunoNome.TabIndex = 0;
+            this.textBoxAcaoAlunoNome.TabIndex = 1;
             // 
             // textBoxAcaoAlunoMatricula
             // 
@@ -97,7 +97,7 @@
             this.textBoxAcaoAlunoMatricula.Location = new System.Drawing.Point(79, 71);
             this.textBoxAcaoAlunoMatricula.Name = "textBoxAcaoAlunoMatricula";
             this.textBoxAcaoAlunoMatricula.Size = new System.Drawing.Size(79, 20);
-            this.textBoxAcaoAlunoMatricula.TabIndex = 1;
+            this.textBoxAcaoAlunoMatricula.TabIndex = 2;
             // 
             // buttonAcaoAlunoConfirmar
             // 
@@ -135,7 +135,7 @@
             this.maskedTextBoxAcaoAlunoTelefone.Mask = "(99)999999999";
             this.maskedTextBoxAcaoAlunoTelefone.Name = "maskedTextBoxAcaoAlunoTelefone";
             this.maskedTextBoxAcaoAlunoTelefone.Size = new System.Drawing.Size(80, 20);
-            this.maskedTextBoxAcaoAlunoTelefone.TabIndex = 2;
+            this.maskedTextBoxAcaoAlunoTelefone.TabIndex = 3;
             this.maskedTextBoxAcaoAlunoTelefone.TextMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
             // 
             // labelAcaoAlunoID
@@ -153,11 +153,10 @@
             this.textBoxAcaoAlunoID.Location = new System.Drawing.Point(67, 13);
             this.textBoxAcaoAlunoID.Name = "textBoxAcaoAlunoID";
             this.textBoxAcaoAlunoID.Size = new System.Drawing.Size(90, 20);
-            this.textBoxAcaoAlunoID.TabIndex = 19;
+            this.textBoxAcaoAlunoID.TabIndex = 0;
             // 
             // textBoxAcaoAlunoCursoNome
             // 
-            this.textBoxAcaoAlunoCursoNome.Enabled = false;
             this.textBoxAcaoAlunoCursoNome.Location = new System.Drawing.Point(116, 101);
             this.textBoxAcaoAlunoCursoNome.Name = "textBoxAcaoAlunoCursoNome";
             this.textBoxAcaoAlunoCursoNome.ReadOnly = true;
@@ -169,14 +168,13 @@
             this.buttonAcaoAlunoCursoSelecionar.Location = new System.Drawing.Point(365, 99);
             this.buttonAcaoAlunoCursoSelecionar.Name = "buttonAcaoAlunoCursoSelecionar";
             this.buttonAcaoAlunoCursoSelecionar.Size = new System.Drawing.Size(65, 23);
-            this.buttonAcaoAlunoCursoSelecionar.TabIndex = 21;
+            this.buttonAcaoAlunoCursoSelecionar.TabIndex = 4;
             this.buttonAcaoAlunoCursoSelecionar.Text = "Selecionar";
             this.buttonAcaoAlunoCursoSelecionar.UseVisualStyleBackColor = true;
             this.buttonAcaoAlunoCursoSelecionar.Click += new System.EventHandler(this.buttonAcaoAlunoCursoSelecionar_Click);
             // 
             // textBoxAcaoAlunoCursoID
             // 
-            this.textBoxAcaoAlunoCursoID.Enabled = false;
             this.textBoxAcaoAlunoCursoID.Location = new System.Drawing.Point(67, 101);
             this.textBoxAcaoAlunoCursoID.Name = "textBoxAcaoAlunoCursoID";
             this.textBoxAcaoAlunoCursoID.ReadOnly = true;
@@ -185,7 +183,6 @@
             // 
             // textBoxAcaoAlunoUnidade
             // 
-            this.textBoxAcaoAlunoUnidade.Enabled = false;
             this.textBoxAcaoAlunoUnidade.Location = new System.Drawing.Point(67, 131);
             this.textBoxAcaoAlunoUnidade.Name = "textBoxAcaoAlunoUnidade";
             this.textBoxAcaoAlunoUnidade.ReadOnly = true;

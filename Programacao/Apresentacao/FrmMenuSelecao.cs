@@ -290,6 +290,7 @@ namespace Apresentacao
                 labelPesquisaTipo.Text = "Código: ";
                 //Pesquisas
                 labelPesquisarEscolha.Visible = true;
+                labelPesquisarEscolha.Location = new Point(488, 278);
                 radioButtonPesquisarPorTitulo.Visible = false;
                 radioButtonPesquisarPorTitulo.Checked = false;
                 radioButtonPesquisarPorTitulo.Location = new Point();
@@ -298,13 +299,13 @@ namespace Apresentacao
                 radioButtonPesquisarPorAluno.Location = new Point();
                 radioButtonPesquisarPorNome.Visible = true;
                 radioButtonPesquisarPorNome.Checked = true;
-                radioButtonPesquisarPorNome.Location = new Point(588, 276);
+                radioButtonPesquisarPorNome.Location = new Point(566, 276);
                 radioButtonPesquisarPorMatricula.Visible = false;
                 radioButtonPesquisarPorMatricula.Checked = false;
                 radioButtonPesquisarPorMatricula.Location = new Point();
                 radioButtonPesquisarPorDescricao.Visible = true;
                 radioButtonPesquisarPorDescricao.Checked = false;
-                radioButtonPesquisarPorDescricao.Location = new Point(641, 276);
+                radioButtonPesquisarPorDescricao.Location = new Point(623, 276);
                 radioButtonPesquisarPorCodigo.Visible = false;
                 radioButtonPesquisarPorCodigo.Checked = false;
                 radioButtonPesquisarPorCodigo.Location = new Point();
@@ -519,6 +520,20 @@ namespace Apresentacao
                 dataGridView.Update();
                 dataGridView.Refresh();
             }
+
+            if (labelModuloTitulo.Text == "Salas")
+            {
+                SalaNegocios salaNegocios = new SalaNegocios();
+                SalaColecao salaColecao = new SalaColecao();
+
+                string filtroUnidade = comboBoxFiltroUnidade.Text;
+                salaColecao = salaNegocios.ConsultarPorNome(textBoxPesquisa.Text, filtroUnidade);
+
+                dataGridView.DataSource = null;
+                dataGridView.DataSource = salaColecao;
+                dataGridView.Update();
+                dataGridView.Refresh();
+            }
         }
 
         private void buttonPesquisar_Click(object sender, EventArgs e)
@@ -553,6 +568,7 @@ namespace Apresentacao
                 Aluno alunoSelecao = (dataGridView.SelectedRows[0].DataBoundItem as Aluno);
                 labelIDSelecionado.Text = Convert.ToString(alunoSelecao.AlunoID);
                 labelCampo1Selecionado.Text = alunoSelecao.AlunoNome;
+                labelCampo2Selecionado.Text = alunoSelecao.AlunoCursoNome;
                 this.Close();
             }
 
@@ -580,6 +596,7 @@ namespace Apresentacao
 
                 labelIDSelecionado.Text = Convert.ToString(salaSelecao.SalaID);
                 labelCampo1Selecionado.Text = salaSelecao.SalaNome;
+                labelCampo2Selecionado.Text = salaSelecao.SalaUnidadeNome;
                 this.Close();
             }
         }
@@ -592,33 +609,95 @@ namespace Apresentacao
             }
         }
 
-        private void comboBoxFiltroUnidade_Click(object sender, EventArgs e)
-        {
-            this.tblUnidadeTableAdapter.Fill(this.dataSetUnidade.tblUnidade);
-            comboBoxFiltroUnidade.Text = "";
-        }
-
-        private void comboBoxFiltroCurso_Click(object sender, EventArgs e)
-        {
-            this.tblCursoTableAdapter.Fill(this.dataSetCurso.tblCurso);
-            comboBoxFiltroCurso.Text = "";
-        }
-
-        private void comboBoxFiltroGrupo_Click(object sender, EventArgs e)
-        {
-            this.tblGrupoTableAdapter.Fill(this.dataSetGrupo.tblGrupo);
-            comboBoxFiltroGrupo.Text = "";
-        }
-
-        private void comboBoxFiltroTipo_Click(object sender, EventArgs e)
-        {
-            this.tblSalaTipoTableAdapter.Fill(this.dataSetSalaTipo.tblSalaTipo);
-            comboBoxFiltroTipo.Text = "";
-        }
-
         private void dataGridView_RowEnter(object sender, DataGridViewCellEventArgs e)
         {
             SelecionarEntrada();
+        }
+
+        private void FrmMenuSelecao_Load(object sender, EventArgs e)
+        {
+            Unidade unidade = new Unidade();
+            Curso curso = new Curso();
+            Sala sala = new Sala();
+            Usuario usuario = new Usuario();
+
+            unidade.UnidadeNome = "";
+            curso.CursoNome = "";
+            sala.SalaSalaTipoNome = "";
+            usuario.UsuarioGrupoNome = "";
+
+            this.tblUnidadeTableAdapter.Fill(this.dataSetUnidade.tblUnidade);
+            if (unidade.UnidadeNome == "")
+            {
+                comboBoxFiltroUnidade.SelectedValue = "";
+            }
+            else
+            {
+                comboBoxFiltroUnidade.Text = unidade.UnidadeNome;
+            }
+
+            this.tblCursoTableAdapter.Fill(this.dataSetCurso.tblCurso);
+            if (curso.CursoNome == "")
+            {
+                comboBoxFiltroCurso.SelectedValue = "";
+            }
+            else
+            {
+                comboBoxFiltroCurso.Text = curso.CursoNome;
+            }
+
+            this.tblGrupoTableAdapter.Fill(this.dataSetGrupo.tblGrupo);
+            if (usuario.UsuarioGrupoNome == "")
+            {
+                comboBoxFiltroGrupo.SelectedValue = "";
+            }
+            else
+            {
+                comboBoxFiltroGrupo.Text = usuario.UsuarioGrupoNome;
+            }
+
+            this.tblSalaTipoTableAdapter.Fill(this.dataSetSalaTipo.tblSalaTipo);
+            if (sala.SalaSalaTipoNome == "")
+            {
+                comboBoxFiltroTipo.SelectedValue = "";
+            }
+            else
+            {
+                comboBoxFiltroTipo.Text = sala.SalaSalaTipoNome;
+            }
+
+        }
+
+        private void comboBoxFiltroUnidade_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == 8)
+            {
+                comboBoxFiltroUnidade.SelectedValue = "";
+            }
+        }
+
+        private void comboBoxFiltroCurso_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == 8)
+            {
+                comboBoxFiltroCurso.SelectedValue = "";
+            }
+        }
+
+        private void comboBoxFiltroTipo_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == 8)
+            {
+                comboBoxFiltroTipo.SelectedValue = "";
+            }
+        }
+
+        private void comboBoxFiltroGrupo_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == 8 || e.KeyChar == 127)
+            {
+                comboBoxFiltroGrupo.SelectedValue = "";
+            }
         }
     }
 }

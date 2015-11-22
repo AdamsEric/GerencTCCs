@@ -110,5 +110,13 @@ namespace Negocios
 
                 return ID;
         }
+
+        public int VerificarUso(int cursoid)
+        {
+            acessoDadosSqlServer.LimparParametros();
+            acessoDadosSqlServer.AdicionarParametros("@CursoID", cursoid);
+            int verificacao = Convert.ToInt32(acessoDadosSqlServer.ExecutarManipulacao(CommandType.Text, "SELECT TOP 1 CursoID FROM tblCurso INNER JOIN tblAluno ON CursoID = AlunoCursoID WHERE CursoID = @CursoID and AlunoID > '0'"));
+            return verificacao;
+        }
     }
 }

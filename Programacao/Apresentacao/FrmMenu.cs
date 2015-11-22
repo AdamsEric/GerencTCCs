@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Apresentacao
 {
-    public partial class MenuAluno : Form
+    public partial class Menu : Form
     {
-        public MenuAluno()
+        public Menu()
         {
             InitializeComponent();
         }
@@ -28,7 +28,6 @@ namespace Apresentacao
             FrmMenuAdministrador frmMenuAdministrador = new FrmMenuAdministrador(modulo);
             frmMenuAdministrador.MdiParent = this;
             frmMenuAdministrador.Show();
-
         }
 
         private void acessoLogin_Click(object sender, EventArgs e)
@@ -93,5 +92,11 @@ namespace Apresentacao
             frmMenuAdministrador.Show();
         }
 
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            DateTime dataHora = DateTime.Now;
+            toolStripStatusLabelDataeHora.Text = (dataHora.ToLongDateString() + " - " + dataHora.ToLongTimeString());
+            toolStripStatusLabelDataeHora.Alignment = ToolStripItemAlignment.Right;
+        }
     }
 }

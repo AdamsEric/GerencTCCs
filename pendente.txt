@@ -1,0 +1,6 @@
+Máscara páginas para números
+Configurar consulta para não permitir fazer alterações nos cadastros
+Configurar botões selecionar para não serem exibidos nas consultas
+Configurar telas de usuários
+Configurar tela de login
+Configurar botões de acordo com login efetuado

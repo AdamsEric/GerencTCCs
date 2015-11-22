@@ -79,6 +79,7 @@
             this.textBoxAcaoSalaNome.Name = "textBoxAcaoSalaNome";
             this.textBoxAcaoSalaNome.Size = new System.Drawing.Size(90, 20);
             this.textBoxAcaoSalaNome.TabIndex = 0;
+            this.textBoxAcaoSalaNome.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxAcaoSalaNome_KeyPress);
             // 
             // buttonAcaoSalaConfirmar
             // 
@@ -105,13 +106,13 @@
             // 
             this.comboBoxAcaoSalaUnidade.DataSource = this.tblUnidadeBindingSource1;
             this.comboBoxAcaoSalaUnidade.DisplayMember = "UnidadeNome";
+            this.comboBoxAcaoSalaUnidade.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxAcaoSalaUnidade.FormattingEnabled = true;
             this.comboBoxAcaoSalaUnidade.Location = new System.Drawing.Point(68, 124);
             this.comboBoxAcaoSalaUnidade.Name = "comboBoxAcaoSalaUnidade";
             this.comboBoxAcaoSalaUnidade.Size = new System.Drawing.Size(362, 21);
             this.comboBoxAcaoSalaUnidade.TabIndex = 3;
             this.comboBoxAcaoSalaUnidade.ValueMember = "UnidadeNome";
-            this.comboBoxAcaoSalaUnidade.Click += new System.EventHandler(this.comboBoxAcaoSalaUnidade_Click);
             this.comboBoxAcaoSalaUnidade.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.comboBoxAcaoSalaUnidade_KeyPress);
             // 
             // tblUnidadeBindingSource1
@@ -157,6 +158,7 @@
             this.textBoxAcaoSalaDescricao.Name = "textBoxAcaoSalaDescricao";
             this.textBoxAcaoSalaDescricao.Size = new System.Drawing.Size(362, 20);
             this.textBoxAcaoSalaDescricao.TabIndex = 2;
+            this.textBoxAcaoSalaDescricao.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxAcaoSalaDescricao_KeyPress);
             // 
             // labelAcaoSalaDescricao
             // 
@@ -171,12 +173,12 @@
             // 
             this.comboBoxAcaoSalaTipo.DataSource = this.tblSalaTipoBindingSource;
             this.comboBoxAcaoSalaTipo.DisplayMember = "SalaTipoTipo";
+            this.comboBoxAcaoSalaTipo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxAcaoSalaTipo.Location = new System.Drawing.Point(224, 50);
             this.comboBoxAcaoSalaTipo.Name = "comboBoxAcaoSalaTipo";
             this.comboBoxAcaoSalaTipo.Size = new System.Drawing.Size(110, 21);
             this.comboBoxAcaoSalaTipo.TabIndex = 1;
             this.comboBoxAcaoSalaTipo.ValueMember = "SalaTipoTipo";
-            this.comboBoxAcaoSalaTipo.Click += new System.EventHandler(this.comboBoxAcaoSalaTipo_Click);
             this.comboBoxAcaoSalaTipo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.comboBoxAcaoSalaTipo_KeyPress);
             // 
             // tblSalaTipoBindingSource
@@ -232,6 +234,7 @@
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Acao Sala";
+            this.Load += new System.EventHandler(this.FrmMenuAcaoSala_Load);
             ((System.ComponentModel.ISupportInitialize)(this.tblUnidadeBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSetUnidade)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblSalaTipoBindingSource)).EndInit();

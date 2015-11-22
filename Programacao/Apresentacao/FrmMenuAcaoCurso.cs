@@ -38,7 +38,7 @@ namespace Apresentacao
                 this.Text = "Consultar Curso";
                 textBoxAcaoCursoID.Text = curso.CursoID.ToString();
                 textBoxAcaoCursoNome.Text = curso.CursoNome;
-                comboBoxAcaoCursoUnidadeNome.Text = curso.CursoUnidadeNome;
+                comboBoxAcaoCursoUnidadeNome.SelectedValue = curso.CursoUnidadeNome;
 
                 buttonAcaoCursoConfirmar.Hide();
                 buttonAcaoCursoCancelar.Hide();
@@ -141,6 +141,27 @@ namespace Apresentacao
 
         private void comboBoxAcaoCursoUnidadeNome_Click(object sender, EventArgs e)
         {
+            
+        }
+
+        private void comboBoxAcaoCursoUnidadeNome_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == 13)
+            {
+                buttonAcaoCursoConfirmar.PerformClick();
+            }
+        }
+
+        private void textBoxAcaoCursoNome_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == 13)
+            {
+                buttonAcaoCursoConfirmar.PerformClick();
+            }
+        }
+
+        private void FrmMenuAcaoCurso_Load(object sender, EventArgs e)
+        {
             this.tblUnidadeTableAdapter1.Fill(this.dataSetUnidade.tblUnidade);
             if (cursoold.CursoUnidadeNome == "")
             {
@@ -150,11 +171,6 @@ namespace Apresentacao
             {
                 comboBoxAcaoCursoUnidadeNome.Text = cursoold.CursoUnidadeNome;
             }
-        }
-
-        private void comboBoxAcaoCursoUnidadeNome_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            e.Handled = true;
         }
     }
 }

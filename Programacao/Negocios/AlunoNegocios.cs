@@ -127,5 +127,16 @@ namespace Negocios
             }
             return alunoColecao;
         }
+
+        public int VerificarAlunoExistente(string matricula, int alunoid)
+        {
+            acessoDadosSqlServer.LimparParametros();
+            acessoDadosSqlServer.AdicionarParametros("@AlunoMatricula", matricula);
+            acessoDadosSqlServer.AdicionarParametros("@AlunoID", alunoid);
+            int verificacao = Convert.ToInt32(acessoDadosSqlServer.ExecutarManipulacao(CommandType.Text, "SELECT AlunoID FROM tblAluno WHERE AlunoMatricula = @AlunoMatricula AND AlunoID <> @AlunoID"));
+
+            return verificacao;
+        }
+
     }
 }

@@ -1,6 +1,6 @@
 ﻿namespace Apresentacao
 {
-    partial class MenuAluno
+    partial class Menu
     {
         /// <summary>
         /// Required designer variable.
@@ -28,13 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.acessoMenuOpcoes = new System.Windows.Forms.ToolStripMenuItem();
             this.acessoMenuOpcoesLogin = new System.Windows.Forms.ToolStripMenuItem();
+            this.acessoMenuOpcoesSobre = new System.Windows.Forms.ToolStripMenuItem();
             this.acessoMenuOpcoesSair = new System.Windows.Forms.ToolStripMenuItem();
             this.menuPrincipal = new System.Windows.Forms.MenuStrip();
-            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
-            this.toolStripStatusLabelUsuarioAtual = new System.Windows.Forms.ToolStripStatusLabel();
-            this.toolStripStatusLabelUsuario = new System.Windows.Forms.ToolStripStatusLabel();
             this.acessoMenuModulos = new System.Windows.Forms.ToolStripMenuItem();
             this.acessoMenuModulosTCCs = new System.Windows.Forms.ToolStripMenuItem();
             this.acessoMenuModulosAlunos = new System.Windows.Forms.ToolStripMenuItem();
@@ -42,9 +41,14 @@
             this.acessoMenuModulosCursos = new System.Windows.Forms.ToolStripMenuItem();
             this.acessoMenuModulosUnidades = new System.Windows.Forms.ToolStripMenuItem();
             this.acessoMenuModulosSalas = new System.Windows.Forms.ToolStripMenuItem();
-            this.acessoMenuOpcoesSobre = new System.Windows.Forms.ToolStripMenuItem();
             this.acessoMenuAdministracao = new System.Windows.Forms.ToolStripMenuItem();
             this.acessoMenuAdministracaoUsuarios = new System.Windows.Forms.ToolStripMenuItem();
+            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
+            this.toolStripStatusLabelUsuarioAtual = new System.Windows.Forms.ToolStripStatusLabel();
+            this.toolStripStatusLabelUsuario = new System.Windows.Forms.ToolStripStatusLabel();
+            this.toolStripStatusLabelDataHora = new System.Windows.Forms.ToolStripStatusLabel();
+            this.toolStripStatusLabelDataeHora = new System.Windows.Forms.ToolStripStatusLabel();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.menuPrincipal.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -62,14 +66,20 @@
             // acessoMenuOpcoesLogin
             // 
             this.acessoMenuOpcoesLogin.Name = "acessoMenuOpcoesLogin";
-            this.acessoMenuOpcoesLogin.Size = new System.Drawing.Size(152, 22);
+            this.acessoMenuOpcoesLogin.Size = new System.Drawing.Size(113, 22);
             this.acessoMenuOpcoesLogin.Text = "Login";
             this.acessoMenuOpcoesLogin.Click += new System.EventHandler(this.acessoLogin_Click);
+            // 
+            // acessoMenuOpcoesSobre
+            // 
+            this.acessoMenuOpcoesSobre.Name = "acessoMenuOpcoesSobre";
+            this.acessoMenuOpcoesSobre.Size = new System.Drawing.Size(113, 22);
+            this.acessoMenuOpcoesSobre.Text = "Sobre...";
             // 
             // acessoMenuOpcoesSair
             // 
             this.acessoMenuOpcoesSair.Name = "acessoMenuOpcoesSair";
-            this.acessoMenuOpcoesSair.Size = new System.Drawing.Size(152, 22);
+            this.acessoMenuOpcoesSair.Size = new System.Drawing.Size(113, 22);
             this.acessoMenuOpcoesSair.Text = "Sair";
             this.acessoMenuOpcoesSair.Click += new System.EventHandler(this.acessoSair_Click);
             // 
@@ -85,30 +95,6 @@
             this.menuPrincipal.Size = new System.Drawing.Size(804, 24);
             this.menuPrincipal.TabIndex = 1;
             this.menuPrincipal.Text = "menuStrip1";
-            // 
-            // statusStrip1
-            // 
-            this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripStatusLabelUsuarioAtual,
-            this.toolStripStatusLabelUsuario});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 439);
-            this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(804, 22);
-            this.statusStrip1.TabIndex = 3;
-            this.statusStrip1.Text = "statusStrip1";
-            // 
-            // toolStripStatusLabelUsuarioAtual
-            // 
-            this.toolStripStatusLabelUsuarioAtual.Name = "toolStripStatusLabelUsuarioAtual";
-            this.toolStripStatusLabelUsuarioAtual.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.toolStripStatusLabelUsuarioAtual.Size = new System.Drawing.Size(79, 17);
-            this.toolStripStatusLabelUsuarioAtual.Text = "Usuário atual:";
-            // 
-            // toolStripStatusLabelUsuario
-            // 
-            this.toolStripStatusLabelUsuario.Name = "toolStripStatusLabelUsuario";
-            this.toolStripStatusLabelUsuario.Size = new System.Drawing.Size(52, 17);
-            this.toolStripStatusLabelUsuario.Text = "Visitante";
             // 
             // acessoMenuModulos
             // 
@@ -165,12 +151,6 @@
             this.acessoMenuModulosSalas.Text = "Salas";
             this.acessoMenuModulosSalas.Click += new System.EventHandler(this.acessoMenuModulosSalas_Click);
             // 
-            // acessoMenuOpcoesSobre
-            // 
-            this.acessoMenuOpcoesSobre.Name = "acessoMenuOpcoesSobre";
-            this.acessoMenuOpcoesSobre.Size = new System.Drawing.Size(152, 22);
-            this.acessoMenuOpcoesSobre.Text = "Sobre...";
-            // 
             // acessoMenuAdministracao
             // 
             this.acessoMenuAdministracao.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -182,11 +162,54 @@
             // acessoMenuAdministracaoUsuarios
             // 
             this.acessoMenuAdministracaoUsuarios.Name = "acessoMenuAdministracaoUsuarios";
-            this.acessoMenuAdministracaoUsuarios.Size = new System.Drawing.Size(152, 22);
+            this.acessoMenuAdministracaoUsuarios.Size = new System.Drawing.Size(119, 22);
             this.acessoMenuAdministracaoUsuarios.Text = "Usuários";
             this.acessoMenuAdministracaoUsuarios.Click += new System.EventHandler(this.acessoMenuAdministracaoUsuarios_Click);
             // 
-            // MenuAluno
+            // statusStrip1
+            // 
+            this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripStatusLabelUsuarioAtual,
+            this.toolStripStatusLabelUsuario,
+            this.toolStripStatusLabelDataHora,
+            this.toolStripStatusLabelDataeHora});
+            this.statusStrip1.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.HorizontalStackWithOverflow;
+            this.statusStrip1.Location = new System.Drawing.Point(0, 439);
+            this.statusStrip1.Name = "statusStrip1";
+            this.statusStrip1.Size = new System.Drawing.Size(804, 22);
+            this.statusStrip1.TabIndex = 3;
+            this.statusStrip1.Text = "statusStrip1";
+            // 
+            // toolStripStatusLabelUsuarioAtual
+            // 
+            this.toolStripStatusLabelUsuarioAtual.Name = "toolStripStatusLabelUsuarioAtual";
+            this.toolStripStatusLabelUsuarioAtual.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.toolStripStatusLabelUsuarioAtual.Size = new System.Drawing.Size(79, 17);
+            this.toolStripStatusLabelUsuarioAtual.Text = "Usuário atual:";
+            // 
+            // toolStripStatusLabelUsuario
+            // 
+            this.toolStripStatusLabelUsuario.Name = "toolStripStatusLabelUsuario";
+            this.toolStripStatusLabelUsuario.Size = new System.Drawing.Size(52, 17);
+            this.toolStripStatusLabelUsuario.Text = "Visitante";
+            // 
+            // toolStripStatusLabelDataHora
+            // 
+            this.toolStripStatusLabelDataHora.Name = "toolStripStatusLabelDataHora";
+            this.toolStripStatusLabelDataHora.Size = new System.Drawing.Size(0, 17);
+            // 
+            // toolStripStatusLabelDataeHora
+            // 
+            this.toolStripStatusLabelDataeHora.Name = "toolStripStatusLabelDataeHora";
+            this.toolStripStatusLabelDataeHora.Size = new System.Drawing.Size(118, 17);
+            this.toolStripStatusLabelDataeHora.Text = "toolStripStatusLabel1";
+            // 
+            // timer1
+            // 
+            this.timer1.Enabled = true;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -198,7 +221,7 @@
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuPrincipal;
             this.MaximizeBox = false;
-            this.Name = "MenuAluno";
+            this.Name = "Menu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Gerenciador de TCCs - Versão 2.10.1";
             this.Load += new System.EventHandler(this.MenuAluno_Load);
@@ -230,6 +253,9 @@
         private System.Windows.Forms.ToolStripMenuItem acessoMenuModulosSalas;
         private System.Windows.Forms.ToolStripMenuItem acessoMenuAdministracao;
         private System.Windows.Forms.ToolStripMenuItem acessoMenuAdministracaoUsuarios;
+        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabelDataHora;
+        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabelDataeHora;
+        private System.Windows.Forms.Timer timer1;
 
     }
 }

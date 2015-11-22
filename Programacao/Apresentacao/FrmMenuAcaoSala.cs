@@ -164,7 +164,33 @@ namespace Apresentacao
             }
         }
 
-        private void comboBoxAcaoSalaUnidade_Click(object sender, EventArgs e)
+        private void comboBoxAcaoSalaTipo_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = true;
+        }
+
+        private void comboBoxAcaoSalaUnidade_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = true;
+        }
+
+        private void textBoxAcaoSalaNome_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == 13)
+            {
+                buttonAcaoSalaConfirmar.PerformClick();
+            }
+        }
+
+        private void textBoxAcaoSalaDescricao_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == 13)
+            {
+                buttonAcaoSalaConfirmar.PerformClick();
+            }
+        }
+
+        private void FrmMenuAcaoSala_Load(object sender, EventArgs e)
         {
             this.tblUnidadeTableAdapter1.Fill(this.dataSetUnidade.tblUnidade);
             if (salaold.SalaUnidadeNome == "")
@@ -175,10 +201,7 @@ namespace Apresentacao
             {
                 comboBoxAcaoSalaUnidade.Text = salaold.SalaUnidadeNome;
             }
-        }
 
-        private void comboBoxAcaoSalaTipo_Click(object sender, EventArgs e)
-        {
             this.tblSalaTipoTableAdapter.Fill(this.dataSetSalaTipo.tblSalaTipo);
             if (salaold.SalaSalaTipoNome == "")
             {
@@ -188,16 +211,6 @@ namespace Apresentacao
             {
                 comboBoxAcaoSalaTipo.Text = salaold.SalaSalaTipoNome;
             }
-        }
-
-        private void comboBoxAcaoSalaTipo_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            e.Handled = true;
-        }
-
-        private void comboBoxAcaoSalaUnidade_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            e.Handled = true;
         }
     }
 }

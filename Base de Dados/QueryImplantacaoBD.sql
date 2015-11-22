@@ -91,18 +91,6 @@ AlunoCursoID INT FOREIGN KEY REFERENCES tblCurso(CursoID))
 
 GO 
 
-CREATE TABLE tblBanca(
-
-BancaID INT PRIMARY KEY IDENTITY(1,1),
-
-BancaOrientador INT FOREIGN KEY REFERENCES tblProfessor(ProfessorID),
-
-BancaProfessor1 INT FOREIGN KEY REFERENCES tblProfessor(ProfessorID),
-
-BancaProfessor2 INT FOREIGN KEY REFERENCES tblProfessor(ProfessorID))
-
-GO
-
 CREATE TABLE tblTCC(
 
 TCCID INT PRIMARY KEY IDENTITY(1,1),
@@ -127,9 +115,21 @@ TCCSalaID INT FOREIGN KEY REFERENCES tblSala(SalaID) NULL,
 
 TCCAlunoID INT FOREIGN KEY REFERENCES tblAluno(AlunoID),
 
-TCCOrientadorID INT FOREIGN KEY REFERENCES tblProfessor(ProfessorID),
+TCCOrientadorID INT FOREIGN KEY REFERENCES tblProfessor(ProfessorID))
 
-TCCBancaID INT FOREIGN KEY REFERENCES tblBanca(BancaID) NULL)
+GO
+
+CREATE TABLE tblBanca(
+
+BancaID INT PRIMARY KEY IDENTITY(1,1),
+
+BancaProfessor1 INT FOREIGN KEY REFERENCES tblProfessor(ProfessorID),
+
+BancaProfessor2 INT FOREIGN KEY REFERENCES tblProfessor(ProfessorID),
+
+BancaProfessor3 INT FOREIGN KEY REFERENCES tblProfessor(ProfessorID),
+
+BancaTCCID INT FOREIGN KEY REFERENCES tblTCC(TCCID))
 
 GO
 

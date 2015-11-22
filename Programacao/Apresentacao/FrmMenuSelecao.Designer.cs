@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.shapeContainer1 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
             this.rectangleShape2 = new Microsoft.VisualBasic.PowerPacks.RectangleShape();
             this.labelPesquisaTipo = new System.Windows.Forms.Label();
@@ -139,8 +139,8 @@
             this.dataGridView.AllowUserToAddRows = false;
             this.dataGridView.AllowUserToDeleteRows = false;
             this.dataGridView.AllowUserToResizeRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.dataGridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.dataGridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
             this.dataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells;
             this.dataGridView.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
             this.dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -157,6 +157,7 @@
             this.comboBoxFiltroUnidade.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.comboBoxFiltroUnidade.DataSource = this.tblUnidadeBindingSource;
             this.comboBoxFiltroUnidade.DisplayMember = "UnidadeNome";
+            this.comboBoxFiltroUnidade.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxFiltroUnidade.DropDownWidth = 200;
             this.comboBoxFiltroUnidade.FormattingEnabled = true;
             this.comboBoxFiltroUnidade.Location = new System.Drawing.Point(68, 15);
@@ -165,7 +166,7 @@
             this.comboBoxFiltroUnidade.Size = new System.Drawing.Size(129, 21);
             this.comboBoxFiltroUnidade.TabIndex = 9;
             this.comboBoxFiltroUnidade.ValueMember = "UnidadeNome";
-            this.comboBoxFiltroUnidade.Click += new System.EventHandler(this.comboBoxFiltroUnidade_Click);
+            this.comboBoxFiltroUnidade.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.comboBoxFiltroUnidade_KeyPress);
             // 
             // tblUnidadeBindingSource
             // 
@@ -200,13 +201,14 @@
             this.comboBoxFiltroCurso.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.comboBoxFiltroCurso.DataSource = this.tblCursoBindingSource;
             this.comboBoxFiltroCurso.DisplayMember = "CursoNome";
+            this.comboBoxFiltroCurso.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxFiltroCurso.FormattingEnabled = true;
             this.comboBoxFiltroCurso.Location = new System.Drawing.Point(68, 43);
             this.comboBoxFiltroCurso.Name = "comboBoxFiltroCurso";
             this.comboBoxFiltroCurso.Size = new System.Drawing.Size(129, 21);
             this.comboBoxFiltroCurso.TabIndex = 10;
             this.comboBoxFiltroCurso.ValueMember = "CursoNome";
-            this.comboBoxFiltroCurso.Click += new System.EventHandler(this.comboBoxFiltroCurso_Click);
+            this.comboBoxFiltroCurso.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.comboBoxFiltroCurso_KeyPress);
             // 
             // tblCursoBindingSource
             // 
@@ -224,7 +226,7 @@
             this.labelModuloTitulo.BackColor = System.Drawing.SystemColors.ControlLight;
             this.labelModuloTitulo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.labelModuloTitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelModuloTitulo.Location = new System.Drawing.Point(327, 26);
+            this.labelModuloTitulo.Location = new System.Drawing.Point(286, 26);
             this.labelModuloTitulo.Margin = new System.Windows.Forms.Padding(0);
             this.labelModuloTitulo.MinimumSize = new System.Drawing.Size(147, 42);
             this.labelModuloTitulo.Name = "labelModuloTitulo";
@@ -248,6 +250,7 @@
             this.comboBoxFiltroTipo.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.comboBoxFiltroTipo.DataSource = this.tblSalaTipoBindingSource;
             this.comboBoxFiltroTipo.DisplayMember = "SalaTipoTipo";
+            this.comboBoxFiltroTipo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxFiltroTipo.FormattingEnabled = true;
             this.comboBoxFiltroTipo.Location = new System.Drawing.Point(68, 71);
             this.comboBoxFiltroTipo.Name = "comboBoxFiltroTipo";
@@ -255,7 +258,7 @@
             this.comboBoxFiltroTipo.TabIndex = 11;
             this.comboBoxFiltroTipo.ValueMember = "SalaTipoTipo";
             this.comboBoxFiltroTipo.Visible = false;
-            this.comboBoxFiltroTipo.Click += new System.EventHandler(this.comboBoxFiltroTipo_Click);
+            this.comboBoxFiltroTipo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.comboBoxFiltroTipo_KeyPress);
             // 
             // tblSalaTipoBindingSource
             // 
@@ -295,6 +298,7 @@
             this.comboBoxFiltroGrupo.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.comboBoxFiltroGrupo.DataSource = this.tblGrupoBindingSource;
             this.comboBoxFiltroGrupo.DisplayMember = "GrupoNome";
+            this.comboBoxFiltroGrupo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxFiltroGrupo.FormattingEnabled = true;
             this.comboBoxFiltroGrupo.Location = new System.Drawing.Point(237, 43);
             this.comboBoxFiltroGrupo.Name = "comboBoxFiltroGrupo";
@@ -302,7 +306,7 @@
             this.comboBoxFiltroGrupo.TabIndex = 13;
             this.comboBoxFiltroGrupo.ValueMember = "GrupoNome";
             this.comboBoxFiltroGrupo.Visible = false;
-            this.comboBoxFiltroGrupo.Click += new System.EventHandler(this.comboBoxFiltroGrupo_Click);
+            this.comboBoxFiltroGrupo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.comboBoxFiltroGrupo_KeyPress);
             // 
             // tblGrupoBindingSource
             // 
@@ -463,6 +467,7 @@
             this.labelIDSelecionado.Size = new System.Drawing.Size(13, 13);
             this.labelIDSelecionado.TabIndex = 47;
             this.labelIDSelecionado.Text = "0";
+            this.labelIDSelecionado.Visible = false;
             // 
             // labelCampo1Selecionado
             // 
@@ -472,6 +477,7 @@
             this.labelCampo1Selecionado.Size = new System.Drawing.Size(46, 13);
             this.labelCampo1Selecionado.TabIndex = 48;
             this.labelCampo1Selecionado.Text = "Campo1";
+            this.labelCampo1Selecionado.Visible = false;
             // 
             // labelCampo2Selecionado
             // 
@@ -481,6 +487,7 @@
             this.labelCampo2Selecionado.Size = new System.Drawing.Size(46, 13);
             this.labelCampo2Selecionado.TabIndex = 49;
             this.labelCampo2Selecionado.Text = "Campo2";
+            this.labelCampo2Selecionado.Visible = false;
             // 
             // labelCampo3Selecionado
             // 
@@ -490,6 +497,7 @@
             this.labelCampo3Selecionado.Size = new System.Drawing.Size(46, 13);
             this.labelCampo3Selecionado.TabIndex = 50;
             this.labelCampo3Selecionado.Text = "Campo3";
+            this.labelCampo3Selecionado.Visible = false;
             // 
             // tblCursoTableAdapter
             // 
@@ -512,7 +520,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.ClientSize = new System.Drawing.Size(716, 385);
             this.Controls.Add(this.labelCampo3Selecionado);
             this.Controls.Add(this.labelCampo2Selecionado);
@@ -542,6 +550,7 @@
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmMenuAluno";
+            this.Load += new System.EventHandler(this.FrmMenuSelecao_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblUnidadeBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSetUnidade)).EndInit();

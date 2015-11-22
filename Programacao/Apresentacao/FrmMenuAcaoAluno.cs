@@ -90,19 +90,28 @@ namespace Apresentacao
                 }
                 else
                 {
-                    string retorno = alunoNegocios.Inserir(aluno);
+                    int alunoid = 0;
+                    int verificacao = alunoNegocios.VerificarAlunoExistente(textBoxAcaoAlunoMatricula.Text, alunoid);
 
-                    try
+                    if (verificacao != 0)
                     {
-                        int alunoID = Convert.ToInt32(retorno);
-
-                        MessageBox.Show("Registro inserido com sucesso! Código cadastrado: " + alunoID.ToString());
-                        this.DialogResult = DialogResult.Yes;
+                        MessageBox.Show("Já existe aluno cadastrado com esta matrícula!");
                     }
-                    catch
+                    else
                     {
-                        MessageBox.Show("Não foi possível completar a operação! Detalhes: " + retorno, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                        this.DialogResult = DialogResult.No;
+                        string retorno = alunoNegocios.Inserir(aluno);
+                        try
+                        {
+                            int alunoID = Convert.ToInt32(retorno);
+
+                            MessageBox.Show("Registro inserido com sucesso! Código cadastrado: " + alunoID.ToString());
+                            this.DialogResult = DialogResult.Yes;
+                        }
+                        catch
+                        {
+                            MessageBox.Show("Não foi possível completar a operação! Detalhes: " + retorno, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            this.DialogResult = DialogResult.No;
+                        }
                     }
                 }
             }
@@ -138,18 +147,27 @@ namespace Apresentacao
                     }
                     else
                     {
-                        string retorno = alunoNegocios.Alterar(aluno);
-                        try
+                        int verificacao = alunoNegocios.VerificarAlunoExistente(textBoxAcaoAlunoMatricula.Text, Convert.ToInt32(textBoxAcaoAlunoID.Text));
+
+                        if (verificacao != 0)
                         {
-                            int alunoID = Convert.ToInt32(retorno);
-                            
-                            MessageBox.Show("Registro alterado com sucesso! Código: " + alunoID.ToString());
-                            this.DialogResult = DialogResult.Yes;
+                            MessageBox.Show("Já existe aluno cadastrado com esta matrícula!");
                         }
-                        catch
+                        else
                         {
-                            MessageBox.Show("Não foi possível completar a operação! Detalhes: " + retorno, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                            this.DialogResult = DialogResult.No;
+                            string retorno = alunoNegocios.Alterar(aluno);
+                            try
+                            {
+                                int alunoID = Convert.ToInt32(retorno);
+
+                                MessageBox.Show("Registro alterado com sucesso! Código: " + alunoID.ToString());
+                                this.DialogResult = DialogResult.Yes;
+                            }
+                            catch
+                            {
+                                MessageBox.Show("Não foi possível completar a operação! Detalhes: " + retorno, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                this.DialogResult = DialogResult.No;
+                            }
                         }
                     }
                 }

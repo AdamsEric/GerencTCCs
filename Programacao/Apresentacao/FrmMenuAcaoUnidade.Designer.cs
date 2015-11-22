@@ -77,6 +77,7 @@
             this.textBoxAcaoUnidadeNome.Name = "textBoxAcaoUnidadeNome";
             this.textBoxAcaoUnidadeNome.Size = new System.Drawing.Size(373, 20);
             this.textBoxAcaoUnidadeNome.TabIndex = 1;
+            this.textBoxAcaoUnidadeNome.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxAcaoUnidadeNome_KeyPress);
             // 
             // buttonAcaoUnidadeConfirmar
             // 
@@ -106,6 +107,7 @@
             this.textBoxAcaoUnidadeCidade.Name = "textBoxAcaoUnidadeCidade";
             this.textBoxAcaoUnidadeCidade.Size = new System.Drawing.Size(266, 20);
             this.textBoxAcaoUnidadeCidade.TabIndex = 2;
+            this.textBoxAcaoUnidadeCidade.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxAcaoUnidadeCidade_KeyPress);
             // 
             // textBoxAcaoUnidadeEstado
             // 
@@ -115,6 +117,7 @@
             this.textBoxAcaoUnidadeEstado.Name = "textBoxAcaoUnidadeEstado";
             this.textBoxAcaoUnidadeEstado.Size = new System.Drawing.Size(26, 20);
             this.textBoxAcaoUnidadeEstado.TabIndex = 3;
+            this.textBoxAcaoUnidadeEstado.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxAcaoUnidadeEstado_KeyPress);
             // 
             // textBoxAcaoUnidadePais
             // 
@@ -123,6 +126,7 @@
             this.textBoxAcaoUnidadePais.Name = "textBoxAcaoUnidadePais";
             this.textBoxAcaoUnidadePais.Size = new System.Drawing.Size(277, 20);
             this.textBoxAcaoUnidadePais.TabIndex = 4;
+            this.textBoxAcaoUnidadePais.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxAcaoUnidadePais_KeyPress);
             // 
             // labelAcaoUnidadePais
             // 

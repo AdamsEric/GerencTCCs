@@ -61,20 +61,8 @@
             this.textBoxAcaoTCCSalaID = new System.Windows.Forms.TextBox();
             this.buttonAcaoTCCSalaSelecionar = new System.Windows.Forms.Button();
             this.textBoxAcaoTCCSalaNome = new System.Windows.Forms.TextBox();
-            this.textBoxAcaoTCCProfessorBanca1ID = new System.Windows.Forms.TextBox();
-            this.buttonAcaoTCCProfessorBanca1Selecionar = new System.Windows.Forms.Button();
-            this.textBoxAcaoTCCProfessorBanca1Nome = new System.Windows.Forms.TextBox();
-            this.labelAcaoTCCProfessorBanca1 = new System.Windows.Forms.Label();
-            this.textBoxAcaoTCCProfessorBanca2ID = new System.Windows.Forms.TextBox();
-            this.buttonAcaoTCCProfessorBanca2Selecionar = new System.Windows.Forms.Button();
-            this.textBoxAcaoTCCProfessorBanca2Nome = new System.Windows.Forms.TextBox();
-            this.labelAcaoTCCProfessorBanca2 = new System.Windows.Forms.Label();
-            this.textBoxAcaoTCCProfessorBanca3ID = new System.Windows.Forms.TextBox();
-            this.buttonAcaoTCCProfessorBanca3Selecionar = new System.Windows.Forms.Button();
-            this.textBoxAcaoTCCProfessorBanca3Nome = new System.Windows.Forms.TextBox();
-            this.labelAcaoTCCProfessorBanca3 = new System.Windows.Forms.Label();
-            this.groupBoxAcaoTCCBanca = new System.Windows.Forms.GroupBox();
-            this.groupBoxAcaoTCCBanca.SuspendLayout();
+            this.buttonAcaoTCCTCCBanca = new System.Windows.Forms.Button();
+            this.textBoxAcaoTCCUnidade = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // labelAcaoTCCNome
@@ -119,7 +107,7 @@
             this.buttonAcaoTCCConfirmar.Location = new System.Drawing.Point(582, 345);
             this.buttonAcaoTCCConfirmar.Name = "buttonAcaoTCCConfirmar";
             this.buttonAcaoTCCConfirmar.Size = new System.Drawing.Size(75, 22);
-            this.buttonAcaoTCCConfirmar.TabIndex = 12;
+            this.buttonAcaoTCCConfirmar.TabIndex = 14;
             this.buttonAcaoTCCConfirmar.Text = "Confirmar";
             this.buttonAcaoTCCConfirmar.UseVisualStyleBackColor = true;
             this.buttonAcaoTCCConfirmar.Click += new System.EventHandler(this.buttonAcaoTCCConfirmar_Click);
@@ -130,7 +118,7 @@
             this.buttonAcaoTCCCancelar.Location = new System.Drawing.Point(678, 345);
             this.buttonAcaoTCCCancelar.Name = "buttonAcaoTCCCancelar";
             this.buttonAcaoTCCCancelar.Size = new System.Drawing.Size(75, 22);
-            this.buttonAcaoTCCCancelar.TabIndex = 13;
+            this.buttonAcaoTCCCancelar.TabIndex = 15;
             this.buttonAcaoTCCCancelar.Text = "Cancelar";
             this.buttonAcaoTCCCancelar.UseVisualStyleBackColor = true;
             this.buttonAcaoTCCCancelar.Click += new System.EventHandler(this.buttonAcaoTCCCancelar_Click);
@@ -163,7 +151,6 @@
             // 
             // textBoxAcaoTCCAlunoNome
             // 
-            this.textBoxAcaoTCCAlunoNome.Enabled = false;
             this.textBoxAcaoTCCAlunoNome.Location = new System.Drawing.Point(131, 41);
             this.textBoxAcaoTCCAlunoNome.Name = "textBoxAcaoTCCAlunoNome";
             this.textBoxAcaoTCCAlunoNome.ReadOnly = true;
@@ -182,11 +169,10 @@
             // 
             // textBoxAcaoTCCAlunoID
             // 
-            this.textBoxAcaoTCCAlunoID.Enabled = false;
             this.textBoxAcaoTCCAlunoID.Location = new System.Drawing.Point(88, 41);
             this.textBoxAcaoTCCAlunoID.Name = "textBoxAcaoTCCAlunoID";
             this.textBoxAcaoTCCAlunoID.ReadOnly = true;
-            this.textBoxAcaoTCCAlunoID.Size = new System.Drawing.Size(33, 20);
+            this.textBoxAcaoTCCAlunoID.Size = new System.Drawing.Size(37, 20);
             this.textBoxAcaoTCCAlunoID.TabIndex = 22;
             // 
             // textBoxAcaoTCCArea
@@ -259,7 +245,7 @@
             // labelAcaoTCCPaginas
             // 
             this.labelAcaoTCCPaginas.AutoSize = true;
-            this.labelAcaoTCCPaginas.Location = new System.Drawing.Point(406, 168);
+            this.labelAcaoTCCPaginas.Location = new System.Drawing.Point(406, 205);
             this.labelAcaoTCCPaginas.Name = "labelAcaoTCCPaginas";
             this.labelAcaoTCCPaginas.Size = new System.Drawing.Size(48, 13);
             this.labelAcaoTCCPaginas.TabIndex = 32;
@@ -267,10 +253,10 @@
             // 
             // textBoxAcaoTCCPaginas
             // 
-            this.textBoxAcaoTCCPaginas.Enabled = false;
-            this.textBoxAcaoTCCPaginas.Location = new System.Drawing.Point(460, 164);
+            this.textBoxAcaoTCCPaginas.Location = new System.Drawing.Point(460, 201);
+            this.textBoxAcaoTCCPaginas.MaxLength = 3;
             this.textBoxAcaoTCCPaginas.Name = "textBoxAcaoTCCPaginas";
-            this.textBoxAcaoTCCPaginas.Size = new System.Drawing.Size(33, 20);
+            this.textBoxAcaoTCCPaginas.Size = new System.Drawing.Size(37, 20);
             this.textBoxAcaoTCCPaginas.TabIndex = 9;
             // 
             // textBoxAcaoTCCResumo
@@ -279,21 +265,20 @@
             this.textBoxAcaoTCCResumo.Multiline = true;
             this.textBoxAcaoTCCResumo.Name = "textBoxAcaoTCCResumo";
             this.textBoxAcaoTCCResumo.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textBoxAcaoTCCResumo.Size = new System.Drawing.Size(293, 115);
+            this.textBoxAcaoTCCResumo.Size = new System.Drawing.Size(293, 154);
             this.textBoxAcaoTCCResumo.TabIndex = 8;
             // 
             // labelAcaoTCCResumo
             // 
             this.labelAcaoTCCResumo.AutoSize = true;
-            this.labelAcaoTCCResumo.Location = new System.Drawing.Point(401, 45);
+            this.labelAcaoTCCResumo.Location = new System.Drawing.Point(405, 45);
             this.labelAcaoTCCResumo.Name = "labelAcaoTCCResumo";
-            this.labelAcaoTCCResumo.Size = new System.Drawing.Size(53, 13);
+            this.labelAcaoTCCResumo.Size = new System.Drawing.Size(49, 13);
             this.labelAcaoTCCResumo.TabIndex = 33;
-            this.labelAcaoTCCResumo.Text = "Resumo*:";
+            this.labelAcaoTCCResumo.Text = "Resumo:";
             // 
             // textBoxAcaoTCCOrientadorID
             // 
-            this.textBoxAcaoTCCOrientadorID.Enabled = false;
             this.textBoxAcaoTCCOrientadorID.Location = new System.Drawing.Point(88, 136);
             this.textBoxAcaoTCCOrientadorID.Name = "textBoxAcaoTCCOrientadorID";
             this.textBoxAcaoTCCOrientadorID.ReadOnly = true;
@@ -312,7 +297,6 @@
             // 
             // textBoxAcaoTCCOrientadorNome
             // 
-            this.textBoxAcaoTCCOrientadorNome.Enabled = false;
             this.textBoxAcaoTCCOrientadorNome.Location = new System.Drawing.Point(131, 136);
             this.textBoxAcaoTCCOrientadorNome.Name = "textBoxAcaoTCCOrientadorNome";
             this.textBoxAcaoTCCOrientadorNome.ReadOnly = true;
@@ -330,25 +314,27 @@
             // 
             // dateTimePickerAcaoTCCData
             // 
-            this.dateTimePickerAcaoTCCData.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePickerAcaoTCCData.Location = new System.Drawing.Point(460, 218);
+            this.dateTimePickerAcaoTCCData.CustomFormat = "dd-MM-yyyy HH:mm";
+            this.dateTimePickerAcaoTCCData.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dateTimePickerAcaoTCCData.Location = new System.Drawing.Point(577, 201);
             this.dateTimePickerAcaoTCCData.Name = "dateTimePickerAcaoTCCData";
-            this.dateTimePickerAcaoTCCData.Size = new System.Drawing.Size(95, 20);
-            this.dateTimePickerAcaoTCCData.TabIndex = 11;
+            this.dateTimePickerAcaoTCCData.Size = new System.Drawing.Size(176, 20);
+            this.dateTimePickerAcaoTCCData.TabIndex = 10;
+            this.dateTimePickerAcaoTCCData.Value = new System.DateTime(2015, 11, 14, 0, 0, 0, 0);
             // 
             // labelAcaoTCCData
             // 
             this.labelAcaoTCCData.AutoSize = true;
-            this.labelAcaoTCCData.Location = new System.Drawing.Point(421, 222);
+            this.labelAcaoTCCData.Location = new System.Drawing.Point(503, 205);
             this.labelAcaoTCCData.Name = "labelAcaoTCCData";
-            this.labelAcaoTCCData.Size = new System.Drawing.Size(33, 13);
+            this.labelAcaoTCCData.Size = new System.Drawing.Size(68, 13);
             this.labelAcaoTCCData.TabIndex = 40;
-            this.labelAcaoTCCData.Text = "Data:";
+            this.labelAcaoTCCData.Text = "Data e Hora:";
             // 
             // labelAcaoTCCLocal
             // 
             this.labelAcaoTCCLocal.AutoSize = true;
-            this.labelAcaoTCCLocal.Location = new System.Drawing.Point(418, 195);
+            this.labelAcaoTCCLocal.Location = new System.Drawing.Point(418, 232);
             this.labelAcaoTCCLocal.Name = "labelAcaoTCCLocal";
             this.labelAcaoTCCLocal.Size = new System.Drawing.Size(36, 13);
             this.labelAcaoTCCLocal.TabIndex = 42;
@@ -356,170 +342,56 @@
             // 
             // textBoxAcaoTCCSalaID
             // 
-            this.textBoxAcaoTCCSalaID.Enabled = false;
-            this.textBoxAcaoTCCSalaID.Location = new System.Drawing.Point(460, 191);
+            this.textBoxAcaoTCCSalaID.Location = new System.Drawing.Point(460, 228);
+            this.textBoxAcaoTCCSalaID.MaxLength = 4;
             this.textBoxAcaoTCCSalaID.Name = "textBoxAcaoTCCSalaID";
             this.textBoxAcaoTCCSalaID.ReadOnly = true;
-            this.textBoxAcaoTCCSalaID.Size = new System.Drawing.Size(32, 20);
+            this.textBoxAcaoTCCSalaID.Size = new System.Drawing.Size(37, 20);
             this.textBoxAcaoTCCSalaID.TabIndex = 45;
             // 
             // buttonAcaoTCCSalaSelecionar
             // 
-            this.buttonAcaoTCCSalaSelecionar.Location = new System.Drawing.Point(688, 190);
+            this.buttonAcaoTCCSalaSelecionar.Location = new System.Drawing.Point(688, 227);
             this.buttonAcaoTCCSalaSelecionar.Name = "buttonAcaoTCCSalaSelecionar";
             this.buttonAcaoTCCSalaSelecionar.Size = new System.Drawing.Size(65, 23);
-            this.buttonAcaoTCCSalaSelecionar.TabIndex = 10;
+            this.buttonAcaoTCCSalaSelecionar.TabIndex = 11;
             this.buttonAcaoTCCSalaSelecionar.Text = "Selecionar";
             this.buttonAcaoTCCSalaSelecionar.UseVisualStyleBackColor = true;
             this.buttonAcaoTCCSalaSelecionar.Click += new System.EventHandler(this.buttonAcaoTCCSalaSelecionar_Click);
             // 
             // textBoxAcaoTCCSalaNome
             // 
-            this.textBoxAcaoTCCSalaNome.Enabled = false;
-            this.textBoxAcaoTCCSalaNome.Location = new System.Drawing.Point(498, 191);
+            this.textBoxAcaoTCCSalaNome.Location = new System.Drawing.Point(506, 228);
             this.textBoxAcaoTCCSalaNome.Name = "textBoxAcaoTCCSalaNome";
             this.textBoxAcaoTCCSalaNome.ReadOnly = true;
-            this.textBoxAcaoTCCSalaNome.Size = new System.Drawing.Size(184, 20);
+            this.textBoxAcaoTCCSalaNome.Size = new System.Drawing.Size(176, 20);
             this.textBoxAcaoTCCSalaNome.TabIndex = 43;
             // 
-            // textBoxAcaoTCCProfessorBanca1ID
+            // buttonAcaoTCCTCCBanca
             // 
-            this.textBoxAcaoTCCProfessorBanca1ID.Enabled = false;
-            this.textBoxAcaoTCCProfessorBanca1ID.Location = new System.Drawing.Point(59, 15);
-            this.textBoxAcaoTCCProfessorBanca1ID.Name = "textBoxAcaoTCCProfessorBanca1ID";
-            this.textBoxAcaoTCCProfessorBanca1ID.ReadOnly = true;
-            this.textBoxAcaoTCCProfessorBanca1ID.Size = new System.Drawing.Size(33, 20);
-            this.textBoxAcaoTCCProfessorBanca1ID.TabIndex = 49;
+            this.buttonAcaoTCCTCCBanca.Location = new System.Drawing.Point(460, 287);
+            this.buttonAcaoTCCTCCBanca.Name = "buttonAcaoTCCTCCBanca";
+            this.buttonAcaoTCCTCCBanca.Size = new System.Drawing.Size(293, 33);
+            this.buttonAcaoTCCTCCBanca.TabIndex = 13;
+            this.buttonAcaoTCCTCCBanca.Text = "Banca Examinadora";
+            this.buttonAcaoTCCTCCBanca.UseVisualStyleBackColor = true;
+            this.buttonAcaoTCCTCCBanca.Click += new System.EventHandler(this.buttonAcaoTCCTCCBanca_Click);
             // 
-            // buttonAcaoTCCProfessorBanca1Selecionar
+            // textBoxAcaoTCCUnidade
             // 
-            this.buttonAcaoTCCProfessorBanca1Selecionar.Location = new System.Drawing.Point(278, 15);
-            this.buttonAcaoTCCProfessorBanca1Selecionar.Name = "buttonAcaoTCCProfessorBanca1Selecionar";
-            this.buttonAcaoTCCProfessorBanca1Selecionar.Size = new System.Drawing.Size(65, 23);
-            this.buttonAcaoTCCProfessorBanca1Selecionar.TabIndex = 0;
-            this.buttonAcaoTCCProfessorBanca1Selecionar.Text = "Selecionar";
-            this.buttonAcaoTCCProfessorBanca1Selecionar.UseVisualStyleBackColor = true;
-            this.buttonAcaoTCCProfessorBanca1Selecionar.Click += new System.EventHandler(this.buttonAcaoTCCProfessorBanca1Selecionar_Click);
-            // 
-            // textBoxAcaoTCCProfessorBanca1Nome
-            // 
-            this.textBoxAcaoTCCProfessorBanca1Nome.Enabled = false;
-            this.textBoxAcaoTCCProfessorBanca1Nome.Location = new System.Drawing.Point(98, 15);
-            this.textBoxAcaoTCCProfessorBanca1Nome.Name = "textBoxAcaoTCCProfessorBanca1Nome";
-            this.textBoxAcaoTCCProfessorBanca1Nome.ReadOnly = true;
-            this.textBoxAcaoTCCProfessorBanca1Nome.Size = new System.Drawing.Size(174, 20);
-            this.textBoxAcaoTCCProfessorBanca1Nome.TabIndex = 47;
-            // 
-            // labelAcaoTCCProfessorBanca1
-            // 
-            this.labelAcaoTCCProfessorBanca1.AutoSize = true;
-            this.labelAcaoTCCProfessorBanca1.Location = new System.Drawing.Point(5, 19);
-            this.labelAcaoTCCProfessorBanca1.Name = "labelAcaoTCCProfessorBanca1";
-            this.labelAcaoTCCProfessorBanca1.Size = new System.Drawing.Size(54, 13);
-            this.labelAcaoTCCProfessorBanca1.TabIndex = 46;
-            this.labelAcaoTCCProfessorBanca1.Text = "Professor:";
-            // 
-            // textBoxAcaoTCCProfessorBanca2ID
-            // 
-            this.textBoxAcaoTCCProfessorBanca2ID.Enabled = false;
-            this.textBoxAcaoTCCProfessorBanca2ID.Location = new System.Drawing.Point(59, 39);
-            this.textBoxAcaoTCCProfessorBanca2ID.Name = "textBoxAcaoTCCProfessorBanca2ID";
-            this.textBoxAcaoTCCProfessorBanca2ID.ReadOnly = true;
-            this.textBoxAcaoTCCProfessorBanca2ID.Size = new System.Drawing.Size(33, 20);
-            this.textBoxAcaoTCCProfessorBanca2ID.TabIndex = 53;
-            // 
-            // buttonAcaoTCCProfessorBanca2Selecionar
-            // 
-            this.buttonAcaoTCCProfessorBanca2Selecionar.Location = new System.Drawing.Point(278, 38);
-            this.buttonAcaoTCCProfessorBanca2Selecionar.Name = "buttonAcaoTCCProfessorBanca2Selecionar";
-            this.buttonAcaoTCCProfessorBanca2Selecionar.Size = new System.Drawing.Size(65, 23);
-            this.buttonAcaoTCCProfessorBanca2Selecionar.TabIndex = 1;
-            this.buttonAcaoTCCProfessorBanca2Selecionar.Text = "Selecionar";
-            this.buttonAcaoTCCProfessorBanca2Selecionar.UseVisualStyleBackColor = true;
-            this.buttonAcaoTCCProfessorBanca2Selecionar.Click += new System.EventHandler(this.buttonAcaoTCCProfessorBanca2Selecionar_Click);
-            // 
-            // textBoxAcaoTCCProfessorBanca2Nome
-            // 
-            this.textBoxAcaoTCCProfessorBanca2Nome.Enabled = false;
-            this.textBoxAcaoTCCProfessorBanca2Nome.Location = new System.Drawing.Point(98, 39);
-            this.textBoxAcaoTCCProfessorBanca2Nome.Name = "textBoxAcaoTCCProfessorBanca2Nome";
-            this.textBoxAcaoTCCProfessorBanca2Nome.ReadOnly = true;
-            this.textBoxAcaoTCCProfessorBanca2Nome.Size = new System.Drawing.Size(174, 20);
-            this.textBoxAcaoTCCProfessorBanca2Nome.TabIndex = 51;
-            // 
-            // labelAcaoTCCProfessorBanca2
-            // 
-            this.labelAcaoTCCProfessorBanca2.AutoSize = true;
-            this.labelAcaoTCCProfessorBanca2.Location = new System.Drawing.Point(5, 43);
-            this.labelAcaoTCCProfessorBanca2.Name = "labelAcaoTCCProfessorBanca2";
-            this.labelAcaoTCCProfessorBanca2.Size = new System.Drawing.Size(54, 13);
-            this.labelAcaoTCCProfessorBanca2.TabIndex = 50;
-            this.labelAcaoTCCProfessorBanca2.Text = "Professor:";
-            // 
-            // textBoxAcaoTCCProfessorBanca3ID
-            // 
-            this.textBoxAcaoTCCProfessorBanca3ID.Enabled = false;
-            this.textBoxAcaoTCCProfessorBanca3ID.Location = new System.Drawing.Point(59, 64);
-            this.textBoxAcaoTCCProfessorBanca3ID.Name = "textBoxAcaoTCCProfessorBanca3ID";
-            this.textBoxAcaoTCCProfessorBanca3ID.ReadOnly = true;
-            this.textBoxAcaoTCCProfessorBanca3ID.Size = new System.Drawing.Size(33, 20);
-            this.textBoxAcaoTCCProfessorBanca3ID.TabIndex = 57;
-            // 
-            // buttonAcaoTCCProfessorBanca3Selecionar
-            // 
-            this.buttonAcaoTCCProfessorBanca3Selecionar.Location = new System.Drawing.Point(278, 63);
-            this.buttonAcaoTCCProfessorBanca3Selecionar.Name = "buttonAcaoTCCProfessorBanca3Selecionar";
-            this.buttonAcaoTCCProfessorBanca3Selecionar.Size = new System.Drawing.Size(65, 23);
-            this.buttonAcaoTCCProfessorBanca3Selecionar.TabIndex = 2;
-            this.buttonAcaoTCCProfessorBanca3Selecionar.Text = "Selecionar";
-            this.buttonAcaoTCCProfessorBanca3Selecionar.UseVisualStyleBackColor = true;
-            this.buttonAcaoTCCProfessorBanca3Selecionar.Click += new System.EventHandler(this.buttonAcaoTCCProfessorBanca3Selecionar_Click);
-            // 
-            // textBoxAcaoTCCProfessorBanca3Nome
-            // 
-            this.textBoxAcaoTCCProfessorBanca3Nome.Enabled = false;
-            this.textBoxAcaoTCCProfessorBanca3Nome.Location = new System.Drawing.Point(98, 64);
-            this.textBoxAcaoTCCProfessorBanca3Nome.Name = "textBoxAcaoTCCProfessorBanca3Nome";
-            this.textBoxAcaoTCCProfessorBanca3Nome.ReadOnly = true;
-            this.textBoxAcaoTCCProfessorBanca3Nome.Size = new System.Drawing.Size(174, 20);
-            this.textBoxAcaoTCCProfessorBanca3Nome.TabIndex = 55;
-            // 
-            // labelAcaoTCCProfessorBanca3
-            // 
-            this.labelAcaoTCCProfessorBanca3.AutoSize = true;
-            this.labelAcaoTCCProfessorBanca3.Location = new System.Drawing.Point(5, 68);
-            this.labelAcaoTCCProfessorBanca3.Name = "labelAcaoTCCProfessorBanca3";
-            this.labelAcaoTCCProfessorBanca3.Size = new System.Drawing.Size(54, 13);
-            this.labelAcaoTCCProfessorBanca3.TabIndex = 54;
-            this.labelAcaoTCCProfessorBanca3.Text = "Professor:";
-            // 
-            // groupBoxAcaoTCCBanca
-            // 
-            this.groupBoxAcaoTCCBanca.Controls.Add(this.labelAcaoTCCProfessorBanca1);
-            this.groupBoxAcaoTCCBanca.Controls.Add(this.textBoxAcaoTCCProfessorBanca3ID);
-            this.groupBoxAcaoTCCBanca.Controls.Add(this.textBoxAcaoTCCProfessorBanca1Nome);
-            this.groupBoxAcaoTCCBanca.Controls.Add(this.buttonAcaoTCCProfessorBanca3Selecionar);
-            this.groupBoxAcaoTCCBanca.Controls.Add(this.buttonAcaoTCCProfessorBanca1Selecionar);
-            this.groupBoxAcaoTCCBanca.Controls.Add(this.textBoxAcaoTCCProfessorBanca3Nome);
-            this.groupBoxAcaoTCCBanca.Controls.Add(this.textBoxAcaoTCCProfessorBanca1ID);
-            this.groupBoxAcaoTCCBanca.Controls.Add(this.labelAcaoTCCProfessorBanca3);
-            this.groupBoxAcaoTCCBanca.Controls.Add(this.labelAcaoTCCProfessorBanca2);
-            this.groupBoxAcaoTCCBanca.Controls.Add(this.textBoxAcaoTCCProfessorBanca2ID);
-            this.groupBoxAcaoTCCBanca.Controls.Add(this.textBoxAcaoTCCProfessorBanca2Nome);
-            this.groupBoxAcaoTCCBanca.Controls.Add(this.buttonAcaoTCCProfessorBanca2Selecionar);
-            this.groupBoxAcaoTCCBanca.Location = new System.Drawing.Point(401, 244);
-            this.groupBoxAcaoTCCBanca.Name = "groupBoxAcaoTCCBanca";
-            this.groupBoxAcaoTCCBanca.Size = new System.Drawing.Size(352, 95);
-            this.groupBoxAcaoTCCBanca.TabIndex = 0;
-            this.groupBoxAcaoTCCBanca.TabStop = false;
-            this.groupBoxAcaoTCCBanca.Text = "Banca";
+            this.textBoxAcaoTCCUnidade.Location = new System.Drawing.Point(460, 254);
+            this.textBoxAcaoTCCUnidade.Name = "textBoxAcaoTCCUnidade";
+            this.textBoxAcaoTCCUnidade.ReadOnly = true;
+            this.textBoxAcaoTCCUnidade.Size = new System.Drawing.Size(293, 20);
+            this.textBoxAcaoTCCUnidade.TabIndex = 12;
             // 
             // FrmMenuAcaoTCC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(769, 377);
-            this.Controls.Add(this.groupBoxAcaoTCCBanca);
+            this.Controls.Add(this.textBoxAcaoTCCUnidade);
+            this.Controls.Add(this.buttonAcaoTCCTCCBanca);
             this.Controls.Add(this.textBoxAcaoTCCSalaID);
             this.Controls.Add(this.buttonAcaoTCCSalaSelecionar);
             this.Controls.Add(this.textBoxAcaoTCCSalaNome);
@@ -561,8 +433,6 @@
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Acao TCC";
-            this.groupBoxAcaoTCCBanca.ResumeLayout(false);
-            this.groupBoxAcaoTCCBanca.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -603,18 +473,7 @@
         private System.Windows.Forms.TextBox textBoxAcaoTCCSalaID;
         private System.Windows.Forms.Button buttonAcaoTCCSalaSelecionar;
         private System.Windows.Forms.TextBox textBoxAcaoTCCSalaNome;
-        private System.Windows.Forms.TextBox textBoxAcaoTCCProfessorBanca1ID;
-        private System.Windows.Forms.Button buttonAcaoTCCProfessorBanca1Selecionar;
-        private System.Windows.Forms.TextBox textBoxAcaoTCCProfessorBanca1Nome;
-        private System.Windows.Forms.Label labelAcaoTCCProfessorBanca1;
-        private System.Windows.Forms.TextBox textBoxAcaoTCCProfessorBanca2ID;
-        private System.Windows.Forms.Button buttonAcaoTCCProfessorBanca2Selecionar;
-        private System.Windows.Forms.TextBox textBoxAcaoTCCProfessorBanca2Nome;
-        private System.Windows.Forms.Label labelAcaoTCCProfessorBanca2;
-        private System.Windows.Forms.TextBox textBoxAcaoTCCProfessorBanca3ID;
-        private System.Windows.Forms.Button buttonAcaoTCCProfessorBanca3Selecionar;
-        private System.Windows.Forms.TextBox textBoxAcaoTCCProfessorBanca3Nome;
-        private System.Windows.Forms.Label labelAcaoTCCProfessorBanca3;
-        private System.Windows.Forms.GroupBox groupBoxAcaoTCCBanca;
+        private System.Windows.Forms.Button buttonAcaoTCCTCCBanca;
+        private System.Windows.Forms.TextBox textBoxAcaoTCCUnidade;
     }
 }
