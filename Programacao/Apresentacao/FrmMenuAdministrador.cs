@@ -15,11 +15,40 @@ namespace Apresentacao
 {
     public partial class FrmMenuAdministrador : Form
     {
-        public FrmMenuAdministrador(string modulo)
+        public FrmMenuAdministrador(string modulo, string grupo)
         {
             InitializeComponent();
 
             labelModuloTitulo.Text = modulo;
+
+            if (grupo == "ADMINISTRADOR")
+            {
+                buttonInserir.Visible = true;
+                buttonAlterar.Visible = true;
+                buttonExcluir.Visible = true;
+                buttonConsultar.Visible = true;
+            }
+            if (grupo == "GERENTE")
+            {
+                buttonInserir.Visible = true;
+                buttonAlterar.Visible = true;
+                buttonExcluir.Visible = true;
+                buttonConsultar.Visible = true;
+            }
+            if (grupo == "REGISTRADOR")
+            {
+                buttonInserir.Visible = true;
+                buttonAlterar.Visible = true;
+                buttonExcluir.Visible = false;
+                buttonConsultar.Visible = true;
+            }
+            if (grupo == "VISITANTE")
+            {
+                buttonInserir.Visible = false;
+                buttonAlterar.Visible = false;
+                buttonExcluir.Visible = false;
+                buttonConsultar.Visible = true;
+            }
             
 
             if (labelModuloTitulo.Text == "TCCs")
@@ -448,7 +477,12 @@ namespace Apresentacao
             }
             if (labelModuloTitulo.Text == "Usuários")
             {
-                
+                FrmMenuAcaoUsuario frmMenuAcaoUsuario = new FrmMenuAcaoUsuario(null, "Inserir Usuario");
+                DialogResult dialogResult = frmMenuAcaoUsuario.ShowDialog();
+                if (dialogResult == DialogResult.Yes)
+                {
+                    RealizarPesquisa();
+                }
             }
         }
 
@@ -529,7 +563,14 @@ namespace Apresentacao
             }
             if (labelModuloTitulo.Text == "Usuários")
             {
-                
+                Usuario usuarioSelecao = (dataGridView.SelectedRows[0].DataBoundItem as Usuario);
+
+                FrmMenuAcaoUsuario frmMenuAcaoUsuario = new FrmMenuAcaoUsuario(usuarioSelecao, "Alterar Usuario");
+                DialogResult dialogResult = frmMenuAcaoUsuario.ShowDialog();
+                if (dialogResult == DialogResult.Yes)
+                {
+                    RealizarPesquisa();
+                }
             }
         }
 
@@ -582,6 +623,13 @@ namespace Apresentacao
                 FrmMenuAcaoSala frmMenuAcaoSala = new FrmMenuAcaoSala(salaSelecao, "Consultar Sala");
                 frmMenuAcaoSala.ShowDialog();
             }
+
+            if (labelModuloTitulo.Text == "Usuários")
+            {
+                Usuario usuarioSelecao = (dataGridView.SelectedRows[0].DataBoundItem as Usuario);
+                FrmMenuAcaoUsuario frmMenuAcaoUsuario = new FrmMenuAcaoUsuario(usuarioSelecao, "Consultar Usuario");
+                frmMenuAcaoUsuario.ShowDialog();
+            }
         }
 
         private void RealizarPesquisa()
@@ -596,10 +644,15 @@ namespace Apresentacao
                 dataGridView.DataSource = null;
                 dataGridView.DataSource = unidadeColecao;
                 dataGridView.Columns["UnidadeID"].HeaderText = "ID";
+                dataGridView.Columns["UnidadeID"].Width = 40;
                 dataGridView.Columns["UnidadeNome"].HeaderText = "Unidade";
+                dataGridView.Columns["UnidadeNome"].MinimumWidth = 250;
                 dataGridView.Columns["UnidadeCidade"].HeaderText = "Cidade";
+                dataGridView.Columns["UnidadeCidade"].MinimumWidth = 220;
                 dataGridView.Columns["UnidadeEstado"].HeaderText = "Estado";
+                dataGridView.Columns["UnidadeEstado"].Width = 50;
                 dataGridView.Columns["UnidadePais"].HeaderText = "País";
+                dataGridView.Columns["UnidadePais"].MinimumWidth = 157;
                 dataGridView.Update();
                 dataGridView.Refresh();
             }
@@ -615,8 +668,11 @@ namespace Apresentacao
                 dataGridView.DataSource = null;
                 dataGridView.DataSource = cursoColecao;
                 dataGridView.Columns["CursoID"].HeaderText = "ID";
+                dataGridView.Columns["CursoID"].Width = 40;
                 dataGridView.Columns["CursoNome"].HeaderText = "Curso";
+                dataGridView.Columns["CursoNome"].MinimumWidth = 420;
                 dataGridView.Columns["CursoUnidadeNome"].HeaderText = "Unidade";
+                dataGridView.Columns["CursoUnidadeNome"].MinimumWidth= 256;
                 dataGridView.Columns["CursoUnidadeID"].Visible = false;
                 dataGridView.Update();
                 dataGridView.Refresh();
@@ -639,9 +695,13 @@ namespace Apresentacao
                 dataGridView.DataSource = null;
                 dataGridView.DataSource = professorColecao;
                 dataGridView.Columns["ProfessorID"].HeaderText = "ID";
+                dataGridView.Columns["ProfessorID"].Width = 40;
                 dataGridView.Columns["ProfessorNome"].HeaderText = "Nome do Professor";
+                dataGridView.Columns["ProfessorNome"].MinimumWidth = 300;
                 dataGridView.Columns["ProfessorMatricula"].HeaderText = "Matrícula";
+                dataGridView.Columns["ProfessorMatricula"].MinimumWidth = 100;
                 dataGridView.Columns["ProfessorTelefone"].HeaderText = "Telefone";
+                dataGridView.Columns["ProfessorTelefone"].MinimumWidth = 100;
                 dataGridView.Update();
                 dataGridView.Refresh();
             }
@@ -663,11 +723,17 @@ namespace Apresentacao
                 dataGridView.DataSource = null;
                 dataGridView.DataSource = alunoColecao;
                 dataGridView.Columns["AlunoID"].HeaderText = "ID";
+                dataGridView.Columns["AlunoID"].Width = 40;
                 dataGridView.Columns["AlunoNome"].HeaderText = "Nome do Aluno";
+                dataGridView.Columns["AlunoNome"].MinimumWidth = 220;
                 dataGridView.Columns["AlunoMatricula"].HeaderText = "Matrícula";
+                dataGridView.Columns["AlunoMatricula"].MinimumWidth = 100;
                 dataGridView.Columns["AlunoTelefone"].HeaderText = "Telefone";
+                dataGridView.Columns["AlunoTelefone"].MinimumWidth = 100;
                 dataGridView.Columns["AlunoCursoNome"].HeaderText = "Curso";
+                dataGridView.Columns["AlunoCursoNome"].MinimumWidth = 200;
                 dataGridView.Columns["AlunoUnidadeNome"].HeaderText = "Unidade";
+                dataGridView.Columns["AlunoUnidadeNome"].MinimumWidth = 200;
                 dataGridView.Columns["AlunoCursoID"].Visible = false;
                 dataGridView.Update();
                 dataGridView.Refresh();
@@ -690,21 +756,32 @@ namespace Apresentacao
                 dataGridView.DataSource = null;
                 dataGridView.DataSource = tccColecao;
                 dataGridView.Columns["TCCID"].HeaderText = "ID";
+                dataGridView.Columns["TCCID"].Width = 40;
                 dataGridView.Columns["TCCTitulo"].HeaderText = "Titulo do Trabalho";
+                dataGridView.Columns["TCCTitulo"].MinimumWidth = 500;
                 dataGridView.Columns["TCCAlunoNome"].HeaderText = "Aluno Responsável";
+                dataGridView.Columns["TCCAlunoNome"].MinimumWidth = 200;
                 dataGridView.Columns["TCCOrientadorNome"].HeaderText = "Professor Orientador";
-                dataGridView.Columns["TCCOrientadorNome"].Width = 2;
+                dataGridView.Columns["TCCOrientadorNome"].MinimumWidth = 200;
                 dataGridView.Columns["TCCGrandeArea"].HeaderText = "Grande Área";
+                dataGridView.Columns["TCCGrandeArea"].MinimumWidth = 150;
                 dataGridView.Columns["TCCArea"].HeaderText = "Área";
+                dataGridView.Columns["TCCArea"].MinimumWidth = 200;
                 dataGridView.Columns["TCCSubarea"].HeaderText = "Subarea";
+                dataGridView.Columns["TCCSubarea"].MinimumWidth = 150;
                 dataGridView.Columns["TCCEspecialidade"].HeaderText = "Especialidade";
+                dataGridView.Columns["TCCEspecialidade"].MinimumWidth = 200;
                 dataGridView.Columns["TCCData"].HeaderText = "Data";
+                dataGridView.Columns["TCCData"].MinimumWidth = 80;
                 dataGridView.Columns["TCCSalaNome"].HeaderText = "Local";
+                dataGridView.Columns["TCCSalaNome"].MinimumWidth = 60;
                 dataGridView.Columns["TCCUnidade"].HeaderText = "Unidade";
+                dataGridView.Columns["TCCUnidade"].MinimumWidth = 200;
 
                 dataGridView.Columns["TCCAlunoID"].Visible = false;
                 dataGridView.Columns["TCCOrientadorID"].Visible = false;
                 dataGridView.Columns["TCCResumo"].Visible = false;
+                dataGridView.Columns["TCCPaginas"].Visible = false;
                 dataGridView.Columns["TCCSalaID"].Visible = false;
                 dataGridView.Update();
                 dataGridView.Refresh();
@@ -716,17 +793,64 @@ namespace Apresentacao
                 SalaColecao salaColecao = new SalaColecao();
 
                 string filtroUnidade = comboBoxFiltroUnidade.Text;
-                salaColecao = salaNegocios.ConsultarPorNome(textBoxPesquisa.Text, filtroUnidade);
+
+                if (radioButtonPesquisarPorNome.Checked)
+                {
+                    salaColecao = salaNegocios.ConsultarPorNome(textBoxPesquisa.Text, filtroUnidade);
+                }
+                if (radioButtonPesquisarPorDescricao.Checked)
+                {
+                    salaColecao = salaNegocios.ConsultarPorDescricao(textBoxPesquisa.Text, filtroUnidade);
+                }
 
                 dataGridView.DataSource = null;
                 dataGridView.DataSource = salaColecao;
                 dataGridView.Columns["SalaID"].HeaderText = "ID";
+                dataGridView.Columns["SalaID"].Width = 40;
                 dataGridView.Columns["SalaNome"].HeaderText = "Sala";
+                dataGridView.Columns["SalaNome"].Width = 50;
                 dataGridView.Columns["SalaDescricao"].HeaderText = "Descrição";
+                dataGridView.Columns["SalaDescricao"].MinimumWidth = 280;
                 dataGridView.Columns["SalaSalaTipoNome"].HeaderText = "Tipo";
+                dataGridView.Columns["SalaSalaTipoNome"].MinimumWidth = 100;
                 dataGridView.Columns["SalaUnidadeNome"].HeaderText = "Unidade";
+                dataGridView.Columns["SalaUnidadeNome"].MinimumWidth = 247;
                 dataGridView.Columns["SalaSalaTipoID"].Visible = false;
                 dataGridView.Columns["SalaUnidadeID"].Visible = false;
+                dataGridView.Update();
+                dataGridView.Refresh();
+            }
+
+            if (labelModuloTitulo.Text == "Usuários")
+            {
+                UsuarioNegocios usuarioNegocios = new UsuarioNegocios();
+                UsuarioColecao usuarioColecao = new UsuarioColecao();
+
+                if (radioButtonPesquisarPorNome.Checked)
+                {
+                    usuarioColecao = usuarioNegocios.ConsultarPorNome(textBoxPesquisa.Text);
+                }
+                if (radioButtonPesquisarPorLogin.Checked)
+                {
+                    usuarioColecao = usuarioNegocios.ConsultarPorLogin(textBoxPesquisa.Text);
+                }
+
+                dataGridView.DataSource = null;
+                dataGridView.DataSource = usuarioColecao;
+                dataGridView.Columns["UsuarioID"].HeaderText = "ID";
+                dataGridView.Columns["UsuarioID"].Width = 40;
+                dataGridView.Columns["UsuarioLogin"].HeaderText = "Login";
+                dataGridView.Columns["UsuarioLogin"].Width = 150;
+                dataGridView.Columns["UsuarioNome"].HeaderText = "Nome do Usuário";
+                dataGridView.Columns["UsuarioNome"].MinimumWidth = 150;
+                dataGridView.Columns["UsuarioMatricula"].HeaderText = "Matrícula";
+                dataGridView.Columns["UsuarioMatricula"].MinimumWidth = 100;
+                dataGridView.Columns["UsuarioGrupoNome"].HeaderText = "Grupo";
+                dataGridView.Columns["UsuarioGrupoNome"].MinimumWidth = 120;
+                dataGridView.Columns["UsuarioSituacao"].HeaderText = "Situação";
+                dataGridView.Columns["UsuarioSituacao"].MinimumWidth = 40;
+                dataGridView.Columns["UsuarioSenha"].Visible = false;
+                dataGridView.Columns["UsuarioGrupoID"].Visible = false;
                 dataGridView.Update();
                 dataGridView.Refresh();
             }
@@ -764,18 +888,28 @@ namespace Apresentacao
             {
                 Professor professorSelecao = (dataGridView.SelectedRows[0].DataBoundItem as Professor);
                 ProfessorNegocios professorNegocios = new ProfessorNegocios();
-                string retorno = professorNegocios.Excluir(professorSelecao);
+                
+                int verificacao = professorNegocios.VerificarUso(professorSelecao.ProfessorID);
 
-                try
+                if (verificacao != 0)
                 {
-                    int ProfessorID = Convert.ToInt32(retorno);
-
-                    MessageBox.Show("Registro excluído com sucesso!", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    RealizarPesquisa();
+                    MessageBox.Show("Impossível excluir o professor selecionado.\nJá existe cadastro deste professor como\norientador de TCC ou participante de uma Banca.", "Operação não permitida");
                 }
-                catch
+                else
                 {
-                    MessageBox.Show("Não foi possível excluir. Detalhes: " + retorno, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    string retorno = professorNegocios.Excluir(professorSelecao);
+
+                    try
+                    {
+                        int ProfessorID = Convert.ToInt32(retorno);
+
+                        MessageBox.Show("Registro excluído com sucesso!", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        RealizarPesquisa();
+                    }
+                    catch
+                    {
+                        MessageBox.Show("Não foi possível excluir. Detalhes: " + retorno, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
                 }
             }
 
@@ -788,7 +922,7 @@ namespace Apresentacao
 
                 if (verificacao != 0)
                 {
-                    MessageBox.Show("Impossível excluir a unidade selecionada.\nJá existe cadastro de curso(s) para esta unidade.", "Operação não permitida");
+                    MessageBox.Show("Impossível excluir a unidade selecionada.\nExiste cadastro de curso(s) ou sala(s) vinculados a esta unidade.", "Operação não permitida");
                 }
                 else
                 {
@@ -817,7 +951,7 @@ namespace Apresentacao
 
                 if (verificacao != 0)
                 {
-                    MessageBox.Show("Impossível excluir o curso selecionado.\nJá existe cadastro de aluno(s) para este curso.", "Operação não permitida");
+                    MessageBox.Show("Impossível excluir o curso selecionado.\nJá existe cadastro de aluno(s) vinculados a este curso.", "Operação não permitida");
                 }
                 else
                 {
@@ -841,18 +975,28 @@ namespace Apresentacao
             {
                 Aluno alunoSelecao = (dataGridView.SelectedRows[0].DataBoundItem as Aluno);
                 AlunoNegocios alunoNegocios = new AlunoNegocios();
-                string retorno = alunoNegocios.Excluir(alunoSelecao);
 
-                try
+                int verificacao = alunoNegocios.VerificarUso(alunoSelecao.AlunoID);
+
+                if (verificacao != 0)
                 {
-                    int alunoID = Convert.ToInt32(retorno);
-
-                    MessageBox.Show("Registro excluído com sucesso!", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    RealizarPesquisa();
+                    MessageBox.Show("Impossível excluir o aluno selecionado.\nJá existe cadastro de TCC(s) vinculados a este aluno.", "Operação não permitida");
                 }
-                catch
+                else
                 {
-                    MessageBox.Show("Não foi possível excluir. Detalhes: " + retorno, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    string retorno = alunoNegocios.Excluir(alunoSelecao);
+
+                    try
+                    {
+                        int alunoID = Convert.ToInt32(retorno);
+
+                        MessageBox.Show("Registro excluído com sucesso!", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        RealizarPesquisa();
+                    }
+                    catch
+                    {
+                        MessageBox.Show("Não foi possível excluir. Detalhes: " + retorno, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
                 }
             }
 
@@ -860,18 +1004,27 @@ namespace Apresentacao
             {
                 Sala salaSelecao = (dataGridView.SelectedRows[0].DataBoundItem as Sala);
                 SalaNegocios salaNegocios = new SalaNegocios();
-                string retorno = salaNegocios.Excluir(salaSelecao);
+                
+                int verificacao = salaNegocios.VerificarUso(salaSelecao.SalaID);
 
-                try
+                if (verificacao != 0)
                 {
-                    int salaID = Convert.ToInt32(retorno);
-
-                    MessageBox.Show("Registro excluído com sucesso!", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    RealizarPesquisa();
+                    MessageBox.Show("Impossível excluir a sala selecionada.\nJá existe cadastro de TCC(s) vinculados a esta sala.", "Operação não permitida");
                 }
-                catch
+                else
                 {
-                    MessageBox.Show("Não foi possível excluir. Detalhes: " + retorno, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    string retorno = salaNegocios.Excluir(salaSelecao);
+                    try
+                    {
+                        int salaID = Convert.ToInt32(retorno);
+
+                        MessageBox.Show("Registro excluído com sucesso!", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        RealizarPesquisa();
+                    }
+                    catch
+                    {
+                        MessageBox.Show("Não foi possível excluir. Detalhes: " + retorno, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
                 }
             }
 
@@ -884,6 +1037,25 @@ namespace Apresentacao
                 try
                 {
                     int tccID = Convert.ToInt32(retorno);
+
+                    MessageBox.Show("Registro excluído com sucesso!", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    RealizarPesquisa();
+                }
+                catch
+                {
+                    MessageBox.Show("Não foi possível excluir. Detalhes: " + retorno, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+
+            if (labelModuloTitulo.Text == "Usuários")
+            {
+                Usuario usuarioSelecao = (dataGridView.SelectedRows[0].DataBoundItem as Usuario);
+                UsuarioNegocios usuarioNegocios = new UsuarioNegocios();
+                string retorno = usuarioNegocios.Excluir(usuarioSelecao);
+
+                try
+                {
+                    int usuarioID = Convert.ToInt32(retorno);
 
                     MessageBox.Show("Registro excluído com sucesso!", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     RealizarPesquisa();
@@ -910,6 +1082,7 @@ namespace Apresentacao
             Sala sala = new Sala();
             Usuario usuario = new Usuario();
 
+            dateTimePickerFiltroData.Value = DateTime.Now.Date;
             unidade.UnidadeNome = "";
             curso.CursoNome = "";
             sala.SalaSalaTipoNome = "";

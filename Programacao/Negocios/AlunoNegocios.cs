@@ -138,5 +138,12 @@ namespace Negocios
             return verificacao;
         }
 
+        public int VerificarUso(int alunoid)
+        {
+            acessoDadosSqlServer.LimparParametros();
+            acessoDadosSqlServer.AdicionarParametros("@AlunoID", alunoid);
+            int verificacao = Convert.ToInt32(acessoDadosSqlServer.ExecutarManipulacao(CommandType.Text, "SELECT TOP 1 AlunoID FROM tblAluno INNER JOIN tblTCC ON AlunoID = TCCAlunoID WHERE AlunoID = @AlunoID and TCCID > '0'"));
+            return verificacao;
+        }
     }
 }

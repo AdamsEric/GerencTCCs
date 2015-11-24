@@ -82,7 +82,8 @@ namespace AcessoBancoDados
                 //DataTable = Tabela de dados vazia onde vou colocar os dados que vem do banco
                 DataTable dataTable = new DataTable();
                 //Mandar o comando ir até o banco buscar os dados e o adaptador preencher o datatable
-                sqlDataAdapter.Fill(dataTable);
+                
+            sqlDataAdapter.Fill(dataTable);
 
                 return dataTable;
         }

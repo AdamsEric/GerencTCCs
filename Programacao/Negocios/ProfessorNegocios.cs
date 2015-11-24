@@ -99,7 +99,7 @@ namespace Negocios
 
             acessoDadosSqlServer.LimparParametros();
             acessoDadosSqlServer.AdicionarParametros("@ProfessorMatricula", matricula);
-            DataTable dataTableProfessor = acessoDadosSqlServer.ExecutarConsulta(CommandType.StoredProcedure, "SELECT ProfessorID AS ID, ProfessorNome AS Professor, ProfessorMatricula AS Matricula, ProfessorTelefone AS Telefone FROM tblProfessor WHERE ProfessorMatricula LIKE '%' + @ProfessorMatricula + '%'");
+            DataTable dataTableProfessor = acessoDadosSqlServer.ExecutarConsulta(CommandType.Text, "SELECT ProfessorID AS ID, ProfessorNome AS Professor, ProfessorMatricula AS Matricula, ProfessorTelefone AS Telefone FROM tblProfessor WHERE ProfessorMatricula LIKE '%' + @ProfessorMatricula + '%'");
 
             //Percorrer o DataTable e transformar em coleção de cliente
             //Cada linha do DataTable é um cliente
@@ -126,6 +126,15 @@ namespace Negocios
             int verificacao = Convert.ToInt32(acessoDadosSqlServer.ExecutarManipulacao(CommandType.Text, "SELECT ProfessorID FROM tblProfessor WHERE ProfessorMatricula = @ProfessorMatricula AND ProfessorID <> @ProfessorID"));
 
             return verificacao;
+        }
+
+        public int VerificarUso(int professorid)
+        {
+            acessoDadosSqlServer.LimparParametros();
+            acessoDadosSqlServer.AdicionarParametros("@ProfessorID", professorid);
+            int verificacao1 = Convert.ToInt32(acessoDadosSqlServer.ExecutarManipulacao(CommandType.Text, "SELECT TOP 1 ProfessorID FROM tblProfessor INNER JOIN tblTCC ON ProfessorID = TCCOrientadorID WHERE ProfessorID = @ProfessorID"));
+            int verificacao2 = Convert.ToInt32(acessoDadosSqlServer.ExecutarManipulacao(CommandType.Text, "SELECT TOP 1 ProfessorID FROM tblProfessor INNER JOIN tblBancaProfessor ON ProfessorID = BancaProfessorProfessorID WHERE ProfessorID = @ProfessorID"));
+            return verificacao1+verificacao2;
         }
     }
 }

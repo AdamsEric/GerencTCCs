@@ -43,9 +43,9 @@ SalaNome NVARCHAR(10) NOT NULL,
 
 SalaDescricao NVARCHAR(70) NULL,
 
-SalaUnidadeID INT FOREIGN KEY REFERENCES tblUnidade(UnidadeID),
+SalaUnidadeID INT FOREIGN KEY REFERENCES tblUnidade(UnidadeID) NOT NULL,
 
-SalaSalaTipoID INT FOREIGN KEY REFERENCES tblSalaTipo(SalaTipoID))
+SalaSalaTipoID INT FOREIGN KEY REFERENCES tblSalaTipo(SalaTipoID) NOT NULL)
 
 GO
 
@@ -60,7 +60,7 @@ ProfessorNome NVARCHAR(70) NOT NULL,
 
 ProfessorMatricula VARCHAR(15) UNIQUE NOT NULL,
 
-ProfessorTelefone VARCHAR(13))
+ProfessorTelefone VARCHAR(15) NULL)
 
 GO
 
@@ -73,7 +73,7 @@ CursoID INT PRIMARY KEY IDENTITY(1,1),
 
 CursoNome NVARCHAR(80) NOT NULL,
 
-CursoUnidadeID INT FOREIGN KEY REFERENCES tblUnidade(UnidadeID))
+CursoUnidadeID INT FOREIGN KEY REFERENCES tblUnidade(UnidadeID) NOT NULL)
 
 GO
 
@@ -85,9 +85,9 @@ AlunoNome NVARCHAR(70) NOT NULL,
 
 AlunoMatricula NVARCHAR(15) UNIQUE NOT NULL,
 
-AlunoTelefone VARCHAR(13),
+AlunoTelefone VARCHAR(15) NULL,
 
-AlunoCursoID INT FOREIGN KEY REFERENCES tblCurso(CursoID))
+AlunoCursoID INT FOREIGN KEY REFERENCES tblCurso(CursoID) NOT NULL)
 
 GO 
 
@@ -113,9 +113,9 @@ TCCData DATETIME NULL,
 
 TCCSalaID INT FOREIGN KEY REFERENCES tblSala(SalaID) NULL,
 
-TCCAlunoID INT FOREIGN KEY REFERENCES tblAluno(AlunoID),
+TCCAlunoID INT FOREIGN KEY REFERENCES tblAluno(AlunoID) NOT NULL,
 
-TCCOrientadorID INT FOREIGN KEY REFERENCES tblProfessor(ProfessorID))
+TCCOrientadorID INT FOREIGN KEY REFERENCES tblProfessor(ProfessorID) NOT NULL)
 
 GO
 
@@ -123,13 +123,17 @@ CREATE TABLE tblBanca(
 
 BancaID INT PRIMARY KEY IDENTITY(1,1),
 
-BancaProfessor1 INT FOREIGN KEY REFERENCES tblProfessor(ProfessorID),
+BancaTCCID INT FOREIGN KEY REFERENCES tblTCC(TCCID) NOT NULL)
 
-BancaProfessor2 INT FOREIGN KEY REFERENCES tblProfessor(ProfessorID),
+GO
 
-BancaProfessor3 INT FOREIGN KEY REFERENCES tblProfessor(ProfessorID),
+CREATE TABLE tblBancaProfessor(
 
-BancaTCCID INT FOREIGN KEY REFERENCES tblTCC(TCCID))
+BancaProfessorID INT PRIMARY KEY IDENTITY,
+
+BancaProfessorProfessorID INT FOREIGN KEY REFERENCES tblProfessor(ProfessorID) NOT NULL,
+
+BancaProfessorBancaID INT FOREIGN KEY REFERENCES tblBanca(BancaID) NOT NULL)
 
 GO
 
@@ -153,9 +157,11 @@ UsuarioNome NVARCHAR(70) NOT NULL,
 
 UsuarioMatricula NVARCHAR(15) NULL,
 
-UsuarioGrupoID INT FOREIGN KEY REFERENCES tblGrupo(GrupoID)
+UsuarioSituacao NCHAR(1) NOT NULL,
 
-)
+UsuarioGrupoID INT FOREIGN KEY REFERENCES tblGrupo(GrupoID) NOT NULL)
+
+GO
 
 insert into tblGrupo (GrupoNome) values ('ADMINISTRADOR')
 insert into tblGrupo (GrupoNome) values ('GERENTE')

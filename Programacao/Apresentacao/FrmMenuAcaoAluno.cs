@@ -48,13 +48,15 @@ namespace Apresentacao
                 maskedTextBoxAcaoAlunoTelefone.Text = aluno.AlunoTelefone;
                 textBoxAcaoAlunoCursoID.Text = aluno.AlunoCursoID.ToString();
                 textBoxAcaoAlunoCursoNome.Text = aluno.AlunoCursoNome;
+                textBoxAcaoAlunoCursoNome.Width = 314;
                 textBoxAcaoAlunoUnidade.Text = aluno.AlunoUnidadeNome;
+                buttonAcaoAlunoCursoSelecionar.Visible = false;
 
                 buttonAcaoAlunoConfirmar.Hide();
                 buttonAcaoAlunoCancelar.Hide();
-                textBoxAcaoAlunoNome.Enabled = false;
-                textBoxAcaoAlunoMatricula.Enabled = false;
-                maskedTextBoxAcaoAlunoTelefone.Enabled = false;
+                textBoxAcaoAlunoNome.ReadOnly = true;
+                textBoxAcaoAlunoMatricula.ReadOnly = true;
+                maskedTextBoxAcaoAlunoTelefone.ReadOnly = true;
 
                 labelAcaoAlunoCO.Hide();
             }
@@ -135,7 +137,7 @@ namespace Apresentacao
                     && aluno.AlunoCursoID == alunoold.AlunoCursoID
                     && aluno.AlunoCursoNome == alunoold.AlunoCursoNome)
                 {
-                    MessageBox.Show("Os campos não foram alterados");
+                    MessageBox.Show("Os campos não foram alterados!");
                 }
                 else
                 {

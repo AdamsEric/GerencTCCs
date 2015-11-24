@@ -102,7 +102,6 @@ namespace Negocios
                 sala.SalaDescricao = Convert.ToString(linha["Descricao"]);
                 sala.SalaSalaTipoNome = Convert.ToString(linha["Tipo"]);
                 sala.SalaUnidadeNome = Convert.ToString(linha["Unidade"]);
-                sala.SalaSalaTipoNome = Convert.ToString(linha["Tipo"]);
                 salaColecao.Add(sala);
             }
             return salaColecao;
@@ -119,13 +118,13 @@ namespace Negocios
             if (unidade == "")
             {
                 acessoDadosSqlServer.AdicionarParametros("@SalaDescricao", descricao);
-                dataTableSala = acessoDadosSqlServer.ExecutarConsulta(CommandType.Text, "SELECT SalaID AS ID, SalaNome AS Sala, SalaDescricao AS Descicao, SalaTipoTipo AS Tipo, UnidadeNome AS Unidade FROM tblSala INNER JOIN tblUnidade ON SalaUnidadeID = UnidadeID INNER JOIN tblSalaTipo ON SalaSalaTipoID = SalaTipoID WHERE SalaDescricao LIKE '%' + @SalaDescricao + '%'");
+                dataTableSala = acessoDadosSqlServer.ExecutarConsulta(CommandType.Text, "SELECT SalaID AS ID, SalaNome AS Sala, SalaDescricao AS Descricao, SalaTipoTipo AS Tipo, UnidadeNome AS Unidade FROM tblSala INNER JOIN tblUnidade ON SalaUnidadeID = UnidadeID INNER JOIN tblSalaTipo ON SalaSalaTipoID = SalaTipoID WHERE (SalaDescricao LIKE '%' + @SalaDescricao + '%')");
             }
             else
             {
                 acessoDadosSqlServer.AdicionarParametros("@SalaUnidadeID", RetornaUnidadeID(unidade));
                 acessoDadosSqlServer.AdicionarParametros("@SalaDescricao", descricao);
-                dataTableSala = acessoDadosSqlServer.ExecutarConsulta(CommandType.Text, "SELECT SalaID AS ID, SalaNome AS Sala, SalaDescricao AS Descicao, SalaTipoTipo AS Tipo, UnidadeNome AS Unidade FROM tblSala INNER JOIN tblUnidade ON SalaUnidadeID = UnidadeID INNER JOIN tblSalaTipo ON SalaSalaTipoID = SalaTipoID WHERE (SalaDescricao LIKE '%' + @SalaDescricao + '%') and (SalaUnidadeID = @SalaUnidadeID)");
+                dataTableSala = acessoDadosSqlServer.ExecutarConsulta(CommandType.Text, "SELECT SalaID AS ID, SalaNome AS Sala, SalaDescricao AS Descricao, SalaTipoTipo AS Tipo, UnidadeNome AS Unidade FROM tblSala INNER JOIN tblUnidade ON SalaUnidadeID = UnidadeID INNER JOIN tblSalaTipo ON SalaSalaTipoID = SalaTipoID WHERE (SalaDescricao LIKE '%' + @SalaDescricao + '%') and (SalaUnidadeID = @SalaUnidadeID)");
             }
 
             //Percorrer o DataTable e transformar em coleção de cliente
@@ -141,7 +140,6 @@ namespace Negocios
                 sala.SalaDescricao = Convert.ToString(linha["Descricao"]);
                 sala.SalaSalaTipoNome = Convert.ToString(linha["Tipo"]);
                 sala.SalaUnidadeNome = Convert.ToString(linha["Unidade"]);
-                sala.SalaSalaTipoNome = Convert.ToString(linha["Tipo"]);
                 salaColecao.Add(sala);
             }
             return salaColecao;
@@ -165,5 +163,12 @@ namespace Negocios
             return ID;
         }
 
+        public int VerificarUso(int salaid)
+        {
+            acessoDadosSqlServer.LimparParametros();
+            acessoDadosSqlServer.AdicionarParametros("@SalaID", salaid);
+            int verificacao = Convert.ToInt32(acessoDadosSqlServer.ExecutarManipulacao(CommandType.Text, "SELECT TOP 1 SalaID FROM tblSala INNER JOIN tblTCC ON SalaID = TCCSalaID WHERE SalaID = @SalaID"));
+            return verificacao;
+        }
     }
 }

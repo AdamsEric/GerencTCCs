@@ -17,17 +17,33 @@ namespace Apresentacao
     {
         Banca bancaold = new Banca();
 
-        public FrmMenuAcaoBanca(Banca banca, int tccID, int bancaID, string orientadornome)
+        public FrmMenuAcaoBanca(string Acao, Banca banca, int tccID, int bancaID, string orientadornome)
         {
             InitializeComponent();
             this.Text = "Banca Examinadora";
+
+            if (Acao == "Consultar TCC")
+            {
+                dataGridViewAcaoBancaProfessor.Size = new Size(456, 138);
+                dataGridViewAcaoBancaProfessor.Location = new Point(14, 41);
+                labelAcaoBancaProfessor.Visible = false;
+                labelAcaoBancaTCCOrientador.Visible = false;
+                textBoxAcaoBancaProfessorID.Visible = false;
+                textBoxAcaoBancaProfessorNome.Visible = false;
+                buttonAcaoBancaExcluirProfessor.Visible = false;
+                buttonAcaoBancaInserirProfessor.Visible = false;
+                buttonAcaoBancaConcluir.Visible = false;
+            }
+
             labelAcaoBancaTCCOrientador.Text = orientadornome;
             textBoxAcaoBancaTCCID.Text = tccID.ToString();
             textBoxAcaoBancaID.Text = bancaID.ToString();
             textBoxAcaoBancaProfessorID.Text = "";
             textBoxAcaoBancaProfessorNome.Text = "";
             if (textBoxAcaoBancaProfessorID.Text == "")
-            this.buttonAcaoBancaInserirProfessor.Enabled = false;
+            {
+                this.buttonAcaoBancaInserirProfessor.Enabled = false;
+            }
         }
 
         private void buttonAcaoBancaInserirProfessor_Click(object sender, EventArgs e)
@@ -63,6 +79,18 @@ namespace Apresentacao
             textBoxAcaoBancaProfessorNome.Text = "";
             this.buttonAcaoBancaInserirProfessor.Enabled = false;
             ListarProfessores();
+        }
+
+        private void buttonAcaoBancaConcluir_Click(object sender, EventArgs e)
+        {
+            BancaNegocios bancaNegocios = new BancaNegocios();
+            int verificacao = bancaNegocios.VerificarBancaVazia(Convert.ToInt32(textBoxAcaoBancaID.Text));
+            if (verificacao == 0)
+            {
+                MessageBox.Show("Não existe professor cadastrado nesta banca. Esta banca será excluída.");
+                bancaNegocios.ExcluirBanca(Convert.ToInt32(textBoxAcaoBancaTCCID.Text));
+            }
+            this.Close();
         }
 
         private void buttonAcaoBancaExcluirProfessor_Click(object sender, EventArgs e)
@@ -103,18 +131,6 @@ namespace Apresentacao
             }
         }
 
-        private void buttonAcaoBancaVoltar_Click(object sender, EventArgs e)
-        {
-            BancaNegocios bancaNegocios = new BancaNegocios();
-            int verificacao = bancaNegocios.VerificarBancaVazia(Convert.ToInt32(textBoxAcaoBancaID.Text));
-            if (verificacao == 0)
-            {
-                MessageBox.Show("Não existe professor cadastrado nesta banca. Esta banca será excluída.");
-                bancaNegocios.ExcluirBanca(Convert.ToInt32(textBoxAcaoBancaTCCID.Text));
-            }
-            this.Close();
-        }
-
         private void ListarProfessores()
         {
             BancaNegocios bancaNegocios = new BancaNegocios();
@@ -133,14 +149,6 @@ namespace Apresentacao
             dataGridViewAcaoBancaProfessor.Columns["BancaTCCID"].Visible = false;
             dataGridViewAcaoBancaProfessor.Update();
             dataGridViewAcaoBancaProfessor.Refresh();
-        }
-
-        private void buttonAcaoBancaConfirmar_Click(object sender, EventArgs e)
-        {
-            if (this.Text == "Inserir Banca")
-            {
-                
-            }
         }
 
         private void FrmMenuAcaoBanca_Load(object sender, EventArgs e)

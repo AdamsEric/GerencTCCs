@@ -38,12 +38,14 @@ namespace Apresentacao
                 this.Text = "Consultar Curso";
                 textBoxAcaoCursoID.Text = curso.CursoID.ToString();
                 textBoxAcaoCursoNome.Text = curso.CursoNome;
-                comboBoxAcaoCursoUnidadeNome.SelectedValue = curso.CursoUnidadeNome;
+                textBoxAcaoCursoUnidadeNome.Text = curso.CursoUnidadeNome;
 
                 buttonAcaoCursoConfirmar.Hide();
                 buttonAcaoCursoCancelar.Hide();
-                textBoxAcaoCursoNome.Enabled = false;
-                comboBoxAcaoCursoUnidadeNome.Enabled = false;
+                textBoxAcaoCursoNome.ReadOnly = true;
+                textBoxAcaoCursoUnidadeNome.Location = new Point(68, 87);
+                textBoxAcaoCursoUnidadeNome.Visible = true;
+                comboBoxAcaoCursoUnidadeNome.Visible = false;
                 labelAcaoCursoCO.Hide();
             }
         }

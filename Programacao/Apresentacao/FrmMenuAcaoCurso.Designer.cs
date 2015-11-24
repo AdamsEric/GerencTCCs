@@ -42,6 +42,7 @@
             this.labelAcaoCursoID = new System.Windows.Forms.Label();
             this.textBoxAcaoCursoID = new System.Windows.Forms.TextBox();
             this.tblUnidadeTableAdapter1 = new Apresentacao.DataSetUnidadeTableAdapters.tblUnidadeTableAdapter();
+            this.textBoxAcaoCursoUnidadeNome = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.tblUnidadeBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSetUnidadeBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSetUnidade)).BeginInit();
@@ -154,11 +155,21 @@
             // 
             this.tblUnidadeTableAdapter1.ClearBeforeFill = true;
             // 
+            // textBoxAcaoCursoUnidadeNome
+            // 
+            this.textBoxAcaoCursoUnidadeNome.Location = new System.Drawing.Point(68, 87);
+            this.textBoxAcaoCursoUnidadeNome.Name = "textBoxAcaoCursoUnidadeNome";
+            this.textBoxAcaoCursoUnidadeNome.ReadOnly = true;
+            this.textBoxAcaoCursoUnidadeNome.Size = new System.Drawing.Size(362, 20);
+            this.textBoxAcaoCursoUnidadeNome.TabIndex = 25;
+            this.textBoxAcaoCursoUnidadeNome.Visible = false;
+            // 
             // FrmMenuAcaoCurso
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(461, 213);
+            this.Controls.Add(this.textBoxAcaoCursoUnidadeNome);
             this.Controls.Add(this.labelAcaoCursoID);
             this.Controls.Add(this.textBoxAcaoCursoID);
             this.Controls.Add(this.labelAcaoCursoCO);
@@ -200,5 +211,6 @@
         private DataSetUnidade dataSetUnidade;
         private System.Windows.Forms.BindingSource tblUnidadeBindingSource1;
         private DataSetUnidadeTableAdapters.tblUnidadeTableAdapter tblUnidadeTableAdapter1;
+        private System.Windows.Forms.TextBox textBoxAcaoCursoUnidadeNome;
     }
 }

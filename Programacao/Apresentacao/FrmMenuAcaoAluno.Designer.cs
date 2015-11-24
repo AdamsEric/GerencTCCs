@@ -132,11 +132,11 @@
             // maskedTextBoxAcaoAlunoTelefone
             // 
             this.maskedTextBoxAcaoAlunoTelefone.Location = new System.Drawing.Point(224, 71);
-            this.maskedTextBoxAcaoAlunoTelefone.Mask = "(99)999999999";
+            this.maskedTextBoxAcaoAlunoTelefone.Mask = "(99) 999999999";
             this.maskedTextBoxAcaoAlunoTelefone.Name = "maskedTextBoxAcaoAlunoTelefone";
-            this.maskedTextBoxAcaoAlunoTelefone.Size = new System.Drawing.Size(80, 20);
+            this.maskedTextBoxAcaoAlunoTelefone.PromptChar = ' ';
+            this.maskedTextBoxAcaoAlunoTelefone.Size = new System.Drawing.Size(89, 20);
             this.maskedTextBoxAcaoAlunoTelefone.TabIndex = 3;
-            this.maskedTextBoxAcaoAlunoTelefone.TextMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
             // 
             // labelAcaoAlunoID
             // 

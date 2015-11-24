@@ -42,7 +42,7 @@ namespace Apresentacao
                 textBoxAcaoTCCSubarea.Text = tcc.TCCSubarea;
                 textBoxAcaoTCCEspecialidade.Text = tcc.TCCEspecialidade;
                 textBoxAcaoTCCResumo.Text = tcc.TCCResumo;
-                textBoxAcaoTCCPaginas.Text = tcc.TCCPaginas.ToString();
+                maskedTextBoxAcaoTCCPaginas.Text = tcc.TCCPaginas.ToString();
                 textBoxAcaoTCCSalaID.Text = tcc.TCCSalaID.ToString();
                 textBoxAcaoTCCSalaNome.Text = tcc.TCCSalaNome;
                 textBoxAcaoTCCUnidade.Text = tcc.TCCUnidade;
@@ -63,11 +63,11 @@ namespace Apresentacao
                 textBoxAcaoTCCSubarea.Text = tcc.TCCSubarea;
                 textBoxAcaoTCCEspecialidade.Text = tcc.TCCEspecialidade;
                 textBoxAcaoTCCResumo.Text = tcc.TCCResumo;
-                textBoxAcaoTCCPaginas.Text = tcc.TCCPaginas.ToString();
+                maskedTextBoxAcaoTCCPaginas.Text = tcc.TCCPaginas.ToString();
                 textBoxAcaoTCCSalaID.Text = tcc.TCCSalaID.ToString();
                 textBoxAcaoTCCUnidade.Text = tcc.TCCUnidade;
                 textBoxAcaoTCCSalaNome.Text = tcc.TCCSalaNome;
-                dateTimePickerAcaoTCCData.Value = tcc.TCCData;
+                textBoxAcaoTCCData.Text = tcc.TCCData.ToString();
 
                 buttonAcaoTCCConfirmar.Hide();
                 buttonAcaoTCCCancelar.Hide();
@@ -83,19 +83,20 @@ namespace Apresentacao
                 textBoxAcaoTCCSubarea.ReadOnly = true;
                 textBoxAcaoTCCEspecialidade.ReadOnly = true;
                 textBoxAcaoTCCResumo.ReadOnly = true;
-                textBoxAcaoTCCPaginas.ReadOnly = true;
+                maskedTextBoxAcaoTCCPaginas.ReadOnly = true;
                 textBoxAcaoTCCSalaID.ReadOnly = true;
                 textBoxAcaoTCCUnidade.ReadOnly = true;
                 textBoxAcaoTCCSalaNome.ReadOnly = true;
-                dateTimePickerAcaoTCCData.Enabled = false;
+                dateTimePickerAcaoTCCData.Visible = false;
 
-                textBoxAcaoTCCAlunoNome.Size = new Size (264,20);
+                textBoxAcaoTCCAlunoNome.Width = 264;
                 buttonAcaoTCCAlunoSelecionar.Hide();
-                textBoxAcaoTCCOrientadorNome.Size = new Size(264, 20);
+                textBoxAcaoTCCOrientadorNome.Width = 264;
                 buttonAcaoTCCOrientadorSelecionar.Hide();
-                textBoxAcaoTCCOrientadorNome.Size = new Size(239, 20);
-                buttonAcaoTCCOrientadorSelecionar.Hide();
-
+                textBoxAcaoTCCSalaNome.Width = 247;
+                buttonAcaoTCCSalaSelecionar.Hide();
+                textBoxAcaoTCCData.Visible = true;
+                textBoxAcaoTCCData.Location = new Point(577, 201);
 
                 labelAcaoTCCCO.Hide();
             }
@@ -132,9 +133,9 @@ namespace Apresentacao
                 tcc.TCCSubarea = textBoxAcaoTCCSubarea.Text;
                 tcc.TCCEspecialidade = textBoxAcaoTCCEspecialidade.Text;
                 tcc.TCCResumo = textBoxAcaoTCCResumo.Text;
-                if (textBoxAcaoTCCPaginas.Text != "")
+                if (maskedTextBoxAcaoTCCPaginas.Text != "")
                 {
-                    tcc.TCCPaginas = Convert.ToInt32(textBoxAcaoTCCPaginas.Text);
+                    tcc.TCCPaginas = Convert.ToInt32(maskedTextBoxAcaoTCCPaginas.Text);
                 }
                 if (textBoxAcaoTCCSalaID.Text != "")
                 {
@@ -187,7 +188,7 @@ namespace Apresentacao
                 tcc.TCCSubarea = textBoxAcaoTCCSubarea.Text;
                 tcc.TCCEspecialidade = textBoxAcaoTCCEspecialidade.Text;
                 tcc.TCCResumo = textBoxAcaoTCCResumo.Text;
-                tcc.TCCPaginas = Convert.ToInt32(textBoxAcaoTCCPaginas.Text);
+                tcc.TCCPaginas = Convert.ToInt32(maskedTextBoxAcaoTCCPaginas.Text);
                 tcc.TCCSalaID = Convert.ToInt32(textBoxAcaoTCCSalaID.Text);
                 tcc.TCCSalaNome = textBoxAcaoTCCSalaNome.Text;
                 tcc.TCCUnidade = textBoxAcaoTCCUnidade.Text;
@@ -292,13 +293,19 @@ namespace Apresentacao
                 {
                     bancaID = Convert.ToInt32(bancaNegocios.InserirBanca(Convert.ToInt32(textBoxAcaoTCCID.Text)));
                 }
-                FrmMenuAcaoBanca frmMenuAcaoBanca = new FrmMenuAcaoBanca(null, Convert.ToInt32(textBoxAcaoTCCID.Text), bancaID, textBoxAcaoTCCOrientadorNome.Text);
+
+                FrmMenuAcaoBanca frmMenuAcaoBanca = new FrmMenuAcaoBanca(this.Text, null, Convert.ToInt32(textBoxAcaoTCCID.Text), bancaID, textBoxAcaoTCCOrientadorNome.Text);
                 frmMenuAcaoBanca.ShowDialog();
             }
             else
             {
                 MessageBox.Show("É necessário primeiro concluir o cadastro do TCC!", "Aviso");
             }
+        }
+
+        private void FrmMenuAcaoTCC_Load(object sender, EventArgs e)
+        {
+            dateTimePickerAcaoTCCData.Value = DateTime.Now.Date;
         }
     }
 }

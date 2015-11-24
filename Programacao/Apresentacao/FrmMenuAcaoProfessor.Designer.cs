@@ -119,9 +119,10 @@
             // maskedTextBoxAcaoProfessorTelefone
             // 
             this.maskedTextBoxAcaoProfessorTelefone.Location = new System.Drawing.Point(232, 87);
-            this.maskedTextBoxAcaoProfessorTelefone.Mask = "(99)999999999";
+            this.maskedTextBoxAcaoProfessorTelefone.Mask = "(99) 999999999";
             this.maskedTextBoxAcaoProfessorTelefone.Name = "maskedTextBoxAcaoProfessorTelefone";
-            this.maskedTextBoxAcaoProfessorTelefone.Size = new System.Drawing.Size(85, 20);
+            this.maskedTextBoxAcaoProfessorTelefone.PromptChar = ' ';
+            this.maskedTextBoxAcaoProfessorTelefone.Size = new System.Drawing.Size(90, 20);
             this.maskedTextBoxAcaoProfessorTelefone.TabIndex = 3;
             this.maskedTextBoxAcaoProfessorTelefone.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.maskedTextBoxAcaoProfessorTelefone_KeyPress);
             // 

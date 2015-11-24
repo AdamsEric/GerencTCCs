@@ -41,15 +41,19 @@ namespace Apresentacao
                 textBoxAcaoSalaID.Text = sala.SalaID.ToString();
                 textBoxAcaoSalaNome.Text = sala.SalaNome;
                 textBoxAcaoSalaDescricao.Text = sala.SalaDescricao;
-                comboBoxAcaoSalaUnidade.Text = sala.SalaUnidadeNome;
-                comboBoxAcaoSalaTipo.Text = sala.SalaSalaTipoNome;
+                textBoxAcaoSalaUnidade.Text = sala.SalaUnidadeNome;
+                textBoxAcaoSalaTipo.Text = sala.SalaSalaTipoNome;
 
                 buttonAcaoSalaConfirmar.Hide();
                 buttonAcaoSalaCancelar.Hide();
-                textBoxAcaoSalaNome.Enabled = false;
-                textBoxAcaoSalaDescricao.Enabled = false;
-                comboBoxAcaoSalaUnidade.Enabled = false;
-                comboBoxAcaoSalaTipo.Enabled = false;
+                textBoxAcaoSalaNome.ReadOnly = true;
+                textBoxAcaoSalaDescricao.ReadOnly = true;
+                comboBoxAcaoSalaUnidade.Visible = false;
+                textBoxAcaoSalaUnidade.Visible = true;
+                textBoxAcaoSalaUnidade.Location = new Point(68, 124);
+                comboBoxAcaoSalaTipo.Visible = false;
+                textBoxAcaoSalaTipo.Visible = true;
+                textBoxAcaoSalaTipo.Location = new Point(224, 50);
 
                 labelAcaoSalaCO.Hide();
             }

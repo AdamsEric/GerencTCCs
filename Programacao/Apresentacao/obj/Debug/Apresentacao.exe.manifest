@@ -54,43 +54,43 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>sFIl16aZwuiCiT4gacppykWwuYx2W/t19wwDGXT7MTQ=</dsig:DigestValue>
+        <dsig:DigestValue>q6Wt25DQQm/cy0R3GtJ6v1C/5b0Paczh+X9WwfjqTGM=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Apresentacao.exe" size="171520">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Apresentacao.exe" size="199680">
       <assemblyIdentity name="Apresentacao" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>O8UW9COwHg7sKHKJ1UFZ3ngWyMZZ6KS+My4ZpY1MRwQ=</dsig:DigestValue>
+        <dsig:DigestValue>wQKkm2HeUn2E+fEObogpI0iQnRw9O4tU00fVlmzMf5U=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="DTO.dll" size="15360">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="DTO.dll" size="15872">
       <assemblyIdentity name="DTO" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>ytFSCovhfpdnme9Sb5fiQKonIKeLyv/6UsXz/Jfiv1c=</dsig:DigestValue>
+        <dsig:DigestValue>MwufwDQzAKxIWJ2pO+7No/SB3pd9fLwXW14X06Q537c=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Negocios.dll" size="37888">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Negocios.dll" size="45056">
       <assemblyIdentity name="Negocios" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>LnchlmKuLSC07M7rZ52f4fmHAFujfEGZVvh+NX/BZZ4=</dsig:DigestValue>
+        <dsig:DigestValue>dQfYKpyOlvs/upgkrxqMZm9R72LpmONbKvu+N20i/Dk=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

@@ -47,10 +47,10 @@ namespace Apresentacao
 
                 buttonAcaoUnidadeConfirmar.Hide();
                 buttonAcaoUnidadeCancelar.Hide();
-                textBoxAcaoUnidadeNome.Enabled = false;
-                textBoxAcaoUnidadeCidade.Enabled = false;
-                textBoxAcaoUnidadeEstado.Enabled = false;
-                textBoxAcaoUnidadePais.Enabled = false;
+                textBoxAcaoUnidadeNome.ReadOnly = true;
+                textBoxAcaoUnidadeCidade.ReadOnly = true;
+                textBoxAcaoUnidadeEstado.ReadOnly = true;
+                textBoxAcaoUnidadePais.ReadOnly = true;
                 labelAcaoUnidadeCO.Hide();
             }
         }

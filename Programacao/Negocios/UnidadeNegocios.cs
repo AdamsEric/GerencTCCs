@@ -110,8 +110,9 @@ namespace Negocios
         {
             acessoDadosSqlServer.LimparParametros();
             acessoDadosSqlServer.AdicionarParametros("@UnidadeID", unidadeid);
-            int verificacao = Convert.ToInt32(acessoDadosSqlServer.ExecutarManipulacao(CommandType.Text, "SELECT TOP 1 UnidadeID FROM tblUnidade INNER JOIN tblCurso ON UnidadeID = CursoUnidadeID WHERE UnidadeID = @UnidadeID and CursoID > '0'"));
-            return verificacao;
+            int verificacao1 = Convert.ToInt32(acessoDadosSqlServer.ExecutarManipulacao(CommandType.Text, "SELECT TOP 1 UnidadeID FROM tblUnidade INNER JOIN tblCurso ON UnidadeID = CursoUnidadeID WHERE UnidadeID = @UnidadeID"));
+            int verificacao2 = Convert.ToInt32(acessoDadosSqlServer.ExecutarManipulacao(CommandType.Text, "SELECT TOP 1 UnidadeID FROM tblUnidade INNER JOIN tblSala ON UnidadeID = SalaUnidadeID WHERE UnidadeID = @UnidadeID"));
+            return verificacao1+verificacao2;
         }
     }
 }

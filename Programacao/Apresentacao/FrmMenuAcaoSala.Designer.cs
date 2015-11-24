@@ -48,6 +48,8 @@
             this.labelAcaoSalaTipo = new System.Windows.Forms.Label();
             this.tblSalaTipoTableAdapter = new Apresentacao.DataSetSalaTipoTableAdapters.tblSalaTipoTableAdapter();
             this.tblUnidadeTableAdapter1 = new Apresentacao.DataSetUnidadeTableAdapters.tblUnidadeTableAdapter();
+            this.textBoxAcaoSalaTipo = new System.Windows.Forms.TextBox();
+            this.textBoxAcaoSalaUnidade = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.tblUnidadeBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSetUnidade)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblSalaTipoBindingSource)).BeginInit();
@@ -208,11 +210,31 @@
             // 
             this.tblUnidadeTableAdapter1.ClearBeforeFill = true;
             // 
+            // textBoxAcaoSalaTipo
+            // 
+            this.textBoxAcaoSalaTipo.Location = new System.Drawing.Point(224, 50);
+            this.textBoxAcaoSalaTipo.Name = "textBoxAcaoSalaTipo";
+            this.textBoxAcaoSalaTipo.ReadOnly = true;
+            this.textBoxAcaoSalaTipo.Size = new System.Drawing.Size(110, 20);
+            this.textBoxAcaoSalaTipo.TabIndex = 28;
+            this.textBoxAcaoSalaTipo.Visible = false;
+            // 
+            // textBoxAcaoSalaUnidade
+            // 
+            this.textBoxAcaoSalaUnidade.Location = new System.Drawing.Point(68, 124);
+            this.textBoxAcaoSalaUnidade.Name = "textBoxAcaoSalaUnidade";
+            this.textBoxAcaoSalaUnidade.ReadOnly = true;
+            this.textBoxAcaoSalaUnidade.Size = new System.Drawing.Size(362, 20);
+            this.textBoxAcaoSalaUnidade.TabIndex = 29;
+            this.textBoxAcaoSalaUnidade.Visible = false;
+            // 
             // FrmMenuAcaoSala
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(461, 213);
+            this.Controls.Add(this.textBoxAcaoSalaUnidade);
+            this.Controls.Add(this.textBoxAcaoSalaTipo);
             this.Controls.Add(this.comboBoxAcaoSalaTipo);
             this.Controls.Add(this.labelAcaoSalaTipo);
             this.Controls.Add(this.textBoxAcaoSalaDescricao);
@@ -265,5 +287,7 @@
         private DataSetUnidade dataSetUnidade;
         private System.Windows.Forms.BindingSource tblUnidadeBindingSource1;
         private DataSetUnidadeTableAdapters.tblUnidadeTableAdapter tblUnidadeTableAdapter1;
+        private System.Windows.Forms.TextBox textBoxAcaoSalaTipo;
+        private System.Windows.Forms.TextBox textBoxAcaoSalaUnidade;
     }
 }

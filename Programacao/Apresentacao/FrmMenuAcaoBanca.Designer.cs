@@ -28,32 +28,21 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.buttonAcaoBancaVoltar = new System.Windows.Forms.Button();
             this.textBoxAcaoBancaID = new System.Windows.Forms.TextBox();
             this.labelAcaoBancaID = new System.Windows.Forms.Label();
             this.textBoxAcaoBancaProfessorID = new System.Windows.Forms.TextBox();
             this.buttonAcaoBancaProfessorSelecionar = new System.Windows.Forms.Button();
             this.textBoxAcaoBancaProfessorNome = new System.Windows.Forms.TextBox();
-            this.labelAcaoBancaProfessor3 = new System.Windows.Forms.Label();
+            this.labelAcaoBancaProfessor = new System.Windows.Forms.Label();
             this.textBoxAcaoBancaTCCID = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.buttonAcaoBancaInserirProfessor = new System.Windows.Forms.Button();
             this.dataGridViewAcaoBancaProfessor = new System.Windows.Forms.DataGridView();
             this.buttonAcaoBancaExcluirProfessor = new System.Windows.Forms.Button();
             this.labelAcaoBancaTCCOrientador = new System.Windows.Forms.Label();
+            this.buttonAcaoBancaConcluir = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewAcaoBancaProfessor)).BeginInit();
             this.SuspendLayout();
-            // 
-            // buttonAcaoBancaVoltar
-            // 
-            this.buttonAcaoBancaVoltar.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.buttonAcaoBancaVoltar.Location = new System.Drawing.Point(394, 194);
-            this.buttonAcaoBancaVoltar.Name = "buttonAcaoBancaVoltar";
-            this.buttonAcaoBancaVoltar.Size = new System.Drawing.Size(75, 23);
-            this.buttonAcaoBancaVoltar.TabIndex = 6;
-            this.buttonAcaoBancaVoltar.Text = "Voltar";
-            this.buttonAcaoBancaVoltar.UseVisualStyleBackColor = true;
-            this.buttonAcaoBancaVoltar.Click += new System.EventHandler(this.buttonAcaoBancaVoltar_Click);
             // 
             // textBoxAcaoBancaID
             // 
@@ -99,14 +88,14 @@
             this.textBoxAcaoBancaProfessorNome.Size = new System.Drawing.Size(279, 20);
             this.textBoxAcaoBancaProfessorNome.TabIndex = 68;
             // 
-            // labelAcaoBancaProfessor3
+            // labelAcaoBancaProfessor
             // 
-            this.labelAcaoBancaProfessor3.AutoSize = true;
-            this.labelAcaoBancaProfessor3.Location = new System.Drawing.Point(11, 45);
-            this.labelAcaoBancaProfessor3.Name = "labelAcaoBancaProfessor3";
-            this.labelAcaoBancaProfessor3.Size = new System.Drawing.Size(54, 13);
-            this.labelAcaoBancaProfessor3.TabIndex = 67;
-            this.labelAcaoBancaProfessor3.Text = "Professor:";
+            this.labelAcaoBancaProfessor.AutoSize = true;
+            this.labelAcaoBancaProfessor.Location = new System.Drawing.Point(11, 45);
+            this.labelAcaoBancaProfessor.Name = "labelAcaoBancaProfessor";
+            this.labelAcaoBancaProfessor.Size = new System.Drawing.Size(54, 13);
+            this.labelAcaoBancaProfessor.TabIndex = 67;
+            this.labelAcaoBancaProfessor.Text = "Professor:";
             // 
             // textBoxAcaoBancaTCCID
             // 
@@ -142,12 +131,12 @@
             this.dataGridViewAcaoBancaProfessor.AllowUserToResizeRows = false;
             this.dataGridViewAcaoBancaProfessor.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
             this.dataGridViewAcaoBancaProfessor.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            this.dataGridViewAcaoBancaProfessor.Location = new System.Drawing.Point(14, 72);
+            this.dataGridViewAcaoBancaProfessor.Location = new System.Drawing.Point(14, 67);
             this.dataGridViewAcaoBancaProfessor.MultiSelect = false;
             this.dataGridViewAcaoBancaProfessor.Name = "dataGridViewAcaoBancaProfessor";
             this.dataGridViewAcaoBancaProfessor.ReadOnly = true;
             this.dataGridViewAcaoBancaProfessor.RowHeadersWidth = 30;
-            this.dataGridViewAcaoBancaProfessor.Size = new System.Drawing.Size(456, 107);
+            this.dataGridViewAcaoBancaProfessor.Size = new System.Drawing.Size(456, 121);
             this.dataGridViewAcaoBancaProfessor.TabIndex = 76;
             // 
             // buttonAcaoBancaExcluirProfessor
@@ -170,11 +159,22 @@
             this.labelAcaoBancaTCCOrientador.Text = "Orientador";
             this.labelAcaoBancaTCCOrientador.Visible = false;
             // 
+            // buttonAcaoBancaConcluir
+            // 
+            this.buttonAcaoBancaConcluir.Location = new System.Drawing.Point(394, 194);
+            this.buttonAcaoBancaConcluir.Name = "buttonAcaoBancaConcluir";
+            this.buttonAcaoBancaConcluir.Size = new System.Drawing.Size(75, 23);
+            this.buttonAcaoBancaConcluir.TabIndex = 79;
+            this.buttonAcaoBancaConcluir.Text = "Concluir";
+            this.buttonAcaoBancaConcluir.UseVisualStyleBackColor = true;
+            this.buttonAcaoBancaConcluir.Click += new System.EventHandler(this.buttonAcaoBancaConcluir_Click);
+            // 
             // FrmMenuAcaoBanca
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(482, 229);
+            this.Controls.Add(this.buttonAcaoBancaConcluir);
             this.Controls.Add(this.labelAcaoBancaTCCOrientador);
             this.Controls.Add(this.buttonAcaoBancaExcluirProfessor);
             this.Controls.Add(this.dataGridViewAcaoBancaProfessor);
@@ -184,10 +184,9 @@
             this.Controls.Add(this.textBoxAcaoBancaProfessorID);
             this.Controls.Add(this.buttonAcaoBancaProfessorSelecionar);
             this.Controls.Add(this.textBoxAcaoBancaProfessorNome);
-            this.Controls.Add(this.labelAcaoBancaProfessor3);
+            this.Controls.Add(this.labelAcaoBancaProfessor);
             this.Controls.Add(this.labelAcaoBancaID);
             this.Controls.Add(this.textBoxAcaoBancaID);
-            this.Controls.Add(this.buttonAcaoBancaVoltar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
@@ -205,18 +204,18 @@
 
         #endregion
 
-        private System.Windows.Forms.Button buttonAcaoBancaVoltar;
         private System.Windows.Forms.TextBox textBoxAcaoBancaID;
         private System.Windows.Forms.Label labelAcaoBancaID;
         private System.Windows.Forms.TextBox textBoxAcaoBancaProfessorID;
         private System.Windows.Forms.Button buttonAcaoBancaProfessorSelecionar;
         private System.Windows.Forms.TextBox textBoxAcaoBancaProfessorNome;
-        private System.Windows.Forms.Label labelAcaoBancaProfessor3;
+        private System.Windows.Forms.Label labelAcaoBancaProfessor;
         private System.Windows.Forms.TextBox textBoxAcaoBancaTCCID;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button buttonAcaoBancaInserirProfessor;
         private System.Windows.Forms.DataGridView dataGridViewAcaoBancaProfessor;
         private System.Windows.Forms.Button buttonAcaoBancaExcluirProfessor;
         private System.Windows.Forms.Label labelAcaoBancaTCCOrientador;
+        private System.Windows.Forms.Button buttonAcaoBancaConcluir;
     }
 }
