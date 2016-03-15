@@ -69,21 +69,21 @@
             // acessoMenuOpcoesLogin
             // 
             this.acessoMenuOpcoesLogin.Name = "acessoMenuOpcoesLogin";
-            this.acessoMenuOpcoesLogin.Size = new System.Drawing.Size(113, 22);
+            this.acessoMenuOpcoesLogin.Size = new System.Drawing.Size(152, 22);
             this.acessoMenuOpcoesLogin.Text = "Login";
             this.acessoMenuOpcoesLogin.Click += new System.EventHandler(this.acessoLogin_Click);
             // 
             // acessoMenuOpcoesSobre
             // 
             this.acessoMenuOpcoesSobre.Name = "acessoMenuOpcoesSobre";
-            this.acessoMenuOpcoesSobre.Size = new System.Drawing.Size(113, 22);
+            this.acessoMenuOpcoesSobre.Size = new System.Drawing.Size(152, 22);
             this.acessoMenuOpcoesSobre.Text = "Sobre...";
             this.acessoMenuOpcoesSobre.Click += new System.EventHandler(this.acessoMenuOpcoesSobre_Click);
             // 
             // acessoMenuOpcoesSair
             // 
             this.acessoMenuOpcoesSair.Name = "acessoMenuOpcoesSair";
-            this.acessoMenuOpcoesSair.Size = new System.Drawing.Size(113, 22);
+            this.acessoMenuOpcoesSair.Size = new System.Drawing.Size(152, 22);
             this.acessoMenuOpcoesSair.Text = "Sair";
             this.acessoMenuOpcoesSair.Click += new System.EventHandler(this.acessoSair_Click);
             // 
@@ -252,7 +252,7 @@
             this.MaximizeBox = false;
             this.Name = "Menu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Gerenciador de TCCs - Versão 1.11.1";
+            this.Text = "Gerenciador de TCCs - Versão 2.03.1";
             this.Load += new System.EventHandler(this.MenuAluno_Load);
             this.menuPrincipal.ResumeLayout(false);
             this.menuPrincipal.PerformLayout();

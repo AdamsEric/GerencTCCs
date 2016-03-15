@@ -101,14 +101,14 @@
             this.textBoxAcaoTCCTitulo.Name = "textBoxAcaoTCCTitulo";
             this.textBoxAcaoTCCTitulo.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.textBoxAcaoTCCTitulo.Size = new System.Drawing.Size(307, 59);
-            this.textBoxAcaoTCCTitulo.TabIndex = 1;
+            this.textBoxAcaoTCCTitulo.TabIndex = 2;
             // 
             // buttonAcaoTCCConfirmar
             // 
             this.buttonAcaoTCCConfirmar.Location = new System.Drawing.Point(582, 345);
             this.buttonAcaoTCCConfirmar.Name = "buttonAcaoTCCConfirmar";
             this.buttonAcaoTCCConfirmar.Size = new System.Drawing.Size(75, 22);
-            this.buttonAcaoTCCConfirmar.TabIndex = 12;
+            this.buttonAcaoTCCConfirmar.TabIndex = 13;
             this.buttonAcaoTCCConfirmar.Text = "Confirmar";
             this.buttonAcaoTCCConfirmar.UseVisualStyleBackColor = true;
             this.buttonAcaoTCCConfirmar.Click += new System.EventHandler(this.buttonAcaoTCCConfirmar_Click);
@@ -119,7 +119,7 @@
             this.buttonAcaoTCCCancelar.Location = new System.Drawing.Point(678, 345);
             this.buttonAcaoTCCCancelar.Name = "buttonAcaoTCCCancelar";
             this.buttonAcaoTCCCancelar.Size = new System.Drawing.Size(75, 22);
-            this.buttonAcaoTCCCancelar.TabIndex = 13;
+            this.buttonAcaoTCCCancelar.TabIndex = 14;
             this.buttonAcaoTCCCancelar.Text = "Cancelar";
             this.buttonAcaoTCCCancelar.UseVisualStyleBackColor = true;
             this.buttonAcaoTCCCancelar.Click += new System.EventHandler(this.buttonAcaoTCCCancelar_Click);
@@ -163,7 +163,7 @@
             this.buttonAcaoTCCAlunoSelecionar.Location = new System.Drawing.Point(330, 40);
             this.buttonAcaoTCCAlunoSelecionar.Name = "buttonAcaoTCCAlunoSelecionar";
             this.buttonAcaoTCCAlunoSelecionar.Size = new System.Drawing.Size(65, 23);
-            this.buttonAcaoTCCAlunoSelecionar.TabIndex = 0;
+            this.buttonAcaoTCCAlunoSelecionar.TabIndex = 1;
             this.buttonAcaoTCCAlunoSelecionar.Text = "Selecionar";
             this.buttonAcaoTCCAlunoSelecionar.UseVisualStyleBackColor = true;
             this.buttonAcaoTCCAlunoSelecionar.Click += new System.EventHandler(this.buttonAcaoTCCAlunoSelecionar_Click);
@@ -184,7 +184,7 @@
             this.textBoxAcaoTCCArea.Name = "textBoxAcaoTCCArea";
             this.textBoxAcaoTCCArea.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.textBoxAcaoTCCArea.Size = new System.Drawing.Size(307, 33);
-            this.textBoxAcaoTCCArea.TabIndex = 4;
+            this.textBoxAcaoTCCArea.TabIndex = 5;
             // 
             // labelAcaoTCCArea
             // 
@@ -212,7 +212,7 @@
             this.textBoxAcaoTCCGrandeArea.Name = "textBoxAcaoTCCGrandeArea";
             this.textBoxAcaoTCCGrandeArea.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.textBoxAcaoTCCGrandeArea.Size = new System.Drawing.Size(307, 33);
-            this.textBoxAcaoTCCGrandeArea.TabIndex = 3;
+            this.textBoxAcaoTCCGrandeArea.TabIndex = 4;
             // 
             // textBoxAcaoTCCSubarea
             // 
@@ -222,7 +222,7 @@
             this.textBoxAcaoTCCSubarea.Name = "textBoxAcaoTCCSubarea";
             this.textBoxAcaoTCCSubarea.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.textBoxAcaoTCCSubarea.Size = new System.Drawing.Size(307, 33);
-            this.textBoxAcaoTCCSubarea.TabIndex = 5;
+            this.textBoxAcaoTCCSubarea.TabIndex = 6;
             // 
             // textBoxAcaoTCCEspecialidade
             // 
@@ -232,7 +232,7 @@
             this.textBoxAcaoTCCEspecialidade.Name = "textBoxAcaoTCCEspecialidade";
             this.textBoxAcaoTCCEspecialidade.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.textBoxAcaoTCCEspecialidade.Size = new System.Drawing.Size(307, 33);
-            this.textBoxAcaoTCCEspecialidade.TabIndex = 6;
+            this.textBoxAcaoTCCEspecialidade.TabIndex = 7;
             // 
             // labelAcaoTCCEspecialidade
             // 
@@ -259,7 +259,7 @@
             this.textBoxAcaoTCCResumo.Name = "textBoxAcaoTCCResumo";
             this.textBoxAcaoTCCResumo.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.textBoxAcaoTCCResumo.Size = new System.Drawing.Size(293, 154);
-            this.textBoxAcaoTCCResumo.TabIndex = 7;
+            this.textBoxAcaoTCCResumo.TabIndex = 8;
             // 
             // labelAcaoTCCResumo
             // 
@@ -283,7 +283,7 @@
             this.buttonAcaoTCCOrientadorSelecionar.Location = new System.Drawing.Point(330, 135);
             this.buttonAcaoTCCOrientadorSelecionar.Name = "buttonAcaoTCCOrientadorSelecionar";
             this.buttonAcaoTCCOrientadorSelecionar.Size = new System.Drawing.Size(65, 23);
-            this.buttonAcaoTCCOrientadorSelecionar.TabIndex = 2;
+            this.buttonAcaoTCCOrientadorSelecionar.TabIndex = 3;
             this.buttonAcaoTCCOrientadorSelecionar.Text = "Selecionar";
             this.buttonAcaoTCCOrientadorSelecionar.UseVisualStyleBackColor = true;
             this.buttonAcaoTCCOrientadorSelecionar.Click += new System.EventHandler(this.buttonAcaoTCCOrientadorSelecionar_Click);
@@ -347,7 +347,7 @@
             this.buttonAcaoTCCSalaSelecionar.Location = new System.Drawing.Point(688, 227);
             this.buttonAcaoTCCSalaSelecionar.Name = "buttonAcaoTCCSalaSelecionar";
             this.buttonAcaoTCCSalaSelecionar.Size = new System.Drawing.Size(65, 23);
-            this.buttonAcaoTCCSalaSelecionar.TabIndex = 10;
+            this.buttonAcaoTCCSalaSelecionar.TabIndex = 11;
             this.buttonAcaoTCCSalaSelecionar.Text = "Selecionar";
             this.buttonAcaoTCCSalaSelecionar.UseVisualStyleBackColor = true;
             this.buttonAcaoTCCSalaSelecionar.Click += new System.EventHandler(this.buttonAcaoTCCSalaSelecionar_Click);
@@ -365,7 +365,7 @@
             this.buttonAcaoTCCTCCBanca.Location = new System.Drawing.Point(460, 287);
             this.buttonAcaoTCCTCCBanca.Name = "buttonAcaoTCCTCCBanca";
             this.buttonAcaoTCCTCCBanca.Size = new System.Drawing.Size(293, 33);
-            this.buttonAcaoTCCTCCBanca.TabIndex = 14;
+            this.buttonAcaoTCCTCCBanca.TabIndex = 15;
             this.buttonAcaoTCCTCCBanca.Text = "Banca Examinadora";
             this.buttonAcaoTCCTCCBanca.UseVisualStyleBackColor = true;
             this.buttonAcaoTCCTCCBanca.Click += new System.EventHandler(this.buttonAcaoTCCTCCBanca_Click);
@@ -376,7 +376,7 @@
             this.textBoxAcaoTCCUnidade.Name = "textBoxAcaoTCCUnidade";
             this.textBoxAcaoTCCUnidade.ReadOnly = true;
             this.textBoxAcaoTCCUnidade.Size = new System.Drawing.Size(293, 20);
-            this.textBoxAcaoTCCUnidade.TabIndex = 11;
+            this.textBoxAcaoTCCUnidade.TabIndex = 12;
             // 
             // maskedTextBoxAcaoTCCPaginas
             // 
@@ -385,7 +385,7 @@
             this.maskedTextBoxAcaoTCCPaginas.Name = "maskedTextBoxAcaoTCCPaginas";
             this.maskedTextBoxAcaoTCCPaginas.PromptChar = ' ';
             this.maskedTextBoxAcaoTCCPaginas.Size = new System.Drawing.Size(37, 20);
-            this.maskedTextBoxAcaoTCCPaginas.TabIndex = 8;
+            this.maskedTextBoxAcaoTCCPaginas.TabIndex = 9;
             // 
             // textBoxAcaoTCCData
             // 
@@ -393,7 +393,7 @@
             this.textBoxAcaoTCCData.Name = "textBoxAcaoTCCData";
             this.textBoxAcaoTCCData.ReadOnly = true;
             this.textBoxAcaoTCCData.Size = new System.Drawing.Size(176, 20);
-            this.textBoxAcaoTCCData.TabIndex = 9;
+            this.textBoxAcaoTCCData.TabIndex = 10;
             this.textBoxAcaoTCCData.Visible = false;
             // 
             // FrmMenuAcaoTCC

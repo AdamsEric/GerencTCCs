@@ -165,7 +165,7 @@ namespace Apresentacao
 
         private void acessoMenuOpcoesSobre_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Não há nada aqui.\nDeixe de ser curioso, cara!", "Sobre");
+            MessageBox.Show("Gerenciador de TCCs.\nVersão 2.03.1\n\nEric Adams. Todos os direitos reservados.", "Sobre");
         }
 
         private void logoffToolStripMenuItem_Click(object sender, EventArgs e)

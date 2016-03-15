@@ -17,7 +17,7 @@ BEGIN
 	SELECT @@IDENTITY AS RETORNO
 END
 
-
+GO
 
 CREATE PROCEDURE uspCursoAlterar
 	@CursoID int,
@@ -35,7 +35,7 @@ BEGIN
 	SELECT @CursoID AS RETORNO
 END
 
-
+GO
 
 
 CREATE PROCEDURE uspCursoExcluir
@@ -49,7 +49,7 @@ BEGIN
 	SELECT @CursoID AS RETORNO
 END
 
-
+GO
 
 CREATE PROCEDURE uspCursoConsultarPorNome
 	@CursoNome nvarchar(80)

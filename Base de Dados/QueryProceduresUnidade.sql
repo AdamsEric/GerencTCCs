@@ -23,7 +23,7 @@ BEGIN
 END
 
 
-
+GO
 
 CREATE PROCEDURE uspUnidadeAlterar
 	@UnidadeID int,
@@ -45,7 +45,7 @@ BEGIN
 	SELECT @UnidadeID AS RETORNO
 END
 
-
+GO
 
 
 CREATE PROCEDURE uspUnidadeExcluir
@@ -59,6 +59,7 @@ BEGIN
 	SELECT @UnidadeID AS RETORNO
 END
 
+GO
 
 
 CREATE PROCEDURE uspUnidadeConsultarPorNome

@@ -19,7 +19,7 @@ BEGIN
 	SELECT @@IDENTITY AS RETORNO
 END
 
-
+GO
 
 
 CREATE PROCEDURE uspProfessorAlterar
@@ -40,7 +40,7 @@ BEGIN
 	SELECT @ProfessorID AS RETORNO
 END
 
-
+GO
 
 
 CREATE PROCEDURE uspProfessorExcluir
@@ -54,6 +54,7 @@ BEGIN
 	SELECT @ProfessorID AS RETORNO
 END
 
+GO
 
 
 CREATE PROCEDURE uspProfessorConsultarPorNome
@@ -72,6 +73,8 @@ BEGIN
 		ProfessorNome LIKE '%' + @ProfessorNome + '%'
 
 END
+
+GO
 
 
 CREATE PROCEDURE uspProfessorConsultarPorMatricula

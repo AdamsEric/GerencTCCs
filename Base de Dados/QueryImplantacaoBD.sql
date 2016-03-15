@@ -60,7 +60,7 @@ ProfessorNome NVARCHAR(70) NOT NULL,
 
 ProfessorMatricula VARCHAR(15) UNIQUE NOT NULL,
 
-ProfessorTelefone VARCHAR(15) NULL)
+ProfessorTelefone VARCHAR(14) NULL)
 
 GO
 
@@ -77,6 +77,7 @@ CursoUnidadeID INT FOREIGN KEY REFERENCES tblUnidade(UnidadeID) NOT NULL)
 
 GO
 
+
 CREATE TABLE tblAluno(
 
 AlunoID INT PRIMARY KEY IDENTITY(1,1),
@@ -85,7 +86,7 @@ AlunoNome NVARCHAR(70) NOT NULL,
 
 AlunoMatricula NVARCHAR(15) UNIQUE NOT NULL,
 
-AlunoTelefone VARCHAR(15) NULL,
+AlunoTelefone VARCHAR(14) NULL,
 
 AlunoCursoID INT FOREIGN KEY REFERENCES tblCurso(CursoID) NOT NULL)
 
@@ -157,7 +158,7 @@ UsuarioNome NVARCHAR(70) NOT NULL,
 
 UsuarioMatricula NVARCHAR(15) NULL,
 
-UsuarioSituacao NCHAR(1) NOT NULL,
+UsuarioSituacao VARCHAR(1) NOT NULL,
 
 UsuarioGrupoID INT FOREIGN KEY REFERENCES tblGrupo(GrupoID) NOT NULL)
 
@@ -169,5 +170,7 @@ insert into tblGrupo (GrupoNome) values ('REGISTRADOR')
 
 insert into tblSalaTipo (SalaTipoTipo) values ('SALA')
 insert into tblSalaTipo (SalaTipoTipo) values ('LABORATÓRIO')
+
+insert into tblUsuario (UsuarioLogin, UsuarioSenha, UsuarioNome, UsuariogrupoID) values ('ADMIN', '123456', 'ADMIN', 1)
 
 GO

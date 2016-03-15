@@ -22,3 +22,8 @@ D:\Eric Adams\OneDrive\Projetos\GerencTCCs\Programacao\DTO\bin\Debug\DTO.pdb
 D:\Eric Adams\OneDrive\Projetos\GerencTCCs\Programacao\DTO\obj\Debug\DTO.dll
 D:\Eric Adams\OneDrive\Projetos\GerencTCCs\Programacao\DTO\obj\Debug\DTO.pdb
 D:\Eric Adams\OneDrive\Projetos\GerencTCCs\Programacao\DTO\obj\Debug\DTO.csprojResolveAssemblyReference.cache
+D:\Eric Adams\OneDrive\UNP\Projetos\Engenharia de Software\GerencTCCs\GerencTCCs\Programacao\DTO\bin\Debug\DTO.dll
+D:\Eric Adams\OneDrive\UNP\Projetos\Engenharia de Software\GerencTCCs\GerencTCCs\Programacao\DTO\bin\Debug\DTO.pdb
+D:\Eric Adams\OneDrive\UNP\Projetos\Engenharia de Software\GerencTCCs\GerencTCCs\Programacao\DTO\obj\Debug\DTO.csprojResolveAssemblyReference.cache
+D:\Eric Adams\OneDrive\UNP\Projetos\Engenharia de Software\GerencTCCs\GerencTCCs\Programacao\DTO\obj\Debug\DTO.dll
+D:\Eric Adams\OneDrive\UNP\Projetos\Engenharia de Software\GerencTCCs\GerencTCCs\Programacao\DTO\obj\Debug\DTO.pdb

@@ -43,3 +43,12 @@ D:\Eric Adams\OneDrive\Projetos\GerencTCCs\Programacao\Negocios\bin\Debug\DTO.pd
 D:\Eric Adams\OneDrive\Projetos\GerencTCCs\Programacao\Negocios\obj\Debug\Negocios.csprojResolveAssemblyReference.cache
 D:\Eric Adams\OneDrive\Projetos\GerencTCCs\Programacao\Negocios\obj\Debug\Negocios.dll
 D:\Eric Adams\OneDrive\Projetos\GerencTCCs\Programacao\Negocios\obj\Debug\Negocios.pdb
+D:\Eric Adams\OneDrive\UNP\Projetos\Engenharia de Software\GerencTCCs\GerencTCCs\Programacao\Negocios\bin\Debug\Negocios.dll
+D:\Eric Adams\OneDrive\UNP\Projetos\Engenharia de Software\GerencTCCs\GerencTCCs\Programacao\Negocios\bin\Debug\Negocios.pdb
+D:\Eric Adams\OneDrive\UNP\Projetos\Engenharia de Software\GerencTCCs\GerencTCCs\Programacao\Negocios\bin\Debug\AcessoBancoDados.dll
+D:\Eric Adams\OneDrive\UNP\Projetos\Engenharia de Software\GerencTCCs\GerencTCCs\Programacao\Negocios\bin\Debug\DTO.dll
+D:\Eric Adams\OneDrive\UNP\Projetos\Engenharia de Software\GerencTCCs\GerencTCCs\Programacao\Negocios\bin\Debug\AcessoBancoDados.pdb
+D:\Eric Adams\OneDrive\UNP\Projetos\Engenharia de Software\GerencTCCs\GerencTCCs\Programacao\Negocios\bin\Debug\DTO.pdb
+D:\Eric Adams\OneDrive\UNP\Projetos\Engenharia de Software\GerencTCCs\GerencTCCs\Programacao\Negocios\obj\Debug\Negocios.csprojResolveAssemblyReference.cache
+D:\Eric Adams\OneDrive\UNP\Projetos\Engenharia de Software\GerencTCCs\GerencTCCs\Programacao\Negocios\obj\Debug\Negocios.dll
+D:\Eric Adams\OneDrive\UNP\Projetos\Engenharia de Software\GerencTCCs\GerencTCCs\Programacao\Negocios\obj\Debug\Negocios.pdb
